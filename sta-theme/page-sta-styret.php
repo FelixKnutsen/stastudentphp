@@ -67,7 +67,7 @@ if (empty($members)) {
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
         <span class="sta-badge"><?php echo esc_html(sta_t('Ledelse', 'Executive Leadership')); ?></span>
-        <h1 class="sta-hero-title" style="font-size:2.75rem; margin-top:0.5rem;">
+        <h1 class="sta-hero-title" style="margin-top:0.5rem;">
             <?php echo esc_html(sta_t('STA-styret og Sekretariatet 2026-2027', 'The STA Board & Secretariat 2026-2027')); ?>
         </h1>
         <p style="color:var(--sta-teal-100); font-size:1.15rem; max-width:800px;">
@@ -98,9 +98,9 @@ if (empty($members)) {
     </div>
 
     <!-- Board Members Grid (6 Members) -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:1.75rem; margin-bottom:4rem;">
+    <div class="sta-board-grid">
         <?php foreach ($members as $member): ?>
-            <div class="sta-card" style="padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
                     <!-- Photo 4:3 -->
                     <div style="position:relative; aspect-ratio:4/3; width:100%; border-radius:var(--sta-radius-sm); overflow:hidden; background:var(--sta-teal-800); border:1px solid rgba(61,148,139,0.25); margin-bottom:1.25rem;">

@@ -134,12 +134,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </a>
 
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-label="Åpne meny">
+                <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-controls="sta-mobile-drawer" aria-label="Åpne meny">
                     <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </div>
         </div>
     </div>
+</header>
 
     <!-- Search Modal -->
     <div id="sta-search-modal" class="sta-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sta-modal-title">
@@ -214,14 +215,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             </ul>
         </nav>
     </div>
-</header>
 
 <main id="main-content" class="sta-site-main">
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
         <span class="sta-badge">Ledelse</span>
-        <h1 class="sta-hero-title" style="font-size:2.75rem; margin-top:0.5rem;">
+        <h1 class="sta-hero-title" style="margin-top:0.5rem;">
             STA-styret og Sekretariatet 2026-2027        </h1>
         <p style="color:var(--sta-teal-100); font-size:1.15rem; max-width:800px;">
             STA-styret og Sekretariatet står for den daglige driften av organisasjonen og har hovedansvaret for studentdemokratiet på Universitetet i Agder.        </p>
@@ -249,8 +249,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     </div>
 
     <!-- Board Members Grid (6 Members) -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:1.75rem; margin-bottom:4rem;">
-                    <div class="sta-card" style="padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+    <div class="sta-board-grid">
+                    <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
                     <!-- Photo 4:3 -->
                     <div style="position:relative; aspect-ratio:4/3; width:100%; border-radius:var(--sta-radius-sm); overflow:hidden; background:var(--sta-teal-800); border:1px solid rgba(61,148,139,0.25); margin-bottom:1.25rem;">
@@ -284,7 +284,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                         </a>
                                     </div>
             </div>
-                    <div class="sta-card" style="padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
                     <!-- Photo 4:3 -->
                     <div style="position:relative; aspect-ratio:4/3; width:100%; border-radius:var(--sta-radius-sm); overflow:hidden; background:var(--sta-teal-800); border:1px solid rgba(61,148,139,0.25); margin-bottom:1.25rem;">
@@ -314,7 +314,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                     
                                     </div>
             </div>
-                    <div class="sta-card" style="padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
                     <!-- Photo 4:3 -->
                     <div style="position:relative; aspect-ratio:4/3; width:100%; border-radius:var(--sta-radius-sm); overflow:hidden; background:var(--sta-teal-800); border:1px solid rgba(61,148,139,0.25); margin-bottom:1.25rem;">
@@ -344,7 +344,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                     
                                     </div>
             </div>
-                    <div class="sta-card" style="padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
                     <!-- Photo 4:3 -->
                     <div style="position:relative; aspect-ratio:4/3; width:100%; border-radius:var(--sta-radius-sm); overflow:hidden; background:var(--sta-teal-800); border:1px solid rgba(61,148,139,0.25); margin-bottom:1.25rem;">
@@ -374,7 +374,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                     
                                     </div>
             </div>
-                    <div class="sta-card" style="padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
                     <!-- Photo 4:3 -->
                     <div style="position:relative; aspect-ratio:4/3; width:100%; border-radius:var(--sta-radius-sm); overflow:hidden; background:var(--sta-teal-800); border:1px solid rgba(61,148,139,0.25); margin-bottom:1.25rem;">
@@ -404,7 +404,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                     
                                     </div>
             </div>
-                    <div class="sta-card" style="padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
                     <!-- Photo 4:3 -->
                     <div style="position:relative; aspect-ratio:4/3; width:100%; border-radius:var(--sta-radius-sm); overflow:hidden; background:var(--sta-teal-800); border:1px solid rgba(61,148,139,0.25); margin-bottom:1.25rem;">

@@ -107,12 +107,13 @@ $current_url = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($
                 </a>
 
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-label="<?php echo esc_attr(sta_t('Åpne meny', 'Open menu')); ?>">
+                <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-controls="sta-mobile-drawer" aria-label="<?php echo esc_attr(sta_t('Åpne meny', 'Open menu')); ?>">
                     <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </div>
         </div>
     </div>
+</header>
 
     <!-- Search Modal -->
     <div id="sta-search-modal" class="sta-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sta-modal-title">
@@ -192,6 +193,5 @@ $current_url = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($
             </ul>
         </nav>
     </div>
-</header>
 
 <main id="main-content" class="sta-site-main">

@@ -128,6 +128,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (mobileBackdrop) mobileBackdrop.classList.add('is-active');
         document.body.classList.add('sta-no-scroll');
         if (mobileTrigger) mobileTrigger.setAttribute('aria-expanded', 'true');
+        if (mobileClose) {
+            setTimeout(function () { mobileClose.focus(); }, 50);
+        }
     }
 
     function closeMobileDrawer() {
@@ -141,9 +144,35 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    if (mobileTrigger) mobileTrigger.addEventListener('click', openMobileDrawer);
+    function toggleMobileDrawer() {
+        if (!mobileDrawer) return;
+        if (mobileDrawer.classList.contains('is-active')) {
+            closeMobileDrawer();
+        } else {
+            openMobileDrawer();
+        }
+    }
+
+    if (mobileTrigger) mobileTrigger.addEventListener('click', toggleMobileDrawer);
     if (mobileClose) mobileClose.addEventListener('click', closeMobileDrawer);
     if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileDrawer);
+
+    // Close on link click
+    if (mobileDrawer) {
+        const navLinks = mobileDrawer.querySelectorAll('.sta-mobile-nav-link:not(.sta-mobile-accordion-toggle), .sta-mobile-sublink');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                closeMobileDrawer();
+            });
+        });
+    }
+
+    // Auto-close on viewport resize to desktop
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 1024 && mobileDrawer && mobileDrawer.classList.contains('is-active')) {
+            closeMobileDrawer();
+        }
+    });
 
     // Mobile Accordion Toggle
     const mobileAccordions = document.querySelectorAll('.sta-mobile-accordion-toggle');

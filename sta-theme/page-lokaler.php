@@ -63,13 +63,7 @@ $alibiet_images = array(
             <h2 style="font-size:2rem; font-weight:800; color:#fff; margin:0;">Alibiet</h2>
         </div>
 
-        <div style="display:grid; grid-template-columns:1fr; gap:2rem; align-items:start;">
-            <style>
-                @media (min-width: 1024px) {
-                    .sta-venue-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 2rem; }
-                }
-            </style>
-            <div class="sta-venue-grid">
+        <div class="sta-venue-grid">
                 <!-- Interactive Image Slider -->
                 <div>
                     <div class="sta-slider-container">
@@ -147,7 +141,6 @@ $alibiet_images = array(
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Venue 2: Bluebox (Campus Grimstad) -->
     <div>

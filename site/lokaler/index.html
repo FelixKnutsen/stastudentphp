@@ -134,12 +134,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </a>
 
                 <!-- Mobile Menu Toggle Button -->
-                <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-label="Åpne meny">
+                <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-controls="sta-mobile-drawer" aria-label="Åpne meny">
                     <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </div>
         </div>
     </div>
+</header>
 
     <!-- Search Modal -->
     <div id="sta-search-modal" class="sta-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sta-modal-title">
@@ -214,7 +215,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             </ul>
         </nav>
     </div>
-</header>
 
 <main id="main-content" class="sta-site-main">
 
@@ -236,13 +236,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             <h2 style="font-size:2rem; font-weight:800; color:#fff; margin:0;">Alibiet</h2>
         </div>
 
-        <div style="display:grid; grid-template-columns:1fr; gap:2rem; align-items:start;">
-            <style>
-                @media (min-width: 1024px) {
-                    .sta-venue-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 2rem; }
-                }
-            </style>
-            <div class="sta-venue-grid">
+        <div class="sta-venue-grid">
                 <!-- Interactive Image Slider -->
                 <div>
                     <div class="sta-slider-container">
@@ -332,7 +326,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Venue 2: Bluebox (Campus Grimstad) -->
     <div>
