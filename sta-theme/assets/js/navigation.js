@@ -190,6 +190,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // -------------------------------------------------------------------------
+    // 4. Language Switcher (Desktop & Mobile Drawer)
+    // -------------------------------------------------------------------------
+    const langButtons = document.querySelectorAll('.sta-lang-btn');
+    langButtons.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            const currentPath = window.location.pathname;
+            const isEnglish = currentPath.startsWith('/en/') || currentPath === '/en' || document.documentElement.lang === 'en';
+            let targetUrl;
+
+            if (isEnglish) {
+                // Switch to Norwegian
+                document.cookie = 'sta_lang=no; path=/; max-age=' + (60 * 60 * 24 * 30);
+                let noPath = currentPath.replace(/^\/en(\/|$)/, '/');
+                if (!noPath) noPath = '/';
+                targetUrl = noPath + window.location.search;
+            } else {
+                // Switch to English
+                document.cookie = 'sta_lang=en; path=/; max-age=' + (60 * 60 * 24 * 30);
+                let cleanPath = currentPath.replace(/^\//, '');
+                targetUrl = '/en/' + cleanPath + window.location.search;
+            }
+
+            if (targetUrl) {
+                e.preventDefault();
+                window.location.href = targetUrl;
+            }
+        });
+    });
+
     // Global Escape Handler
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') {
@@ -201,3 +231,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+

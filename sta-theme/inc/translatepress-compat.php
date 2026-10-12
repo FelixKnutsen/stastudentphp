@@ -78,8 +78,7 @@ function sta_t($no_text, $en_text) {
 function sta_get_localized_url($path = '/') {
     $path = '/' . ltrim($path, '/');
     if (sta_is_en()) {
-        // Return URL with lang parameter or /en/ prefix
-        return home_url($path . (strpos($path, '?') !== false ? '&lang=en' : '?lang=en'));
+        return home_url('/en' . ($path === '/' ? '/' : $path));
     }
     return home_url($path);
 }
@@ -89,19 +88,32 @@ function sta_get_localized_url($path = '/') {
  */
 function sta_get_toggle_language_url() {
     $current_uri = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '/';
-    $target_lang = sta_is_en() ? 'no' : 'en';
-
-    // Remove existing lang query param
     $clean_uri = remove_query_arg('lang', $current_uri);
 
-    // If switching to Norwegian from /en/ path
-    if ($target_lang === 'no') {
-        $clean_uri = preg_replace('#^/en(/|$)#i', '/', $clean_uri);
-        return add_query_arg('lang', 'no', $clean_uri);
+    $path = parse_url($clean_uri, PHP_URL_PATH);
+    if (!$path) $path = '/';
+    $query = parse_url($clean_uri, PHP_URL_QUERY);
+    $query_str = $query ? '?' . $query : '';
+
+    if (sta_is_en()) {
+        $no_path = preg_replace('#^/en(/|$)#i', '/', $path);
+        if (!$no_path) $no_path = '/';
+        return home_url($no_path . $query_str);
     } else {
-        return add_query_arg('lang', 'en', $clean_uri);
+        $en_path = '/en' . ($path === '/' ? '/' : ('/' . ltrim($path, '/')));
+        return home_url($en_path . $query_str);
     }
 }
+
+/**
+ * Prevent WordPress canonical redirect from hijacking /en/ routes
+ */
+add_filter('redirect_canonical', function ($redirect_url, $requested_url) {
+    if (sta_is_en()) {
+        return false;
+    }
+    return $redirect_url;
+}, 10, 2);
 
 /**
  * Ensure <html> tag always reflects active language

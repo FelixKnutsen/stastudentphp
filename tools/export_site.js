@@ -60,7 +60,7 @@ async function runExport() {
     console.error('Error querying WordPress DB:', err.message);
   }
 
-  const urlsToFetch = new Set([
+  const keyPages = [
     '/',
     '/om-sta/',
     '/sta-styret/',
@@ -78,7 +78,14 @@ async function runExport() {
     '/for-tillitsvalgte/',
     '/personvernserklaering/',
     '/nyheter/'
-  ]);
+  ];
+
+  const urlsToFetch = new Set(keyPages);
+
+  // Add English versions of all key pages
+  for (const kp of keyPages) {
+    urlsToFetch.add(kp === '/' ? '/en/' : `/en${kp}`);
+  }
 
   // Add news pagination (pages 2 to 19)
   for (let i = 2; i <= 19; i++) {
@@ -150,6 +157,14 @@ async function runExport() {
   const pluginZip = path.join(BASE_DIR, 'sta-core-plugin.zip');
   if (fs.existsSync(themeZip)) fs.copyFileSync(themeZip, path.join(downloadsDir, 'sta-theme.zip'));
   if (fs.existsSync(pluginZip)) fs.copyFileSync(pluginZip, path.join(downloadsDir, 'sta-core-plugin.zip'));
+
+  // 5. English aliases (om-oss-2 -> om-sta)
+  const enOmSta = path.join(SITE_DIR, 'en', 'om-sta', 'index.html');
+  const enOmOss2Dir = path.join(SITE_DIR, 'en', 'om-oss-2');
+  if (fs.existsSync(enOmSta)) {
+    fs.mkdirSync(enOmOss2Dir, { recursive: true });
+    fs.copyFileSync(enOmSta, path.join(enOmOss2Dir, 'index.html'));
+  }
 
   console.log('🎉 Site export complete! Saved to site/');
 }
