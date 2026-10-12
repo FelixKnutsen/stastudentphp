@@ -3,6 +3,9 @@ local-test/
 wordpress.zip
 sqlite-plugin.zip
 
+# Build output
+public_html/
+
 # Logs and temporary files
 *.log
 .DS_Store

@@ -1,0 +1,5 @@
+{
+  "buildCommand": "node tools/build_vercel_hub.js",
+  "outputDirectory": "public_html",
+  "framework": null
+}
