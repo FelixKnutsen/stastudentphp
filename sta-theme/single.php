@@ -8,6 +8,8 @@ if (!defined('ABSPATH')) {
 }
 
 get_header();
+$is_en = sta_is_en();
+$is_nn = sta_is_nn();
 ?>
 
 <div class="sta-container" style="padding-top:3rem; padding-bottom:5rem;">
@@ -16,7 +18,7 @@ get_header();
             <!-- Back navigation link -->
             <div style="margin-bottom:1.5rem;">
                 <a href="<?php echo esc_url(sta_get_localized_url('/category/nyheter')); ?>" style="color:var(--sta-teal-200); font-size:0.9rem; display:inline-flex; align-items:center; gap:0.35rem;">
-                    &larr; <?php echo esc_html(sta_t('Tilbake til alle nyheter', 'Back to all news')); ?>
+                    &larr; <?php echo esc_html(sta_t('Tilbake til alle nyheter', 'Back to all news', 'Attende til alle nyheiter')); ?>
                 </a>
             </div>
 
@@ -24,7 +26,8 @@ get_header();
             <header style="margin-bottom:2rem;">
                 <?php
                 $categories = get_the_category();
-                $cat_title = (!empty($categories) && $categories[0]->name !== 'Uncategorized') ? $categories[0]->name : (sta_is_en() ? 'News' : 'Nyheter');
+                $fallback_cat = $is_en ? 'News' : ($is_nn ? 'Nyheiter' : 'Nyheter');
+                $cat_title = (!empty($categories) && $categories[0]->name !== 'Uncategorized') ? $categories[0]->name : $fallback_cat;
                 ?>
                 <span class="sta-badge" style="margin-bottom:0.75rem;">
                     <?php echo esc_html($cat_title); ?>
@@ -61,10 +64,10 @@ get_header();
             <!-- Article Footer CTA -->
             <footer style="margin-top:3.5rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
                 <a href="<?php echo esc_url(sta_get_localized_url('/category/nyheter')); ?>" class="sta-btn sta-btn-outline">
-                    &larr; <?php echo esc_html(sta_t('Flere nyheter', 'More news')); ?>
+                    &larr; <?php echo esc_html(sta_t('Flere nyheter', 'More news', 'Fleire nyheiter')); ?>
                 </a>
                 <a href="#content" style="color:var(--sta-teal-200); font-size:0.9rem;">
-                    <?php echo esc_html(sta_t('Til toppen &uarr;', 'Back to top &uarr;')); ?>
+                    <?php echo esc_html(sta_t('Til toppen &uarr;', 'Back to top &uarr;', 'Til toppen &uarr;')); ?>
                 </a>
             </footer>
         </article>

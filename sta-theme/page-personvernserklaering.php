@@ -9,36 +9,37 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 ?>
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <article style="max-width:840px; margin:0 auto;">
         <header style="margin-bottom:2.5rem;">
-            <span class="sta-badge"><?php echo esc_html(sta_t('Personvern og GDPR', 'Privacy & GDPR')); ?></span>
+            <span class="sta-badge"><?php echo esc_html(sta_t('Personvern og GDPR', 'Privacy & GDPR', 'Personvern og GDPR')); ?></span>
             <h1 class="sta-hero-title" style="font-size:2.75rem; margin-top:0.5rem;">
-                <?php echo esc_html(sta_t('Personvernserklæring', 'Privacy Policy')); ?>
+                <?php echo esc_html(sta_t('Personvernserklæring', 'Privacy Policy', 'Personvernerklæring')); ?>
             </h1>
         </header>
 
         <div class="sta-article-content" style="font-size:1.1rem; line-height:1.8; color:var(--sta-teal-50);">
-            <h2>1. <?php echo esc_html(sta_t('Behandlingsansvarlig', 'Data Controller')); ?></h2>
+            <h2>1. <?php echo esc_html(sta_t('Behandlingsansvarlig', 'Data Controller', 'Handsamingsansvarleg')); ?></h2>
             <p>
-                <?php echo esc_html(sta_t('Studentorganisasjonen i Agder (STA), organisasjonsnummer 981 596 412, Universitetsveien 24, 4630 Kristiansand S, er behandlingsansvarlig for behandling av personopplysninger på stastudent.no.', 'The Student Organisation of Agder (STA), organisation number 981 596 412, Universitetsveien 24, 4630 Kristiansand S, is the data controller for personal data processed on stastudent.no.')); ?>
+                <?php echo esc_html(sta_t('Studentorganisasjonen i Agder (STA), organisasjonsnummer 981 596 412, Universitetsveien 24, 4630 Kristiansand S, er behandlingsansvarlig for behandling av personopplysninger på stastudent.no.', 'The Student Organisation of Agder (STA), organisation number 981 596 412, Universitetsveien 24, 4630 Kristiansand S, is the data controller for personal data processed on stastudent.no.', 'Studentorganisasjonen i Agder (STA), organisasjonsnummer 981 596 412, Universitetsveien 24, 4630 Kristiansand S, er handsamingsansvarleg for handsaming av personopplysningar på stastudent.no.')); ?>
             </p>
 
-            <h2>2. <?php echo esc_html(sta_t('Webstatistikk og informasjonskapsler (Koko Analytics)', 'Web Analytics & Cookies')); ?></h2>
+            <h2>2. <?php echo esc_html(sta_t('Webstatistikk og informasjonskapsler (Koko Analytics)', 'Web Analytics & Cookies', 'Nettstatistikk og informasjonskapslar (Koko Analytics)')); ?></h2>
             <p>
-                <?php echo esc_html(sta_t('Vi benytter Koko Analytics for anonymisert besøksstatistikk. Koko Analytics sporer ikke personlig identifiserbar informasjon, deler ikke data med tredjeparter og bruker ikke invaderende sporingskapsler.', 'We use Koko Analytics for privacy-friendly visitor statistics. Koko Analytics does not track personally identifiable information, does not share data with third parties, and avoids tracking cookies.')); ?>
+                <?php echo esc_html(sta_t('Vi benytter Koko Analytics for anonymisert besøksstatistikk. Koko Analytics sporer ikke personlig identifiserbar informasjon, deler ikke data med tredjeparter og bruker ikke invaderende sporingskapsler.', 'We use Koko Analytics for privacy-friendly visitor statistics. Koko Analytics does not track personally identifiable information, does not share data with third parties, and avoids tracking cookies.', 'Vi nyttar Koko Analytics for anonymisert vitjingsstatistikk. Koko Analytics sporar ikkje personleg identifiserbar informasjon, deler ikkje data med tredjepartar og brukar ikkje invaderande sporingskapslar.')); ?>
             </p>
 
-            <h2>3. <?php echo esc_html(sta_t('Sikkerhet og logger', 'Security & Logs')); ?></h2>
+            <h2>3. <?php echo esc_html(sta_t('Sikkerhet og logger', 'Security & Logs', 'Tryggleik og loggar')); ?></h2>
             <p>
-                <?php echo esc_html(sta_t('Nettstedet benytter sikkerhetslogger (Solid Security) for å forhindre uautorisert adgang og angrep. IP-adresser i sikkerhetslogger oppbevares i inntil 60 dager før de slettes automatisk.', 'The website employs security logging to prevent unauthorized access and cyber attacks. IP addresses in security logs are retained for up to 60 days before automatic deletion.')); ?>
+                <?php echo esc_html(sta_t('Nettstedet benytter sikkerhetslogger (Solid Security) for å forhindre uautorisert adgang og angrep. IP-adresser i sikkerhetslogger oppbevares i inntil 60 dager før de slettes automatisk.', 'The website employs security logging to prevent unauthorized access and cyber attacks. IP addresses in security logs are retained for up to 60 days before automatic deletion.', 'Nettstaden nyttar tryggleiksloggar (Solid Security) for å hindre uautorisert tilgang og åtak. IP-adresser i tryggleiksloggar blir lagra i opptil 60 dagar før dei blir sletta automatisk.')); ?>
             </p>
 
-            <h2>4. <?php echo esc_html(sta_t('Dine rettigheter og kontakt', 'Your Rights & Contact')); ?></h2>
+            <h2>4. <?php echo esc_html(sta_t('Dine rettigheter og kontakt', 'Your Rights & Contact', 'Dine rettar og kontakt')); ?></h2>
             <p>
-                <?php echo esc_html(sta_t('Du har rett til innsyn, retting og sletting av personopplysninger vi eventuelt oppbevarer om deg. Henvendelser rettes til sta@uia.no.', 'You have the right to request access to, rectification of, or erasure of any personal data we hold about you. Contact sta@uia.no for any inquiries.')); ?>
+                <?php echo esc_html(sta_t('Du har rett til innsyn, retting og sletting av personopplysninger vi eventuelt oppbevarer om deg. Henvendelser rettes til sta@uia.no.', 'You have the right to request access to, rectification of, or erasure of any personal data we hold about you. Contact sta@uia.no for any inquiries.', 'Du har rett til innsyn, retting og sletting av personopplysningar vi eventuelt lagrar om deg. Førespurnader rettast til sta@uia.no.')); ?>
             </p>
         </div>
     </article>

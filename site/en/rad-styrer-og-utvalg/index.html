@@ -120,18 +120,32 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </div>
             </nav>
 
-            <!-- Right Controls: Search Icon, Language Switcher & Mobile Menu Button -->
+            <!-- Right Controls: Search Icon, 3-Language Selector & Mobile Menu Button -->
             <div style="display:flex; align-items:center; gap:0.75rem;">
                 <!-- Search Button -->
                 <button type="button" id="sta-search-trigger" class="sta-search-btn" aria-label="Open search" style="background:transparent; border:none; color:#fff; cursor:pointer; padding:0.5rem; border-radius:50%; display:flex; align-items:center; justify-content:center;">
                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 </button>
 
-                <!-- Language Switcher Pill Button -->
-                <a href="/rad-styrer-og-utvalg/" class="sta-lang-btn" aria-label="Switch language to Norwegian" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.35rem 0.85rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; text-decoration:none;">
-                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    <span>Norsk bokmål</span>
-                </a>
+                <!-- Language Switcher Dropdown (Desktop: Bokmål, Nynorsk, English) -->
+                <div class="sta-dropdown-container sta-lang-dropdown" style="position:relative;">
+                    <button type="button" class="sta-lang-btn sta-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Switch language" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.35rem 0.85rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; cursor:pointer;">
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <span>English</span>
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="sta-dropdown-menu" role="menu" style="min-width:160px; right:0; left:auto; padding:0.5rem 0;">
+                        <a href="/rad-styrer-og-utvalg/" class="sta-dropdown-item sta-lang-option " data-lang="no" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                            <span>Norsk bokmål</span>
+                                                    </a>
+                        <a href="/nn/rad-styrer-og-utvalg/" class="sta-dropdown-item sta-lang-option " data-lang="nn" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                            <span>Norsk nynorsk</span>
+                                                    </a>
+                        <a href="/en/rad-styrer-og-utvalg/" class="sta-dropdown-item sta-lang-option is-active" data-lang="en" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                            <span>English</span>
+                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>                        </a>
+                    </div>
+                </div>
 
                 <!-- Mobile Menu Toggle Button -->
                 <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-controls="sta-mobile-drawer" aria-label="Open menu">
@@ -170,10 +184,19 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                  height="34" 
                  width="165"
                  style="height:34px; width:auto;">
-            <div style="display:flex; align-items:center; gap:0.75rem;">
-                <a href="/rad-styrer-og-utvalg/" class="sta-lang-btn" style="display:inline-flex; align-items:center; gap:0.35rem; padding:0.3rem 0.75rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; text-decoration:none;">
-                    <span>Norsk</span>
-                </a>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+                <!-- Mobile 3-Language Segment Control -->
+                <div style="display:inline-flex; align-items:center; background:rgba(9,50,47,0.85); border:1px solid rgba(158,207,201,0.25); border-radius:9999px; padding:2px;">
+                    <a href="/rad-styrer-og-utvalg/" class="sta-lang-option" data-lang="no" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; color:var(--sta-teal-100);" aria-label="Norsk bokmål">
+                        NB
+                    </a>
+                    <a href="/nn/rad-styrer-og-utvalg/" class="sta-lang-option" data-lang="nn" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; color:var(--sta-teal-100);" aria-label="Norsk nynorsk">
+                        NN
+                    </a>
+                    <a href="/en/rad-styrer-og-utvalg/" class="sta-lang-option" data-lang="en" style="display:inline-flex; align-items:center; justify-content:center; padding:0.35rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; background:var(--sta-orange); color:#fff;" aria-label="English">
+                        EN
+                    </a>
+                </div>
                 <button type="button" id="sta-mobile-drawer-close" class="sta-mobile-drawer-close" aria-label="Close menu">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
@@ -316,299 +339,179 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                  style="width:100%; height:100%; object-fit:cover;"
                  loading="lazy">
         </div>
-        <div style="background:rgba(4,24,23,0.9); padding:1.5rem; backdrop-filter:blur(4px);">
-            <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 0.25rem;">
-                STA has many positions for you!            </h3>
-            <p style="font-size:0.85rem; color:var(--sta-teal-100); margin:0;">
-                Whether passionate about education, sustainability, student welfare, or events, we have a position that suits your interests.            </p>
-        </div>
     </div>
 
-    <!-- Categories of Verv -->
-    <div style="display:flex; flex-direction:column; gap:3.5rem;">
-                    <div>
-                <h2 style="font-size:1.6rem; font-weight:800; color:#fff; margin:0 0 1.5rem; padding-bottom:0.75rem; border-bottom:1px solid rgba(158,207,201,0.25);">
-                    STA Positions                </h2>
-
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+    <!-- Committee Categories & Details Accordion / Cards -->
+    <div style="max-width:56rem; margin:0 auto; display:flex; flex-direction:column; gap:3rem;">
+        <br />
+<b>Warning</b>:  Undefined array key "name" in <b>C:\github\stastudent-wordpress\sta-wordpress\local-test\wordpress\wp-content\themes\sta-theme\page-rad-styrer-og-utvalg.php</b> on line <b>145</b><br />
+            <div>
+                <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:0.5rem; padding-bottom:0.5rem; border-bottom:1px solid rgba(158,207,201,0.25);">
+                                    </h2>
+                
+                <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     The STA-board                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     STA&#039;s executive leadership. President and Vice President are 100% full-time, while three officers are 50% part-time. Responsible for student democracy at UiA.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="/en/sta-styret" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Read more about the STA Board</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     The Student Parliament                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     UiA&#039;s supreme student democratic body consisting of 25 representatives elected across all faculties and the Teacher Education Unit.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="/en/studentparlamentet" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Read more about the Student Parliament</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     The Welfare Council in Agder (VT)                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Advocates for student welfare and allocates student welfare and semester fee funds across higher education institutions in Agder.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.sia.no/om-sia/studentdemokratiet/" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Official information (SiA / VT)</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     Grimstad Student Council (SIG)                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Municipal advisory body securing student representation directly before Grimstad municipality and political leadership. Compensated position.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.grimstad.kommune.no/" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Grimstad Municipality</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     The Unikum-board                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Governing board for the independent student newspaper Unikum, responsible for finances, operations, and hiring.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.unikumnett.no/" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Unikum newspaper</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     National meeting delegation (NSO)                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     UiA&#039;s official delegation to the national convention of the National Union of Students in Norway (NSO), shaping national student policy.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://student.no/" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>National Union of Students in Norway (NSO)</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
                                     </div>
             </div>
-                    <div>
-                <h2 style="font-size:1.6rem; font-weight:800; color:#fff; margin:0 0 1.5rem; padding-bottom:0.75rem; border-bottom:1px solid rgba(158,207,201,0.25);">
-                    STA Political Committees                </h2>
-
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+        <br />
+<b>Warning</b>:  Undefined array key "name" in <b>C:\github\stastudent-wordpress\sta-wordpress\local-test\wordpress\wp-content\themes\sta-theme\page-rad-styrer-og-utvalg.php</b> on line <b>145</b><br />
+            <div>
+                <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:0.5rem; padding-bottom:0.5rem; border-bottom:1px solid rgba(158,207,201,0.25);">
+                                    </h2>
+                
+                <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     Academic and research policy committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Assists the Officer of academic affairs with educational quality, academic integrity, and research policies.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="/en/dokumenter" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Political documents (STA)</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     Learning environment policy committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Focuses on improving the physical, psychosocial, and digital learning environment for students on campus.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="/en/dokumenter" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Political documents (STA)</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     Sustainability and environmental committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Works toward green campus operations, environmental awareness, and integrating sustainability across UiA programs.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="/en/dokumenter" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Political documents (STA)</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     Election committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Interviews applicants and recommends candidates for elected office at Student Parliament election assemblies.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="/en/valgkomiteen" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>About the Election Committee</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     Control committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Ensures that STA&#039;s bodies and resolutions comply with STA&#039;s regulations and governing policies.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="/en/dokumenter" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>STA&#039;s Regulations</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
                                     </div>
             </div>
-                    <div>
-                <h2 style="font-size:1.6rem; font-weight:800; color:#fff; margin:0 0 1.5rem; padding-bottom:0.75rem; border-bottom:1px solid rgba(158,207,201,0.25);">
-                    UiA Governing Bodies &amp; Committees                </h2>
-
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+        <br />
+<b>Warning</b>:  Undefined array key "name" in <b>C:\github\stastudent-wordpress\sta-wordpress\local-test\wordpress\wp-content\themes\sta-theme\page-rad-styrer-og-utvalg.php</b> on line <b>145</b><br />
+            <div>
+                <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:0.5rem; padding-bottom:0.5rem; border-bottom:1px solid rgba(158,207,201,0.25);">
+                                    </h2>
+                
+                <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     The University-board                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     UiA&#039;s supreme governing body deciding institutional strategy, finances, and overarching policies. 2 student representatives with personal substitutes. Compensated.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.uia.no/om-uia/styrer-og-utvalg/universitetsstyret.html" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Official UiA University Board page</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     UiA&#039;s Learning environment committee (LMU)                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Statutory committee supervising the physical and psychosocial study and working environment in cooperation with SiA. 6 student representatives with gender balance.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.uia.no/om-uia/styrer-og-utvalg/leringsmiljoutvalget.html" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Official UiA Learning Environment Committee page</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     UiA&#039;s Academic affairs committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Advisory committee regarding educational quality, accreditation of academic programs, and education reports at UiA.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.uia.no/om-uia/styrer-og-utvalg/utdanningsutvalg.html" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Official UiA Academic Affairs Committee page</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     UiA&#039;s Appeals committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Statutory appeals committee reviewing appeals on administrative individual decisions, suspected cheating, and dismissals. Compensated.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.uia.no/om-uia/styrer-og-utvalg/nemnd-for-studentsaker.html" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Official UiA Appeals Committee page</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     UiA&#039;s Suitability committee                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Assesses whether students in professional training programs (health, teaching, etc.) are suitable for practice. 2 student representatives.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.uia.no/om-uia/styrer-og-utvalg/skikkethetsnemnd.html" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Official UiA Suitability Committee page</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
-                                            <div class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between;">
-                            <div>
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">
+                                            <div class="sta-card" style="padding:1.5rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
+                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
                                     UiA&#039;s Election board                                </h3>
-                                <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                                            </div>
+                                                            <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                                     Responsible for organizing, administering, and conducting rector and university board elections at UiA.                                </p>
-                            </div>
-
-                                                            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                                                                            <a href="https://www.uia.no/om-uia/styrer-og-utvalg/valstyret.html" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.35rem;">
-                                            <span>Official UiA Election Board page</span>
-                                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                        </a>
-                                                                    </div>
                                                     </div>
                                     </div>
             </div>
             </div>
 
-    <!-- Bottom CTA -->
-    <div style="margin-top:4rem; text-align:center;">
-        <a href="/en/ledige-verv" class="sta-btn sta-btn-orange" style="font-size:1rem; padding:0.85rem 2rem;">
-            <span>Apply for vacant positions today</span>
-        </a>
+    <!-- Bottom CTA Button -->
+    <div style="margin-top:4.5rem; text-align:center;">
+        <a href="/en/ledige-verv" class="sta-btn sta-btn-orange" style="font-size:1.05rem; padding:0.9rem 2rem; font-weight:700;">
+            View all vacant positions and apply now &rarr;        </a>
     </div>
 </div>
 

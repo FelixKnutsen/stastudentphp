@@ -9,6 +9,7 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 
 // Load vacancies data
 $vacancies = array();
@@ -20,25 +21,25 @@ if ($json_file && file_exists($json_file)) {
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
-        <span class="sta-badge"><?php echo esc_html(sta_t('Bli engasjert', 'Get Involved')); ?></span>
+        <span class="sta-badge"><?php echo esc_html(sta_t('Bli engasjert', 'Get Involved', 'Bli engasjert')); ?></span>
         <h1 class="sta-hero-title">
-            <?php echo esc_html(sta_t('Ledige verv 2026/2027', 'Vacant positions 2026/2027')); ?>
+            <?php echo esc_html(sta_t('Ledige verv 2026/2027', 'Vacant positions 2026/2027', 'Ledige verv 2026/2027')); ?>
         </h1>
         <p class="sta-hero-subtitle" style="max-width:800px; margin-left:auto; margin-right:auto;">
-            <?php echo esc_html(sta_t('Er du interessert i å gjøre en endring på Universitetet i Agder? Da kan du sjekke om det fortsatt er ledige verv å søke på!', 'Are you interested in making a difference at the University of Agder? Check out our vacant positions and apply today!')); ?>
+            <?php echo esc_html(sta_t('Er du interessert i å gjøre en endring på Universitetet i Agder? Da kan du sjekke om det fortsatt er ledige verv å søke på!', 'Are you interested in making a difference at the University of Agder? Check out our vacant positions and apply today!', 'Er du interessert i å gjere ein skilnad ved Universitetet i Agder? Då kan du sjekke om det framleis er ledige verv å søkje på!')); ?>
         </p>
     </header>
 
     <!-- Top CTA Box -->
     <div style="max-width:44rem; margin:0 auto 3.5rem auto; padding:2rem; border-radius:1rem; background:rgba(14,76,71,0.6); border:1px solid rgba(239,115,48,0.4); text-align:center;">
         <p style="font-size:0.95rem; color:var(--sta-teal-100); margin-bottom:1.25rem;">
-            <?php echo esc_html(sta_t('Ønsker du å stille til et av vervene nedenfor? Send en e-post med en kort introduksjon om deg selv til:', 'Would you like to run for one of the positions below? Send an email with a brief introduction of yourself to:')); ?>
+            <?php echo esc_html(sta_t('Ønsker du å stille til et av vervene nedenfor? Send en e-post med en kort introduksjon om deg selv til:', 'Would you like to run for one of the positions below? Send an email with a brief introduction of yourself to:', 'Ynskjer du å stille til eit av verva nedanfor? Send ein e-post med ein kort introduksjon av deg sjølv til:')); ?>
         </p>
-        <a href="mailto:sta@uia.no?subject=<?php echo rawurlencode(sta_t('Søknad på ledig verv', 'Application for vacant position')); ?>" 
+        <a href="mailto:sta@uia.no?subject=<?php echo rawurlencode(sta_t('Søknad på ledig verv', 'Application for vacant position', 'Søknad på ledig verv')); ?>" 
            class="sta-btn sta-btn-orange" 
            style="display:inline-flex; align-items:center; gap:0.5rem; font-weight:700;">
             <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <span><?php echo esc_html(sta_t('Send søknad til sta@uia.no', 'Send application to sta@uia.no')); ?></span>
+            <span><?php echo esc_html(sta_t('Send søknad til sta@uia.no', 'Send application to sta@uia.no', 'Send søknad til sta@uia.no')); ?></span>
         </a>
     </div>
 
@@ -83,7 +84,7 @@ if ($json_file && file_exists($json_file)) {
 
                                 <?php if (!empty($item_elig)): ?>
                                     <p style="font-size:0.75rem; color:var(--sta-teal-300); font-style:italic; margin-bottom:0.75rem; line-height:1.4;">
-                                        <strong><?php echo esc_html(sta_t('Kvalifikasjonskrav:', 'Eligibility:')); ?></strong> <?php echo esc_html($item_elig); ?>
+                                        <strong><?php echo esc_html(sta_t('Kvalifikasjonskrav:', 'Eligibility:', 'Kvalifikasjonskrav:')); ?></strong> <?php echo esc_html($item_elig); ?>
                                     </p>
                                 <?php endif; ?>
                             </div>
@@ -111,7 +112,7 @@ if ($json_file && file_exists($json_file)) {
     <!-- Bottom CTA Button -->
     <div style="margin-top:4rem; text-align:center;">
         <a href="<?php echo esc_url(sta_get_localized_url('/rad-styrer-og-utvalg')); ?>" class="sta-btn sta-btn-outline">
-            <?php echo esc_html(sta_t('Les mer om hva de ulike vervene innebærer &rarr;', 'Read more about what the various positions entail &rarr;')); ?>
+            <?php echo esc_html(sta_t('Les mer om hva de ulike vervene innebærer &rarr;', 'Read more about what the various positions entail &rarr;', 'Les meir om kva dei ulike verva inneber &rarr;')); ?>
         </a>
     </div>
 </div>

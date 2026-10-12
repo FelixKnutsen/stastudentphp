@@ -8,7 +8,8 @@ if (!defined('ABSPATH')) {
 }
 
 $categories = get_the_category();
-$category_name = (!empty($categories) && $categories[0]->name !== 'Uncategorized') ? $categories[0]->name : (sta_is_en() ? 'News' : 'Nyheter');
+$fallback_cat = sta_is_en() ? 'News' : (sta_is_nn() ? 'Nyheiter' : 'Nyheter');
+$category_name = (!empty($categories) && $categories[0]->name !== 'Uncategorized') ? $categories[0]->name : $fallback_cat;
 ?>
 <article class="sta-news-card">
     <?php 

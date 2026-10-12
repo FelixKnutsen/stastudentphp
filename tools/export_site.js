@@ -87,6 +87,11 @@ async function runExport() {
     urlsToFetch.add(kp === '/' ? '/en/' : `/en${kp}`);
   }
 
+  // Add Nynorsk versions of all key pages
+  for (const kp of keyPages) {
+    urlsToFetch.add(kp === '/' ? '/nn/' : `/nn${kp}`);
+  }
+
   // Add news pagination (pages 2 to 19)
   for (let i = 2; i <= 19; i++) {
     urlsToFetch.add(`/nyheter/page/${i}/`);
@@ -158,12 +163,18 @@ async function runExport() {
   if (fs.existsSync(themeZip)) fs.copyFileSync(themeZip, path.join(downloadsDir, 'sta-theme.zip'));
   if (fs.existsSync(pluginZip)) fs.copyFileSync(pluginZip, path.join(downloadsDir, 'sta-core-plugin.zip'));
 
-  // 5. English aliases (om-oss-2 -> om-sta)
+  // 5. English & Nynorsk aliases (om-oss-2 -> om-sta)
   const enOmSta = path.join(SITE_DIR, 'en', 'om-sta', 'index.html');
   const enOmOss2Dir = path.join(SITE_DIR, 'en', 'om-oss-2');
   if (fs.existsSync(enOmSta)) {
     fs.mkdirSync(enOmOss2Dir, { recursive: true });
     fs.copyFileSync(enOmSta, path.join(enOmOss2Dir, 'index.html'));
+  }
+  const nnOmSta = path.join(SITE_DIR, 'nn', 'om-sta', 'index.html');
+  const nnOmOss2Dir = path.join(SITE_DIR, 'nn', 'om-oss-2');
+  if (fs.existsSync(nnOmSta)) {
+    fs.mkdirSync(nnOmOss2Dir, { recursive: true });
+    fs.copyFileSync(nnOmSta, path.join(nnOmOss2Dir, 'index.html'));
   }
 
   console.log('🎉 Site export complete! Saved to site/');

@@ -10,6 +10,7 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 ?>
 
 <!-- 1. Hero Banner Image -->
@@ -17,7 +18,7 @@ $is_en = sta_is_en();
     <div class="sta-container">
         <div class="sta-hero-banner-box">
             <img src="https://stastudent.no/wp-content/uploads/2025/11/IMG_4781_CROP-scaled.jpg" 
-                 alt="<?php echo esc_attr(sta_t('Studentorganisasjonen i Agder', 'Student Organisation of Agder')); ?>" 
+                 alt="<?php echo esc_attr(sta_t('Studentorganisasjonen i Agder', 'Student Organisation of Agder', 'Studentorganisasjonen i Agder')); ?>" 
                  class="sta-hero-banner-img"
                  loading="eager">
         </div>
@@ -30,14 +31,14 @@ $is_en = sta_is_en();
         <div class="sta-verv-banner">
             <div>
                 <h2 class="sta-verv-banner-title">
-                    <?php echo esc_html(sta_t('Engasjer deg - still til verv!', 'Get involved - run for a position!')); ?>
+                    <?php echo esc_html(sta_t('Engasjer deg - still til verv!', 'Get involved - run for a position!', 'Engasjer deg - still til verv!')); ?>
                 </h2>
                 <p class="sta-verv-banner-sub">
-                    <?php echo esc_html(sta_t('Bli med og gjør en forskjell for over 14 000 studenter ved Universitetet i Agder.', 'Join in and make a difference for over 14,000 students at the University of Agder.')); ?>
+                    <?php echo esc_html(sta_t('Bli med og gjør en forskjell for over 14 000 studenter ved Universitetet i Agder.', 'Join in and make a difference for over 14,000 students at the University of Agder.', 'Bli med og gjer ein skilnad for over 14 000 studentar ved Universitetet i Agder.')); ?>
                 </p>
             </div>
             <a href="<?php echo esc_url(sta_get_localized_url('/ledige-verv')); ?>" class="sta-btn sta-btn-orange" style="font-size:1rem; padding:0.85rem 1.75rem; shrink-0:0; white-space:nowrap;">
-                <span><?php echo esc_html(sta_t('Ledige verv', 'Vacant positions')); ?></span>
+                <span><?php echo esc_html(sta_t('Ledige verv', 'Vacant positions', 'Ledige verv')); ?></span>
                 <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-left:0.5rem;" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
         </div>
@@ -53,8 +54,8 @@ $is_en = sta_is_en();
                 <div class="sta-quick-icon-box">
                     <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
                 </div>
-                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Linjeforeninger', 'Academic Associations')); ?></h3>
-                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Møt studentene på ditt studieprogram og delta på sosiale og faglige aktiviteter.', 'Meet students in your study programme and join social and academic activities.')); ?></p>
+                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Linjeforeninger', 'Academic Associations', 'Linjeforeiningar')); ?></h3>
+                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Møt studentene på ditt studieprogram og delta på sosiale og faglige aktiviteter.', 'Meet students in your study programme and join social and academic activities.', 'Møt studentane på studieprogrammet ditt og delta på sosiale og faglege aktivitetar.')); ?></p>
             </a>
 
             <!-- Lokaler -->
@@ -62,8 +63,8 @@ $is_en = sta_is_en();
                 <div class="sta-quick-icon-box">
                     <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                 </div>
-                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Lokaler', 'Our Premises')); ?></h3>
-                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Lei eller lån lokaler til foreningsmøter, kurs eller studentarrangementer.', 'Book venues for association meetings, courses, or student events.')); ?></p>
+                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Lokaler', 'Our Premises', 'Lokale')); ?></h3>
+                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Lei eller lån lokaler til foreningsmøter, kurs eller studentarrangementer.', 'Book venues for association meetings, courses, or student events.', 'Lei eller lån lokale til foreiningsmøte, kurs eller studentarrangement.')); ?></p>
             </a>
 
             <!-- Tillitsvalgte -->
@@ -71,8 +72,8 @@ $is_en = sta_is_en();
                 <div class="sta-quick-icon-box">
                     <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                 </div>
-                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Tillitsvalgt', 'Representatives')); ?></h3>
-                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Ressurser, opplæring og verktøy for tillitsvalgte og studentrepresentanter.', 'Resources, training, and tools for student representatives.')); ?></p>
+                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Tillitsvalgt', 'Representatives', 'Tillitsvald')); ?></h3>
+                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Ressurser, opplæring og verktøy for tillitsvalgte og studentrepresentanter.', 'Resources, training, and tools for student representatives.', 'Ressursar, opplæring og verktøy for tillitsvalde og studentrepresentantar.')); ?></p>
             </a>
 
             <!-- Studentaktiviteter -->
@@ -80,8 +81,8 @@ $is_en = sta_is_en();
                 <div class="sta-quick-icon-box">
                     <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                 </div>
-                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Studentaktiviteter', 'Student Activities')); ?></h3>
-                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Idrettslag, kulturklubber og studentorganisasjoner ved campus.', 'Sports teams, cultural clubs, and student organisations on campus.')); ?></p>
+                <h3 class="sta-quick-title"><?php echo esc_html(sta_t('Studentaktiviteter', 'Student Activities', 'Studentaktivitetar')); ?></h3>
+                <p class="sta-quick-desc"><?php echo esc_html(sta_t('Idrettslag, kulturklubber og studentorganisasjoner ved campus.', 'Sports teams, cultural clubs, and student organisations on campus.', 'Idrettslag, kulturklubbar og studentorganisasjonar ved campus.')); ?></p>
             </a>
         </div>
     </div>
@@ -105,7 +106,8 @@ if ($latest_news_query->have_posts()) {
             continue;
         }
         $cats = get_the_category();
-        $cat_name = (!empty($cats) && $cats[0]->name !== 'Uncategorized') ? $cats[0]->name : (sta_is_en() ? 'News' : 'Nyheter');
+        $fallback_cat = sta_is_en() ? 'News' : (sta_is_nn() ? 'Nyheiter' : 'Nyheter');
+        $cat_name = (!empty($cats) && $cats[0]->name !== 'Uncategorized') ? $cats[0]->name : $fallback_cat;
         $news_items[] = array(
             'title'        => get_the_title(),
             'url'          => get_permalink(),
@@ -125,12 +127,13 @@ if (empty($news_items)) {
         $raw = json_decode(file_get_contents($news_file), true);
         if (is_array($raw)) {
             $slice = array_slice($raw, 0, 3);
+            $fallback_cat = sta_is_en() ? 'News' : (sta_is_nn() ? 'Nyheiter' : 'Nyheter');
             foreach ($slice as $n) {
                 $news_items[] = array(
                     'title'     => $n['title'] ?? '',
                     'url'       => sta_get_localized_url('/nyheter/' . ($n['slug'] ?? '')),
                     'date'      => sta_format_date($n['publishedAt'] ?? 'now'),
-                    'category'  => $n['category'] ?? (sta_is_en() ? 'News' : 'Nyheter'),
+                    'category'  => $n['category'] ?? $fallback_cat,
                     'excerpt'   => $n['excerpt'] ?? '',
                     'thumbnail' => $n['imageUrl'] ?? ''
                 );
@@ -144,10 +147,10 @@ if (empty($news_items)) {
     <div class="sta-container">
         <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem;">
             <a href="<?php echo esc_url(sta_get_localized_url('/nyheter')); ?>" style="font-size:1.75rem; font-weight:800; color:#fff; letter-spacing:0.05em;">
-                <?php echo esc_html(sta_t('SISTE NYTT', 'LATEST NEWS')); ?>
+                <?php echo esc_html(sta_t('SISTE NYTT', 'LATEST NEWS', 'SISTE NYTT')); ?>
             </a>
             <a href="<?php echo esc_url(sta_get_localized_url('/nyheter')); ?>" style="display:flex; align-items:center; gap:0.35rem; color:var(--sta-orange); font-size:0.85rem; font-weight:700;">
-                <span><?php echo esc_html(sta_t('Se alle nyheter', 'View all news')); ?></span>
+                <span><?php echo esc_html(sta_t('Se alle nyheter', 'View all news', 'Sjå alle nyheiter')); ?></span>
                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
         </div>
@@ -183,7 +186,7 @@ if (empty($news_items)) {
                         </div>
                         <div style="margin-top:1.25rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
                             <a href="<?php echo esc_url($article['url']); ?>" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.25rem;">
-                                <span><?php echo esc_html(sta_t('Les hele saken', 'Read full article')); ?> &rarr;</span>
+                                <span><?php echo esc_html(sta_t('Les hele saken', 'Read full article', 'Les heile saka')); ?> &rarr;</span>
                             </a>
                         </div>
                     </div>
@@ -204,15 +207,15 @@ if (empty($news_items)) {
                      loading="lazy">
             </div>
             <div class="sta-feature-content">
-                <h2><?php echo esc_html(sta_t('Studentparlamentet', 'The Student Parliament')); ?></h2>
+                <h2><?php echo esc_html(sta_t('Studentparlamentet', 'The Student Parliament', 'Studentparlamentet')); ?></h2>
                 <p class="sta-feature-subtitle">
-                    <?php echo esc_html(sta_t('UiAs øverste studentrepresentanter​', "UiA's highest student representatives")); ?>
+                    <?php echo esc_html(sta_t('UiAs øverste studentrepresentanter​', "UiA's highest student representatives", 'Dei øvste studentrepresentantane ved UiA')); ?>
                 </p>
                 <p class="sta-feature-text">
-                    <?php echo esc_html(sta_t('Studentparlamentet består av 25 folkevalgte representanter som fatter de overordnede politiske beslutningene og velger STA-styret.', 'The Student Parliament consists of 25 elected student representatives who make the supreme political decisions and elect the STA Board.')); ?>
+                    <?php echo esc_html(sta_t('Studentparlamentet består av 25 folkevalgte representanter som fatter de overordnede politiske beslutningene og velger STA-styret.', 'The Student Parliament consists of 25 elected student representatives who make the supreme political decisions and elect the STA Board.', 'Studentparlamentet er sett saman av 25 folkevalde representantar som fatter dei overordna politiske vedtaka og vel STA-styret.')); ?>
                 </p>
                 <a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-btn sta-btn-orange">
-                    <span><?php echo esc_html(sta_t('Les mer!', 'Read more!')); ?></span>
+                    <span><?php echo esc_html(sta_t('Les mer!', 'Read more!', 'Les meir!')); ?></span>
                     <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-left:0.35rem;" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
             </div>
@@ -226,15 +229,15 @@ if (empty($news_items)) {
                      loading="lazy">
             </div>
             <div class="sta-feature-content">
-                <h2><?php echo esc_html(sta_t('UiA Karriereuka', 'UiA Career Week')); ?></h2>
+                <h2><?php echo esc_html(sta_t('UiA Karriereuka', 'UiA Career Week', 'UiA Karriereveka')); ?></h2>
                 <p class="sta-feature-subtitle">
-                    <?php echo esc_html(sta_t('Studentenes arena for kontakt med næringslivet', 'The students arena for contact with business life')); ?>
+                    <?php echo esc_html(sta_t('Studentenes arena for kontakt med næringslivet', 'The students arena for contact with business life', 'Studentane sin arena for kontakt med næringslivet')); ?>
                 </p>
                 <p class="sta-feature-text">
-                    <?php echo esc_html(sta_t('Møt fremtidige arbeidsgivere, delta på workshops og bygg nettverk for livet etter studiene.', 'Meet future employers, join practical workshops, and build a lasting network for life after graduation.')); ?>
+                    <?php echo esc_html(sta_t('Møt fremtidige arbeidsgivere, delta på workshops og bygg nettverk for livet etter studiene.', 'Meet future employers, join practical workshops, and build a lasting network for life after graduation.', 'Møt framtidige arbeidsgjevarar, delta på kurs og bygg nettverk for livet etter studia.')); ?>
                 </p>
                 <a href="https://uiakarriereuka.no/" target="_blank" rel="noopener noreferrer" class="sta-btn sta-btn-orange">
-                    <span><?php echo esc_html(sta_t('Les mer!', 'Read more!')); ?></span>
+                    <span><?php echo esc_html(sta_t('Les mer!', 'Read more!', 'Les meir!')); ?></span>
                     <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-left:0.35rem;" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
             </div>

@@ -10,6 +10,7 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 
 // Fallback faculties data
 $faculties = array();
@@ -22,12 +23,12 @@ if ($json_file && file_exists($json_file)) {
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <!-- Section Heading -->
     <header class="sta-page-header">
-        <span class="sta-badge"><?php echo esc_html(sta_t('Studentdemokrati', 'Student Democracy')); ?></span>
+        <span class="sta-badge"><?php echo esc_html(sta_t('Studentdemokrati', 'Student Democracy', 'Studentdemokrati')); ?></span>
         <h1 class="sta-hero-title">
-            <?php echo esc_html(sta_t('Studentparlamentet 2026/2027', 'The Student Parliament 2026/2027')); ?>
+            <?php echo esc_html(sta_t('Studentparlamentet 2026/2027', 'The Student Parliament 2026/2027', 'Studentparlamentet 2026/2027')); ?>
         </h1>
         <p class="sta-hero-subtitle" style="max-width:800px; margin-left:auto; margin-right:auto;">
-            <?php echo esc_html(sta_t('UiAs øverste studentorgan og demokratiske forsamling', 'UiA\'s highest student body and democratic assembly')); ?>
+            <?php echo esc_html(sta_t('UiAs øverste studentorgan og demokratiske forsamling', 'UiA\'s highest student body and democratic assembly', 'Det øvste studentorganet og den demokratiske forsamlinga ved UiA')); ?>
         </p>
     </header>
 
@@ -35,7 +36,7 @@ if ($json_file && file_exists($json_file)) {
     <div style="position:relative; margin-bottom:3rem; border-radius:1rem; overflow:hidden; border:1px solid rgba(158,207,201,0.3); box-shadow:0 20px 25px -5px rgba(0,0,0,0.4); max-width:1280px; margin-left:auto; margin-right:auto;">
         <div style="position:relative; aspect-ratio:16/7; width:100%; background:var(--sta-teal-900);">
             <img src="https://stastudent.no/wp-content/uploads/2025/09/IMG_4688-–-Kopi-CROPPED-1536x581.jpg" 
-                 alt="<?php echo esc_attr(sta_t('Studentparlamentet samlet i møtesalen', 'The Student Parliament gathered in session')); ?>" 
+                 alt="<?php echo esc_attr(sta_t('Studentparlamentet samlet i møtesalen', 'The Student Parliament gathered in session', 'Studentparlamentet samla i møtesalen')); ?>" 
                  style="width:100%; height:100%; object-fit:cover;"
                  loading="eager">
         </div>
@@ -46,13 +47,15 @@ if ($json_file && file_exists($json_file)) {
         <p style="margin:0;">
             <?php echo esc_html(sta_t(
                 'Studentene har en viktig stemme i demokratiet på UiA. Derfor er Studentparlamentet øverste beslutningsorgan i STA. Studentparlamentet består av 25 representanter fra alle fakultetene og Avdeling for lærerutdanning. Det er disse representantene som skal ta politiske avgjørelser på vegne av UiAs studentmasse.',
-                'Students have an important voice in the democracy at UiA. Therefore, the Student Parliament is the highest decision-making body in STA. The Student Parliament consists of 25 representatives from all the faculties and the Department of Teacher Education. It is these representatives who will make political decisions on behalf of UiA\'s student body.'
+                'Students have an important voice in the democracy at UiA. Therefore, the Student Parliament is the highest decision-making body in STA. The Student Parliament consists of 25 representatives from all the faculties and the Department of Teacher Education. It is these representatives who will make political decisions on behalf of UiA\'s student body.',
+                'Studentane har ei viktig stemme i demokratiet ved UiA. Difor er Studentparlamentet det øvste vedtaksorganet i STA. Studentparlamentet er sett saman av 25 representantar frå alle fakulteta og Avdeling for lærarutdanning. Det er desse representantane som skal ta politiske avgjerder på vegner av studentmassen ved UiA.'
             )); ?>
         </p>
         <p style="margin:0;">
             <?php echo esc_html(sta_t(
                 'Studentparlamentet har møter én gang i måneden hvor parlamentsmedlemmene skal diskutere og vedta saker som STA-styret legger frem. Møtene blir holdt annenhver gang i Kristiansand, og annenhver gang i Grimstad.',
-                'The student parliament meets once a month, where the members of the parliament discuss and adopt matters presented by the STA-board. The meetings are held every second time in Kristiansand, and every second time in Grimstad.'
+                'The student parliament meets once a month, where the members of the parliament discuss and adopt matters presented by the STA-board. The meetings are held every second time in Kristiansand, and every second time in Grimstad.',
+                'Studentparlamentet har møte éin gong i månaden der parlamentsmedlemmene skal diskutere og vedta saker som STA-styret legg fram. Møta blir haldne annakvar gong i Kristiansand og annakvar gong i Grimstad.'
             )); ?>
         </p>
     </div>
@@ -66,10 +69,10 @@ if ($json_file && file_exists($json_file)) {
             </div>
             <div>
                 <h3 style="font-size:1rem; font-weight:700; color:#fff; margin:0;">
-                    <?php echo esc_html(sta_t('Sakspapirer til parlamentsmøter', 'Agenda and meeting papers')); ?>
+                    <?php echo esc_html(sta_t('Sakspapirer til parlamentsmøter', 'Agenda and meeting papers', 'Sakspapir til parlamentsmøte')); ?>
                 </h3>
                 <p style="font-size:0.75rem; color:var(--sta-teal-200); margin:0.25rem 0 0 0;">
-                    <?php echo esc_html(sta_t('Se innkallinger og saksliste', 'View notices and agenda')); ?>
+                    <?php echo esc_html(sta_t('Se innkallinger og saksliste', 'View notices and agenda', 'Sjå innkallingar og saksliste')); ?>
                 </p>
             </div>
         </a>
@@ -81,10 +84,10 @@ if ($json_file && file_exists($json_file)) {
             </div>
             <div>
                 <h3 style="font-size:1rem; font-weight:700; color:#fff; margin:0;">
-                    <?php echo esc_html(sta_t('Protokoll fra parlamentsmøter', 'Minutes and protocols')); ?>
+                    <?php echo esc_html(sta_t('Protokoll fra parlamentsmøter', 'Minutes and protocols', 'Protokoll frå parlamentsmøte')); ?>
                 </h3>
                 <p style="font-size:0.75rem; color:var(--sta-teal-200); margin:0.25rem 0 0 0;">
-                    <?php echo esc_html(sta_t('Vedtatte resolusjoner og referater', 'Adopted resolutions and minutes')); ?>
+                    <?php echo esc_html(sta_t('Vedtatte resolusjoner og referater', 'Adopted resolutions and minutes', 'Vedtekne resolusjonar og referat')); ?>
                 </p>
             </div>
         </a>
@@ -93,7 +96,7 @@ if ($json_file && file_exists($json_file)) {
     <!-- Responsible persons -->
     <div style="margin-bottom:4.5rem;">
         <h2 style="font-size:1.75rem; font-weight:700; color:#fff; text-align:center; margin-bottom:2rem;">
-            <?php echo esc_html(sta_t('Ansvarlige for Studentparlamentet', 'Leadership of the Student Parliament')); ?>
+            <?php echo esc_html(sta_t('Ansvarlige for Studentparlamentet', 'Leadership of the Student Parliament', 'Ansvarlege for Studentparlamentet')); ?>
         </h2>
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; max-width:44rem; margin:0 auto;">
             <div class="sta-card" style="padding:1.75rem; text-align:center; display:flex; flex-direction:column; align-items:center;">
@@ -105,7 +108,7 @@ if ($json_file && file_exists($json_file)) {
                 </div>
                 <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">Mia Sandøy</h3>
                 <p style="font-size:0.75rem; font-weight:600; color:var(--sta-orange); margin:0.25rem 0 0.75rem 0;">
-                    <?php echo esc_html(sta_t('Førstekonsulent i STA', 'First Consultant at STA')); ?>
+                    <?php echo esc_html(sta_t('Førstekonsulent i STA', 'First Consultant at STA', 'Førstekonsulent i STA')); ?>
                 </p>
                 <a href="mailto:sta@uia.no" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.75rem; color:var(--sta-teal-100); text-decoration:none;">
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -122,7 +125,7 @@ if ($json_file && file_exists($json_file)) {
                 </div>
                 <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">Karen Elise Stenersen</h3>
                 <p style="font-size:0.75rem; font-weight:600; color:var(--sta-orange); margin:0.25rem 0 0.75rem 0;">
-                    <?php echo esc_html(sta_t('Studentleder ved UiA', 'Student President at UiA')); ?>
+                    <?php echo esc_html(sta_t('Studentleder ved UiA', 'Student President at UiA', 'Studentleiar ved UiA')); ?>
                 </p>
                 <a href="mailto:staleder@uia.no" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.75rem; color:var(--sta-teal-100); text-decoration:none;">
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -136,10 +139,10 @@ if ($json_file && file_exists($json_file)) {
     <div style="margin-bottom:4rem;">
         <div style="text-align:center; max-width:36rem; margin:0 auto 2.5rem auto;">
             <h2 style="font-size:1.75rem; font-weight:700; color:#fff; margin-bottom:0.5rem;">
-                <?php echo esc_html(sta_t('Representanter etter fakultet', 'Representatives by Faculty')); ?>
+                <?php echo esc_html(sta_t('Representanter etter fakultet', 'Representatives by Faculty', 'Representantar etter fakultet')); ?>
             </h2>
             <p style="font-size:0.875rem; color:var(--sta-teal-200); margin:0;">
-                <?php echo esc_html(sta_t('Totalt 25 faste folkevalgte representanter og deres personlige varamedlemmer.', 'A total of 25 regular elected representatives and their personal substitutes.')); ?>
+                <?php echo esc_html(sta_t('Totalt 25 faste folkevalgte representanter og deres personlige varamedlemmer.', 'A total of 25 regular elected representatives and their personal substitutes.', 'Totalt 25 faste folkevalde representantar og dei personlege varamedlemmene deira.')); ?>
             </p>
         </div>
 
@@ -161,7 +164,7 @@ if ($json_file && file_exists($json_file)) {
                             <!-- Regulars -->
                             <div>
                                 <h4 style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;">
-                                    <?php printf(esc_html(sta_t('Fast representanter (%d)', 'Regular members (%d)')), count($fac['representatives'])); ?>
+                                    <?php printf(esc_html(sta_t('Faste representanter (%d)', 'Regular members (%d)', 'Faste representantar (%d)')), count($fac['representatives'])); ?>
                                 </h4>
                                 <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;">
                                     <?php foreach ($fac['representatives'] as $rep): ?>
@@ -176,7 +179,7 @@ if ($json_file && file_exists($json_file)) {
                             <!-- Substitutes -->
                             <div>
                                 <h4 style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;">
-                                    <?php printf(esc_html(sta_t('Vararepresentanter (%d)', 'Substitutes (%d)')), count($fac['substitutes'])); ?>
+                                    <?php printf(esc_html(sta_t('Vararepresentanter (%d)', 'Substitutes (%d)', 'Vararepresentantar (%d)')), count($fac['substitutes'])); ?>
                                 </h4>
                                 <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;">
                                     <?php foreach ($fac['substitutes'] as $idx => $sub): 
@@ -186,10 +189,10 @@ if ($json_file && file_exists($json_file)) {
                                             <span style="width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;"></span>
                                             <?php if ($is_vacant): ?>
                                                 <span style="color:var(--sta-orange); font-style:italic;">
-                                                    <?php echo esc_html(sta_t('Ledig verv – kontakt sta@uia.no', 'Vacant – contact sta@uia.no')); ?>
+                                                    <?php echo esc_html(sta_t('Ledig verv – kontakt sta@uia.no', 'Vacant – contact sta@uia.no', 'Ledig verv – kontakt sta@uia.no')); ?>
                                                 </span>
                                             <?php else: ?>
-                                                <span><?php echo ($idx + 1) . '. vara: ' . esc_html($sub['name']); ?></span>
+                                                <span><?php echo ($idx + 1) . '. ' . esc_html(sta_t('vara:', 'substitute:', 'vara:')) . ' ' . esc_html($sub['name']); ?></span>
                                             <?php endif; ?>
                                         </li>
                                     <?php endforeach; ?>
@@ -205,7 +208,7 @@ if ($json_file && file_exists($json_file)) {
     <!-- Bottom CTA Button -->
     <div style="margin-top:4rem; text-align:center;">
         <a href="<?php echo esc_url(sta_get_localized_url('/ledige-verv')); ?>" class="sta-btn sta-btn-orange" style="font-size:1.05rem; padding:0.9rem 2rem; font-weight:700;">
-            <?php echo esc_html(sta_t('Still til ledig verv i parlamentet &rarr;', 'Run for a vacant seat in parliament &rarr;')); ?>
+            <?php echo esc_html(sta_t('Still til ledig verv i parlamentet &rarr;', 'Run for a vacant seat in parliament &rarr;', 'Still til ledig verv i parlamentet &rarr;')); ?>
         </a>
     </div>
 </div>

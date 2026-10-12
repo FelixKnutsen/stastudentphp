@@ -9,6 +9,7 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 
 // 1. Try querying CPT sta_activity
 $activity_query = new WP_Query(array(
@@ -82,12 +83,12 @@ foreach ($items as $item) {
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
-        <span class="sta-badge"><?php echo esc_html(sta_t('Engasjement og fritid', 'Clubs & Leisure')); ?></span>
+        <span class="sta-badge"><?php echo esc_html(sta_t('Engasjement og fritid', 'Clubs & Leisure', 'Engasjement og fritid')); ?></span>
         <h1 class="sta-hero-title">
-            <?php echo esc_html(sta_t('Studentaktiviteter ved UiA', 'Student Activities at UiA')); ?>
+            <?php echo esc_html(sta_t('Studentaktiviteter ved UiA', 'Student Activities at UiA', 'Studentaktivitetar ved UiA')); ?>
         </h1>
         <p class="sta-hero-subtitle" style="max-width:800px; margin-left:auto; margin-right:auto;">
-            <?php echo esc_html(sta_t('Her finner du en oversikt over godkjente studentaktiviteter og interesseorganisasjoner ved UiA.', 'Here is an overview of approved student activities and interest organizations at UiA.')); ?>
+            <?php echo esc_html(sta_t('Her finner du en oversikt over godkjente studentaktiviteter og interesseorganisasjoner ved UiA.', 'Here is an overview of approved student activities and interest organizations at UiA.', 'Her finn du ei oversikt over godkjende studentaktivitetar og interesseorganisasjonar ved UiA.')); ?>
         </p>
     </header>
 
@@ -95,12 +96,12 @@ foreach ($items as $item) {
     <div class="sta-directory-controls" style="max-width:56rem; margin:0 auto 2.5rem auto;">
         <div class="sta-search-box" style="max-width:100%;">
             <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input type="search" class="sta-directory-search-input" placeholder="<?php echo esc_attr(sta_t('Søk etter kor, idrett, teater, forening...', 'Search choirs, sports, theatre, clubs...')); ?>" style="border-radius:9999px;">
+            <input type="search" class="sta-directory-search-input" placeholder="<?php echo esc_attr(sta_t('Søk etter kor, idrett, teater, forening...', 'Search choirs, sports, theatre, clubs...', 'Søk etter kor, idrett, teater, foreining...')); ?>" style="border-radius:9999px;">
         </div>
 
-        <div class="sta-filters-pills" role="toolbar" aria-label="<?php echo esc_attr(sta_t('Filtrer etter kategori', 'Filter by category')); ?>" style="padding-top:0.5rem;">
+        <div class="sta-filters-pills" role="toolbar" aria-label="<?php echo esc_attr(sta_t('Filtrer etter kategori', 'Filter by category', 'Filtrer etter kategori')); ?>" style="padding-top:0.5rem;">
             <button type="button" class="sta-filter-btn is-active" data-filter="all">
-                <?php echo esc_html(sta_t('Alle aktiviteter', 'All activities')); ?> (<?php echo count($items); ?>)
+                <?php echo esc_html(sta_t('Alle aktiviteter', 'All activities', 'Alle aktivitetar')); ?> (<?php echo count($items); ?>)
             </button>
             <?php foreach ($categories_map as $slug => $label): 
                 $count = 0;
@@ -114,8 +115,8 @@ foreach ($items as $item) {
             <?php endforeach; ?>
         </div>
 
-        <div class="sta-directory-count" data-unit="<?php echo esc_attr(sta_t('aktiviteter', 'activities')); ?>" style="color:var(--sta-teal-200); font-size:0.85rem; font-weight:600; margin-top:0.25rem;">
-            <?php printf(esc_html(sta_t('Viser %d av %d aktiviteter', 'Showing %d of %d activities')), count($items), count($items)); ?>
+        <div class="sta-directory-count" data-unit="<?php echo esc_attr(sta_t('aktiviteter', 'activities', 'aktivitetar')); ?>" style="color:var(--sta-teal-200); font-size:0.85rem; font-weight:600; margin-top:0.25rem;">
+            <?php printf(esc_html(sta_t('Viser %d av %d aktiviteter', 'Showing %d of %d activities', 'Viser %d av %d aktivitetar')), count($items), count($items)); ?>
         </div>
     </div>
 
@@ -171,7 +172,7 @@ foreach ($items as $item) {
 
                     <?php if (!empty($item['website'])): ?>
                         <a href="<?php echo esc_url($item['website']); ?>" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
-                            <span><?php echo esc_html(sta_t('Nettside', 'Website')); ?></span>
+                            <span><?php echo esc_html(sta_t('Nettside', 'Website', 'Nettside')); ?></span>
                             <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
                     <?php endif; ?>
@@ -182,7 +183,7 @@ foreach ($items as $item) {
 
     <!-- Empty State -->
     <div class="sta-directory-empty" style="display:none; text-align:center; padding:3rem; background:var(--sta-card-bg); border-radius:var(--sta-radius); margin-top:2rem;">
-        <p style="color:var(--sta-teal-200); font-size:1.2rem;"><?php echo esc_html(sta_t('Ingen studentaktiviteter matchet søket ditt.', 'No student activities matched your search.')); ?></p>
+        <p style="color:var(--sta-teal-200); font-size:1.2rem;"><?php echo esc_html(sta_t('Ingen studentaktiviteter matchet søket ditt.', 'No student activities matched your search.', 'Ingen studentaktivitetar passa til søket ditt.')); ?></p>
     </div>
 </div>
 

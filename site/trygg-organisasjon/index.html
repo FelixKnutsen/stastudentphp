@@ -120,18 +120,32 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </div>
             </nav>
 
-            <!-- Right Controls: Search Icon, Language Switcher & Mobile Menu Button -->
+            <!-- Right Controls: Search Icon, 3-Language Selector & Mobile Menu Button -->
             <div style="display:flex; align-items:center; gap:0.75rem;">
                 <!-- Search Button -->
                 <button type="button" id="sta-search-trigger" class="sta-search-btn" aria-label="Åpne søk" style="background:transparent; border:none; color:#fff; cursor:pointer; padding:0.5rem; border-radius:50%; display:flex; align-items:center; justify-content:center;">
                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 </button>
 
-                <!-- Language Switcher Pill Button -->
-                <a href="/en/trygg-organisasjon/" class="sta-lang-btn" aria-label="Bytt språk til engelsk" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.35rem 0.85rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; text-decoration:none;">
-                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    <span>English</span>
-                </a>
+                <!-- Language Switcher Dropdown (Desktop: Bokmål, Nynorsk, English) -->
+                <div class="sta-dropdown-container sta-lang-dropdown" style="position:relative;">
+                    <button type="button" class="sta-lang-btn sta-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-label="Bytt språk" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.35rem 0.85rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; cursor:pointer;">
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <span>Norsk bokmål</span>
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="sta-dropdown-menu" role="menu" style="min-width:160px; right:0; left:auto; padding:0.5rem 0;">
+                        <a href="/trygg-organisasjon/" class="sta-dropdown-item sta-lang-option is-active" data-lang="no" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                            <span>Norsk bokmål</span>
+                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>                        </a>
+                        <a href="/nn/trygg-organisasjon/" class="sta-dropdown-item sta-lang-option " data-lang="nn" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                            <span>Norsk nynorsk</span>
+                                                    </a>
+                        <a href="/en/trygg-organisasjon/" class="sta-dropdown-item sta-lang-option " data-lang="en" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                            <span>English</span>
+                                                    </a>
+                    </div>
+                </div>
 
                 <!-- Mobile Menu Toggle Button -->
                 <button type="button" id="sta-mobile-menu-trigger" class="sta-mobile-menu-toggle" aria-expanded="false" aria-controls="sta-mobile-drawer" aria-label="Åpne meny">
@@ -170,10 +184,19 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                  height="34" 
                  width="165"
                  style="height:34px; width:auto;">
-            <div style="display:flex; align-items:center; gap:0.75rem;">
-                <a href="/en/trygg-organisasjon/" class="sta-lang-btn" style="display:inline-flex; align-items:center; gap:0.35rem; padding:0.3rem 0.75rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; text-decoration:none;">
-                    <span>English</span>
-                </a>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+                <!-- Mobile 3-Language Segment Control -->
+                <div style="display:inline-flex; align-items:center; background:rgba(9,50,47,0.85); border:1px solid rgba(158,207,201,0.25); border-radius:9999px; padding:2px;">
+                    <a href="/trygg-organisasjon/" class="sta-lang-option" data-lang="no" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; background:var(--sta-orange); color:#fff;" aria-label="Norsk bokmål">
+                        NB
+                    </a>
+                    <a href="/nn/trygg-organisasjon/" class="sta-lang-option" data-lang="nn" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; color:var(--sta-teal-100);" aria-label="Norsk nynorsk">
+                        NN
+                    </a>
+                    <a href="/en/trygg-organisasjon/" class="sta-lang-option" data-lang="en" style="display:inline-flex; align-items:center; justify-content:center; padding:0.35rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; color:var(--sta-teal-100);" aria-label="English">
+                        EN
+                    </a>
+                </div>
                 <button type="button" id="sta-mobile-drawer-close" class="sta-mobile-drawer-close" aria-label="Lukk meny">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
@@ -242,85 +265,72 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </div>
             </div>
 
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:1rem;">
-                Det er av stor verdi at du bidrar til fellesskapet som skaper politikkutvikling, gjennomslag og gode opplevelser for mange andre engasjerte studenter. Sammen skal vi sikre et godt miljø med takhøyde for å diskutere og si meningene våre. Dette gjelder også de sosiale og uformelle delene av alle STA-arrangement.            </p>
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0;">
-                Som engasjert i STA har vi <strong>ingen toleranse for trakassering eller diskriminering</strong>. Vi tar vare på hverandre og viser gjensidig respekt. Det er et felles ansvar å sørge for at møtearenaene vi deltar på er trygge, og at alle ønskes velkommen.            </p>
+            <p style="font-size:1rem; color:var(--sta-teal-100); line-height:1.7; margin:0;">
+                Studentorganisasjonen i Agder har nulltoleranse for alle former for mobbing, seksuell trakassering, rasisme og diskriminering. Alle arrangementer, møter og sosiale sammenkomster i regi av STA eller våre medlemsforeninger skal være trygge arenaer for alle studenter uavhengig av bakgrunn, kjønn eller legning.            </p>
         </div>
 
-        <!-- 6 Principles -->
+        <!-- 6 Core Principles Grid -->
         <div>
             <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:1.5rem;">
-                De 6 prinsippene for Trygg Organisasjon            </h2>
-            <div style="display:flex; flex-direction:column; gap:1rem;">
-                                    <div class="sta-card" style="padding:1.25rem 1.5rem; display:flex; align-items:flex-start; gap:1.25rem;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:var(--sta-orange); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem;">
+                Prinsipper for trygg organisasjon            </h2>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem;">
+                                    <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             1                        </span>
-                        <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.65; margin:0;">
+                        <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                             Alle skal føle seg velkommen og respektert i STA. Dette betyr at man skal avstå fra uttalelser og/eller fysisk atferd som oppleves som ubehagelig, diskriminerende, trakasserende eller krenkende for andre.                        </p>
                     </div>
-                                    <div class="sta-card" style="padding:1.25rem 1.5rem; display:flex; align-items:flex-start; gap:1.25rem;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:var(--sta-orange); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem;">
+                                    <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             2                        </span>
-                        <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.65; margin:0;">
+                        <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                             Alle har et ansvar for å bidra til et inkluderende miljø, både ved formelle og uformelle arrangement.                        </p>
                     </div>
-                                    <div class="sta-card" style="padding:1.25rem 1.5rem; display:flex; align-items:flex-start; gap:1.25rem;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:var(--sta-orange); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem;">
+                                    <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             3                        </span>
-                        <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.65; margin:0;">
+                        <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                             Alle skal vise respekt for hverandres grenser.                        </p>
                     </div>
-                                    <div class="sta-card" style="padding:1.25rem 1.5rem; display:flex; align-items:flex-start; gap:1.25rem;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:var(--sta-orange); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem;">
+                                    <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             4                        </span>
-                        <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.65; margin:0;">
+                        <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                             Press rundt bruk av alkohol og andre rusmidler skal ikke finne sted. Ved alle arrangement i regi av en studentaktivitet eller linjeforening skal man ha 1–2 tillitspersoner.                        </p>
                     </div>
-                                    <div class="sta-card" style="padding:1.25rem 1.5rem; display:flex; align-items:flex-start; gap:1.25rem;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:var(--sta-orange); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem;">
+                                    <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             5                        </span>
-                        <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.65; margin:0;">
+                        <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                             Alle har et ansvar i å forhindre mobbing. STA har nulltoleranse for mobbing.                        </p>
                     </div>
-                                    <div class="sta-card" style="padding:1.25rem 1.5rem; display:flex; align-items:flex-start; gap:1.25rem;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:var(--sta-orange); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem;">
+                                    <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             6                        </span>
-                        <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.65; margin:0;">
+                        <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                             Alle skal vise respekt for hverandres ytringer og møte hverandre på en konstruktiv måte.                        </p>
                     </div>
                             </div>
         </div>
 
-        <!-- Whistleblower procedures Card -->
-        <div class="sta-card" style="padding:2rem; border-color:rgba(239,115,48,0.4); background:rgba(14,76,71,0.6);">
-            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
-                <svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                <h2 style="font-size:1.35rem; font-weight:700; color:#fff; margin:0;">
-                    Varslingsrutiner                </h2>
-            </div>
-
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:0.75rem;">
-                Et antatt brudd på prinsippene kan meldes inn til alle medlemmene i STA-styret og STAs organisasjonskonsulent. Det er leder av STA-styret som følger dette opp, og involverer STAs Kontrollkomite ved behov.            </p>
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:0.75rem;">
-                <strong>Innmelding av brudd på prinsipper skal ikke medføre negative konsekvenser for innmelder.</strong>
-            </p>
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:1.5rem;">
-                Om varslingen gjelder ett eller flere medlemmer av STA-styret, skal denne sendes til STAs organisasjonskonsulent på <a href="mailto:sta@uia.no" style="color:var(--sta-orange);text-decoration:underline;font-weight:600">sta@uia.no</a>. STAs organisasjonskonsulent sitter i en egen varslingsgruppe sammen med Advokatfirma Tofte AS, som sammen vil behandle varslingen objektivt.            </p>
-
-            <div style="display:flex; flex-wrap:wrap; gap:1rem; padding-top:0.5rem;">
-                <a href="mailto:sta@uia.no?subject=Konfidensiell%20varsling%20om%20brudd%20p%C3%A5%20retningslinjer" 
+        <!-- Help & Contact Box -->
+        <div style="padding:2rem; border-radius:1rem; background:rgba(14,76,71,0.6); border:1px solid rgba(239,115,48,0.4);">
+            <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 0.75rem 0;">
+                Har du opplevd noe ubehagelig?            </h3>
+            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0 0 1.5rem 0;">
+                Dersom du har opplevd eller vært vitne til kritikkverdige forhold i tilknytning til STA eller studentforeninger, kan du trygt ta kontakt med oss eller benytte UiAs offisielle Si ifra-system.            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                <a href="mailto:sta@uia.no?subject=Trygg%20organisasjon%20henvendelse" 
                    class="sta-btn sta-btn-orange" 
-                   style="display:inline-flex; align-items:center; gap:0.5rem; font-weight:700;">
-                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <span>Send konfidensielt varsel</span>
-                </a>
+                   style="font-size:0.9rem; padding:0.65rem 1.25rem;">
+                    Kontakt STA på sta@uia.no                </a>
                 <a href="https://www.uia.no/om-uia/kontakt/si-ifra/" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="sta-btn sta-btn-outline" 
-                   style="display:inline-flex; align-items:center; gap:0.5rem;">
-                    <span>UiAs Si ifra-portal</span>
+                   style="font-size:0.9rem; padding:0.65rem 1.25rem;">
+                    <span>UiAs Si ifra-system</span>
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
             </div>

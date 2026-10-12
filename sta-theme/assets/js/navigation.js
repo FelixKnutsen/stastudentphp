@@ -191,32 +191,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // -------------------------------------------------------------------------
-    // 4. Language Switcher (Desktop & Mobile Drawer)
+    // 4. Language Switcher (Desktop & Mobile Drawer - 3 languages)
     // -------------------------------------------------------------------------
-    const langButtons = document.querySelectorAll('.sta-lang-btn');
-    langButtons.forEach(function (btn) {
+    const langOptions = document.querySelectorAll('.sta-lang-option, .sta-lang-btn');
+    langOptions.forEach(function (btn) {
         btn.addEventListener('click', function (e) {
+            const targetLang = btn.getAttribute('data-lang');
+            if (targetLang) {
+                document.cookie = 'sta_lang=' + targetLang + '; path=/; max-age=' + (60 * 60 * 24 * 30);
+            }
+
+            const href = btn.getAttribute('href');
+            if (href && href !== '#' && !href.startsWith('javascript:')) {
+                // Cookie is set, allow navigation via href
+                return;
+            }
+
+            e.preventDefault();
             const currentPath = window.location.pathname;
-            const isEnglish = currentPath.startsWith('/en/') || currentPath === '/en' || document.documentElement.lang === 'en';
-            let targetUrl;
+            let cleanPath = currentPath.replace(/^\/(en|nn)(\/|$)/, '/');
+            if (!cleanPath.startsWith('/')) cleanPath = '/' + cleanPath;
 
-            if (isEnglish) {
-                // Switch to Norwegian
-                document.cookie = 'sta_lang=no; path=/; max-age=' + (60 * 60 * 24 * 30);
-                let noPath = currentPath.replace(/^\/en(\/|$)/, '/');
-                if (!noPath) noPath = '/';
-                targetUrl = noPath + window.location.search;
-            } else {
-                // Switch to English
-                document.cookie = 'sta_lang=en; path=/; max-age=' + (60 * 60 * 24 * 30);
-                let cleanPath = currentPath.replace(/^\//, '');
-                targetUrl = '/en/' + cleanPath + window.location.search;
+            let targetUrl = cleanPath + window.location.search;
+            if (targetLang === 'nn') {
+                targetUrl = '/nn' + (cleanPath === '/' ? '/' : cleanPath) + window.location.search;
+            } else if (targetLang === 'en') {
+                targetUrl = '/en' + (cleanPath === '/' ? '/' : cleanPath) + window.location.search;
             }
 
-            if (targetUrl) {
-                e.preventDefault();
-                window.location.href = targetUrl;
-            }
+            window.location.href = targetUrl;
         });
     });
 

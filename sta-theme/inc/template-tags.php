@@ -44,18 +44,18 @@ function sta_render_partner_logos() {
 
     $is_en = sta_is_en();
     ?>
-    <section id="samarbeidspartnere" class="sta-partners-section" aria-label="<?php echo esc_attr(sta_t('Samarbeidspartnere', 'Collaborating Partners')); ?>">
+    <section id="samarbeidspartnere" class="sta-partners-section" aria-label="<?php echo esc_attr(sta_t('Samarbeidspartnere', 'Collaborating Partners', 'Samarbeidspartnarar')); ?>">
         <div class="sta-container">
             <div class="sta-section-header">
-                <h2 class="sta-section-title"><?php echo esc_html(sta_t('Samarbeidspartnere', 'Collaborating Partners')); ?></h2>
-                <p class="sta-section-subtitle"><?php echo esc_html(sta_t('Vi samarbeider tett med sentrale aktører i UH-sektoren og Agder-regionen', 'We collaborate closely with key partners in the higher education sector and the Agder region')); ?></p>
+                <h2 class="sta-section-title"><?php echo esc_html(sta_t('Samarbeidspartnere', 'Collaborating Partners', 'Samarbeidspartnarar')); ?></h2>
+                <p class="sta-section-subtitle"><?php echo esc_html(sta_t('Vi samarbeider tett med sentrale aktører i UH-sektoren og Agder-regionen', 'We collaborate closely with key partners in the higher education sector and the Agder region', 'Vi samarbeider tett med sentrale aktørar i UH-sektoren og Agder-regionen')); ?></p>
             </div>
 
             <div class="sta-partners-grid">
                 <?php foreach ($partners as $partner): 
                     $name = $is_en ? ($partner['name_en'] ?: $partner['name']) : $partner['name'];
                 ?>
-                    <a href="<?php echo esc_url($partner['url']); ?>" target="_blank" rel="noopener noreferrer" class="sta-partner-card" aria-label="<?php echo esc_attr($name . ' (' . sta_t('åpner i ny fane', 'opens in new tab') . ')'); ?>">
+                    <a href="<?php echo esc_url($partner['url']); ?>" target="_blank" rel="noopener noreferrer" class="sta-partner-card" aria-label="<?php echo esc_attr($name . ' (' . sta_t('åpner i ny fane', 'opens in new tab', 'opnar i ny fane') . ')'); ?>">
                         <div class="sta-partner-logo-box">
                             <img src="<?php echo esc_url($partner['logo_url']); ?>" alt="<?php echo esc_attr($partner['alt']); ?>" loading="lazy">
                         </div>
@@ -80,15 +80,15 @@ function sta_render_verv_cta() {
         <div class="sta-container">
             <div class="sta-cta-box">
                 <div class="sta-cta-content">
-                    <span class="sta-badge"><?php echo esc_html(sta_t('Bli engasjert', 'Get Involved')); ?></span>
-                    <h2 class="sta-cta-title"><?php echo esc_html(sta_t('Vil du være med å forme studiehverdagen på UiA?', 'Want to help shape student life at UiA?')); ?></h2>
-                    <p class="sta-cta-text"><?php echo esc_html(sta_t('Gjennom verv i STA, Studentparlamentet og universitetsorganer får du verdifull erfaring, nettverk og mulighet til å gjøre en forskjell for over 14 000 studenter.', 'Through positions in STA, the Student Parliament, and university bodies, you gain valuable experience, a broader network, and the chance to make a real difference for over 14,000 students.')); ?></p>
+                    <span class="sta-badge"><?php echo esc_html(sta_t('Bli engasjert', 'Get Involved', 'Bli engasjert')); ?></span>
+                    <h2 class="sta-cta-title"><?php echo esc_html(sta_t('Vil du være med å forme studiehverdagen på UiA?', 'Want to help shape student life at UiA?', 'Vil du vere med å forme studiekvardagen ved UiA?')); ?></h2>
+                    <p class="sta-cta-text"><?php echo esc_html(sta_t('Gjennom verv i STA, Studentparlamentet og universitetsorganer får du verdifull erfaring, nettverk og mulighet til å gjøre en forskjell for over 14 000 studenter.', 'Through positions in STA, the Student Parliament, and university bodies, you gain valuable experience, a broader network, and the chance to make a real difference for over 14,000 students.', 'Gjennom verv i STA, Studentparlamentet og universitetsorgan får du verdifull erfaring, nettverk og høve til å gjere ein skilnad for over 14 000 studentar.')); ?></p>
                     <div class="sta-cta-buttons">
                         <a href="<?php echo esc_url(sta_get_localized_url('/ledige-verv')); ?>" class="sta-btn sta-btn-orange">
-                            <?php echo esc_html(sta_t('Se ledige verv', 'View vacant positions')); ?>
+                            <?php echo esc_html(sta_t('Se ledige verv', 'View vacant positions', 'Sjå ledige verv')); ?>
                         </a>
                         <a href="<?php echo esc_url(sta_get_localized_url('/rad-styrer-og-utvalg')); ?>" class="sta-btn sta-btn-outline">
-                            <?php echo esc_html(sta_t('Les om råd, styrer og utvalg', 'Read about boards and committees')); ?>
+                            <?php echo esc_html(sta_t('Les om råd, styrer og utvalg', 'Read about boards and committees', 'Les om råd, styre og utval')); ?>
                         </a>
                     </div>
                 </div>
@@ -106,17 +106,17 @@ function sta_render_board_group_photo() {
     <div class="sta-board-photo-container">
         <div class="sta-board-photo-frame">
             <img src="https://stastudent.no/wp-content/uploads/2026/08/Gruppebilde-STA-styret-1024x683.jpg" 
-                 alt="<?php echo esc_attr(sta_t('Gruppebilde av STA-styret og sekretariatet', 'Group photo of the STA Board and Secretariat')); ?>" 
+                 alt="<?php echo esc_attr(sta_t('Gruppebilde av STA-styret og sekretariatet', 'Group photo of the STA Board and Secretariat', 'Gruppebilete av STA-styret og sekretariatet')); ?>" 
                  class="sta-board-photo"
                  loading="eager">
         </div>
         <div class="sta-board-photo-meta">
             <p>
-                <strong><?php echo esc_html(sta_t('Pressehenvendelser:', 'Press Inquiries:')); ?></strong> 
-                <?php echo esc_html(sta_t('Alle pressehenvendelser rettes til studentleder Karen Elise Stenersen.', 'All press inquiries should be directed to Student President Karen Elise Stenersen.')); ?>
+                <strong><?php echo esc_html(sta_t('Pressehenvendelser:', 'Press Inquiries:', 'Pressehenvendingar:')); ?></strong> 
+                <?php echo esc_html(sta_t('Alle pressehenvendelser rettes til studentleder Karen Elise Stenersen.', 'All press inquiries should be directed to Student President Karen Elise Stenersen.', 'Alle pressehenvendingar rettast til studentleiar Karen Elise Stenersen.')); ?>
             </p>
             <a href="https://www.skyfish.com/p/uia/2397359" target="_blank" rel="noopener noreferrer" class="sta-press-link">
-                <span><?php echo esc_html(sta_t('Last ned høyoppløselige pressebilder (Skyfish)', 'Download press photos (Skyfish)')); ?></span>
+                <span><?php echo esc_html(sta_t('Last ned høyoppløselige pressebilder (Skyfish)', 'Download press photos (Skyfish)', 'Last ned høgoppløyselege pressebilete (Skyfish)')); ?></span>
                 <svg class="sta-external-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
             </a>
         </div>
@@ -140,14 +140,14 @@ function sta_render_pagination($query = null) {
 
     $current_page = max(1, get_query_var('paged'));
 
-    echo '<nav class="sta-pagination" aria-label="' . esc_attr(sta_t('Sidenavigasjon', 'Pagination')) . '">';
+    echo '<nav class="sta-pagination" aria-label="' . esc_attr(sta_t('Sidenavigasjon', 'Pagination', 'Sidenavigasjon')) . '">';
     echo paginate_links(array(
         'base'      => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
         'format'    => '?paged=%#%',
         'current'   => $current_page,
         'total'     => $total_pages,
-        'prev_text' => '&larr; ' . sta_t('Forrige', 'Previous'),
-        'next_text' => sta_t('Neste', 'Next') . ' &rarr;',
+        'prev_text' => '&larr; ' . sta_t('Forrige', 'Previous', 'Førre'),
+        'next_text' => sta_t('Neste', 'Next', 'Neste') . ' &rarr;',
         'type'      => 'list',
         'mid_size'  => 2,
         'end_size'  => 1,
@@ -173,7 +173,7 @@ function sta_get_data_file($filename) {
 }
 
 /**
- * Format date in Norwegian Bokmål or English
+ * Format date in Norwegian Bokmål, Nynorsk or English
  */
 function sta_format_date($timestamp_or_str = null, $format = 'j. F Y') {
     if ($timestamp_or_str === null || $timestamp_or_str === '') {

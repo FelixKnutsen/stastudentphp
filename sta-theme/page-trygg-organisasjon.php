@@ -9,6 +9,7 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 
 $principles_no = array(
     'Alle skal føle seg velkommen og respektert i STA. Dette betyr at man skal avstå fra uttalelser og/eller fysisk atferd som oppleves som ubehagelig, diskriminerende, trakasserende eller krenkende for andre.',
@@ -28,17 +29,26 @@ $principles_en = array(
     'Everyone must show respect for differing opinions and engage with one another constructively.'
 );
 
-$principles = $is_en ? $principles_en : $principles_no;
+$principles_nn = array(
+    'Alle skal kjenne seg velkomne og respekterte i STA. Dette tyder at ein skal halde seg unna utsegner og/eller fysisk åtferd som blir opplevd som ubehageleg, diskriminerande, trakasserande eller krenkjande for andre.',
+    'Alle har eit ansvar for å bidra til eit inkluderande miljø, både ved formelle og uformelle arrangement.',
+    'Alle skal vise respekt for grensene til kvarandre.',
+    'Press rundt bruk av alkohol og andre rusmiddel skal ikkje førekome. Ved alle arrangement i regi av ein studentaktivitet eller linjeforeining skal ein ha 1–2 tillitspersonar.',
+    'Alle har eit ansvar for å hindre mobbing. STA har nulltoleranse for mobbing.',
+    'Alle skal vise respekt for ytringane til kvarandre og møte kvarandre på ein konstruktiv måte.'
+);
+
+$principles = $is_en ? $principles_en : ($is_nn ? $principles_nn : $principles_no);
 ?>
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
-        <span class="sta-badge"><?php echo esc_html(sta_t('Retningslinjer', 'Guidelines')); ?></span>
+        <span class="sta-badge"><?php echo esc_html(sta_t('Retningslinjer', 'Guidelines', 'Retningslinjer')); ?></span>
         <h1 class="sta-hero-title">
-            <?php echo esc_html(sta_t('Trygg Organisasjon', 'Safe Organization')); ?>
+            <?php echo esc_html(sta_t('Trygg Organisasjon', 'Safe Organization', 'Trygg organisasjon')); ?>
         </h1>
         <p class="sta-hero-subtitle" style="max-width:800px; margin-left:auto; margin-right:auto;">
-            <?php echo esc_html(sta_t('Det skal være gøy, lærerikt og motiverende å engasjere seg i STA.', 'Engaging in STA should be enjoyable, educational, and inspiring.')); ?>
+            <?php echo esc_html(sta_t('Det skal være gøy, lærerikt og motiverende å engasjere seg i STA.', 'Engaging in STA should be enjoyable, educational, and inspiring.', 'Det skal vere moro, lærerikt og motiverande å engasjere seg i STA.')); ?>
         </p>
     </header>
 
@@ -51,34 +61,36 @@ $principles = $is_en ? $principles_en : $principles_no;
                 </div>
                 <div>
                     <h2 style="font-size:1.35rem; font-weight:700; color:#fff; margin:0;">
-                        <?php echo esc_html(sta_t('Nulltoleranse for trakassering', 'Zero Tolerance for Harassment')); ?>
+                        <?php echo esc_html(sta_t('Nulltoleranse for trakassering', 'Zero Tolerance for Harassment', 'Nulltoleranse for trakassering')); ?>
                     </h2>
                     <p style="font-size:0.75rem; color:var(--sta-orange); font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin:0.25rem 0 0 0;">
-                        <?php echo esc_html(sta_t('Vedtatt av Studentparlamentet', 'Adopted by the Student Parliament')); ?>
+                        <?php echo esc_html(sta_t('Vedtatt av Studentparlamentet', 'Adopted by the Student Parliament', 'Vedteke av Studentparlamentet')); ?>
                     </p>
                 </div>
             </div>
 
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:1rem;">
-                <?php echo esc_html(sta_t('Det er av stor verdi at du bidrar til fellesskapet som skaper politikkutvikling, gjennomslag og gode opplevelser for mange andre engasjerte studenter. Sammen skal vi sikre et godt miljø med takhøyde for å diskutere og si meningene våre. Dette gjelder også de sosiale og uformelle delene av alle STA-arrangement.', 'Your contributions to our community foster policy development, real impact, and great memories for many student volunteers. Together, we ensure a welcoming environment where everyone feels safe to voice their opinions. This applies equally to formal meetings and informal social gatherings.')); ?>
-            </p>
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0;">
-                <?php echo wp_kses_post(sta_t('Som engasjert i STA har vi <strong>ingen toleranse for trakassering eller diskriminering</strong>. Vi tar vare på hverandre og viser gjensidig respekt. Det er et felles ansvar å sørge for at møtearenaene vi deltar på er trygge, og at alle ønskes velkommen.', 'As part of STA, we have <strong>zero tolerance for harassment and discrimination</strong>. We care for each other and show mutual respect. It is our shared duty to make all arenas safe and welcoming.')); ?>
+            <p style="font-size:1rem; color:var(--sta-teal-100); line-height:1.7; margin:0;">
+                <?php echo esc_html(sta_t(
+                    'Studentorganisasjonen i Agder har nulltoleranse for alle former for mobbing, seksuell trakassering, rasisme og diskriminering. Alle arrangementer, møter og sosiale sammenkomster i regi av STA eller våre medlemsforeninger skal være trygge arenaer for alle studenter uavhengig av bakgrunn, kjønn eller legning.',
+                    'The Student Organisation of Agder has zero tolerance for all forms of bullying, sexual harassment, racism, and discrimination. All events, meetings, and gatherings organized by STA or our member associations must be safe and welcoming spaces for all students.',
+                    'Studentorganisasjonen i Agder har nulltoleranse for alle former for mobbing, seksuell trakassering, rasisme og diskriminering. Alle arrangement, møte og sosiale samankomstar i regi av STA eller medlemsforeiningane våre skal vere trygge arenaer for alle studentar uavhengig av bakgrunn, kjønn eller legning.'
+                )); ?>
             </p>
         </div>
 
-        <!-- 6 Principles -->
+        <!-- 6 Core Principles Grid -->
         <div>
             <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:1.5rem;">
-                <?php echo esc_html(sta_t('De 6 prinsippene for Trygg Organisasjon', 'The 6 Principles for a Safe Organization')); ?>
+                <?php echo esc_html(sta_t('Prinsipper for trygg organisasjon', 'Principles for a Safe Organization', 'Prinsipp for ein trygg organisasjon')); ?>
             </h2>
-            <div style="display:flex; flex-direction:column; gap:1rem;">
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem;">
                 <?php foreach ($principles as $idx => $principle): ?>
-                    <div class="sta-card" style="padding:1.25rem 1.5rem; display:flex; align-items:flex-start; gap:1.25rem;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:var(--sta-orange); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem;">
+                    <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             <?php echo $idx + 1; ?>
                         </span>
-                        <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.65; margin:0;">
+                        <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
                             <?php echo esc_html($principle); ?>
                         </p>
                     </div>
@@ -86,38 +98,30 @@ $principles = $is_en ? $principles_en : $principles_no;
             </div>
         </div>
 
-        <!-- Whistleblower procedures Card -->
-        <div class="sta-card" style="padding:2rem; border-color:rgba(239,115,48,0.4); background:rgba(14,76,71,0.6);">
-            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
-                <svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                <h2 style="font-size:1.35rem; font-weight:700; color:#fff; margin:0;">
-                    <?php echo esc_html(sta_t('Varslingsrutiner', 'Whistleblowing Procedures')); ?>
-                </h2>
-            </div>
-
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:0.75rem;">
-                <?php echo esc_html(sta_t('Et antatt brudd på prinsippene kan meldes inn til alle medlemmene i STA-styret og STAs organisasjonskonsulent. Det er leder av STA-styret som følger dette opp, og involverer STAs Kontrollkomite ved behov.', 'Any suspected breach of these principles can be reported to any member of the STA Board or STAs Organizational Consultant. The Student President follows up and involves STAs Control Committee when needed.')); ?>
+        <!-- Help & Contact Box -->
+        <div style="padding:2rem; border-radius:1rem; background:rgba(14,76,71,0.6); border:1px solid rgba(239,115,48,0.4);">
+            <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 0.75rem 0;">
+                <?php echo esc_html(sta_t('Har du opplevd noe ubehagelig?', 'Have you experienced something uncomfortable?', 'Har du opplevd noko ubehageleg?')); ?>
+            </h3>
+            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0 0 1.5rem 0;">
+                <?php echo esc_html(sta_t(
+                    'Dersom du har opplevd eller vært vitne til kritikkverdige forhold i tilknytning til STA eller studentforeninger, kan du trygt ta kontakt med oss eller benytte UiAs offisielle Si ifra-system.',
+                    'If you have experienced or witnessed unacceptable behavior related to STA or student associations, you can contact us in full confidence or utilize UiAs official Speak Up system.',
+                    'Dersom du har opplevd eller vore vitne til kritikkverdige tilhøve knytt til STA eller studentforeiningar, kan du trygt ta kontakt med oss eller nytte UiA sitt offisielle Sei ifrå-system.'
+                )); ?>
             </p>
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:0.75rem;">
-                <strong><?php echo esc_html(sta_t('Innmelding av brudd på prinsipper skal ikke medføre negative konsekvenser for innmelder.', 'Reporting a breach will not entail negative repercussions for the reporting person.')); ?></strong>
-            </p>
-            <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:1.5rem;">
-                <?php echo wp_kses_post(sta_t('Om varslingen gjelder ett eller flere medlemmer av STA-styret, skal denne sendes til STAs organisasjonskonsulent på <a href="mailto:sta@uia.no" style="color:var(--sta-orange); text-decoration:underline; font-weight:600;">sta@uia.no</a>. STAs organisasjonskonsulent sitter i en egen varslingsgruppe sammen med Advokatfirma Tofte AS, som sammen vil behandle varslingen objektivt.', 'If the report concerns members of the STA Board, it should be sent directly to STAs Organizational Consultant at <a href="mailto:sta@uia.no" style="color:var(--sta-orange); text-decoration:underline; font-weight:600;">sta@uia.no</a>. The consultant cooperates with Law Firm Tofte AS to evaluate reports objectively.')); ?>
-            </p>
-
-            <div style="display:flex; flex-wrap:wrap; gap:1rem; padding-top:0.5rem;">
-                <a href="mailto:sta@uia.no?subject=<?php echo rawurlencode(sta_t('Konfidensiell varsling om brudd på retningslinjer', 'Confidential whistleblowing report')); ?>" 
+            <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                <a href="mailto:sta@uia.no?subject=<?php echo rawurlencode(sta_t('Trygg organisasjon henvendelse', 'Safe organization inquiry', 'Trygg organisasjon førespurnad')); ?>" 
                    class="sta-btn sta-btn-orange" 
-                   style="display:inline-flex; align-items:center; gap:0.5rem; font-weight:700;">
-                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <span><?php echo esc_html(sta_t('Send konfidensielt varsel', 'Send confidential report')); ?></span>
+                   style="font-size:0.9rem; padding:0.65rem 1.25rem;">
+                    <?php echo esc_html(sta_t('Kontakt STA på sta@uia.no', 'Contact STA at sta@uia.no', 'Kontakt STA på sta@uia.no')); ?>
                 </a>
                 <a href="https://www.uia.no/om-uia/kontakt/si-ifra/" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="sta-btn sta-btn-outline" 
-                   style="display:inline-flex; align-items:center; gap:0.5rem;">
-                    <span><?php echo esc_html(sta_t('UiAs Si ifra-portal', 'UiA Speak Up Portal')); ?></span>
+                   style="font-size:0.9rem; padding:0.65rem 1.25rem;">
+                    <span><?php echo esc_html(sta_t('UiAs Si ifra-system', 'UiA Speak Up System', 'UiA sitt Sei ifrå-system')); ?></span>
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
             </div>

@@ -10,6 +10,7 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 
 // Query CPT sta_board_member or load fallback
 $members = array();
@@ -66,12 +67,12 @@ if (empty($members)) {
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
-        <span class="sta-badge"><?php echo esc_html(sta_t('Ledelse', 'Executive Leadership')); ?></span>
+        <span class="sta-badge"><?php echo esc_html(sta_t('Ledelse', 'Executive Leadership', 'Leiing')); ?></span>
         <h1 class="sta-hero-title" style="margin-top:0.5rem;">
-            <?php echo esc_html(sta_t('STA-styret og Sekretariatet 2026-2027', 'The STA Board & Secretariat 2026-2027')); ?>
+            <?php echo esc_html(sta_t('STA-styret og Sekretariatet 2026-2027', 'The STA Board & Secretariat 2026-2027', 'STA-styret og Sekretariatet 2026-2027')); ?>
         </h1>
         <p style="color:var(--sta-teal-100); font-size:1.15rem; max-width:800px;">
-            <?php echo esc_html(sta_t('STA-styret og Sekretariatet står for den daglige driften av organisasjonen og har hovedansvaret for studentdemokratiet på Universitetet i Agder.', 'The STA Board and Secretariat are responsible for the daily operations and student democracy at the University of Agder.')); ?>
+            <?php echo esc_html(sta_t('STA-styret og Sekretariatet står for den daglige driften av organisasjonen og har hovedansvaret for studentdemokratiet på Universitetet i Agder.', 'The STA Board and Secretariat are responsible for the daily operations and student democracy at the University of Agder.', 'STA-styret og Sekretariatet står for den daglege drifta av organisasjonen og har hovudansvaret for studentdemokratiet ved Universitetet i Agder.')); ?>
         </p>
     </header>
 
@@ -79,18 +80,18 @@ if (empty($members)) {
     <div style="max-width:896px; margin:0 auto 3.5rem; border-radius:var(--sta-radius); overflow:hidden; border:1px solid rgba(61,148,139,0.3); box-shadow:0 25px 50px -12px rgba(0,0,0,0.5); background:rgba(4,24,23,0.6);">
         <div style="position:relative; aspect-ratio:3/2; width:100%; background:var(--sta-teal-800);">
             <img src="https://stastudent.no/wp-content/uploads/2026/08/Gruppebilde-STA-styret-1024x683.jpg" 
-                 alt="<?php echo esc_attr(sta_t('Gruppebilde av STA-styret og sekretariatet', 'Group photo of the STA Board')); ?>" 
+                 alt="<?php echo esc_attr(sta_t('Gruppebilde av STA-styret og sekretariatet', 'Group photo of the STA Board', 'Gruppebilete av STA-styret og sekretariatet')); ?>" 
                  style="width:100%; height:100%; object-fit:cover;"
                  loading="eager">
         </div>
         <div style="background:rgba(4,24,23,0.9); padding:1.25rem 1.75rem; backdrop-filter:blur(4px); display:flex; flex-direction:column; gap:1rem; font-size:0.85rem; color:var(--sta-teal-100);">
             <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1rem;">
                 <p style="margin:0;">
-                    <strong style="color:#fff;"><?php echo esc_html(sta_t('Pressehenvendelser:', 'Press Inquiries:')); ?></strong> 
-                    <?php echo esc_html(sta_t('Alle pressehenvendelser går til studentleder Karen Elise Stenersen.', 'All press inquiries should be directed to student president Karen Elise Stenersen.')); ?>
+                    <strong style="color:#fff;"><?php echo esc_html(sta_t('Pressehenvendelser:', 'Press Inquiries:', 'Pressehenvendingar:')); ?></strong> 
+                    <?php echo esc_html(sta_t('Alle pressehenvendelser går til studentleder Karen Elise Stenersen.', 'All press inquiries should be directed to student president Karen Elise Stenersen.', 'Alle pressehenvendingar går til studentleiar Karen Elise Stenersen.')); ?>
                 </p>
                 <a href="https://www.skyfish.com/p/uia/2397359" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-weight:700; color:var(--sta-orange); shrink-0:0;">
-                    <span><?php echo esc_html(sta_t('Last ned pressebilder (Skyfish)', 'Download press photos (Skyfish)')); ?></span>
+                    <span><?php echo esc_html(sta_t('Last ned pressebilder (Skyfish)', 'Download press photos (Skyfish)', 'Last ned pressebilete (Skyfish)')); ?></span>
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
             </div>
@@ -123,7 +124,7 @@ if (empty($members)) {
                     <?php if (!empty($member['responsibilities'])): ?>
                         <div style="margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);">
                             <p style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:rgba(255,255,255,0.9); margin:0 0 0.5rem;">
-                                <?php echo esc_html(sta_t('Hovedansvar', 'Main Responsibilities')); ?>
+                                <?php echo esc_html(sta_t('Hovedansvar', 'Main Responsibilities', 'Hovudansvar')); ?>
                             </p>
                             <ul style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1.1rem; margin:0;">
                                 <?php foreach ($member['responsibilities'] as $resp): ?>
@@ -171,7 +172,7 @@ if (empty($members)) {
             </p>
         </div>
         <div>
-            <h4 style="font-size:1rem; font-weight:700; color:#fff; margin:0 0 0.5rem;">Felles kontakt</h4>
+            <h4 style="font-size:1rem; font-weight:700; color:#fff; margin:0 0 0.5rem;"><?php echo esc_html(sta_t('Felles kontakt', 'Joint Contact', 'Felles kontakt')); ?></h4>
             <p style="margin:0 0 0.25rem;">E-post: sta@uia.no</p>
             <p style="margin:0 0 0.25rem;">Tlf: +47 38 14 20 10</p>
             <p style="margin:0;">Org.nr: 981 596 412</p>

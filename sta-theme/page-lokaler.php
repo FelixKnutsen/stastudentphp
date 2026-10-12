@@ -10,47 +10,48 @@ if (!defined('ABSPATH')) {
 
 get_header();
 $is_en = sta_is_en();
+$is_nn = sta_is_nn();
 
 $alibiet_images = array(
     array(
         'url'     => 'https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_092836179-768x576.jpg',
-        'caption' => 'Utenfor Alibiet'
+        'caption' => sta_t('Utenfor Alibiet', 'Outside Alibiet', 'Utanfor Alibiet')
     ),
     array(
         'url'     => 'https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_093006806-768x576.jpg',
-        'caption' => 'Inngangen til Alibiet'
+        'caption' => sta_t('Inngangen til Alibiet', 'Entrance to Alibiet', 'Inngangen til Alibiet')
     ),
     array(
         'url'     => 'https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_093021348.MP_-768x576.jpg',
-        'caption' => 'Fest- og arrangementsarealet'
+        'caption' => sta_t('Fest- og arrangementsarealet', 'Party and event space', 'Fest- og arrangementsarealet')
     ),
     array(
         'url'     => 'https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_093039894.MP_-768x576.jpg',
-        'caption' => 'Kjøkkenet til festlokalet'
+        'caption' => sta_t('Kjøkkenet til festlokalet', 'Venue kitchen', 'Kjøkkenet til festlokalet')
     ),
     array(
         'url'     => 'https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_113150219-768x576.jpg',
-        'caption' => 'Inngangen til kontorlokalet'
+        'caption' => sta_t('Inngangen til kontorlokalet', 'Office entrance', 'Inngangen til kontorlokalet')
     ),
     array(
         'url'     => 'https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_113156984.MP_-768x576.jpg',
-        'caption' => 'TV-krok og sittegruppe'
+        'caption' => sta_t('TV-krok og sittegruppe', 'TV lounge and seating area', 'TV-krok og sitjegruppe')
     ),
     array(
         'url'     => 'https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_113132165-768x576.jpg',
-        'caption' => 'Møteplass'
+        'caption' => sta_t('Møteplass', 'Meeting area', 'Møteplass')
     ),
 );
 ?>
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
-        <span class="sta-badge"><?php echo esc_html(sta_t('Studentlokaler', 'Student Venues')); ?></span>
+        <span class="sta-badge"><?php echo esc_html(sta_t('Studentlokaler', 'Student Venues', 'Studentlokale')); ?></span>
         <h1 class="sta-hero-title" style="font-size:2.75rem; margin-top:0.5rem;">
-            <?php echo esc_html(sta_t('Lokaler', 'Our Premises')); ?>
+            <?php echo esc_html(sta_t('Lokaler', 'Our Premises', 'Lokale')); ?>
         </h1>
         <p style="color:var(--sta-teal-100); font-size:1.15rem; max-width:800px;">
-            <?php echo esc_html(sta_t('Alle studentaktiviteter og linjeforeninger som er medlem av STA kan booke Alibiet og Bluebox lokalene til STA.', 'All student activities and academic associations that are members of STA can book STAs venues at Alibiet and Bluebox.')); ?>
+            <?php echo esc_html(sta_t('Alle studentaktiviteter og linjeforeninger som er medlem av STA kan booke Alibiet og Bluebox lokalene til STA.', 'All student activities and academic associations that are members of STA can book STAs venues at Alibiet and Bluebox.', 'Alle studentaktivitetar og linjeforeiningar som er medlem av STA kan booke Alibiet og Bluebox-lokala til STA.')); ?>
         </p>
     </header>
 
@@ -72,10 +73,10 @@ $alibiet_images = array(
                              alt="<?php echo esc_attr($alibiet_images[0]['caption']); ?>" 
                              class="sta-slider-img">
 
-                        <button type="button" id="sta-slider-prev" class="sta-slider-btn prev" aria-label="Forrige bilde">
+                        <button type="button" id="sta-slider-prev" class="sta-slider-btn prev" aria-label="<?php echo esc_attr(sta_t('Forrige bilde', 'Previous image', 'Førre bilete')); ?>">
                             <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
                         </button>
-                        <button type="button" id="sta-slider-next" class="sta-slider-btn next" aria-label="Neste bilde">
+                        <button type="button" id="sta-slider-next" class="sta-slider-btn next" aria-label="<?php echo esc_attr(sta_t('Neste bilde', 'Next image', 'Neste bilete')); ?>">
                             <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </button>
 
@@ -99,44 +100,44 @@ $alibiet_images = array(
                 <div style="display:flex; flex-direction:column; gap:1.5rem;">
                     <div class="sta-card" style="display:flex; flex-direction:column; gap:1.25rem;">
                         <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0;">
-                            <?php echo esc_html(sta_t('Om Alibiet', 'About Alibiet')); ?>
+                            <?php echo esc_html(sta_t('Om Alibiet', 'About Alibiet', 'Om Alibiet')); ?>
                         </h3>
                         <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
-                            <?php echo esc_html(sta_t('Alibiet inneholder musikkanlegg, kjøleskap og sitteplasser med tilhørende bord. Lokalet er perfekt for foreningskvelder, fester, brettspill og sosiale sammenkomster.', 'Alibiet includes a sound system, refrigerators, and seating with tables. The venue is ideal for association gatherings, parties, board game nights, and social events.')); ?>
+                            <?php echo esc_html(sta_t('Alibiet inneholder musikkanlegg, kjøleskap og sitteplasser med tilhørende bord. Lokalet er perfekt for foreningskvelder, fester, brettspill og sosiale sammenkomster.', 'Alibiet includes a sound system, refrigerators, and seating with tables. The venue is ideal for association gatherings, parties, board game nights, and social events.', 'Alibiet inneheld musikkanlegg, kjøleskåp og sitjeplassar med tilhøyrande bord. Lokalet er perfekt for foreiningskveldar, festar, brettspel og sosiale samankomstar.')); ?>
                         </p>
 
                         <div style="padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);">
                             <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.5rem;">
-                                <?php echo esc_html(sta_t('Bookingregler', 'Booking Rules')); ?>
+                                <?php echo esc_html(sta_t('Bookingregler', 'Booking Rules', 'Bookingreglar')); ?>
                             </h4>
                             <ul style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1rem; margin:0;">
-                                <li>Booking foregår via e-post til: <a href="mailto:sta@uia.no" style="color:var(--sta-orange); text-decoration:underline;">sta@uia.no</a></li>
-                                <li>Foreninger bookes inn fortløpende i kalenderen.</li>
-                                <li>Skriftlig bekreftelse sendes innen 1–3 virkedager.</li>
-                                <li>Booking må sendes fra foreningens offisielle e-post.</li>
+                                <li><?php echo esc_html(sta_t('Booking foregår via e-post til:', 'Booking takes place via email to:', 'Booking føregår via e-post til:')); ?> <a href="mailto:sta@uia.no" style="color:var(--sta-orange); text-decoration:underline;">sta@uia.no</a></li>
+                                <li><?php echo esc_html(sta_t('Foreninger bookes inn fortløpende i kalenderen.', 'Associations are booked consecutively into the calendar.', 'Foreiningar blir booka fortløpande i kalenderen.')); ?></li>
+                                <li><?php echo esc_html(sta_t('Skriftlig bekreftelse sendes innen 1–3 virkedager.', 'Written confirmation is sent within 1–3 business days.', 'Skriftleg stadfesting blir sendt innan 1–3 vyrkedagar.')); ?></li>
+                                <li><?php echo esc_html(sta_t('Booking må sendes fra foreningens offisielle e-post.', 'Booking must be sent from the association\'s official email.', 'Booking må sendast frå den offisielle e-posten til foreininga.')); ?></li>
                             </ul>
                         </div>
 
                         <div style="padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);">
                             <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.5rem;">
-                                <?php echo esc_html(sta_t('Kontorlokalet', 'Office Space')); ?>
+                                <?php echo esc_html(sta_t('Kontorlokalet', 'Office Space', 'Kontorlokalet')); ?>
                             </h4>
                             <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
-                                Kontorlokalet på Alibiet er gratis tilgjengelig for studentaktiviteter og linjeforeninger uten forhåndsbooking. For nøkkelkortadgang, kontakt <a href="mailto:sta@uia.no" style="text-decoration:underline;">sta@uia.no</a>.
+                                <?php echo esc_html(sta_t('Kontorlokalet på Alibiet er gratis tilgjengelig for studentaktiviteter og linjeforeninger uten forhåndsbooking. For nøkkelkortadgang, kontakt', 'Office space at Alibiet is available free of charge for student activities and academic associations without advance booking. For keycard access, contact', 'Kontorlokalet på Alibiet er gratis tilgjengeleg for studentaktivitetar og linjeforeiningar utan førehandsbooking. For nøkkelkorttilgang, ta kontakt med')); ?> <a href="mailto:sta@uia.no" style="text-decoration:underline;">sta@uia.no</a>.
                             </p>
                         </div>
 
                         <div style="padding-top:0.5rem;">
                             <a href="https://stastudent.no/wp-content/uploads/2025/10/Alibireglement.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange);">
                                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
-                                <span>Last ned Alibireglementet (PDF)</span>
+                                <span><?php echo esc_html(sta_t('Last ned Alibireglementet (PDF)', 'Download Alibi regulations (PDF)', 'Last ned Alibireglementet (PDF)')); ?></span>
                             </a>
                         </div>
                     </div>
 
                     <a href="mailto:sta@uia.no?subject=Booking%20av%20Alibiet" class="sta-btn sta-btn-orange" style="justify-content:center; padding:0.85rem 1.5rem; font-size:0.95rem;">
                         <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right:0.5rem;" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <span>Book Alibiet via e-post</span>
+                        <span><?php echo esc_html(sta_t('Book Alibiet via e-post', 'Book Alibiet via email', 'Book Alibiet via e-post')); ?></span>
                     </a>
                 </div>
             </div>
@@ -158,30 +159,30 @@ $alibiet_images = array(
                      style="width:100%; height:100%; object-fit:cover;"
                      loading="lazy">
                 <div style="position:absolute; bottom:0; inset-x:0; background:rgba(0,0,0,0.65); backdrop-filter:blur(4px); padding:0.75rem 1rem; font-size:0.8rem; color:#fff;">
-                    <span>Møterom og lager på Bluebox • Foto: Irene Bredal / STA</span>
+                    <span><?php echo esc_html(sta_t('Møterom og lager på Bluebox • Foto: Irene Bredal / STA', 'Meeting room and storage at Bluebox • Photo: Irene Bredal / STA', 'Møterom og lager på Bluebox • Foto: Irene Bredal / STA')); ?></span>
                 </div>
             </div>
 
             <div class="sta-card" style="display:flex; flex-direction:column; gap:1.25rem;">
                 <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0;">
-                    <?php echo esc_html(sta_t('Om lokalene på Bluebox', 'About Bluebox Premises')); ?>
+                    <?php echo esc_html(sta_t('Om lokalene på Bluebox', 'About Bluebox Premises', 'Om lokala på Bluebox')); ?>
                 </h3>
                 <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
-                    <?php echo esc_html(sta_t('På Bluebox har STA to møterom og et lager som medlemsforeninger og studentaktiviteter kan benytte gratis til møter og arrangementer.', 'At Bluebox, STA has two meeting rooms and storage that member associations and student activities can use free of charge for meetings and events.')); ?>
+                    <?php echo esc_html(sta_t('På Bluebox har STA to møterom og et lager som medlemsforeninger og studentaktiviteter kan benytte gratis til møter og arrangementer.', 'At Bluebox, STA has two meeting rooms and storage that member associations and student activities can use free of charge for meetings and events.', 'På Bluebox har STA to møterom og eit lager som medlemsforeiningar og studentaktivitetar kan nytte gratis til møte og arrangement.')); ?>
                 </p>
 
                 <div style="padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);">
                     <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.5rem;">
-                        <?php echo esc_html(sta_t('Bookingmetode', 'Booking Method')); ?>
+                        <?php echo esc_html(sta_t('Bookingmetode', 'Booking Method', 'Bookingmetode')); ?>
                     </h4>
                     <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
-                        <?php echo esc_html(sta_t('Manuell fysisk booking foregår ved å gå opp i 2. etasje på Bluebox og skrive opp foreningen på listen som henger på døren til møterommet.', 'Manual physical booking takes place by going up to the 2nd floor of Bluebox and signing up your association on the list hanging on the meeting room door.')); ?>
+                        <?php echo esc_html(sta_t('Manuell fysisk booking foregår ved å gå opp i 2. etasje på Bluebox og skrive opp foreningen på listen som henger på døren til møterommet.', 'Manual physical booking takes place by going up to the 2nd floor of Bluebox and signing up your association on the list hanging on the meeting room door.', 'Manuell fysisk booking føregår ved å gå opp i 2. høgda på Bluebox og skrive opp foreininga på lista som heng på døra til møterommet.')); ?>
                     </p>
                 </div>
 
                 <div style="padding-top:0.5rem;">
                     <a href="https://bluebox.no" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange);">
-                        <span>Besøk Bluebox sin offisielle nettside</span>
+                        <span><?php echo esc_html(sta_t('Besøk Bluebox sin offisielle nettside', 'Visit official Bluebox website', 'Besøk Bluebox si offisielle nettside')); ?></span>
                         <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </a>
                 </div>
