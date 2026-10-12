@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Handelshøyskolen ved UiA",
+    "nameEn": "School of Business and Law",
+    "representatives": [
+      {
+        "name": "Martine Holmoe Tengs"
+      },
+      {
+        "name": "Agnes Nymark"
+      },
+      {
+        "name": "Sunniva Skolås"
+      },
+      {
+        "name": "Thea Korneliussen"
+      }
+    ],
+    "substitutes": [
+      {
+        "name": "Emil Briskelund"
+      },
+      {
+        "name": "Kenneth Engeland Smith"
+      },
+      {
+        "name": "Vår Flåtene Bolstad"
+      },
+      {
+        "name": "",
+        "isVacant": true
+      }
+    ]
+  },
+  {
+    "name": "Fakultetet for Teknologi og realfag",
+    "nameEn": "Faculty of Engineering and Science",
+    "representatives": [
+      {
+        "name": "Jakob Moen Bekken"
+      },
+      {
+        "name": "Asif Soltani"
+      },
+      {
+        "name": "Morten Andreas Myrstad"
+      },
+      {
+        "name": "Ole Andrè Rønsåsbjørg"
+      }
+    ],
+    "substitutes": [
+      {
+        "name": "William Skauge"
+      },
+      {
+        "name": "Helene Aspelund"
+      },
+      {
+        "name": "Kim Andrè Lønø"
+      },
+      {
+        "name": "Nasiba Salehin"
+      }
+    ]
+  },
+  {
+    "name": "Fakultetet for Samfunnsvitenskap",
+    "nameEn": "Faculty of Social Sciences",
+    "representatives": [
+      {
+        "name": "Mia Gjermstad"
+      },
+      {
+        "name": "Eirik Arnestad Næss"
+      },
+      {
+        "name": "Even Skotnes"
+      },
+      {
+        "name": "Adam Omar"
+      }
+    ],
+    "substitutes": [
+      {
+        "name": "Amir Krpo"
+      },
+      {
+        "name": "Simen Dovland Paulsen"
+      },
+      {
+        "name": "Rikke Sofie Moltumyr"
+      },
+      {
+        "name": "Yasir A. Mohamed"
+      }
+    ]
+  },
+  {
+    "name": "Avdeling for Lærerutdanning",
+    "nameEn": "Teacher Education unit",
+    "representatives": [
+      {
+        "name": "Ingrid Lenes Trulsvik"
+      },
+      {
+        "name": "Kristian Sand"
+      },
+      {
+        "name": "Iver Berle Lokshall"
+      },
+      {
+        "name": "Daniel Rørvik"
+      }
+    ],
+    "substitutes": [
+      {
+        "name": "Silje Bruun Haugen"
+      },
+      {
+        "name": "Katarina Lyng"
+      },
+      {
+        "name": "",
+        "isVacant": true
+      },
+      {
+        "name": "",
+        "isVacant": true
+      }
+    ]
+  },
+  {
+    "name": "Fakultetet for Helse- og idrettsvitenskap",
+    "nameEn": "Faculty of Health and Sport Sciences",
+    "representatives": [
+      {
+        "name": "Hedda Yvonne M. Semb-Røren"
+      },
+      {
+        "name": "Hedda Røe Åkra"
+      },
+      {
+        "name": "Otilie Vangen"
+      },
+      {
+        "name": "Andrea Furuholt"
+      }
+    ],
+    "substitutes": [
+      {
+        "name": "",
+        "isVacant": true
+      },
+      {
+        "name": "",
+        "isVacant": true
+      },
+      {
+        "name": "",
+        "isVacant": true
+      },
+      {
+        "name": "",
+        "isVacant": true
+      }
+    ]
+  },
+  {
+    "name": "Fakultetet for Humaniora og Pedagogikk",
+    "nameEn": "Faculty of Humanities and Education",
+    "representatives": [
+      {
+        "name": "Synne Mjøs Sørensen"
+      },
+      {
+        "name": "Danli Peters"
+      },
+      {
+        "name": "Federico Agostini"
+      }
+    ],
+    "substitutes": [
+      {
+        "name": "",
+        "isVacant": true
+      },
+      {
+        "name": "",
+        "isVacant": true
+      },
+      {
+        "name": "",
+        "isVacant": true
+      }
+    ]
+  },
+  {
+    "name": "Fakultetet for Kunstfag",
+    "nameEn": "Faculty of Fine Arts",
+    "representatives": [
+      {
+        "name": "Antonina Zerbst"
+      },
+      {
+        "name": "Sophia Hansteen Jeffery"
+      }
+    ],
+    "substitutes": [
+      {
+        "name": "Gustav Sæterøy"
+      },
+      {
+        "name": "Eskil Andresen"
+      }
+    ]
+  }
+]

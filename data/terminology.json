@@ -1,0 +1,446 @@
+{
+  "sta": {
+    "no": "Studentorganisasjonen i Agder (STA)",
+    "en": "The Student Organization of Agder (STA)"
+  },
+  "president": {
+    "no": "Leder av STA",
+    "en": "President of STA"
+  },
+  "vicePresident": {
+    "no": "Nestleder",
+    "en": "Vice President"
+  },
+  "officerAcademicAffairs": {
+    "no": "Fagpolitisk ansvarlig",
+    "en": "Officer of academic affairs"
+  },
+  "officerLearningEnvironment": {
+    "no": "Læringsmiljøpolitisk ansvarlig",
+    "en": "Officer for the learning environment"
+  },
+  "officerDiversity": {
+    "no": "Mangfoldspolitisk ansvarlig",
+    "en": "Officer of Diversity"
+  },
+  "organizationalConsultant": {
+    "no": "Organisasjonskonsulent",
+    "en": "Organizational consultant"
+  },
+  "officerClassRepresentatives": {
+    "no": "Tillitsvalgtsansvarlig",
+    "en": "Officer for the class representatives"
+  },
+  "officerWelfare": {
+    "no": "Velferdspolitisk ansvarlig",
+    "en": "Officer of welfare political affairs"
+  },
+  "electionCommittee": {
+    "no": "Valgkomité",
+    "en": "Election committee"
+  },
+  "controlCommittee": {
+    "no": "Kontrollkomité",
+    "en": "Control committee"
+  },
+  "politicalCommittees": {
+    "no": "Politiske utvalg",
+    "en": "Political committees"
+  },
+  "preparatoryCommittee": {
+    "no": "Forberedende komité for politisk måldokument",
+    "en": "Preparatory committee for STA's political document"
+  },
+  "rsu": {
+    "no": "Råd, styrer og utvalg (RSU)",
+    "en": "Boards and committees"
+  },
+  "studentParliament": {
+    "no": "Studentparlamentet",
+    "en": "The Student Parliament"
+  },
+  "staBoard": {
+    "no": "Styret",
+    "en": "The STA-board"
+  },
+  "politicalDocuments": {
+    "no": "Politiske dokument",
+    "en": "Political documents"
+  },
+  "regulations": {
+    "no": "STAs vedtekter",
+    "en": "STA's Regulations"
+  },
+  "politicalDocument": {
+    "no": "Politisk måldokument",
+    "en": "STA's Political document"
+  },
+  "planOfAction": {
+    "no": "Handlingsplan",
+    "en": "STA's Plan of action"
+  },
+  "economyRegulations": {
+    "no": "Økonomireglement",
+    "en": "STA's Economy regulations"
+  },
+  "electionRegulations": {
+    "no": "Valgreglement",
+    "en": "STA's Election regulations"
+  },
+  "rulesOfProcedure": {
+    "no": "Forretningsorden",
+    "en": "STA's Rules of procedure"
+  },
+  "jobDescriptions": {
+    "no": "Stillingsbeskrivelser",
+    "en": "STA's job descriptions"
+  },
+  "policyPaper": {
+    "no": "Prinsipprogram",
+    "en": "STA's Policy paper"
+  },
+  "policyDocuments": {
+    "no": "Styringsdokumenter",
+    "en": "Policy documents"
+  },
+  "nso": {
+    "no": "Norsk studentorganisasjon (NSO)",
+    "en": "The National union of students in Norway"
+  },
+  "regionalMeeting": {
+    "no": "Regionsmøte",
+    "en": "Regional meeting"
+  },
+  "nationalMeeting": {
+    "no": "Landsmøte",
+    "en": "National meeting"
+  },
+  "nationalMeetingDelegation": {
+    "no": "Landsmøtedelegasjon / delegat",
+    "en": "Delegations to the national meeting / delegate"
+  },
+  "unikumBoard": {
+    "no": "Unikum-styret",
+    "en": "The Unikum-board"
+  },
+  "universityBoard": {
+    "no": "Universitetsstyret",
+    "en": "The University-board"
+  },
+  "appealsCommittee": {
+    "no": "Klagenemnda",
+    "en": "UiA's Appeals committee"
+  },
+  "electionBoard": {
+    "no": "Valgstyre",
+    "en": "UiA's Election board"
+  },
+  "employmentCommittee": {
+    "no": "Tilsettingsutvalget",
+    "en": "UiA's Employment committee"
+  },
+  "awardCommittee": {
+    "no": "Prisutvalget (Utdanningsprisen ved UiA)",
+    "en": "UiA's Award committee (Education award at UiA)"
+  },
+  "academicAffairsCommittee": {
+    "no": "Studieutvalget",
+    "en": "UiA's Academic affairs committee"
+  },
+  "learningEnvironmentCommittee": {
+    "no": "Læringsmiljøutvalget",
+    "en": "UiA's Learning environment committee"
+  },
+  "suitabilityCommittee": {
+    "no": "Skikkethetsnemnda",
+    "en": "UiA's Suitability committee"
+  },
+  "equalityInclusionCommittee": {
+    "no": "Likestillings- og integreringsutvalget",
+    "en": "The Equality and inclusion committee"
+  },
+  "sia": {
+    "no": "Studentsamskipnaden i Agder (SiA)",
+    "en": "Student Welfare Organization"
+  },
+  "velferdstinget": {
+    "no": "Velferdstinget i Agder (VT)",
+    "en": "The Welfare Council"
+  },
+  "saih": {
+    "no": "Studentenes og Akademikernes Internasjonale Hjelpefond (SAIH)",
+    "en": "Students' and Academics' International Assistance Fund (SAIH)"
+  },
+  "uia": {
+    "no": "Universitetet i Agder (UiA)",
+    "en": "University of Agder (UiA)"
+  },
+  "andWeAreVoting": {
+    "no": "\"og det stemmes\"",
+    "en": "And we are voting"
+  },
+  "theCaseIsClosed": {
+    "no": "\"saken lukkes\"",
+    "en": "The case is closed"
+  },
+  "twoThirdsMajority": {
+    "no": "2/3 flertall",
+    "en": "2/3 majority"
+  },
+  "absoluteMajority": {
+    "no": "Absolutt flertall",
+    "en": "Absolute majority"
+  },
+  "simpleMajority": {
+    "no": "Alminnelig flertall",
+    "en": "Simple majority"
+  },
+  "employersVicariousLiability": {
+    "no": "Arbeidsgiveransvar",
+    "en": "Employers' vicarious liability"
+  },
+  "abstained": {
+    "no": "Avholdende",
+    "en": "Abstained"
+  },
+  "report": {
+    "no": "Beretning",
+    "en": "Report"
+  },
+  "quorum": {
+    "no": "Beslutningsdyktighet",
+    "en": "Quorum"
+  },
+  "stipulation": {
+    "no": "Bestemmelse",
+    "en": "Stipulation"
+  },
+  "agenda": {
+    "no": "Dagsorden",
+    "en": "Agenda"
+  },
+  "subjectOfDiscussion": {
+    "no": "Diskusjonssak",
+    "en": "Subject of discussion"
+  },
+  "castingVote": {
+    "no": "Dobbeltstemme",
+    "en": "Casting vote"
+  },
+  "courseEvaluations": {
+    "no": "Emneevaluering",
+    "en": "Course evaluations"
+  },
+  "miscellaneous": {
+    "no": "Eventuelt",
+    "en": "Miscellaneous"
+  },
+  "professionalMentoring": {
+    "no": "Faglig mentor",
+    "en": "Professional mentoring"
+  },
+  "subjectArea": {
+    "no": "Fagområde",
+    "en": "Subject area"
+  },
+  "majority": {
+    "no": "Flertall",
+    "en": "Majority"
+  },
+  "rejected": {
+    "no": "Forkastet",
+    "en": "Rejected"
+  },
+  "decisionSuggestion": {
+    "no": "Forslag til vedtak",
+    "en": "Decision suggestion"
+  },
+  "rightToMakeSuggestions": {
+    "no": "Forslagsrett",
+    "en": "Right to make suggestions"
+  },
+  "defection": {
+    "no": "Fratredelse",
+    "en": "Defection"
+  },
+  "authority": {
+    "no": "Fullmakt",
+    "en": "Authority / by authority"
+  },
+  "toLetSomeoneSpeak": {
+    "no": "Gi ordet til noen",
+    "en": "To let someone speak"
+  },
+  "current": {
+    "no": "Gjeldende",
+    "en": "Current"
+  },
+  "toApprove": {
+    "no": "Godkjenne/Godkjenning",
+    "en": "To approve / approval"
+  },
+  "toHoldASpeech": {
+    "no": "Holde tale",
+    "en": "To hold a speech"
+  },
+  "hearing": {
+    "no": "Høring",
+    "en": "Hearing"
+  },
+  "summons": {
+    "no": "Innkalling",
+    "en": "Summons"
+  },
+  "toPostAnOpinion": {
+    "no": "Innlegg",
+    "en": "To post an opinion"
+  },
+  "propose": {
+    "no": "Innstille",
+    "en": "Propose"
+  },
+  "recommendations": {
+    "no": "Innstilling",
+    "en": "Recommendations"
+  },
+  "systemOfQuality": {
+    "no": "Kvalitetssystem",
+    "en": "System of Quality"
+  },
+  "lackOfConfidence": {
+    "no": "Mistillit",
+    "en": "Lack of confidence"
+  },
+  "notionForVoteOfNoConfidence": {
+    "no": "Mistillitsforslag",
+    "en": "Notion for vote of no confidence"
+  },
+  "compulsoryAttendance": {
+    "no": "Møteplikt",
+    "en": "Compulsory attendance"
+  },
+  "observerStatus": {
+    "no": "Observatørstatus",
+    "en": "Observer status"
+  },
+  "appoint": {
+    "no": "Oppnevne",
+    "en": "Appoint"
+  },
+  "rollCall": {
+    "no": "Opprop",
+    "en": "Roll-call"
+  },
+  "admission": {
+    "no": "Opptak",
+    "en": "Admission"
+  },
+  "admissionRequirements": {
+    "no": "Opptakskrav",
+    "en": "Admission requirements"
+  },
+  "moderator": {
+    "no": "Ordstyrer",
+    "en": "Moderator"
+  },
+  "subjectOfOrientation": {
+    "no": "Orienteringssak",
+    "en": "Subject of orientation"
+  },
+  "minutes": {
+    "no": "Referat",
+    "en": "Minutes"
+  },
+  "noteTaker": {
+    "no": "Referent",
+    "en": "Note taker"
+  },
+  "reply": {
+    "no": "Replikk",
+    "en": "Reply"
+  },
+  "subjectOrCase": {
+    "no": "Sak",
+    "en": "Subject/Case"
+  },
+  "caseOfficer": {
+    "no": "Saksbehandler",
+    "en": "Case officer"
+  },
+  "subjectOrder": {
+    "no": "Saksliste",
+    "en": "Subject order"
+  },
+  "informationRegardingCase": {
+    "no": "Saksopplysning",
+    "en": "Information regarding the case"
+  },
+  "representativesWithRightToVote": {
+    "no": "Stemmeberettigede",
+    "en": "Representatives with the right to vote"
+  },
+  "equalityOfVotes": {
+    "no": "Stemmelikhet",
+    "en": "Equality of votes"
+  },
+  "votingSign": {
+    "no": "Stemmeskilt",
+    "en": "Voting sign"
+  },
+  "confidentialityRequirements": {
+    "no": "Taushetsplikt",
+    "en": "Confidentiality requirements"
+  },
+  "toTheOrder": {
+    "no": "Til orden",
+    "en": "To the order"
+  },
+  "actions": {
+    "no": "Tiltak",
+    "en": "Actions"
+  },
+  "willBeEffectiveFrom": {
+    "no": "Tre i kraft",
+    "en": "Will be effective from.."
+  },
+  "prepare": {
+    "no": "Utarbeide",
+    "en": "Prepare"
+  },
+  "executive": {
+    "no": "Utøvende",
+    "en": "Executive"
+  },
+  "election": {
+    "no": "Valg",
+    "en": "Election"
+  },
+  "electionAssembly": {
+    "no": "Valgforsamling",
+    "en": "Election assembly"
+  },
+  "constituency": {
+    "no": "Valgkrets",
+    "en": "Constituency"
+  },
+  "decision": {
+    "no": "Vedtak",
+    "en": "Decision"
+  },
+  "subjectOfDecision": {
+    "no": "Vedtaksak",
+    "en": "Subject of decision"
+  },
+  "toVote": {
+    "no": "Votere/stemme",
+    "en": "To vote"
+  },
+  "formOfAssessment": {
+    "no": "Vurderingsformer",
+    "en": "Form of assessment"
+  },
+  "toPropose": {
+    "no": "Å innstille",
+    "en": "To propose"
+  }
+}

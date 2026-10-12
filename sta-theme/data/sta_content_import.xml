@@ -1,0 +1,3496 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+    <title>Studentorganisasjonen i Agder</title>
+    <link>https://stastudent.no</link>
+    <description>Studentenes stemme ved Universitetet i Agder</description>
+    <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+    <language>nb-NO</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://stastudent.no</wp:base_site_url>
+    <wp:base_blog_url>https://stastudent.no</wp:base_blog_url>
+
+    <item>
+        <title><![CDATA[Linjeforeninger]]></title>
+        <link>https://stastudent.no/linjeforeninger/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10001</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>linjeforeninger</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-linjeforeninger.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studentaktiviteter]]></title>
+        <link>https://stastudent.no/studentaktiviteter/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10002</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>studentaktiviteter</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-studentaktiviteter.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[STA-Styret]]></title>
+        <link>https://stastudent.no/sta-styret/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10003</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>sta-styret</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-sta-styret.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studentparlamentet]]></title>
+        <link>https://stastudent.no/studentparlamentet/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10004</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>studentparlamentet</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-studentparlamentet.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Råd, Styrer og Utvalg]]></title>
+        <link>https://stastudent.no/rad-styrer-og-utvalg/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10005</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>rad-styrer-og-utvalg</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-rad-styrer-og-utvalg.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Ledige verv]]></title>
+        <link>https://stastudent.no/ledige-verv/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10006</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>ledige-verv</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-ledige-verv.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Lokaler]]></title>
+        <link>https://stastudent.no/lokaler/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10007</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>lokaler</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-lokaler.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Dokumenter]]></title>
+        <link>https://stastudent.no/dokumenter/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10008</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>dokumenter</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-dokumenter.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studenttillitsvalgt]]></title>
+        <link>https://stastudent.no/for-tillitsvalgte/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10009</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>for-tillitsvalgte</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-for-tillitsvalgte.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Trygg Organisasjon]]></title>
+        <link>https://stastudent.no/trygg-organisasjon/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10010</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>trygg-organisasjon</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-trygg-organisasjon.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Irene Bredals Hederspris]]></title>
+        <link>https://stastudent.no/irene-bredals-hederspris/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10011</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>irene-bredals-hederspris</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-irene-bredals-hederspris.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Personvernserklæring]]></title>
+        <link>https://stastudent.no/personvernserklaering/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10012</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>personvernserklaering</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page-personvernserklaering.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Om Oss]]></title>
+        <link>https://stastudent.no/om-oss-2/</link>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10013</wp:post_id>
+        <wp:post_date>2026-01-01 12:00:00</wp:post_date>
+        <wp:post_name>om-oss-2</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>page</wp:post_type>
+        <wp:postmeta>
+            <wp:meta_key>_wp_page_template</wp:meta_key>
+            <wp:meta_value><![CDATA[page.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Clio Studentforening]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10014</wp:post_id>
+        <wp:post_name>clio</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-humaniora-og-pedagogikk"><![CDATA[Fakultet for Humaniora og Pedagogikk]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Clio studentforening er linjeforeningen for alle som studerer historie eller religion ved UiA. Vi ønsker å bidra til et godt faglig- og sosialt fellesskap for historie- og religionstudentene ved å arrangere quiz, foredrag, film, fester, museumsturer og annet morro.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[CLIO is the association for history students – by history students! At CLIO we try to create a positive environment for the everyday lives of history students here at the University of Agder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/clio.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[post@cliostudentene.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://cliostudentene.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/cliostudentene/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/clio_studentforening/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Rhetorica]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10015</wp:post_id>
+        <wp:post_name>rhetorica</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-humaniora-og-pedagogikk"><![CDATA[Fakultet for Humaniora og Pedagogikk]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Rhetorica, Linjeforeningen for kommunikasjonsstudenter ved Universitet i Agder. Foreningen er åpen for alle semesterregistrerte studenter ved studiene kommunikasjon årsstudium og bachelor, samt master i samfunnskommunikasjon.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2025/09/RHETORICA.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder.rhetorica@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.rhetoricauia.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/rhetoricauia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Philosophia]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10016</wp:post_id>
+        <wp:post_name>philosophia</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-humaniora-og-pedagogikk"><![CDATA[Fakultet for Humaniora og Pedagogikk]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Philosophia er linjeforeningen for filosofistudentene på UiA, campus Kristiansand. Linjeforeningens mål er å tilrettelegge for et godt studentmiljø og gi alle studenter mulighet til å delta i et filosofisk forum.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2024/03/Philosophia-logo-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[philosophia.uia@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://philosophuia.wordpress.com/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/PhilosophiaUiA]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[SOPiA]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10017</wp:post_id>
+        <wp:post_name>sopia</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-humaniora-og-pedagogikk"><![CDATA[Fakultet for Humaniora og Pedagogikk]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Vi i SOPiA ønsker å styrke det sosiale samholdet blant oss studenter på institutt for pedagogikk og på tvers av linjer på UiA gjennom faglige og sosiale arrangementer.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/01/sopia_Hovedlogo-Rod-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[Sopia.uia@hotmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/sopialinjeforening]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/sopiauia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Linguistica]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10018</wp:post_id>
+        <wp:post_name>linguistica</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-humaniora-og-pedagogikk"><![CDATA[Fakultet for Humaniora og Pedagogikk]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Linguistica er en linjeforening for alle studenter på institutt for fremmedspråk og oversettelse. Vi arrangerer speed-friending, spillekvelder, filmkvelder, poesikvelder og skriveklubb.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Linguistica is a student association for all students at the institute of foreign languages and translation. We organise speed-friending, board game nights, film nights and writing club.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2023/06/Fox-head-300x300.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[linguistica.board@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/LinguisticaUIA]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/linguisticauia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Det Gylne Snitt]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10019</wp:post_id>
+        <wp:post_name>det-gylne-snitt</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-humaniora-og-pedagogikk"><![CDATA[Fakultet for Humaniora og Pedagogikk]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Det Gylne Snitt er linjeforeningen for studentene på Film, litteratur og teater ved UiA. Vi arrangerer workshops, sosiale aktiviteter og gjesteforelesninger.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Det Gylne Snitt (The Golden Section) is a student association for all students studying Film, Literature and Theatre at the University of Agder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2023/11/Det-Gylne-Snitt-logo.jpeg-1024x1361.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[lftdetgylnesnitt@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/profile.php?id=61550559851442]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/lft_det_gylne_snitt/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[BETA]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10020</wp:post_id>
+        <wp:post_name>beta</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[BETA Engineering & Technology Association er linjeforeningen for dataingeniører ved UiA Grimstad (data, cybersikkerhet, kunstig intelligens). BETA arrangerer bedriftspresentasjoner, fagkvelder, fester og aktiviteter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[BETA Engineering & Technology Association is the student society for computer science students at UiA Grimstad. BETA organizes business presentations, extracurricular lectures, parties and activities.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/10/Beta_B-Bla-B-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[post@betauia.net]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://betauia.net/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/beta.linjeforening]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/betauia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Bjelken]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10021</wp:post_id>
+        <wp:post_name>bjelken</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Bjelken Linjeforening er en sosial forening for alle som studerer byggdesign på UiA Campus Grimstad under slagordet «Vi bygger et godt miljø!».]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/Bjelken.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[post@bjelken.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Bjelken.Linjeforening]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[LiFE]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10022</wp:post_id>
+        <wp:post_name>life</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[LiFE – Linjeforeningen i Fornybar Energi jobber for godt samhold mellom studenter på tvers av klassetrinn og bygger kontakt mellom studenter og næringsliv på Sørlandet.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/LiFE-Logo-200.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@fornybar.net]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/fornybaruia/?fref=ts]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Mekaunikum]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10023</wp:post_id>
+        <wp:post_name>mekaunikum</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Mekaunikum er linjeforeningen for mekatronikk-studenter ved UiA Grimstad, etablert i 2009. Vi arrangerer sosiale sammenkomster, bedriftsbesøk og faglige foredrag.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/Mekaunikum-.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[Leder@mekaunikum.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://mekaunikum.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[http://www.facebook.com/mekaunikum]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Tesla]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10024</wp:post_id>
+        <wp:post_name>tesla</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[TESLA er linjeforeningen for elektroingeniører ved UiA Grimstad. Vår målsetning er å skape både sosiale og faglige bindeledd mellom elektronikkstudentene.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Tesla is the student organization for electrical engineers at UiA Grimstad campus.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/12/Tesla-UiA.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[tesla.uia@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/teslauia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Pixel]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10025</wp:post_id>
+        <wp:post_name>pixel</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Pixel er Linjeforeningen for Multimedieteknologi og -Design ved UiA. Vi arrangerer sosiale minglekvelder, bedriftspresentasjoner og studentdrevne workshops.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Pixel is the Student Association for Multimedia Technology and Design at the University of Agder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/Logo_Pixel-300.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[post@uiapixel.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/uiapixel/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Biofactum]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10026</wp:post_id>
+        <wp:post_name>biofactum</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[BioFactum er linjeforeningen for de biologiske linjene på UiA Kristiansand. Skaper faglig og sosialt nettverk på tvers av biologi, bioingeniør og kystsoneøkologi.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2021/09/Biofactum-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[styret@biofactum.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://biofactum.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/biofactum]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/biofactum/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[GAME]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10027</wp:post_id>
+        <wp:post_name>game</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-teknologi-og-realfag"><![CDATA[Fakultet for Teknologi og Realfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Game Athletics Multimedia and Esports er studentorganisasjonen for e-sport-studenter ved UiA Grimstad, med sosiale arrangementer og nettverksbygging.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Game Athletics Multimedia and Esports is the student organisation for esports students at campus Grimstad.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2023/06/Logo-with-Text-Transparent-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[contact@gameuia.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.gameuia.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/GAME.UiA]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/game.uia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Politicus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10028</wp:post_id>
+        <wp:post_name>politicus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-samfunnsvitenskap"><![CDATA[Fakultet for Samfunnsvitenskap]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Politicus er linjeforeningen for bachelor- og masterstudenter i statsvitenskap ved UiA. Partipolitisk nøytral forening som arrangerer debatter, bedriftspresentasjoner og sosiale happenings.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/09/236463055_239687188157093_7417931063667118677_n.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@politicus.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/politicusuia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Prosperitas]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10029</wp:post_id>
+        <wp:post_name>prosperitas</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-samfunnsvitenskap"><![CDATA[Fakultet for Samfunnsvitenskap]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Prosperitas er linjeforeningen for sosialt arbeid ved UiA Kristiansand. Arrangerer karrieredag, faglunsjer, seminarer og sosiale aktiviteter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2024/05/prosperitas-2-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[uia.prosperitas@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Prosperitasuia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Systematicus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10030</wp:post_id>
+        <wp:post_name>systematicus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-samfunnsvitenskap"><![CDATA[Fakultet for Samfunnsvitenskap]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Systematicus er linjeforeningen for IT- og Informasjonssystemer på årsstudium, bachelor og master ved UiA Kristiansand. Holder fagdager, månedlige bedriftspresentasjoner og sosiale kvelder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/09/300375391_438017691692767_8888115665276559885_n.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@systematicus.org]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://systematicus.org/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Systematicus]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/systematicus_uia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Pangea]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10031</wp:post_id>
+        <wp:post_name>pangea</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-samfunnsvitenskap"><![CDATA[Fakultet for Samfunnsvitenskap]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Pangea er linjeforeningen for studenter innen Samfunnsplanlegging, Utviklingsstudier og Global utvikling ved UiA Kristiansand.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Pangea is a student society for students studying Global Development Studies and social planning at UiA.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/pangea-300.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[pangealinjeforening@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/pangealinjeforening/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/uiapangea/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Evimera]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10032</wp:post_id>
+        <wp:post_name>evimera</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-samfunnsvitenskap"><![CDATA[Fakultet for Samfunnsvitenskap]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Evimería er linjeforeningen for studenter på master i barnevern ved UiA. Arrangerer «fag og pizza», foredrag, aktivitetsdager og julebord.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Evimeria is the student organization of all students enrolled in the master's program of Child Welfare services at UiA.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2023/05/thumbnail_Logo.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[evimeria.uia@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/profile.php?id=100075982054902]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/evimeriauia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Curriculus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10033</wp:post_id>
+        <wp:post_name>curriculus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="avdeling-for-l-rerutdanning"><![CDATA[Avdeling for Lærerutdanning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Curriculus er linjeforeningen for studenter ved lektorutdanning trinn 8-13 ved UiA Kristiansand. Skaper samhold på tvers av fag og kull, og har ansvar for fadderordningen.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Curriculus is a student association for students in teacher education (grades 8-13) at UiA campus Kristiansand.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/curriculus2.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[curriculus.linjeforening@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/curriculusuia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/Curriculus/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Primericus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10034</wp:post_id>
+        <wp:post_name>primericus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="avdeling-for-l-rerutdanning"><![CDATA[Avdeling for Lærerutdanning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Primericus er den politisk uavhengige linjeforeningen for grunnskolelærerstudenter (GLU 1-7 og 5-10) ved UiA Kristiansand.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/12/Primericus-logo-uten-bakgrunn.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[primericus@uia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Primericus]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/primericus/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Emporium]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10035</wp:post_id>
+        <wp:post_name>emporium</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="handelsh-yskolen-ved-uia"><![CDATA[Handelshøyskolen ved UiA]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Emporium er linjeforeningen for studenter på bachelor i Markedsføring og Ledelse og master i Management and Business Development ved UiA.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Emporium is the student association for Marketing and Management students at the University of Agder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/emporium-1024x982.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@emporiumuia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Emporiumlinjeforening]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/emporiumuia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Indøk Sør]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10036</wp:post_id>
+        <wp:post_name>indok-sor</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="handelsh-yskolen-ved-uia"><![CDATA[Handelshøyskolen ved UiA]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Indøk Sør er linjeforeningen for sivilingeniørstudiet i Industriell Økonomi og Teknologiledelse ved UiA Grimstad, etablert våren 2004.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/12/33323821_10155384821257401_1960306112792100864_n.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@indoksor.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://indoksor.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/indoksor]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/indoksoruia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Justitius]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10037</wp:post_id>
+        <wp:post_name>justitius</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="handelsh-yskolen-ved-uia"><![CDATA[Handelshøyskolen ved UiA]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Justitius er linjeforeningen for rettsvitenskapsstudentene ved UiA, etablert i 2011. Arrangerer fagdager, manuduksjoner og jobbsøkerkurs i samarbeid med næringslivet.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/04/JustitiusLogoDark-1024x725.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@justitius.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[http://justitius.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/justitius.uia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/justitiusuia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Mercurius]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10038</wp:post_id>
+        <wp:post_name>mercurius</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="handelsh-yskolen-ved-uia"><![CDATA[Handelshøyskolen ved UiA]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Mercurius er linjeforeningen for økonomistudentene ved Handelshøyskolen ved UiA Kristiansand. Arrangerer Norge på Nytt-konferansen, Karrieredagen og fadderukene. Kåret til landets beste studentforening for økonomistudenter i 2008.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/mercurius.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@mercurius.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.mercurius.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/mercurius.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/mercuriusstudentforening/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Curatus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10039</wp:post_id>
+        <wp:post_name>curatus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-helse-og-idrettsvitenskap"><![CDATA[Fakultet for Helse- og Idrettsvitenskap]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Curatus er linjeforeningen for sykepleiestudenter ved UiA Kristiansand og Grimstad. Skaper samhold med fagdager, fester og tverrfaglig samarbeid.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/09/logo-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[curatus.uia@hotmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/curatusuia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Trisalus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10040</wp:post_id>
+        <wp:post_name>trisalus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-helse-og-idrettsvitenskap"><![CDATA[Fakultet for Helse- og Idrettsvitenskap]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Trisalus er linjeforeningen for studenter ved Institutt for Folkehelse, Idrett og Ernæring ved UiA. Inkluderer også personlig trener og friluftslivstudenter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/Trisalus.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[kontakt@trisalus.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[http://www.trisalus.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/linjeforeningentrisalus]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/trisalus/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Sonus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10041</wp:post_id>
+        <wp:post_name>sonus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-kunstfag"><![CDATA[Fakultet for Kunstfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Sonus linjeforening er foreningen for studenter tilhørende Institutt for rytmisk musikk og Institutt for klassisk musikk og musikkpedagogikk ved Fakultet for kunstfag.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2020/04/Logo-Sonus-tinified.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[sonuslinjeforening@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Sonuslinjeforening]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Agora]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10042</wp:post_id>
+        <wp:post_name>agora</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-kunstfag"><![CDATA[Fakultet for Kunstfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Agora er linjeforeningen for Music Business and Management ved UiA. Arrangerer konserter, faglige og sosiale eventer med fokus på musikkbransjen.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/06/AGORA-LOGO-sort-1024x966.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[agora.association.uia@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Agoraassociation]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Apollon]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10043</wp:post_id>
+        <wp:post_name>apollon</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_association</wp:post_type>
+        <category domain="sta_faculty" nicename="fakultet-for-kunstfag"><![CDATA[Fakultet for Kunstfag]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Apollon samler studenter på visuelle og sceniske fag ved Fakultet for kunstfag gjennom sosiale aktiviteter, workshops og gjesteforelesninger.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_logo_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/06/apollon-logo.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Femmes Spillopus ad Libitum]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10044</wp:post_id>
+        <wp:post_name>femmes-spillopus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="musikk-dans-og-drama"><![CDATA[Musikk, dans og drama]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Femmes Spillopus ad Libitum (til daglig kalt Spillopus) er et av to studinekor ved UiA Kristiansand, dannet i 1988. Sangglede, latter og vennskap er vårt hovedfokus!]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Femmes Spillopus ad Libitum (commonly called Spillopus) is one of two female student choirs at UiA Kristiansand, founded in 1988. Singing joy, laughter, and friendship are our main focus!]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/ny-nøkkel-rød-og-svart-3.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[spillopus@hotmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Spillopus/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/femmesspillopus/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Peripeti Studentforening]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10045</wp:post_id>
+        <wp:post_name>peripeti</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="musikk-dans-og-drama"><![CDATA[Musikk, dans og drama]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Peripeti studentforening er en studentaktivitet som fremmer teater av, med og for studenter ved UiA. Vi er en sosial arena for alle som ønsker å drive med teater og visuelle fag. Helt gratis å bli medlem.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Peripeti student association promotes theatre by, with, and for students at UiA. We provide a social arena for anyone interested in theatre and visual arts. Free to join.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2020/04/Peripeti-logo-tinified.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[peripetiuia@hotmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/peripetiuia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Blandakoret Bondebrølet]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10046</wp:post_id>
+        <wp:post_name>bondebrolet</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="musikk-dans-og-drama"><![CDATA[Musikk, dans og drama]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Blandakoret Bondebrølet er et kor sammensatt av sangglade studenter ved UiA. Vi byr på god stemning, sangglede, fest og fellesskap på tvers av aldre, kjønn og studier. Stiftet i november 1993.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Blandakoret Bondebrølet is a mixed choir of song-loving students at UiA offering great atmosphere, joyful singing, parties, and community across disciplines. Founded November 1993.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/12/bondebrolet-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[guttekoretbrolet@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/blandakoretbondebrolet]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/blandakoretbondebrolet/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Spadser & Blæse-Ensembelet]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10047</wp:post_id>
+        <wp:post_name>blaesen</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="musikk-dans-og-drama"><![CDATA[Musikk, dans og drama]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Christianssands stolthet siden 1974! Unikt studentorkester med både en spillende divisjon og en populær ikke-spillende divisjon som lager show, ablegøyer og god stemning på campus.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Christianssand's pride since 1974! A unique student orchestra with both a playing division and a popular non-playing division creating shows and lively spirits on campus.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/250px-Blæselogo.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[blaesen74@hotmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[http://blaesen.org/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Bleasen/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/blaesen74/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studinekoret Lady klukk]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10048</wp:post_id>
+        <wp:post_name>lady-klukk</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="musikk-dans-og-drama"><![CDATA[Musikk, dans og drama]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Studinekoret Lady Klukk er et av Norges eldste studinekor og «UiAs fremste kvinde», stiftet i 1976. Ca. 25 sangere som synger 4-stemt a cappella og reiser på korhelger over hele landet.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Studinekoret Lady Klukk is one of Norway's oldest female student choirs, established in 1976. Around 25 singers performing 4-part a cappella.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2024/05/Lady-Klukk-logo-1024x1065.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[ladyklukk1976@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/ladyklukk]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/ladyklukk/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Mandschoiret Quantum Oellarus Op & Frem]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10049</wp:post_id>
+        <wp:post_name>quantum</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="musikk-dans-og-drama"><![CDATA[Musikk, dans og drama]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Mandschoiret Quantum Oellarus Op & Frem er et av Norges eldste student-mannskor, stiftet i 1968. De har i over 50 år spredt mannskorsang og glede i Kristiansand og resten av landet.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Mandschoiret Quantum Oellarus Op & Frem is one of Norway's oldest male student choirs, founded in 1968, spreading male choral singing and joy for over 50 years.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/10/Quantum-ny.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[mannskoretquantum@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/MandschoiretQuantum/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/mandschoiretquantum/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Ungswingsør]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10050</wp:post_id>
+        <wp:post_name>ungswingsor</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="musikk-dans-og-drama"><![CDATA[Musikk, dans og drama]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Ungswingsør er en studentforening ved Universitetet i Agder med fokus på å fremme swingdans og sosialt samvær blant unge og studenter. Vi arrangerer ukentlige dansekvelder og kurs for alle nivåer.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Ungswingsør is a student association at UiA promoting swing dance and social gatherings among young people and students with weekly dance nights and workshops.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/02/Ungswingsor_Lang-05-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[ungswingsor@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/ungswingsor]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/ungswingsor/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Kristiansand Studentklatring]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10051</wp:post_id>
+        <wp:post_name>ksk</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Kristiansand Studentklatring er et lavterskeltilbud for alle studenter i Kristiansand som har lyst til å klatre, uansett om du er helt fersk eller har klatret i flere år.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Kristiansand Student Climbing is a welcoming club for all students in Kristiansand who want to climb, whether you are completely new or have climbed for years.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2023/08/KSK-logo-1024x1024.jpeg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[klatring@ksisport.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/kristiansandstudentklatring/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/kristiansandstudentklatring/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Conventus Croquet]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10052</wp:post_id>
+        <wp:post_name>conventus-croquet</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Et selskap for fremgangsrike, engasjerte, unge menn og kvinner i Agder. Conventus Croquet forener sportslig krocket med høytidelige tradisjoner, sosiale sammenkomster og godt humør.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[A society uniting sporty croquet with refined traditions, social gatherings, and camaraderie among students in Agder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/Conventus.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[styret.conventuscroquet@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/ConventusCroquet/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/conventuscroquet/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Friluftsgruppa Faunus - Grimstad]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10053</wp:post_id>
+        <wp:post_name>faunus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Friluftsgruppa Faunus er en studentforening for deg som er glad i friluftsliv og turer i naturen. Vi arrangerer hengekøyeturer, toppturer, bålkvelder, kanoturer og hytteturer i Grimstad og omegn.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Faunus Outdoor Group is a student association in Grimstad organizing hammock trips, mountain hikes, bonfires, canoeing, and cabin getaways.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2025/12/Artboard-1-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/FriluftsgruppaFaunus/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/friluftsgruppafaunus/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[UiA Lacrosse]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10054</wp:post_id>
+        <wp:post_name>uia-lacrosse</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Lacrosse er en studentorganisasjon som ble dannet i 2010. Laget består av UiA Bare Knuckles (herrelag) og UiA Harpies (damelag). Begge lagene trener ukentlig og deltar i NM og student-mesterskap.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Lacrosse was founded in 2010 and comprises UiA Bare Knuckles (men) and UiA Harpies (women), competing nationally and training weekly.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/Lacrosse-logo.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[uialacrosse@hotmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/UiALacrosse/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/uialacrosse/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Kristiansand Studentidrettslag (KSI)]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10055</wp:post_id>
+        <wp:post_name>ksi</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Kristiansand Studentidrettslag (KSI) er et idrettslag drevet av og for studenter i Kristiansand. KSI tilbyr et bredt utvalg av idretter: fotball, volleyball, håndball, klatring, basketball og mye mer.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Kristiansand Student Sports Club (KSI) is run by and for students in Kristiansand, offering football, volleyball, handball, climbing, basketball, and more.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/ksi2.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://ksisport.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/kristiansandstudentidrettslag/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/ksisport/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Grimstad Studentidrettslag (GSI)]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10056</wp:post_id>
+        <wp:post_name>gsi</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Grimstad Studentidrettslag (GSI) er et idrettslag drevet av studenter for studenter ved UiA Campus Grimstad. Tilbyr mange forskjellige idrettsgrener for alle nivåer.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Grimstad Student Sports Club (GSI) is run by students for students at UiA Campus Grimstad, providing various sports activities at all skill levels.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/304888394_511317774332286_4506952659596889629_n-1024x1012.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[post@gsisport.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://gsisport.com/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/gsisport/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/gsisport/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[UiA konkurranse-instinkt]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10057</wp:post_id>
+        <wp:post_name>uia-konkurranse-instinkt</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Vi på konkurranse-instinkt er et studentlag som elsker å konkurrere i alt fra spill, quiz og stafetter til morsomme utfordringer. En super arena for å kjenne på vinnerinstinktet sammen med gode venner!]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Competition Instinct is a student club that loves competing in everything from games and quizzes to relays and fun challenges.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/04/uia-kinstint.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[uia.kinstinkt@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[UiA Dart]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10058</wp:post_id>
+        <wp:post_name>uia-dart</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="sport-og-friluft"><![CDATA[Sport og friluft]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Dart er studentforeningen for alle som ønsker å prøve en presisjonssport med lav terskel og høy trivsel! Vi tilbyr ukentlige treninger og sosiale turneringer for både nybegynnere og erfarne spillere.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Dart is the student club for precision darts with high enjoyment and low barrier to entry, offering weekly training and tournaments.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2025/01/2111-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[Uiadart24@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/uiadart/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[AUF-studentene UiA]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10059</wp:post_id>
+        <wp:post_name>auf-studentene</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="politisk-tilknytning"><![CDATA[Politisk tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[AUF-studentene UiA er et studentlag som arbeider med politiske saker som angår studenter ved Universitetet i Agder. Vi kjemper for en mer rettferdig og solidarisk studenthverdag.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[AUF Students UiA is a political student group working on student welfare and solidarity issues at the University of Agder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/AUF-studentene-UiA-ny-logo-300.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[aufstudentene@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://auf.no/fylkeslag/agder/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/aufstudenteneuia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Høyres Studenterforening i Agder]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10060</wp:post_id>
+        <wp:post_name>hoyres-studenter</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="politisk-tilknytning"><![CDATA[Politisk tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Høyres Studenterforening i Agder (HSFA) er en konservativ organisasjon som arbeider for studentenes rettigheter, god utdanningskvalitet og mer frihet for den enkelte.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Conservative Students in Agder works for student rights, high educational standards, and individual academic freedom.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/312053921_485971110233568_6449723232506143926_n.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[agder@hoyrestudent.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://ungehoyre.no/unge-hoyre-der-du-bor/hoyres-studenter/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/HSagder]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Sosialistiske Studenter i Agder]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10061</wp:post_id>
+        <wp:post_name>sosialistiske-studenter</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="politisk-tilknytning"><![CDATA[Politisk tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Sosialistiske Studenter i Agder er en sosialistisk studentorganisasjon knyttet til Sosialistisk Venstreparti og SU. Vi kjemper for gratis utdanning, studentboliger og klimarettferdighet.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Socialist Students in Agder fights for free higher education, affordable student housing, and climate justice at UiA.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2024/01/SSiA-Logo-1024x1248.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[ksv-student@sv.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/SosialistiskeStudenteriAgder]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/uia.sosialistiske.studenter/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[YATA Kristiansand]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10062</wp:post_id>
+        <wp:post_name>yata-kristiansand</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="politisk-tilknytning"><![CDATA[Politisk tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[YATA Kristiansand er en partipolitisk uavhengig forening for studenter og unge yrkesaktive med interesse for utenriks-, forsvars- og sikkerhetspolitikk. Vi arrangerer debatter, foredrag og studieturer.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Youth Atlantic Treaty Association (YATA) Kristiansand is an independent forum for foreign policy, security, and defense affairs.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2025/11/yata.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[Kristiansand@yata.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://yata.no/kristiansand-2/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/yatakristiansand/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studentlaget Grimstad]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10063</wp:post_id>
+        <wp:post_name>studentlaget-grimstad</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="religi-s-tilknytning"><![CDATA[Religiøs tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Studentlaget Grimstad er et kristent fellesskap for studenter på campus Grimstad tilknyttet Norges Kristelige Student- og Skoleungdomslag (Laget). Møter, bibelgrupper og sosial hygge.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Studentlaget Grimstad is a Christian student fellowship at Campus Grimstad affiliated with Laget (NKSS).]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/306229408_459247652912904_2949217427538130724_n.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://nkss.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/lagetgrimstad]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/studentlagetgrimstad/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Kristiansand Kristelige Studentlag (KKS)]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10064</wp:post_id>
+        <wp:post_name>kks</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="religi-s-tilknytning"><![CDATA[Religiøs tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Kristiansand kristelige Studentlag (KKS) er den lokale studentgrenen av Laget (NKSS) i Kristiansand. Vi samler studenter til ukentlige samlinger, lovsang, undervisning og fellesskap.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Kristiansand Christian Student Association (KKS) gathers students weekly for fellowship, worship, teaching, and shared meals.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/306229408_459247652912904_2949217427538130724_n.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[studentlaget_krsand@hotmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://nkss.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/LagetKKS/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[StudentKRIK - Kristiansand]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10065</wp:post_id>
+        <wp:post_name>studentkrik-kristiansand</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="religi-s-tilknytning"><![CDATA[Religiøs tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[StudentKRIK Kristiansand er den største kristne studentorganisasjonen i Kristiansand. Vi kombinerer idrettsglede med trosglede og livsglede. Hovedtrening i Odderøyhallen fredager.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[StudentKRIK Kristiansand combines athletic fun with Christian faith and fellowship, training every Friday in Odderøyhallen.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/308125132_459246419573254_1148672927191097883_n-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[studentkrikkristiansand@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[http://studentkrik.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/StudentKRIKKristiansand/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/studentkrikkristiansand/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[StudentKRIK - Grimstad]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10066</wp:post_id>
+        <wp:post_name>studentkrik-grimstad</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="religi-s-tilknytning"><![CDATA[Religiøs tilknytning]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[StudentKRIK Grimstad har faste treninger tirsdager og lørdager med varierte idretter og aktiviteter. Et åpent og inkluderende kristent idrettsmiljø for alle studenter i Grimstad.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[StudentKRIK Grimstad hosts trainings on Tuesdays and Saturdays with varied sports in an open Christian community.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/307204788_470016958485920_8871946733472869731_n-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[studentkrikgrimstad@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/StudentKrikGrimstad/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Amnesty-studentene Kristiansand]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10067</wp:post_id>
+        <wp:post_name>amnesty-kristiansand</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="internasjonalt"><![CDATA[Internasjonalt]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Amnestys studentgruppe ved Universitetet i Agder består av studenter som engasjerer seg for menneskerettigheter lokalt og globalt gjennom informasjonsarbeid, underskriftskampanjer og debatter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Amnesty Students UiA works for human rights locally and globally through awareness campaigns, petitions, and debates.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/amnesty-international.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[amnesty.uia@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/AmnestystudenteneKristiansand]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/Amnesty_uia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Erasmus Student Network (ESN Agder)]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10068</wp:post_id>
+        <wp:post_name>esn-agder</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="internasjonalt"><![CDATA[Internasjonalt]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Erasmus Student Network (ESN Agder) arbeider for å integrere internasjonale studenter ved UiA og skape et flerkulturelt miljø med sosiale arrangementer, turer og aktiviteter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Erasmus Student Network (ESN Agder) supports international exchange students at UiA, organizing multicultural trips, events, and buddy programs.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/271802166_4861808290545867_1117096352070922873_n.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[http://www.agder.esn.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/esnuia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[ELSA Kristiansand]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10069</wp:post_id>
+        <wp:post_name>elsa-kristiansand</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="internasjonalt"><![CDATA[Internasjonalt]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[ELSA Kristiansand (The European Law Students' Association) er en uavhengig forening for jusstudenter ved UiA, som tilbyr faglige arrangementer, prosedyrekonkurranser og internasjonale utvekslingsmuligheter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[ELSA Kristiansand is the European Law Students' Association at UiA, providing academic seminars, moot courts, and international student traineeships.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2025/11/images.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[president.kristiansand@no.elsa.org]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/groups/1692835271557976/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/elsakrsand/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studentenes og Akademikernes Internasjonale Hjelpefond - Kristiansand]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10070</wp:post_id>
+        <wp:post_name>saih-kristiansand</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="internasjonalt"><![CDATA[Internasjonalt]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[SAIH er en solidaritetsorganisasjon for studenter og akademikere. Vi jobber for akademisk frihet og retten til utdanning globalt, og setter søkelys på bistand, ulikhet og utviklingspolitikk.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[SAIH Kristiansand is a student solidarity organization advocating for academic freedom and the universal right to higher education.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/logo-saih2.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[saihkristiansand@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[http://saih.no/kristiansand]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/SAIHKristiansand/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studentavisen Unikum]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10071</wp:post_id>
+        <wp:post_name>unikum</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="media-og-kommunikasjon"><![CDATA[Media og kommunikasjon]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Unikum er UiAs uavhengige studentavis som dekker studentlivet, campusnyheter, kultur, debatt og akademia i Kristiansand og Grimstad. Publisert både på papir og nett.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Unikum is the independent student newspaper at UiA, covering student culture, investigative journalism, politics, and reviews.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/244509283_10159248022284336_7217119502942373162_n-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[redaktor@unikumnett.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.unikumnett.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/studentavisenUnikum]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/unikumnett/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studentmållaget i Agder]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10072</wp:post_id>
+        <wp:post_name>studentmallaget</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="media-og-kommunikasjon"><![CDATA[Media og kommunikasjon]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Studentmållaget i Agder arbeider for at alle studenter fritt skal kunne nytte nynorsk og dialekten sin i akademia og i studenthverdagen. Sosiale samlinger og språkpolitiske debatter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Studentmållaget i Agder promotes the use of Nynorsk and Norwegian dialects in academic settings and student life.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2020/04/Studentmållaget-i-agder-2.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://malungdom.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/smiagder/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Børsgruppen UiA]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10073</wp:post_id>
+        <wp:post_name>borsgruppen-uia</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Børsgruppen UiA er en studentorganisasjon for børs- og finansinteresserte ved Universitetet i Agder. Vi forvalter en fiktiv aksjeportefølje, holder aksjekvelder og inviterer næringslivet.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Børsgruppen UiA is a student investment association managing portfolio simulations, stock analysis workshops, and finance company visits.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/01/logo-børsgruppen.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[borsgruppen.uia@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/BorsgruppenUia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Ingeniører Uten Grenser UiA og Sørlandet]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10074</wp:post_id>
+        <wp:post_name>iug-sorlandet</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[IUG Norge fremmer ingeniørkompetanse og humanitær teknologi i bistandsprosjekter og bærekraftig utvikling internasjonalt. UiA-studenter deltar i workshops og faglige oppdrag.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Engineers Without Borders UiA applies humanitarian engineering knowledge to international sustainable development projects.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/309653876_471471208356535_2637784825554589401_n.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[sorlandet@iug.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://iug.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/iuguiasorlandet/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Motor UiA]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10075</wp:post_id>
+        <wp:post_name>motor-uia</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Motor UiA er studentforeningen for motor- og bilinteresserte studenter ved Universitetet i Agder. Vi møtes til mekkekvelder, banedager, biltreff og teknisk erfaringsutveksling.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Motor UiA is the student organization for automotive enthusiasts at UiA, organizing track events, garage meetups, and car shows.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/294860518_457875889676682_7486552445466326527_n-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[post.motoruia@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/motoruia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Studentjuristen]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10076</wp:post_id>
+        <wp:post_name>studentjuristen</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Studentjuristen er et gratis rettshjelpstiltak drevet av jusstudenter ved Universitetet i Agder. Vi yter gratis juridisk rådgivning innen blant annet husleierett, pengekrav og arbeidsrett.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Studentjuristen offers free legal advice and assistance provided by law students at UiA to the general public and students.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2020/09/17992309_1119461311517529_8133344110061779694_n.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[kontakt@studentjuristen.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://studentjuristen.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/studentjuristen]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/studentjuristen/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Lærerstudentene ved UiA - Kristiansand]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10077</wp:post_id>
+        <wp:post_name>laererstudentene</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Lærerstudentene ved UiA (Pedagogstudentene) jobber for lærer-, lektor- og barnehagelærerstudenters faglige og sosiale interesser og arrangerer kurs og faglige foredrag.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Pedagogstudentene Kristiansand advocates for teacher and educator students with workshops, seminars, and social gatherings.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2025/06/1000071893-1024x1024.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[kristiansand@laererstudentene.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.pedagogstudentene.no/kristiansand]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/PS.Kristiansand/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Start Agder]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10078</wp:post_id>
+        <wp:post_name>start-agder</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Start UiA / Start Agder er en studentorganisasjon som fremmer innovasjon, entreprenørskap og nyskaping blant studenter gjennom foredrag, case-konkurranser og gründer-events.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Start UiA fosters innovation and student entrepreneurship in Southern Norway with hackathons, workshops, and startup networking.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/272365444_10159293733495873_1756753719517858029_n-1024x1024.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@startuia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.startuia.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/startuia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Øl, Viser og Dram]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10079</wp:post_id>
+        <wp:post_name>ol-viser-og-dram</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Øl, Viser & Dram er en sosial og tradisjonsrik studentforening i Grimstad som samles til sang, godt humør, historiefortelling og tradisjonsrike studentvisekvelder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Øl, Viser & Dram is a traditional social student association in Grimstad celebrating student culture and festive songs.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2019/10/Øl-viser-og-dram-1024x986.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.ovd.no/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/olviserogdram]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/ovdgrimstad/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Econa - av og for økonomer]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10080</wp:post_id>
+        <wp:post_name>econa-student</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Econas studentgruppe ved UiA tilbyr et bredt spekter av faglige arrangementer, bedriftspresentasjoner, CV-kurs og sosiale treff for økonomistudenter.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Econa UiA organizes career days, corporate presentations, networking, and CV workshops for business and economics students.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/304776647_444588811041040_784477969568208934_n.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[patrick@econa.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[https://nye.econa.no/student/studentgrupper/handelshoyskolen-uia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/Econauia]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.instagram.com/econauia/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Skeive Studenter Agder]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10081</wp:post_id>
+        <wp:post_name>skeive-studenter</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Skeive Studenter Agder er en inkluderende sosial arena for alle skeive (LGBTIQ+) studenter og støttespillere ved UiA. Vi arrangerer brettspillkvelder, kafétreff og sosiale turer.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Queer Students Agder provides a safe, welcoming social community for LGBTQ+ students and allies at the University of Agder.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2022/11/309262515_404799885148531_4661470037186413702_n.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[skeivestudenteragder@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/skeivestudenteragder/]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[UiA Case Club]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10082</wp:post_id>
+        <wp:post_name>uia-case-club</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Case Club startet opp i mai 2024 og er en studentaktivitet for studenter som ønsker å løse reelle næringslivscaser, utvikle analytiske ferdigheter og delta i nasjonale case-konkurranser.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Case Club was founded in May 2024 to train students in real-world business case solving and competitive analysis.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2024/10/UiACC-Logo-hvit-bakgrunn-rod-skrift.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[leder@uiacaseclub.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[UiA Tabletop - Kristiansand]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10083</wp:post_id>
+        <wp:post_name>uia-tabletop</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_activity</wp:post_type>
+        <category domain="sta_activity_category" nicename="annet"><![CDATA[Annet]]></category>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_no</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Tabletop er en brettspillforening som holder til på UiA i Kristiansand. Vi samles ukentlig for å spille brettspill, rollespill (D&D), Warhammer og kortspill i et uformelt og hyggelig miljø.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_desc_en</wp:meta_key>
+            <wp:meta_value><![CDATA[UiA Tabletop is a board gaming association at UiA Kristiansand meeting weekly for modern board games, tabletop RPGs, and card games.]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2025/10/uia-tabletop-logo.png]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[uiatabletop@gmail.com]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_website</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_facebook</wp:meta_key>
+            <wp:meta_value><![CDATA[https://www.facebook.com/groups/1165508338368225]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_instagram</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_discord</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Karen Elise Stenersen]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10084</wp:post_id>
+        <wp:post_name>karen-elise-stenersen</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_board_member</wp:post_type>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Studentleder]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Student President]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[staleder@uia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_phone</wp:meta_key>
+            <wp:meta_value><![CDATA[+47 923 51 334]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_campus</wp:meta_key>
+            <wp:meta_value><![CDATA[Felles]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/08/Karen-Smil-1024x683.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Daglig leder, pressekontakt og representasjon]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Manager, press contact and representation]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Sondre Jørgensen Evjen]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10085</wp:post_id>
+        <wp:post_name>sondre-jorgensen-evjen</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_board_member</wp:post_type>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Nestleder]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Deputy President]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[stanestleder@uia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_phone</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_campus</wp:meta_key>
+            <wp:meta_value><![CDATA[Felles]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/08/Sondre-Smil-1024x683.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Leders stedfortreder, kommunikasjonsansvarlig]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Deputy leader, communications officer]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Felix Fabricius Knutsen]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10086</wp:post_id>
+        <wp:post_name>felix-fabricius-knutsen</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_board_member</wp:post_type>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Læringsmiljøpolitisk ansvarlig]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Officer of the learning environment]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[stalaringsmiljo@uia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_phone</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_campus</wp:meta_key>
+            <wp:meta_value><![CDATA[Felles]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/08/Felix-Smil-1024x683.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Læringsmiljøpolitikk, kontaktperson for tillitsvalgte, bærekraft og miljø]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Learning environment policy, contact person for student representatives, sustainability and environment]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Tørres Andreas Båshus]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10087</wp:post_id>
+        <wp:post_name>torres-andreas-bashus</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_board_member</wp:post_type>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Utdanningspolitisk ansvarlig]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Education policy officer]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[stafag@uia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_phone</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_campus</wp:meta_key>
+            <wp:meta_value><![CDATA[Felles]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/08/Torres-Smil-1024x683.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Utdanning- og forskningspolitikk, kontaktperson for RSU, utvikling av kvalitetssystemet]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Education and research policy, contact person for RSU, development of quality system]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Oda Isnes Tyse]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10088</wp:post_id>
+        <wp:post_name>oda-isnes-tyse</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_board_member</wp:post_type>
+        <wp:menu_order>4</wp:menu_order>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Mangfoldspolitisk ansvarlig]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Officer of diversity]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[stamangfold@uia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_phone</wp:meta_key>
+            <wp:meta_value><![CDATA[]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_campus</wp:meta_key>
+            <wp:meta_value><![CDATA[Felles]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/08/Oda-Smil-1024x683.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Internasjonalisering, likestilling, språk og mangfold]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Internationalisation, equality, language and diversity]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+    <item>
+        <title><![CDATA[Mia Sandøy]]></title>
+        <pubDate>Mon, 12 Oct 2026 15:38:08 GMT</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>10089</wp:post_id>
+        <wp:post_name>mia-sandoy</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_type>sta_board_member</wp:post_type>
+        <wp:menu_order>5</wp:menu_order>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Sekretariatet]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_role_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Consultant]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_email</wp:meta_key>
+            <wp:meta_value><![CDATA[sta@uia.no]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_phone</wp:meta_key>
+            <wp:meta_value><![CDATA[+47 381 42 010]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_campus</wp:meta_key>
+            <wp:meta_value><![CDATA[Felles]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_image_url</wp:meta_key>
+            <wp:meta_value><![CDATA[https://stastudent.no/wp-content/uploads/2026/08/a0da7b30-a50f-4dd3-9b89-6ec47da958aa.jpg]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_no</wp:meta_key>
+            <wp:meta_value><![CDATA[Alt sekretærarbeid, HMS-leder, daglig økonomiansvar og resepsjonsarbeid]]></wp:meta_value>
+        </wp:postmeta>
+        <wp:postmeta>
+            <wp:meta_key>_sta_responsibilities_en</wp:meta_key>
+            <wp:meta_value><![CDATA[Secretarial works, head of HSE, daily accounts and desk work]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+  
+</channel>
+</rss>

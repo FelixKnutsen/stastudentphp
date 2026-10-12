@@ -1,0 +1,94 @@
+[
+  {
+    "id": "karen-elise-stenersen",
+    "name": "Karen Elise Stenersen",
+    "role": "Studentleder",
+    "roleEn": "Student President",
+    "email": "staleder@uia.no",
+    "phone": "+47 923 51 334",
+    "campus": "Felles",
+    "imageUrl": "https://stastudent.no/wp-content/uploads/2026/08/Karen-Smil-1024x683.jpg",
+    "responsibilities": [
+      "Daglig leder, pressekontakt og representasjon"
+    ],
+    "responsibilitiesEn": [
+      "Manager, press contact and representation"
+    ]
+  },
+  {
+    "id": "sondre-jorgensen-evjen",
+    "name": "Sondre Jørgensen Evjen",
+    "role": "Nestleder",
+    "roleEn": "Deputy President",
+    "email": "stanestleder@uia.no",
+    "campus": "Felles",
+    "imageUrl": "https://stastudent.no/wp-content/uploads/2026/08/Sondre-Smil-1024x683.jpg",
+    "responsibilities": [
+      "Leders stedfortreder, kommunikasjonsansvarlig"
+    ],
+    "responsibilitiesEn": [
+      "Deputy leader, communications officer"
+    ]
+  },
+  {
+    "id": "felix-fabricius-knutsen",
+    "name": "Felix Fabricius Knutsen",
+    "role": "Læringsmiljøpolitisk ansvarlig",
+    "roleEn": "Officer of the learning environment",
+    "email": "stalaringsmiljo@uia.no",
+    "campus": "Felles",
+    "imageUrl": "https://stastudent.no/wp-content/uploads/2026/08/Felix-Smil-1024x683.jpg",
+    "responsibilities": [
+      "Læringsmiljøpolitikk, kontaktperson for tillitsvalgte, bærekraft og miljø"
+    ],
+    "responsibilitiesEn": [
+      "Learning environment policy, contact person for student representatives, sustainability and environment"
+    ]
+  },
+  {
+    "id": "torres-andreas-bashus",
+    "name": "Tørres Andreas Båshus",
+    "role": "Utdanningspolitisk ansvarlig",
+    "roleEn": "Education policy officer",
+    "email": "stafag@uia.no",
+    "campus": "Felles",
+    "imageUrl": "https://stastudent.no/wp-content/uploads/2026/08/Torres-Smil-1024x683.jpg",
+    "responsibilities": [
+      "Utdanning- og forskningspolitikk, kontaktperson for RSU, utvikling av kvalitetssystemet"
+    ],
+    "responsibilitiesEn": [
+      "Education and research policy, contact person for RSU, development of quality system"
+    ]
+  },
+  {
+    "id": "oda-isnes-tyse",
+    "name": "Oda Isnes Tyse",
+    "role": "Mangfoldspolitisk ansvarlig",
+    "roleEn": "Officer of diversity",
+    "email": "stamangfold@uia.no",
+    "campus": "Felles",
+    "imageUrl": "https://stastudent.no/wp-content/uploads/2026/08/Oda-Smil-1024x683.jpg",
+    "responsibilities": [
+      "Internasjonalisering, likestilling, språk og mangfold"
+    ],
+    "responsibilitiesEn": [
+      "Internationalisation, equality, language and diversity"
+    ]
+  },
+  {
+    "id": "mia-sandoy",
+    "name": "Mia Sandøy",
+    "role": "Sekretariatet",
+    "roleEn": "Consultant",
+    "email": "sta@uia.no",
+    "phone": "+47 381 42 010",
+    "campus": "Felles",
+    "imageUrl": "https://stastudent.no/wp-content/uploads/2026/08/a0da7b30-a50f-4dd3-9b89-6ec47da958aa.jpg",
+    "responsibilities": [
+      "Alt sekretærarbeid, HMS-leder, daglig økonomiansvar og resepsjonsarbeid"
+    ],
+    "responsibilitiesEn": [
+      "Secretarial works, head of HSE, daily accounts and desk work"
+    ]
+  }
+]

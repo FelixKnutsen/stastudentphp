@@ -1,0 +1,10 @@
+# Local test WordPress environment & runtime
+local-test/
+wordpress.zip
+sqlite-plugin.zip
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
