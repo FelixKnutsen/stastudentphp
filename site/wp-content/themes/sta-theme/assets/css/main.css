@@ -1185,8 +1185,12 @@ img {
 }
 .sta-mobile-nav {
     flex: 1;
+    min-height: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+}
+.sta-chevron {
+    transition: transform 0.25s ease;
 }
 .sta-mobile-nav-list {
     list-style: none;
