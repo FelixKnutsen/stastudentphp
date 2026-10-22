@@ -144,7 +144,7 @@ $is_nn = sta_is_nn();
                 <a href="<?php echo esc_url(sta_get_localized_url('/trygg-organisasjon')); ?>" style="color:var(--sta-teal-200); text-decoration:none;">
                     <?php echo esc_html(sta_t('Trygg Organisasjon', 'Safe Organization', 'Trygg organisasjon')); ?>
                 </a>
-                <a href="#content" style="color:var(--sta-orange); text-decoration:none; font-weight:600;">
+                <a href="#main-content" style="color:var(--sta-orange); text-decoration:none; font-weight:600;">
                     <?php echo esc_html(sta_t('Til toppen &uarr;', 'Back to top &uarr;', 'Til toppen &uarr;')); ?>
                 </a>
             </div>

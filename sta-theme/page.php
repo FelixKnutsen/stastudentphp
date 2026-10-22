@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
 get_header();
 $is_en = sta_is_en();
 $is_nn = sta_is_nn();
-$post_slug = !empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_page'])) : get_post_field('post_name', get_the_ID());
+$post_slug = !empty($_GET['elementor-preview']) ? '' : (!empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_page'])) : get_post_field('post_name', get_the_ID()));
 ?>
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
@@ -129,18 +129,36 @@ $post_slug = !empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_pa
             </article>
 
         <?php else: ?>
-            <?php while (have_posts()): the_post(); ?>
-            <article id="page-<?php the_ID(); ?>" <?php post_class('sta-page-content'); ?> style="max-width:900px; margin:0 auto;">
-                <header class="sta-page-header">
-                    <h1 class="sta-hero-title">
-                        <?php the_title(); ?>
-                    </h1>
-                </header>
-
-                <?php if (has_post_thumbnail()): ?>
-                    <div style="border-radius:var(--sta-radius); overflow:hidden; margin-bottom:2.5rem; background:var(--sta-teal-800);">
-                        <?php the_post_thumbnail('large', array('style' => 'width:100%; height:auto; display:block;')); ?>
-                    </div>
+            <?php
+            global $wp_query;
+            if (!empty($_GET['elementor-preview'])) {
+                $preview_id = intval($_GET['elementor-preview']);
+                if ($preview_id > 0) {
+                    $wp_query = new WP_Query(array(
+                        'p'           => $preview_id,
+                        'post_type'   => 'any',
+                        'post_status' => 'any',
+                    ));
+                }
+            } elseif (!empty($_GET['sta_page'])) {
+                $wp_query = new WP_Query(array(
+                    'name'        => $post_slug,
+                    'post_type'   => 'page',
+                    'post_status' => 'publish',
+                    'numberposts' => 1,
+                ));
+            }
+            ?>
+            <?php while (have_posts()): the_post(); 
+                $is_elementor_page = !empty($_GET['elementor-preview']) || get_post_meta(get_the_ID(), '_elementor_edit_mode', true) === 'builder';
+            ?>
+            <article id="page-<?php the_ID(); ?>" <?php post_class('sta-page-content'); ?> style="<?php echo $is_elementor_page ? 'max-width:1200px;' : 'max-width:900px;'; ?> margin:0 auto;">
+                <?php if (!$is_elementor_page): ?>
+                    <header class="sta-page-header">
+                        <h1 class="sta-hero-title">
+                            <?php the_title(); ?>
+                        </h1>
+                    </header>
                 <?php endif; ?>
 
                 <div class="sta-entry-content" style="font-size:1.15rem; line-height:1.8; color:var(--sta-teal-50);">

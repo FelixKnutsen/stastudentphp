@@ -66,7 +66,7 @@ $is_nn = sta_is_nn();
                 <a href="<?php echo esc_url(sta_get_localized_url('/category/nyheter')); ?>" class="sta-btn sta-btn-outline">
                     &larr; <?php echo esc_html(sta_t('Flere nyheter', 'More news', 'Fleire nyheiter')); ?>
                 </a>
-                <a href="#content" style="color:var(--sta-teal-200); font-size:0.9rem;">
+                <a href="#main-content" style="color:var(--sta-teal-200); font-size:0.9rem;">
                     <?php echo esc_html(sta_t('Til toppen &uarr;', 'Back to top &uarr;', 'Til toppen &uarr;')); ?>
                 </a>
             </footer>

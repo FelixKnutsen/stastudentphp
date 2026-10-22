@@ -280,9 +280,15 @@ add_filter('post_link', function ($permalink, $post) {
 }, 9999, 2);
 
 add_filter('page_link', function ($permalink, $post_id) {
+    if (!empty($_GET['elementor-preview']) || (isset($_GET['action']) && $_GET['action'] === 'elementor')) {
+        return $permalink;
+    }
     if (sta_use_query_lang_routing() && $post_id) {
+        if ((int) $post_id === (int) get_option('page_on_front')) {
+            return sta_get_localized_url('/');
+        }
         $slug = get_post_field('post_name', $post_id);
-        if ($slug && $slug !== 'forside') {
+        if ($slug && $slug !== 'forside' && $slug !== 'studentorganisasjonen-i-agder-2') {
             return sta_get_localized_url('/' . $slug);
         }
         return sta_get_localized_url('/');

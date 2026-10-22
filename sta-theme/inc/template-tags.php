@@ -57,7 +57,7 @@ function sta_render_partner_logos() {
                 ?>
                     <a href="<?php echo esc_url($partner['url']); ?>" target="_blank" rel="noopener noreferrer" class="sta-partner-card" aria-label="<?php echo esc_attr($name . ' (' . sta_t('åpner i ny fane', 'opens in new tab', 'opnar i ny fane') . ')'); ?>">
                         <div class="sta-partner-logo-box">
-                            <img src="<?php echo esc_url($partner['logo_url']); ?>" alt="<?php echo esc_attr($partner['alt']); ?>" loading="lazy">
+                            <img src="<?php echo esc_url($partner['logo_url']); ?>" alt="<?php echo esc_attr($partner['alt']); ?>" width="180" height="60" loading="lazy">
                         </div>
                         <div class="sta-partner-info">
                             <span class="sta-partner-name"><?php echo esc_html($name); ?></span>

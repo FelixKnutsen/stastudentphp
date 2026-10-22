@@ -131,11 +131,11 @@ foreach ($items as $item) {
                 <div>
                     <!-- Header with Logo and Info -->
                     <div style="display:flex; align-items:flex-start; gap:1rem; margin-bottom:1rem;">
-                        <div class="sta-dir-logo-box" style="width:4.25rem; height:4.25rem; padding:0.4rem; border-radius:0.75rem; flex-shrink:0; margin-bottom:0; background:rgba(255,255,255,0.08); border:1px solid rgba(158,207,201,0.25);">
+                        <div class="sta-dir-logo-box" style="width:4.25rem; height:4.25rem; padding:0.4rem; border-radius:0.75rem; flex-shrink:0; margin-bottom:0; background:rgba(255,255,255,0.08); border:1px solid rgba(158,207,201,0.25); display:flex; align-items:center; justify-content:center;">
                             <?php if (!empty($item['logoUrl'])): ?>
                                 <img src="<?php echo esc_url($item['logoUrl']); ?>" alt="<?php echo esc_attr($item['name']); ?> logo" style="max-height:100%; max-width:100%; object-fit:contain;" loading="lazy">
                             <?php else: ?>
-                                <span style="font-size:1.5rem; font-weight:900; color:var(--sta-teal);"><?php echo esc_html(mb_substr($item['name'], 0, 1)); ?></span>
+                                <span style="font-size:1.5rem; font-weight:900; color:var(--sta-orange);"><?php echo esc_html(mb_substr($item['name'], 0, 1)); ?></span>
                             <?php endif; ?>
                         </div>
 

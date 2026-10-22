@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.0.4');
+define('STA_THEME_VERSION', '1.0.5');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -85,7 +85,7 @@ add_action('pre_get_posts', 'sta_adjust_news_archive_query');
  * so the site works out-of-the-box without manual page recreation.
  */
 function sta_auto_ensure_pages() {
-    if (get_option('sta_theme_pages_seeded_v3') === 'yes') {
+    if (get_option('sta_theme_pages_seeded_v4') === 'yes') {
         return;
     }
 
@@ -150,12 +150,21 @@ function sta_auto_ensure_pages() {
         }
     }
 
-    update_option('sta_theme_pages_seeded_v3', 'yes');
+    // Remove the square OpenGraph logo (11946 / 11945) from page _thumbnail_id so it never renders as a giant banner in Elementor
+    $all_pages = get_pages(array('post_status' => 'any'));
+    foreach ($all_pages as $p) {
+        $thumb_id = (int) get_post_thumbnail_id($p->ID);
+        if ($thumb_id === 11946 || $thumb_id === 11945) {
+            delete_post_thumbnail($p->ID);
+        }
+    }
+
+    update_option('sta_theme_pages_seeded_v4', 'yes');
     flush_rewrite_rules();
 }
 add_action('init', 'sta_auto_ensure_pages', 20);
 add_action('after_switch_theme', function () {
-    delete_option('sta_theme_pages_seeded_v3');
+    delete_option('sta_theme_pages_seeded_v4');
     sta_auto_ensure_pages();
 });
 
@@ -165,6 +174,14 @@ add_action('after_switch_theme', function () {
  * our custom PHP templates with old page-builder content.
  */
 function sta_force_theme_templates($template) {
+    // 0. If Elementor preview is open, always render page.php (which calls the_content() without any featured-image banner)
+    if (!empty($_GET['elementor-preview'])) {
+        $default_page = STA_THEME_PATH . '/page.php';
+        if (file_exists($default_page)) {
+            return $default_page;
+        }
+    }
+
     // 1. Handle ?sta_page=... routing (used on WP Staging subdirectories without Nginx/Apache rewrite rules)
     if (!empty($_GET['sta_page'])) {
         $slug = sanitize_title(wp_unslash($_GET['sta_page']));
@@ -172,6 +189,13 @@ function sta_force_theme_templates($template) {
         global $wp_query;
         if ($wp_query) {
             $wp_query->is_404 = false;
+        }
+
+        if ($slug === 'forside' || $slug === 'studentorganisasjonen-i-agder-2') {
+            $front = STA_THEME_PATH . '/front-page.php';
+            if (file_exists($front)) {
+                return $front;
+            }
         }
 
         if ($slug === 'nyheter') {

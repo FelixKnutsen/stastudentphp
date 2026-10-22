@@ -63,6 +63,9 @@ if ($json_file && file_exists($json_file)) {
                         $info_url = $item['infoUrl'] ?? '';
                         $info_label = $is_en ? ($item['infoUrlLabelEn'] ?? $item['infoUrlLabel'] ?? 'Offisiell informasjon') : ($item['infoUrlLabel'] ?? 'Offisiell informasjon');
                         $is_external = str_starts_with($info_url, 'http');
+                        if (!$is_external && !empty($info_url)) {
+                            $info_url = sta_get_localized_url($info_url);
+                        }
                     ?>
                         <div class="sta-card" style="padding:1.35rem; display:flex; flex-direction:column; justify-content:space-between;">
                             <div>
