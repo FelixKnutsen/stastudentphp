@@ -249,7 +249,7 @@ $resolusjoner = array(
         </div>
     </div>
 
-    <!-- 2. Politiske dokumenter (4 Cards) -->
+    <!-- 2. Politiske dokumenter -->
     <div style="margin-bottom:4rem;">
         <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:1.5rem;">
             <?php echo esc_html(sta_t('Politiske dokumenter', 'Political Documents', 'Politiske dokument')); ?>
@@ -279,11 +279,31 @@ $resolusjoner = array(
                     </div>
                 </a>
             <?php endforeach; ?>
+
+            <!-- Prinsipprogram Status & Archive Card -->
+            <a href="<?php echo esc_url(sta_get_localized_url('/prinsipprogram')); ?>" class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between; text-decoration:none;">
+                <div>
+                    <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+                        <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                        </div>
+                        <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0;">
+                            <?php echo esc_html(sta_t('Prinsipprogram', 'Principles Programme', 'Prinsipprogram')); ?>
+                        </h3>
+                    </div>
+                    <p style="font-size:0.875rem; color:var(--sta-teal-100); margin:0; line-height:1.5;">
+                        <?php echo esc_html(sta_t('Informasjon om prinsipprogram, gjeldende styringsmodell og historisk arkiv.', 'Information on principles programme, current policy model, and historical archive.', 'Informasjon om prinsipprogram, gjeldande styringsmodell og historisk arkiv.')); ?>
+                    </p>
+                </div>
+                <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange); display:flex; align-items:center; gap:0.25rem;">
+                    <span><?php echo esc_html(sta_t('Les om prinsipprogrammet &rarr;', 'Read about principles &rarr;', 'Les om prinsipprogrammet &rarr;')); ?></span>
+                </div>
+            </a>
         </div>
     </div>
 
     <!-- 3. Resolusjoner vedtatt av Studentparlamentet (Grouped by Year) -->
-    <div style="margin-bottom:4rem;">
+    <div id="resolusjoner" style="margin-bottom:4rem;">
         <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:1.5rem;">
             <?php echo esc_html(sta_t('Resolusjoner vedtatt av Studentparlamentet', 'Resolutions Adopted by Parliament', 'Resolusjonar vedtekne av Studentparlamentet')); ?>
         </h2>
