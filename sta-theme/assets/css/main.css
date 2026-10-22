@@ -445,6 +445,28 @@ button.sta-card:hover,
     color: var(--sta-orange);
 }
 
+/* Prinsipprogram Informational Banner */
+.sta-prinsipprogram-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.25rem 1.75rem;
+    text-decoration: none;
+    background: rgba(239, 115, 48, 0.06);
+    border: 1px solid rgba(239, 115, 48, 0.25);
+    border-radius: var(--sta-radius);
+    transition: all var(--sta-transition);
+}
+@media (max-width: 768px) {
+    .sta-prinsipprogram-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+}
+
 /* RSU (Boards, Councils & Committees) Multi-Column Grid */
 .sta-rsu-grid {
     display: grid;
