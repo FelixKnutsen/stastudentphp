@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.0.5');
+define('STA_THEME_VERSION', '1.0.6');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -85,7 +85,7 @@ add_action('pre_get_posts', 'sta_adjust_news_archive_query');
  * so the site works out-of-the-box without manual page recreation.
  */
 function sta_auto_ensure_pages() {
-    if (get_option('sta_theme_pages_seeded_v4') === 'yes') {
+    if (get_option('sta_theme_pages_seeded_v5') === 'yes') {
         return;
     }
 
@@ -98,6 +98,8 @@ function sta_auto_ensure_pages() {
         'studentaktiviteter'       => array('title' => 'Studentaktiviteter',       'template' => 'page-studentaktiviteter.php'),
         'lokaler'                  => array('title' => 'Lokaler',                  'template' => 'page-lokaler.php'),
         'dokumenter'               => array('title' => 'Dokumenter',               'template' => 'page-dokumenter.php'),
+        'sakspapirer'              => array('title' => 'Sakspapirer til møter i studentparlamentet', 'template' => 'page-sakspapirer.php'),
+        'referat-fra-moter-i-studentparlamentet' => array('title' => 'Protokoller fra møter i Studentparlamentet', 'template' => 'page-referat-fra-moter-i-studentparlamentet.php'),
         'for-tillitsvalgte'        => array('title' => 'For tillitsvalgte',        'template' => 'page-for-tillitsvalgte.php'),
         'rad-styrer-og-utvalg'     => array('title' => 'Råd, styrer og utvalg',    'template' => 'page-rad-styrer-og-utvalg.php'),
         'trygg-organisasjon'       => array('title' => 'Trygg Organisasjon',       'template' => 'page-trygg-organisasjon.php'),
@@ -159,12 +161,12 @@ function sta_auto_ensure_pages() {
         }
     }
 
-    update_option('sta_theme_pages_seeded_v4', 'yes');
+    update_option('sta_theme_pages_seeded_v5', 'yes');
     flush_rewrite_rules();
 }
 add_action('init', 'sta_auto_ensure_pages', 20);
 add_action('after_switch_theme', function () {
-    delete_option('sta_theme_pages_seeded_v4');
+    delete_option('sta_theme_pages_seeded_v5');
     sta_auto_ensure_pages();
 });
 
@@ -184,7 +186,8 @@ function sta_force_theme_templates($template) {
 
     // 1. Handle ?sta_page=... routing (used on WP Staging subdirectories without Nginx/Apache rewrite rules)
     if (!empty($_GET['sta_page'])) {
-        $slug = sanitize_title(wp_unslash($_GET['sta_page']));
+        $raw_sta_page = trim(wp_unslash($_GET['sta_page']), '/');
+        $slug = sanitize_title(basename($raw_sta_page));
         status_header(200);
         global $wp_query;
         if ($wp_query) {

@@ -220,3 +220,67 @@ function sta_format_date($timestamp_or_str = null, $format = 'j. F Y') {
 
     return "{$day}. {$month_name} {$year}";
 }
+
+/**
+ * Parse year-grouped document links from WordPress page content (Elementor / Block / Classic editor)
+ * and merge any newly added links with the default structured archive so future edits in WordPress
+ * immediately appear on the page.
+ */
+function sta_merge_editable_year_docs($html, $default_groups) {
+    if (empty($html) || !is_string($html)) {
+        return $default_groups;
+    }
+
+    // Track all existing URLs across default groups
+    $existing_urls = array();
+    foreach ($default_groups as $yr => $items) {
+        foreach ($items as $it) {
+            if (!empty($it['href'])) {
+                $existing_urls[rtrim(trim($it['href']), '/')] = true;
+            }
+        }
+    }
+
+    // Split content by year headings (<h1>2026</h1>, <h2>2025</h2>, <h3>2024</h3>, etc.)
+    $pattern = '/<h[1-6][^>]*>\s*(20\d{2})\s*<\/h[1-6]>/i';
+    $parts = preg_split($pattern, $html, -1, PREG_SPLIT_DELIM_CAPTURE);
+    if (!is_array($parts) || count($parts) < 3) {
+        return $default_groups;
+    }
+
+    $merged = $default_groups;
+    for ($i = 1; $i < count($parts); $i += 2) {
+        $year = trim($parts[$i]);
+        $section_html = $parts[$i + 1] ?? '';
+
+        if (preg_match_all('/<a\s+[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)<\/a>/is', $section_html, $matches, PREG_SET_ORDER)) {
+            $new_for_year = array();
+            foreach ($matches as $m) {
+                $href  = trim( html_entity_decode($m[1], ENT_QUOTES, 'UTF-8') );
+                $title = trim( wp_strip_all_tags( html_entity_decode($m[2], ENT_QUOTES, 'UTF-8') ) );
+                $title = preg_replace('/\s+/u', ' ', str_replace("\xC2\xA0", ' ', $title));
+                if ($href === '' || $href === '#' || $title === '' || strtolower($title) === 'klikk her') {
+                    continue;
+                }
+                $norm_href = rtrim($href, '/');
+                if (!isset($existing_urls[$norm_href])) {
+                    $existing_urls[$norm_href] = true;
+                    $new_for_year[] = array(
+                        'title' => $title,
+                        'href'  => $href,
+                    );
+                }
+            }
+            if (!empty($new_for_year)) {
+                if (!isset($merged[$year])) {
+                    $merged = array($year => $new_for_year) + $merged;
+                } else {
+                    $merged[$year] = array_merge($new_for_year, $merged[$year]);
+                }
+            }
+        }
+    }
+
+    krsort($merged);
+    return $merged;
+}

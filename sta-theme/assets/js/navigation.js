@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
         container.addEventListener('mouseleave', scheduleClose);
 
         toggleBtn.addEventListener('click', function (e) {
+            if (toggleBtn.tagName === 'A' && toggleBtn.getAttribute('href') && toggleBtn.getAttribute('href') !== '#') {
+                return; // Allow direct click on link-based dropdown toggles (e.g. Dokumenter) to navigate
+            }
             e.preventDefault();
             justClosedViaEscape = false;
             const isOpen = container.classList.contains('is-open');

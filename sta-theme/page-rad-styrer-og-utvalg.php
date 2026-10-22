@@ -139,49 +139,95 @@ if ($committees_file && file_exists($committees_file)) {
         </div>
     </div>
 
-    <!-- Committee Categories & Details Accordion / Cards -->
-    <div style="max-width:56rem; margin:0 auto; display:flex; flex-direction:column; gap:3rem;">
+    <!-- Committee Categories & Details Multi-Column Grid -->
+    <div style="display:flex; flex-direction:column; gap:3.5rem;">
         <?php foreach ($categories as $cat): 
-            $cat_name = $is_en ? ($cat['nameEn'] ?? $cat['name']) : $cat['name'];
+            $raw_cat_title = $cat['title'] ?? $cat['name'] ?? '';
+            $cat_name = $is_en ? ($cat['titleEn'] ?? $cat['nameEn'] ?? $raw_cat_title) : $raw_cat_title;
+            if ($is_nn) {
+                $nn_cat_map = array(
+                    'STA-Verv'                  => 'STA-verv',
+                    'STAs Politiske Utvalg'     => 'STA sine politiske utval',
+                    'Universitetsorganer (UiA)' => 'Universitetsorgan (UiA)',
+                );
+                if (isset($nn_cat_map[$raw_cat_title])) {
+                    $cat_name = $nn_cat_map[$raw_cat_title];
+                }
+            }
             $cat_desc = $is_en ? ($cat['descEn'] ?? $cat['desc'] ?? '') : ($cat['desc'] ?? '');
             $items = $cat['items'] ?? array();
         ?>
-            <div>
-                <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin-bottom:0.5rem; padding-bottom:0.5rem; border-bottom:1px solid rgba(158,207,201,0.25);">
-                    <?php echo esc_html($cat_name); ?>
-                </h2>
+            <section>
+                <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:0.75rem; margin-bottom:1.5rem; padding-bottom:0.75rem; border-bottom:1px solid rgba(158,207,201,0.25);">
+                    <h2 style="font-size:1.6rem; font-weight:800; color:#fff; margin:0;">
+                        <?php echo esc_html($cat_name); ?>
+                    </h2>
+                    <span class="sta-badge" style="margin:0; background:rgba(239,115,48,0.18); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); font-size:0.75rem;">
+                        <?php printf(esc_html(sta_t('%d organer / utvalg', '%d boards / committees', '%d organ / utval')), count($items)); ?>
+                    </span>
+                </div>
                 <?php if (!empty($cat_desc)): ?>
-                    <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin-bottom:1.5rem;">
+                    <p style="font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin-bottom:1.5rem;">
                         <?php echo esc_html($cat_desc); ?>
                     </p>
                 <?php endif; ?>
 
-                <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                <div class="sta-rsu-grid">
                     <?php foreach ($items as $item): 
                         $item_name = $is_en ? ($item['nameEn'] ?? $item['name']) : $item['name'];
                         $item_pos  = $is_en ? ($item['positionsEn'] ?? $item['positions'] ?? '') : ($item['positions'] ?? '');
                         $item_desc = $is_en ? ($item['descEn'] ?? $item['desc'] ?? '') : ($item['desc'] ?? '');
+                        $info_url  = $item['infoUrl'] ?? '';
+                        if ($info_url === '/valgkomiteen') {
+                            $info_url = '/ledige-verv';
+                        }
+                        $is_ext    = !empty($item['isExternal']);
+                        $final_url = '';
+                        if (!empty($info_url)) {
+                            $final_url = $is_ext ? $info_url : sta_get_localized_url($info_url);
+                        }
+                        $info_label = $is_en ? ($item['infoUrlLabelEn'] ?? $item['infoUrlLabel'] ?? 'Read more') : ($item['infoUrlLabel'] ?? 'Les mer');
                     ?>
-                        <div class="sta-card" style="padding:1.5rem;">
-                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:0.5rem;">
-                                <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">
-                                    <?php echo esc_html($item_name); ?>
-                                </h3>
-                                <?php if (!empty($item_pos)): ?>
-                                    <span class="sta-badge" style="font-size:0.7rem; padding:0.2rem 0.6rem; shrink-0:0; background:rgba(239,115,48,0.2); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange);">
-                                        <?php echo esc_html($item_pos); ?>
-                                    </span>
+                        <div class="sta-card" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
+                            <div>
+                                <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.75rem; margin-bottom:0.75rem;">
+                                    <div style="display:flex; align-items:center; gap:0.65rem;">
+                                        <div style="width:2.25rem; height:2.25rem; border-radius:0.5rem; background:rgba(239,115,48,0.18); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                        </div>
+                                        <h3 style="font-size:1.1rem; font-weight:700; color:#fff; margin:0; line-height:1.3;">
+                                            <?php echo esc_html($item_name); ?>
+                                        </h3>
+                                    </div>
+                                    <?php if (!empty($item_pos)): ?>
+                                        <span class="sta-badge" style="font-size:0.7rem; padding:0.2rem 0.6rem; flex-shrink:0; background:rgba(239,115,48,0.2); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); margin:0;">
+                                            <?php echo esc_html($item_pos); ?>
+                                        </span>
+                                    <?php endif; ?>
+                                </div>
+                                <?php if (!empty($item_desc)): ?>
+                                    <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
+                                        <?php echo esc_html($item_desc); ?>
+                                    </p>
                                 <?php endif; ?>
                             </div>
-                            <?php if (!empty($item_desc)): ?>
-                                <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
-                                    <?php echo esc_html($item_desc); ?>
-                                </p>
+
+                            <?php if (!empty($final_url)): ?>
+                                <div style="margin-top:1.25rem; padding-top:0.85rem; border-top:1px solid rgba(158,207,201,0.18);">
+                                    <a href="<?php echo esc_url($final_url); ?>" <?php echo $is_ext ? 'target="_blank" rel="noopener noreferrer"' : ''; ?> style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange); text-decoration:none;">
+                                        <span><?php echo esc_html($info_label); ?></span>
+                                        <?php if ($is_ext): ?>
+                                            <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <?php else: ?>
+                                            <span aria-hidden="true">&rarr;</span>
+                                        <?php endif; ?>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
-            </div>
+            </section>
         <?php endforeach; ?>
     </div>
 

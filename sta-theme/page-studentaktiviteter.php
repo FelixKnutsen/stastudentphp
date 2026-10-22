@@ -125,12 +125,12 @@ foreach ($items as $item) {
         <?php foreach ($items as $item): ?>
             <div class="sta-directory-card" data-category="<?php echo esc_attr($item['categorySlug']); ?>" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
-                    <!-- 16:10 Photo Banner -->
-                    <div style="position:relative; aspect-ratio:16/10; width:100%; margin-bottom:1rem; border-radius:0.75rem; overflow:hidden; background:var(--sta-card-bg); border:1px solid rgba(158,207,201,0.2);">
+                    <!-- Contained Logo / Image Box (never crops or zooms in on logos) -->
+                    <div style="position:relative; height:9.5rem; width:100%; padding:0.85rem; margin-bottom:1rem; border-radius:0.75rem; overflow:hidden; background:rgba(255,255,255,0.07); border:1px solid rgba(158,207,201,0.22); display:flex; align-items:center; justify-content:center;">
                         <?php if (!empty($item['imageUrl'])): ?>
-                            <img src="<?php echo esc_url($item['imageUrl']); ?>" alt="<?php echo esc_attr($item['name']); ?>" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+                            <img src="<?php echo esc_url($item['imageUrl']); ?>" alt="<?php echo esc_attr($item['name']); ?>" style="max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; border-radius:0.4rem;" loading="lazy">
                         <?php else: ?>
-                            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:900; color:#fff; background:rgba(255,255,255,0.05);">
+                            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:900; color:#fff; background:rgba(255,255,255,0.05); border-radius:0.4rem;">
                                 <?php echo esc_html(mb_substr($item['name'], 0, 1)); ?>
                             </div>
                         <?php endif; ?>

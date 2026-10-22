@@ -79,7 +79,7 @@ $is_nn = sta_is_nn();
         </h2>
 
         <div class="sta-card" style="padding:2.5rem; display:flex; flex-direction:column; gap:2rem;">
-            <div style="display:flex; flex-direction:column; md:flex-row; gap:2rem; align-items:center;">
+            <div class="sta-award-recipient-layout">
                 <!-- Portrait Image -->
                 <div style="position:relative; width:14rem; height:18rem; border-radius:1rem; overflow:hidden; border:2px solid rgba(239,115,48,0.5); box-shadow:0 10px 25px rgba(0,0,0,0.5); flex-shrink:0;">
                     <img src="https://stastudent.no/wp-content/uploads/2025/06/Kopi-av-Kopi-av-Overskrift-1024x1448.png" 
