@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.1.6');
+define('STA_THEME_VERSION', '1.1.9');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -274,3 +274,159 @@ function sta_force_theme_templates($template) {
     return $template;
 }
 add_filter('template_include', 'sta_force_theme_templates', 9999999);
+
+/**
+ * Shortcode to render 3 latest news articles matching the approved homepage design
+ * Usage: [sta_frontpage_news count="3"]
+ */
+function sta_render_frontpage_news_shortcode($atts) {
+    $atts = shortcode_atts(array(
+        'count' => 3
+    ), $atts);
+    $count = intval($atts['count']);
+    if ($count < 1) $count = 3;
+
+    ob_start();
+    $latest_news_query = new WP_Query(array(
+        'post_type'      => 'post',
+        'posts_per_page' => $count,
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC'
+    ));
+
+    $news_items = array();
+    if ($latest_news_query->have_posts()) {
+        while ($latest_news_query->have_posts()) {
+            $latest_news_query->the_post();
+            if (get_post_field('post_name', get_the_ID()) === 'hello-world') {
+                continue;
+            }
+            $cats = get_the_category();
+            $fallback_cat = sta_is_en() ? 'News' : (sta_is_nn() ? 'Nyheiter' : 'Nyheter');
+            $cat_name = (!empty($cats) && $cats[0]->name !== 'Uncategorized') ? $cats[0]->name : $fallback_cat;
+            $thumb = get_the_post_thumbnail_url(get_the_ID(), 'medium_large');
+            if (!$thumb) {
+                $thumb = 'https://stastudent.no/wp-content/uploads/2025/11/IMG_4781_CROP-scaled.jpg';
+            }
+            $news_items[] = array(
+                'title'        => get_the_title(),
+                'url'          => get_permalink(),
+                'date'         => sta_format_date(),
+                'category'     => $cat_name,
+                'excerpt'      => get_the_excerpt(),
+                'thumbnail'    => $thumb,
+            );
+        }
+        wp_reset_postdata();
+    }
+
+    if (empty($news_items)) {
+        $news_file = sta_get_data_file('news_archive.json');
+        if ($news_file && file_exists($news_file)) {
+            $raw = json_decode(file_get_contents($news_file), true);
+            if (is_array($raw)) {
+                $slice = array_slice($raw, 0, $count);
+                $fallback_cat = sta_is_en() ? 'News' : (sta_is_nn() ? 'Nyheiter' : 'Nyheter');
+                foreach ($slice as $n) {
+                    $news_items[] = array(
+                        'title'     => $n['title'] ?? '',
+                        'url'       => sta_get_localized_url('/nyheter/' . ($n['slug'] ?? '')),
+                        'date'      => sta_format_date($n['publishedAt'] ?? 'now'),
+                        'category'  => $n['category'] ?? $fallback_cat,
+                        'excerpt'   => $n['excerpt'] ?? '',
+                        'thumbnail' => $n['imageUrl'] ?? 'https://stastudent.no/wp-content/uploads/2025/11/IMG_4781_CROP-scaled.jpg',
+                    );
+                }
+            }
+        }
+    }
+    ?>
+    <div class="sta-grid-3">
+        <?php foreach ($news_items as $article) : ?>
+            <article class="sta-card" style="display:flex; flex-direction:column; overflow:hidden; border-radius:var(--sta-radius-md); background:var(--sta-card-bg); border:1px solid rgba(158,207,201,0.15); transition:transform 0.2s ease, box-shadow 0.2s ease;">
+                <a href="<?php echo esc_url($article['url']); ?>" style="display:block; position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--sta-teal-900);">
+                    <img src="<?php echo esc_url($article['thumbnail']); ?>" alt="<?php echo esc_attr($article['title']); ?>" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+                    <span style="position:absolute; top:0.75rem; left:0.75rem; background:var(--sta-orange); color:#fff; font-size:0.7rem; font-weight:700; text-transform:uppercase; padding:0.25rem 0.6rem; border-radius:4px; letter-spacing:0.05em;">
+                        <?php echo esc_html($article['category']); ?>
+                    </span>
+                </a>
+                <div style="padding:1.5rem; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                    <div>
+                        <div style="font-size:0.8rem; color:var(--sta-teal-200); margin-bottom:0.6rem; display:flex; align-items:center; gap:0.35rem;">
+                            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span><?php echo esc_html($article['date']); ?></span>
+                        </div>
+                        <h3 style="font-size:1.15rem; font-weight:700; margin:0 0 0.5rem; line-height:1.4;">
+                            <a href="<?php echo esc_url($article['url']); ?>" style="color:#fff; text-decoration:none;">
+                                <?php echo esc_html($article['title']); ?>
+                            </a>
+                        </h3>
+                        <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;">
+                            <?php echo esc_html($article['excerpt']); ?>
+                        </p>
+                    </div>
+                    <div style="margin-top:1.25rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
+                        <a href="<?php echo esc_url($article['url']); ?>" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
+                            <span><?php echo esc_html(sta_t('Les hele saken', 'Read full article', 'Les heile saka')); ?> &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        <?php endforeach; ?>
+    </div>
+    <?php
+    return ob_get_clean();
+}
+add_shortcode('sta_frontpage_news', 'sta_render_frontpage_news_shortcode');
+
+/**
+ * Admin action hook to restore clean, native Elementor structure for the front page (Post 11503).
+ * Accessible via /wp-admin/?sta_restore_homepage_elementor=1
+ */
+add_action('admin_init', function() {
+    if (isset($_GET['sta_restore_homepage_elementor']) && current_user_can('manage_options')) {
+        $post_id = 11503;
+        $json_file = STA_THEME_PATH . '/inc/clean_elementor_homepage_data.json';
+        if (!file_exists($json_file)) {
+            wp_send_json_error(array('message' => 'Clean data JSON file not found at: ' . $json_file));
+        }
+        $raw = file_get_contents($json_file);
+        $data = json_decode($raw, true);
+        if (!is_array($data)) {
+            wp_send_json_error(array('message' => 'Invalid JSON in clean data file.'));
+        }
+
+        // Update postmeta
+        update_post_meta($post_id, '_elementor_data', wp_slash(json_encode($data)));
+        update_post_meta($post_id, '_elementor_edit_mode', 'builder');
+        update_post_meta($post_id, '_elementor_template_type', 'wp-page');
+        
+        // Ensure post is published
+        wp_update_post(array(
+            'ID'          => $post_id,
+            'post_status' => 'publish'
+        ));
+
+        // Trigger Elementor internal db and CSS cache update
+        if (class_exists('\Elementor\Plugin')) {
+            if (isset(\Elementor\Plugin::$instance->files_manager)) {
+                \Elementor\Plugin::$instance->files_manager->clear_cache();
+            }
+            if (isset(\Elementor\Plugin::$instance->db)) {
+                \Elementor\Plugin::$instance->db->save_editor($post_id, $data);
+            }
+        }
+
+        // Clear WP-Optimize caches
+        if (class_exists('WP_Optimize')) {
+            do_action('wpo_purge_all_caches');
+        }
+
+        wp_send_json_success(array(
+            'message' => 'Clean Elementor homepage structure restored successfully for Post ' . $post_id . '!',
+            'sections' => count($data)
+        ));
+    }
+});
+

@@ -1,0 +1,961 @@
+[
+  {
+    "id": "hero_il8qddp",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1280
+      },
+      "padding": {
+        "unit": "px",
+        "top": "24",
+        "right": "24",
+        "bottom": "16",
+        "left": "24",
+        "isLinked": false
+      },
+      "css_classes": "sta-hero-banner-section",
+      "_css_classes": "sta-hero-banner-section"
+    },
+    "elements": [
+      {
+        "id": "hero_img_xcvocce",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+          "image": {
+            "url": "https://stastudent.no/wp-content/uploads/2025/11/IMG_4781_CROP-scaled.jpg",
+            "id": 16619,
+            "source": "library"
+          },
+          "image_size": "full",
+          "css_classes": "sta-hero-banner-img",
+          "_css_classes": "sta-hero-banner-img"
+        },
+        "elements": []
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "verv_sec_ihhgxwq",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1280
+      },
+      "padding": {
+        "unit": "px",
+        "top": "16",
+        "right": "24",
+        "bottom": "16",
+        "left": "24",
+        "isLinked": false
+      },
+      "css_classes": "sta-verv-section",
+      "_css_classes": "sta-verv-section"
+    },
+    "elements": [
+      {
+        "id": "verv_box_b85y7f3",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_justify_content": "space-between",
+          "flex_align_items": "center",
+          "css_classes": "sta-verv-banner",
+          "_css_classes": "sta-verv-banner"
+        },
+        "elements": [
+          {
+            "id": "verv_txt_col_hb9bz95",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_align_items": "flex-start",
+              "css_classes": "sta-verv-text-col",
+              "_css_classes": "sta-verv-text-col"
+            },
+            "elements": [
+              {
+                "id": "verv_title_7uzmgff",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Engasjer deg - still til verv!",
+                  "header_size": "h2",
+                  "css_classes": "sta-verv-banner-title",
+                  "_css_classes": "sta-verv-banner-title"
+                },
+                "elements": []
+              },
+              {
+                "id": "verv_sub_0a2wlfo",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Bli med og gjør en forskjell for over 14 000 studenter ved Universitetet i Agder.</p>",
+                  "css_classes": "sta-verv-banner-sub",
+                  "_css_classes": "sta-verv-banner-sub"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "verv_btn_itg1kyb",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Ledige verv",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=ledige-verv",
+                "is_external": "",
+                "nofollow": ""
+              },
+              "selected_icon": {
+                "value": "fas fa-arrow-right",
+                "library": "fa-solid"
+              },
+              "icon_align": "right",
+              "css_classes": "sta-btn sta-btn-orange",
+              "_css_classes": "sta-btn sta-btn-orange"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "quick_sec_ldvd5xj",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1280
+      },
+      "padding": {
+        "unit": "px",
+        "top": "32",
+        "right": "24",
+        "bottom": "32",
+        "left": "24",
+        "isLinked": false
+      },
+      "css_classes": "sta-quick-nav",
+      "_css_classes": "sta-quick-nav"
+    },
+    "elements": [
+      {
+        "id": "quick_grid_6ww7uo2",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "css_classes": "sta-quick-grid",
+          "_css_classes": "sta-quick-grid"
+        },
+        "elements": [
+          {
+            "id": "qcard_1_h57ncyq",
+            "elType": "widget",
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-graduation-cap",
+                "library": "fa-solid"
+              },
+              "title_text": "Linjeforeninger",
+              "description_text": "Møt studentene på ditt studieprogram og delta på sosiale og faglige aktiviteter.",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=linjeforeninger",
+                "is_external": "",
+                "nofollow": ""
+              },
+              "position": "top",
+              "css_classes": "sta-quick-card",
+              "_css_classes": "sta-quick-card"
+            },
+            "elements": []
+          },
+          {
+            "id": "qcard_2_5t17fcn",
+            "elType": "widget",
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-building",
+                "library": "fa-solid"
+              },
+              "title_text": "Lokaler",
+              "description_text": "Lei eller lån lokaler til foreningsmøter, kurs eller studentarrangementer.",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=lokaler",
+                "is_external": "",
+                "nofollow": ""
+              },
+              "position": "top",
+              "css_classes": "sta-quick-card",
+              "_css_classes": "sta-quick-card"
+            },
+            "elements": []
+          },
+          {
+            "id": "qcard_3_vknkm97",
+            "elType": "widget",
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-users",
+                "library": "fa-solid"
+              },
+              "title_text": "Tillitsvalgt",
+              "description_text": "Ressurser, opplæring og verktøy for tillitsvalgte og studentrepresentanter.",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=for-tillitsvalgte",
+                "is_external": "",
+                "nofollow": ""
+              },
+              "position": "top",
+              "css_classes": "sta-quick-card",
+              "_css_classes": "sta-quick-card"
+            },
+            "elements": []
+          },
+          {
+            "id": "qcard_4_mxj8l9d",
+            "elType": "widget",
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-star",
+                "library": "fa-solid"
+              },
+              "title_text": "Studentaktiviteter",
+              "description_text": "Idrettslag, kulturklubber og studentorganisasjoner ved campus.",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=studentaktiviteter",
+                "is_external": "",
+                "nofollow": ""
+              },
+              "position": "top",
+              "css_classes": "sta-quick-card",
+              "_css_classes": "sta-quick-card"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "news_sec_vvbw0eg",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "background_background": "classic",
+      "background_color": "rgba(4, 24, 23, 0.4)",
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "0",
+        "bottom": "48",
+        "left": "0",
+        "isLinked": false
+      },
+      "css_classes": "sta-news-section",
+      "_css_classes": "sta-news-section"
+    },
+    "elements": [
+      {
+        "id": "news_box_52gizgp",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 1280
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "24",
+            "bottom": "0",
+            "left": "24",
+            "isLinked": false
+          },
+          "css_classes": "sta-container",
+          "_css_classes": "sta-container"
+        },
+        "elements": [
+          {
+            "id": "news_hdr_cm9ic29",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "center",
+              "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "28",
+                "left": "0",
+                "isLinked": false
+              },
+              "css_classes": "sta-news-header-row",
+              "_css_classes": "sta-news-header-row"
+            },
+            "elements": [
+              {
+                "id": "news_title_a0e51ii",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "SISTE NYTT",
+                  "header_size": "h2",
+                  "link": {
+                    "url": "https://stastudent.no/reliant/?sta_page=nyheter",
+                    "is_external": "",
+                    "nofollow": ""
+                  },
+                  "css_classes": "sta-news-section-title",
+                  "_css_classes": "sta-news-section-title"
+                },
+                "elements": []
+              },
+              {
+                "id": "news_btn_b7zz78b",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "Se alle nyheter",
+                  "link": {
+                    "url": "https://stastudent.no/reliant/?sta_page=nyheter",
+                    "is_external": "",
+                    "nofollow": ""
+                  },
+                  "selected_icon": {
+                    "value": "fas fa-arrow-right",
+                    "library": "fa-solid"
+                  },
+                  "icon_align": "right",
+                  "css_classes": "sta-news-all-btn",
+                  "_css_classes": "sta-news-all-btn"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "news_grid_widget_luo8m8z",
+            "elType": "widget",
+            "widgetType": "shortcode",
+            "settings": {
+              "shortcode": "[sta_frontpage_news count=\"3\"]",
+              "css_classes": "sta-frontpage-news-widget",
+              "_css_classes": "sta-frontpage-news-widget"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "feat_sec_yu48en3",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1280
+      },
+      "padding": {
+        "unit": "px",
+        "top": "56",
+        "right": "24",
+        "bottom": "56",
+        "left": "24",
+        "isLinked": false
+      },
+      "css_classes": "sta-features-section",
+      "_css_classes": "sta-features-section"
+    },
+    "elements": [
+      {
+        "id": "feat1_card_3z6r6th",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "sta-feature-card",
+          "_css_classes": "sta-feature-card"
+        },
+        "elements": [
+          {
+            "id": "feat1_img_box_gll7u4g",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "css_classes": "sta-feature-img-box",
+              "_css_classes": "sta-feature-img-box"
+            },
+            "elements": [
+              {
+                "id": "feat1_img_hg8apwv",
+                "elType": "widget",
+                "widgetType": "image",
+                "settings": {
+                  "image": {
+                    "url": "https://stastudent.no/wp-content/uploads/2025/11/IMG_4780-1024x683.jpg"
+                  },
+                  "image_size": "large"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "feat1_content_qp4zo0p",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_align_items": "flex-start",
+              "css_classes": "sta-feature-content",
+              "_css_classes": "sta-feature-content"
+            },
+            "elements": [
+              {
+                "id": "feat1_title_a0k7jqj",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Studentparlamentet",
+                  "header_size": "h2"
+                },
+                "elements": []
+              },
+              {
+                "id": "feat1_sub_k7nh4dc",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "UiAs øverste studentrepresentanter​",
+                  "header_size": "p",
+                  "css_classes": "sta-feature-subtitle",
+                  "_css_classes": "sta-feature-subtitle"
+                },
+                "elements": []
+              },
+              {
+                "id": "feat1_text_g9abvk8",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Studentparlamentet består av 25 folkevalgte representanter som fatter de overordnede politiske beslutningene og velger STA-styret.</p>",
+                  "css_classes": "sta-feature-text",
+                  "_css_classes": "sta-feature-text"
+                },
+                "elements": []
+              },
+              {
+                "id": "feat1_btn_g8ieib4",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "Les mer!",
+                  "link": {
+                    "url": "https://stastudent.no/reliant/?sta_page=studentparlamentet",
+                    "is_external": "",
+                    "nofollow": ""
+                  },
+                  "selected_icon": {
+                    "value": "fas fa-arrow-right",
+                    "library": "fa-solid"
+                  },
+                  "icon_align": "right",
+                  "css_classes": "sta-btn sta-btn-orange",
+                  "_css_classes": "sta-btn sta-btn-orange"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "feat2_card_7gbsnwx",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "css_classes": "sta-feature-card",
+          "_css_classes": "sta-feature-card"
+        },
+        "elements": [
+          {
+            "id": "feat2_img_box_0aj3n9l",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "css_classes": "sta-feature-img-box",
+              "_css_classes": "sta-feature-img-box"
+            },
+            "elements": [
+              {
+                "id": "feat2_img_srptqf9",
+                "elType": "widget",
+                "widgetType": "image",
+                "settings": {
+                  "image": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/02/DSC05899-–-middels.jpeg"
+                  },
+                  "image_size": "large"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "feat2_content_k6ykvb6",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_align_items": "flex-start",
+              "css_classes": "sta-feature-content",
+              "_css_classes": "sta-feature-content"
+            },
+            "elements": [
+              {
+                "id": "feat2_title_zsjlg72",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "UiA Karriereuka",
+                  "header_size": "h2"
+                },
+                "elements": []
+              },
+              {
+                "id": "feat2_sub_r7rk37c",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Studentenes arena for kontakt med næringslivet",
+                  "header_size": "p",
+                  "css_classes": "sta-feature-subtitle",
+                  "_css_classes": "sta-feature-subtitle"
+                },
+                "elements": []
+              },
+              {
+                "id": "feat2_text_g11vcrz",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Møt fremtidige arbeidsgivere, delta på workshops og bygg nettverk for livet etter studiene.</p>",
+                  "css_classes": "sta-feature-text",
+                  "_css_classes": "sta-feature-text"
+                },
+                "elements": []
+              },
+              {
+                "id": "feat2_btn_ea75dvz",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "Les mer!",
+                  "link": {
+                    "url": "https://uiakarriereuka.no/",
+                    "is_external": "on",
+                    "nofollow": ""
+                  },
+                  "selected_icon": {
+                    "value": "fas fa-external-link-alt",
+                    "library": "fa-solid"
+                  },
+                  "icon_align": "right",
+                  "css_classes": "sta-btn sta-btn-orange",
+                  "_css_classes": "sta-btn sta-btn-orange"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "part_sec_2d0io6e",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "css_classes": "sta-partners-section",
+      "_css_classes": "sta-partners-section"
+    },
+    "elements": [
+      {
+        "id": "part_box_89px8xj",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 1280
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "24",
+            "bottom": "0",
+            "left": "24",
+            "isLinked": false
+          },
+          "css_classes": "sta-container",
+          "_css_classes": "sta-container"
+        },
+        "elements": [
+          {
+            "id": "part_hdr_pmf6nh7",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "css_classes": "sta-section-header",
+              "_css_classes": "sta-section-header"
+            },
+            "elements": [
+              {
+                "id": "part_title_zk8dfu4",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Samarbeidspartnere",
+                  "header_size": "h2",
+                  "align": "center",
+                  "css_classes": "sta-section-title",
+                  "_css_classes": "sta-section-title"
+                },
+                "elements": []
+              },
+              {
+                "id": "part_sub_kp8fp7q",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center;\">Vi samarbeider tett med sentrale aktører i UH-sektoren og Agder-regionen</p>",
+                  "css_classes": "sta-section-subtitle",
+                  "_css_classes": "sta-section-subtitle"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "part_grid_b2jssq6",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "css_classes": "sta-partners-grid",
+              "_css_classes": "sta-partners-grid"
+            },
+            "elements": [
+              {
+                "id": "pcard_1_ciervqz",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "link": {
+                    "url": "https://student.no",
+                    "is_external": "on",
+                    "nofollow": ""
+                  },
+                  "css_classes": "sta-partner-card",
+                  "_css_classes": "sta-partner-card"
+                },
+                "elements": [
+                  {
+                    "id": "pcard_1_logo_h4ooii4",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-logo-box",
+                      "_css_classes": "sta-partner-logo-box"
+                    },
+                    "elements": [
+                      {
+                        "id": "p1_img_teyoi5l",
+                        "elType": "widget",
+                        "widgetType": "image",
+                        "settings": {
+                          "image": {
+                            "url": "https://stastudent.no/wp-content/uploads/2024/05/NSO-logo.png",
+                            "source": "library"
+                          }
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "pcard_1_info_ggl2klj",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-info",
+                      "_css_classes": "sta-partner-info"
+                    },
+                    "elements": [
+                      {
+                        "id": "p1_name_ufp6ifq",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Norsk studentorganisasjon (NSO)",
+                          "header_size": "span",
+                          "css_classes": "sta-partner-name",
+                          "_css_classes": "sta-partner-name"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pcard_2_gmdy91t",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "link": {
+                    "url": "https://www.uia.no",
+                    "is_external": "on",
+                    "nofollow": ""
+                  },
+                  "css_classes": "sta-partner-card",
+                  "_css_classes": "sta-partner-card"
+                },
+                "elements": [
+                  {
+                    "id": "pcard_2_logo_gn7z2fx",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-logo-box",
+                      "_css_classes": "sta-partner-logo-box"
+                    },
+                    "elements": [
+                      {
+                        "id": "p2_img_p5pdmtu",
+                        "elType": "widget",
+                        "widgetType": "image",
+                        "settings": {
+                          "image": {
+                            "url": "https://stastudent.no/wp-content/uploads/2020/11/uia-horisontal-med-navn-Positiv.png",
+                            "source": "library"
+                          }
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "pcard_2_info_v5v9hil",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-info",
+                      "_css_classes": "sta-partner-info"
+                    },
+                    "elements": [
+                      {
+                        "id": "p2_name_pvu69gc",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Universitetet i Agder (UiA)",
+                          "header_size": "span",
+                          "css_classes": "sta-partner-name",
+                          "_css_classes": "sta-partner-name"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pcard_3_d8dozgx",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "link": {
+                    "url": "https://sia.no",
+                    "is_external": "on",
+                    "nofollow": ""
+                  },
+                  "css_classes": "sta-partner-card",
+                  "_css_classes": "sta-partner-card"
+                },
+                "elements": [
+                  {
+                    "id": "pcard_3_logo_451ugvs",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-logo-box",
+                      "_css_classes": "sta-partner-logo-box"
+                    },
+                    "elements": [
+                      {
+                        "id": "p3_img_9k3ikss",
+                        "elType": "widget",
+                        "widgetType": "image",
+                        "settings": {
+                          "image": {
+                            "url": "https://stastudent.no/wp-content/uploads/2020/11/sialogo.png",
+                            "source": "library"
+                          }
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "pcard_3_info_7wqzi8v",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-info",
+                      "_css_classes": "sta-partner-info"
+                    },
+                    "elements": [
+                      {
+                        "id": "p3_name_ygz09y2",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Studentsamskipnaden i Agder (SiA)",
+                          "header_size": "span",
+                          "css_classes": "sta-partner-name",
+                          "_css_classes": "sta-partner-name"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pcard_4_z28lah1",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "link": {
+                    "url": "https://www.saih.no/no",
+                    "is_external": "on",
+                    "nofollow": ""
+                  },
+                  "css_classes": "sta-partner-card",
+                  "_css_classes": "sta-partner-card"
+                },
+                "elements": [
+                  {
+                    "id": "pcard_4_logo_6wgc7x6",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-logo-box",
+                      "_css_classes": "sta-partner-logo-box"
+                    },
+                    "elements": [
+                      {
+                        "id": "p4_img_rpapsdl",
+                        "elType": "widget",
+                        "widgetType": "image",
+                        "settings": {
+                          "image": {
+                            "url": "https://stastudent.no/wp-content/uploads/2024/05/SAIH-logo-PNG-1-1024x1024.png",
+                            "source": "library"
+                          }
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "pcard_4_info_ojg9fri",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "css_classes": "sta-partner-info",
+                      "_css_classes": "sta-partner-info"
+                    },
+                    "elements": [
+                      {
+                        "id": "p4_name_7gjasuo",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Studentenes og Akademikernes Internasjonale Hjelpefond (SAIH)",
+                          "header_size": "span",
+                          "css_classes": "sta-partner-name",
+                          "_css_classes": "sta-partner-name"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]
