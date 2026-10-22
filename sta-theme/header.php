@@ -31,7 +31,7 @@ if ($is_en) {
     <link rel="icon" type="image/svg+xml" href="<?php echo esc_url(get_template_directory_uri() . '/assets/images/favicon.svg'); ?>">
     <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/images/favicon.ico'); ?>">
     <?php if (empty($_GET['elementor-preview'])): ?>
-    <script>window.elementorFrontendConfig = window.elementorFrontendConfig || {environmentMode:{edit:false,wpPreview:false,isScriptDebug:false},i18n:{},is_rtl:false,breakpoints:{xs:0,sm:480,md:768,lg:1025,xl:1440,xxl:1600},version:"3.25.0",is_static:false,experimentalFeatures:{},urls:{assets:""},settings:{page:[],editorPreferences:[]},kit:{},post:{id:0,title:"",excerpt:""}};</script>
+    <script>window.elementorFrontendConfig = window.elementorFrontendConfig || {environmentMode:{edit:false,wpPreview:false,isScriptDebug:false},i18n:{},is_rtl:false,breakpoints:{xs:0,sm:480,md:768,lg:1025,xl:1440,xxl:1600},responsive:{breakpoints:{},activeBreakpoints:{}},version:"3.25.0",is_static:false,experimentalFeatures:{},urls:{assets:""},settings:{page:[],editorPreferences:[]},kit:{active_breakpoints:["viewport_mobile","viewport_tablet"]},post:{id:0,title:"",excerpt:"",featuredImage:false}};</script>
     <?php endif; ?>
     <?php wp_head(); ?>
     <style>
