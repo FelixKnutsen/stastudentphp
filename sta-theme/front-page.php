@@ -1,7 +1,9 @@
 <?php
 /**
  * Front Page Template
- * Faithful reproduction of the Next.js HomePage (Hero, Verv CTA, QuickNav, NewsHighlight, Featured, Partners)
+ * Fully editable via Elementor.
+ * If the front page is edited in Elementor or contains post content, renders the_content().
+ * Otherwise, falls back to the default Next.js reproduction layout.
  */
 
 if (!defined('ABSPATH')) {
@@ -9,8 +11,37 @@ if (!defined('ABSPATH')) {
 }
 
 get_header();
-$is_en = sta_is_en();
-$is_nn = sta_is_nn();
+
+$has_elementor = false;
+if (have_posts()) {
+    while (have_posts()) {
+        the_post();
+        if (class_exists('\Elementor\Plugin') && \Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID())) {
+            $has_elementor = true;
+        } elseif (get_post_meta(get_the_ID(), '_elementor_edit_mode', true) === 'builder') {
+            $has_elementor = true;
+        } elseif (is_preview() || !empty($_GET['elementor-preview']) || !empty($_GET['preview'])) {
+            $has_elementor = true;
+        } elseif (!empty(trim(get_the_content()))) {
+            $has_elementor = true;
+        }
+    }
+    rewind_posts();
+}
+
+if ($has_elementor) :
+?>
+<main id="main-content" class="sta-site-main sta-front-page-elementor">
+    <?php
+    while (have_posts()) : the_post();
+        the_content();
+    endwhile;
+    ?>
+</main>
+<?php
+else :
+    $is_en = sta_is_en();
+    $is_nn = sta_is_nn();
 ?>
 
 <!-- 1. Hero Banner Image -->
@@ -249,4 +280,5 @@ if (empty($news_items)) {
 <?php sta_render_partner_logos(); ?>
 
 <?php
+endif;
 get_footer();

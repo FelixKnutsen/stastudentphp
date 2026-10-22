@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.1.4');
+define('STA_THEME_VERSION', '1.1.5');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -178,8 +178,15 @@ add_action('after_switch_theme', function () {
  * our custom PHP templates with old page-builder content.
  */
 function sta_force_theme_templates($template) {
-    // 0. If Elementor preview is open, always render page.php (which calls the_content() without any featured-image banner)
+    // 0. If Elementor preview is open, check if it's the front page
     if (!empty($_GET['elementor-preview'])) {
+        $preview_id = intval($_GET['elementor-preview']);
+        if ($preview_id === (int) get_option('page_on_front')) {
+            $front = STA_THEME_PATH . '/front-page.php';
+            if (file_exists($front)) {
+                return $front;
+            }
+        }
         $default_page = STA_THEME_PATH . '/page.php';
         if (file_exists($default_page)) {
             return $default_page;
