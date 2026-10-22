@@ -645,6 +645,11 @@ button.sta-card:hover,
 }
 
 /* Typography & Prose for Articles and Content Pages */
+article.sta-article,
+.sta-article {
+    background: transparent !important;
+    background-image: none !important;
+}
 .sta-article-content,
 .sta-entry-content {
     font-size: 1.125rem;
