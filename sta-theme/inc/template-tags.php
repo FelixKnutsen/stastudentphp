@@ -138,11 +138,14 @@ function sta_render_pagination($query = null) {
         return;
     }
 
-    $current_page = max(1, get_query_var('paged'));
+    $current_page = isset($_GET['paged']) ? max(1, intval($_GET['paged'])) : max(1, get_query_var('paged'));
+    $base_link = (function_exists('sta_use_query_lang_routing') && sta_use_query_lang_routing())
+        ? esc_url(add_query_arg('paged', '%#%'))
+        : str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999)));
 
     echo '<nav class="sta-pagination" aria-label="' . esc_attr(sta_t('Sidenavigasjon', 'Pagination', 'Sidenavigasjon')) . '">';
     echo paginate_links(array(
-        'base'      => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
+        'base'      => $base_link,
         'format'    => '?paged=%#%',
         'current'   => $current_page,
         'total'     => $total_pages,

@@ -10,6 +10,19 @@ if (!defined('ABSPATH')) {
 get_header();
 $is_en = sta_is_en();
 $is_nn = sta_is_nn();
+
+global $wp_query;
+if ((!empty($_GET['sta_page']) && $_GET['sta_page'] === 'nyheter') || is_page() || is_front_page()) {
+    $paged = isset($_GET['paged']) ? max(1, intval($_GET['paged'])) : max(1, intval(get_query_var('paged')));
+    $wp_query = new WP_Query(array(
+        'post_type'      => 'post',
+        'post_status'    => 'publish',
+        'posts_per_page' => 10,
+        'paged'          => $paged,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    ));
+}
 ?>
 
 <div class="sta-container" style="padding-top:3rem; padding-bottom:5rem;">

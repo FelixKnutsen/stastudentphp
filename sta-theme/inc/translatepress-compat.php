@@ -182,14 +182,28 @@ function sta_use_query_lang_routing() {
 }
 
 /**
- * Helper to build language-aware internal URL
+ * Helper to build language-aware internal URL.
+ * When running on WP Staging subdirectories (e.g. /reliant/) where Nginx/Apache
+ * rewrite rules are not configured for the subfolder, all subpages route via
+ * home_url('/?sta_page=...') so every link hits /reliant/index.php directly.
  */
 function sta_get_localized_url($path = '/', $target_lang = null) {
-    $path = '/' . ltrim($path, '/');
+    $clean_slug = trim($path, '/');
+    $path = '/' . $clean_slug;
     $lang = $target_lang ?: sta_get_current_language();
 
     if (sta_use_query_lang_routing()) {
-        $base_url = home_url($path);
+        $base_url = home_url('/');
+        if ($clean_slug !== '') {
+            if ($clean_slug === 'nyheter' || $clean_slug === 'category/nyheter') {
+                $base_url = add_query_arg('sta_page', 'nyheter', $base_url);
+            } elseif (strpos($clean_slug, 'nyheter/') === 0) {
+                $post_slug = substr($clean_slug, strlen('nyheter/'));
+                $base_url = add_query_arg('name', $post_slug, $base_url);
+            } else {
+                $base_url = add_query_arg('sta_page', $clean_slug, $base_url);
+            }
+        }
         if ($lang === 'en' || $lang === 'nn') {
             return add_query_arg('lang', $lang, $base_url);
         }
@@ -206,7 +220,7 @@ function sta_get_localized_url($path = '/', $target_lang = null) {
 }
 
 /**
- * Get target language URL for switcher (retains current subpath & supports WP Staging subdirectories)
+ * Get target language URL for switcher (retains current subpath & query args)
  */
 function sta_get_language_url($target_lang = 'no') {
     $current_uri = isset($GLOBALS['sta_original_request_uri'])
@@ -233,7 +247,10 @@ function sta_get_language_url($target_lang = 'no') {
     if (!$clean_path) $clean_path = '/';
 
     if (sta_use_query_lang_routing()) {
-        $base_url = home_url($clean_path . $query_str);
+        $base_url = home_url('/' . $query_str);
+        if ($clean_path !== '/' && empty($_GET['sta_page'])) {
+            $base_url = add_query_arg('sta_page', trim($clean_path, '/'), $base_url);
+        }
         return add_query_arg('lang', $target_lang, $base_url);
     }
 
@@ -245,6 +262,33 @@ function sta_get_language_url($target_lang = 'no') {
     }
     return home_url($clean_path . $query_str);
 }
+
+/**
+ * Ensure WordPress post and page permalinks also use query-based URLs on WP Staging
+ * subdirectories so clicking news articles or search results never 404s.
+ */
+add_filter('post_link', function ($permalink, $post) {
+    if (sta_use_query_lang_routing() && isset($post->ID)) {
+        $url = add_query_arg('p', $post->ID, home_url('/'));
+        $lang = sta_get_current_language();
+        if ($lang === 'en' || $lang === 'nn') {
+            $url = add_query_arg('lang', $lang, $url);
+        }
+        return $url;
+    }
+    return $permalink;
+}, 9999, 2);
+
+add_filter('page_link', function ($permalink, $post_id) {
+    if (sta_use_query_lang_routing() && $post_id) {
+        $slug = get_post_field('post_name', $post_id);
+        if ($slug && $slug !== 'forside') {
+            return sta_get_localized_url('/' . $slug);
+        }
+        return sta_get_localized_url('/');
+    }
+    return $permalink;
+}, 9999, 2);
 
 /**
  * Stop TranslatePress output buffer & floating language switcher from conflicting
@@ -263,10 +307,10 @@ function sta_get_toggle_language_url() {
 }
 
 /**
- * Prevent WordPress canonical redirect from hijacking /en/ or /nn/ routes
+ * Prevent WordPress canonical redirect from hijacking /en/, /nn/, or ?sta_page= routes
  */
 add_filter('redirect_canonical', function ($redirect_url, $requested_url) {
-    if (sta_is_en() || sta_is_nn()) {
+    if (sta_is_en() || sta_is_nn() || !empty($_GET['sta_page'])) {
         return false;
     }
     return $redirect_url;

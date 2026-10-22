@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.0.3');
+define('STA_THEME_VERSION', '1.0.4');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -61,7 +61,8 @@ function sta_theme_scripts() {
     wp_enqueue_script('sta-navigation', STA_THEME_URL . '/assets/js/navigation.js', array(), STA_THEME_VERSION, true);
 
     // Directory live filter script (for associations and activities)
-    if (is_page_template(array('page-linjeforeninger.php', 'page-studentaktiviteter.php')) || is_page(array('linjeforeninger', 'studentaktiviteter'))) {
+    $sta_page = isset($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_page'])) : '';
+    if (is_page_template(array('page-linjeforeninger.php', 'page-studentaktiviteter.php')) || is_page(array('linjeforeninger', 'studentaktiviteter')) || in_array($sta_page, array('linjeforeninger', 'studentaktiviteter'), true)) {
         wp_enqueue_script('sta-directory-filter', STA_THEME_URL . '/assets/js/directory-filter.js', array(), STA_THEME_VERSION, true);
     }
 }
@@ -164,6 +165,47 @@ add_action('after_switch_theme', function () {
  * our custom PHP templates with old page-builder content.
  */
 function sta_force_theme_templates($template) {
+    // 1. Handle ?sta_page=... routing (used on WP Staging subdirectories without Nginx/Apache rewrite rules)
+    if (!empty($_GET['sta_page'])) {
+        $slug = sanitize_title(wp_unslash($_GET['sta_page']));
+        status_header(200);
+        global $wp_query;
+        if ($wp_query) {
+            $wp_query->is_404 = false;
+        }
+
+        if ($slug === 'nyheter') {
+            $index_tpl = STA_THEME_PATH . '/index.php';
+            if (file_exists($index_tpl)) {
+                return $index_tpl;
+            }
+        }
+
+        $slug_template = STA_THEME_PATH . '/page-' . $slug . '.php';
+        if (file_exists($slug_template)) {
+            return $slug_template;
+        }
+
+        $default_page = STA_THEME_PATH . '/page.php';
+        if (file_exists($default_page)) {
+            return $default_page;
+        }
+    }
+
+    if (is_singular('post')) {
+        $single = STA_THEME_PATH . '/single.php';
+        if (file_exists($single)) {
+            return $single;
+        }
+    }
+
+    if (is_search()) {
+        $search = STA_THEME_PATH . '/search.php';
+        if (file_exists($search)) {
+            return $search;
+        }
+    }
+
     if (is_front_page()) {
         $front = STA_THEME_PATH . '/front-page.php';
         if (file_exists($front)) {
@@ -183,20 +225,6 @@ function sta_force_theme_templates($template) {
         $default_page = STA_THEME_PATH . '/page.php';
         if (file_exists($default_page)) {
             return $default_page;
-        }
-    }
-
-    if (is_singular('post')) {
-        $single = STA_THEME_PATH . '/single.php';
-        if (file_exists($single)) {
-            return $single;
-        }
-    }
-
-    if (is_search()) {
-        $search = STA_THEME_PATH . '/search.php';
-        if (file_exists($search)) {
-            return $search;
         }
     }
 

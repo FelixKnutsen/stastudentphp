@@ -61,7 +61,7 @@ if ($is_en) {
 
             <!-- Desktop Navigation -->
             <nav class="sta-desktop-nav" role="navigation" aria-label="<?php echo esc_attr(sta_t('Hovedmeny', 'Main navigation', 'Hovudmeny')); ?>">
-                <a href="<?php echo esc_url(sta_get_localized_url('/')); ?>" class="sta-nav-link <?php echo is_front_page() ? 'is-active' : ''; ?>">
+                <a href="<?php echo esc_url(sta_get_localized_url('/')); ?>" class="sta-nav-link <?php echo (is_front_page() && empty($_GET['sta_page'])) ? 'is-active' : ''; ?>">
                     <?php echo esc_html(sta_t('Hjem', 'Home', 'Heim')); ?>
                 </a>
 

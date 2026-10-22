@@ -11,11 +11,10 @@ if (!defined('ABSPATH')) {
 get_header();
 $is_en = sta_is_en();
 $is_nn = sta_is_nn();
-$post_slug = get_post_field('post_name', get_the_ID());
+$post_slug = !empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_page'])) : get_post_field('post_name', get_the_ID());
 ?>
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
-    <?php while (have_posts()): the_post(); ?>
         <?php if ($post_slug === 'om-sta' || $post_slug === 'om-oss' || $post_slug === 'om-oss-2'): ?>
             <header class="sta-page-header" style="text-align:center; max-width:800px; margin:0 auto 3rem;">
                 <span class="sta-badge"><?php echo esc_html(sta_t('Om STA', 'About STA', 'Om STA')); ?></span>
@@ -130,6 +129,7 @@ $post_slug = get_post_field('post_name', get_the_ID());
             </article>
 
         <?php else: ?>
+            <?php while (have_posts()): the_post(); ?>
             <article id="page-<?php the_ID(); ?>" <?php post_class('sta-page-content'); ?> style="max-width:900px; margin:0 auto;">
                 <header class="sta-page-header">
                     <h1 class="sta-hero-title">
@@ -147,8 +147,8 @@ $post_slug = get_post_field('post_name', get_the_ID());
                     <?php the_content(); ?>
                 </div>
             </article>
+            <?php endwhile; ?>
         <?php endif; ?>
-    <?php endwhile; ?>
 </div>
 
 <?php
