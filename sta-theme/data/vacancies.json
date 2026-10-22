@@ -73,9 +73,9 @@
         "positionsEn": "1st and 2nd substitute representative",
         "organization": "Universitetet i Agder (UiA)",
         "organizationEn": "University of Agder (UiA)",
-        "infoUrl": "https://www.uia.no/om-uia/styrer-og-utvalg/",
-        "infoUrlLabel": "Offisiell UiA-side for styrer og utvalg",
-        "infoUrlLabelEn": "Official UiA Boards and Committees page",
+        "infoUrl": "https://www.uia.no/om-uia/utdanningsprisen/",
+        "infoUrlLabel": "Offisiell UiA-side for Utdanningsprisen",
+        "infoUrlLabelEn": "Official UiA Education Award page",
         "eligibility": "Alle semesterregistrerte studenter ved UiA",
         "eligibilityEn": "All semester-registered students at UiA"
       }
@@ -127,9 +127,9 @@
         "positionsEn": "4th, 5th, and 6th substitute representative",
         "organization": "Velferdstinget i Agder (VT)",
         "organizationEn": "The Welfare Council in Agder (VT)",
-        "infoUrl": "https://www.sia.no/om-sia/studentdemokratiet/",
-        "infoUrlLabel": "Offisiell informasjon (SiA / Velferdstinget)",
-        "infoUrlLabelEn": "Official information (SiA / Welfare Council)",
+        "infoUrl": "https://vt-agder.no/",
+        "infoUrlLabel": "Besøk Velferdstinget (vt-agder.no)",
+        "infoUrlLabelEn": "Visit Welfare Council (vt-agder.no)",
         "eligibility": "Alle semesterregistrerte studenter i Agder",
         "eligibilityEn": "All semester-registered students in Agder"
       },

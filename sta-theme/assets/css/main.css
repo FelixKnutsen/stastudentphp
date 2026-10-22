@@ -644,6 +644,84 @@ button.sta-card:hover,
     flex-grow: 1;
 }
 
+/* Typography & Prose for Articles and Content Pages */
+.sta-article-content,
+.sta-entry-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--sta-teal-50);
+}
+.sta-article-content p,
+.sta-entry-content p {
+    margin: 0 0 1.5rem 0;
+}
+.sta-article-content h2,
+.sta-entry-content h2 {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 2.5rem 0 1rem 0;
+    line-height: 1.3;
+}
+.sta-article-content h3,
+.sta-entry-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 2rem 0 0.75rem 0;
+    line-height: 1.4;
+}
+.sta-article-content a,
+.sta-entry-content a {
+    color: var(--sta-orange);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+.sta-article-content a:hover,
+.sta-entry-content a:hover {
+    color: var(--sta-orange-hover);
+}
+.sta-article-content ul,
+.sta-article-content ol,
+.sta-entry-content ul,
+.sta-entry-content ol {
+    margin: 0 0 1.5rem 1.5rem;
+    padding: 0;
+}
+.sta-article-content li,
+.sta-entry-content li {
+    margin-bottom: 0.5rem;
+}
+.sta-article-content blockquote,
+.sta-entry-content blockquote {
+    border-left: 4px solid var(--sta-orange);
+    padding: 0.75rem 1.5rem;
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 0 var(--sta-radius-sm) var(--sta-radius-sm) 0;
+    color: var(--sta-teal-100);
+    font-style: italic;
+}
+.sta-article-content img,
+.sta-entry-content img {
+    border-radius: var(--sta-radius-sm);
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+}
+.sta-article-content figure,
+.sta-entry-content figure {
+    margin: 2rem 0;
+}
+.sta-article-content figcaption,
+.sta-entry-content figcaption {
+    font-size: 0.875rem;
+    color: var(--sta-teal-200);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
 /* Directory Pages (Filter, Search, Cards) */
 .sta-directory-controls {
     margin: 2.5rem 0 2rem;

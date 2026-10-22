@@ -12,7 +12,7 @@ $is_en = sta_is_en();
 $is_nn = sta_is_nn();
 
 global $wp_query;
-if ((!empty($_GET['sta_page']) && $_GET['sta_page'] === 'nyheter') || is_page() || is_front_page()) {
+if ((!empty($_GET['sta_page']) && in_array($_GET['sta_page'], array('nyheter', 'siste-nytt', 'aktuelt'))) || is_page() || is_front_page()) {
     $paged = isset($_GET['paged']) ? max(1, intval($_GET['paged'])) : max(1, intval(get_query_var('paged')));
     $wp_query = new WP_Query(array(
         'post_type'      => 'post',
