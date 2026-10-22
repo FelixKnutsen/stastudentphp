@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.1.9');
+define('STA_THEME_VERSION', '1.2.0');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -176,12 +176,22 @@ add_action('after_switch_theme', function () {
  * Force STA Theme templates at highest priority (9999999) so page builders
  * (such as Elementor's header-footer template) on existing sites never replace
  * our custom PHP templates with old page-builder content.
+ *
+ * Ensures full compatibility with Elementor:
+ * - If Elementor editor/preview is active, loads front-page.php or page.php.
+ * - If a subpage has been built or edited with Elementor, loads page.php so the_content() renders.
+ * - Otherwise, loads our custom PHP templates.
  */
 function sta_force_theme_templates($template) {
-    // 0. If Elementor preview is open, check if it's the front page
-    if (!empty($_GET['elementor-preview'])) {
-        $preview_id = intval($_GET['elementor-preview']);
-        if ($preview_id === (int) get_option('page_on_front')) {
+    $is_elementor_active = !empty($_GET['elementor-preview']) 
+        || !empty($_GET['preview']) 
+        || (isset($_GET['action']) && $_GET['action'] === 'elementor')
+        || (class_exists('\Elementor\Plugin') && (\Elementor\Plugin::$instance->editor->is_edit_mode() || \Elementor\Plugin::$instance->preview->is_preview_mode()));
+
+    // 0. If Elementor editor/preview is active
+    if ($is_elementor_active) {
+        $preview_id = !empty($_GET['elementor-preview']) ? intval($_GET['elementor-preview']) : get_queried_object_id();
+        if ($preview_id === (int) get_option('page_on_front') || is_front_page()) {
             $front = STA_THEME_PATH . '/front-page.php';
             if (file_exists($front)) {
                 return $front;
@@ -257,7 +267,23 @@ function sta_force_theme_templates($template) {
     }
 
     if (is_page()) {
-        $post_id   = get_queried_object_id();
+        $post_id = get_queried_object_id();
+        
+        // If this page has been built or edited in Elementor, route to page.php so the_content() is rendered!
+        $is_built_with_elementor = false;
+        if (class_exists('\Elementor\Plugin') && \Elementor\Plugin::$instance->db->is_built_with_elementor($post_id)) {
+            $is_built_with_elementor = true;
+        } elseif (get_post_meta($post_id, '_elementor_edit_mode', true) === 'builder') {
+            $is_built_with_elementor = true;
+        }
+
+        if ($is_built_with_elementor) {
+            $default_page = STA_THEME_PATH . '/page.php';
+            if (file_exists($default_page)) {
+                return $default_page;
+            }
+        }
+
         $post_slug = $post_id ? get_post_field('post_name', $post_id) : '';
         if ($post_slug) {
             $slug_template = STA_THEME_PATH . '/page-' . $post_slug . '.php';
@@ -274,6 +300,30 @@ function sta_force_theme_templates($template) {
     return $template;
 }
 add_filter('template_include', 'sta_force_theme_templates', 9999999);
+
+/**
+ * Safeguard: Prevent WP-Optimize, Autoptimize, or other minification tools from
+ * deferring jQuery and Elementor core scripts, which causes the Elementor editor preview
+ * handshake to fail or hang indefinitely.
+ */
+add_filter('script_loader_tag', function($tag, $handle, $src) {
+    if (in_array($handle, array('jquery', 'jquery-core', 'jquery-migrate'), true) || strpos($handle, 'elementor') !== false) {
+        // Strip defer and async attributes so critical scripts execute synchronously
+        $tag = preg_replace('/\s+(defer|async)(="[^"]*"|=\'[^\']*\'|(?=[\s>]))/i', '', $tag);
+    }
+    return $tag;
+}, 99999, 3);
+
+/**
+ * Automatically ensure WP-Optimize has defer_jquery turned off to safeguard Elementor editor.
+ */
+add_action('admin_init', function() {
+    $wpo_minify = get_option('wp_optimize_minify_settings', null);
+    if (is_array($wpo_minify) && !empty($wpo_minify['defer_jquery'])) {
+        $wpo_minify['defer_jquery'] = false;
+        update_option('wp_optimize_minify_settings', $wpo_minify);
+    }
+});
 
 /**
  * Shortcode to render 3 latest news articles matching the approved homepage design

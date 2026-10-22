@@ -126,7 +126,18 @@
               },
               "icon_align": "right",
               "css_classes": "sta-btn sta-btn-orange",
-              "_css_classes": "sta-btn sta-btn-orange"
+              "_css_classes": "sta-btn sta-btn-orange",
+              "button_background_color": "#ef7330",
+              "background_color": "#ef7330",
+              "button_text_color": "#ffffff",
+              "border_radius": {
+                "unit": "px",
+                "top": "8",
+                "right": "8",
+                "bottom": "8",
+                "left": "8",
+                "isLinked": true
+              }
             },
             "elements": []
           }
@@ -496,7 +507,18 @@
                   },
                   "icon_align": "right",
                   "css_classes": "sta-btn sta-btn-orange",
-                  "_css_classes": "sta-btn sta-btn-orange"
+                  "_css_classes": "sta-btn sta-btn-orange",
+                  "button_background_color": "#ef7330",
+                  "background_color": "#ef7330",
+                  "button_text_color": "#ffffff",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "isLinked": true
+                  }
                 },
                 "elements": []
               }
@@ -601,7 +623,18 @@
                   },
                   "icon_align": "right",
                   "css_classes": "sta-btn sta-btn-orange",
-                  "_css_classes": "sta-btn sta-btn-orange"
+                  "_css_classes": "sta-btn sta-btn-orange",
+                  "button_background_color": "#ef7330",
+                  "background_color": "#ef7330",
+                  "button_text_color": "#ffffff",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "isLinked": true
+                  }
                 },
                 "elements": []
               }

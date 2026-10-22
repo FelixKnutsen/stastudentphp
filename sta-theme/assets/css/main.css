@@ -1740,7 +1740,7 @@ article.sta-article,
 .sta-front-page-elementor,
 .elementor-11503,
 .elementor-page-11503 {
-    background-color: var(--sta-teal-900) !important;
+    background-color: var(--sta-bg) !important;
     color: #ffffff;
     min-height: 80vh;
 }
@@ -1778,8 +1778,8 @@ article.sta-article,
 .sta-verv-banner,
 .elementor-element.sta-verv-banner,
 .sta-verv-banner.e-con > .e-con-inner {
-    background: rgba(9, 50, 47, 0.8) !important;
-    border: 1px solid rgba(61, 148, 139, 0.4) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(158, 207, 201, 0.25) !important;
     border-radius: var(--sta-radius) !important;
     padding: 2rem 2.5rem !important;
     display: flex !important;
@@ -1871,13 +1871,14 @@ article.sta-article,
 .sta-quick-card,
 .elementor-element.sta-quick-card,
 .sta-quick-grid .elementor-widget-icon-box {
-    background: rgba(9, 50, 47, 0.5) !important;
-    border: 1px solid rgba(61, 148, 139, 0.3) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(158, 207, 201, 0.25) !important;
     border-radius: var(--sta-radius) !important;
     padding: 2rem 1.5rem !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: center !important;
     text-align: center !important;
     transition: all 0.3s ease !important;
     text-decoration: none !important;
@@ -1888,42 +1889,94 @@ article.sta-article,
 .sta-quick-card:hover,
 .elementor-element.sta-quick-card:hover,
 .sta-quick-grid .elementor-widget-icon-box:hover {
-    background: rgba(9, 50, 47, 0.8) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
     border-color: var(--sta-orange) !important;
     transform: translateY(-4px) !important;
     box-shadow: 0 12px 25px -5px rgba(0, 0, 0, 0.4) !important;
 }
+
+/* Ensure centering for Quick Nav Icon Box inner structure */
+.sta-quick-card .elementor-widget-container,
+.sta-quick-card .elementor-icon-box-wrapper {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .sta-quick-card .elementor-icon-box-icon,
 .sta-quick-icon-box {
-    width: 4rem !important;
-    height: 4rem !important;
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+    min-width: 4.5rem !important;
+    min-height: 4.5rem !important;
     border-radius: var(--sta-radius) !important;
     background: rgba(239, 115, 48, 0.15) !important;
     color: var(--sta-orange) !important;
-    display: inline-flex !important;
+    display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin-bottom: 1.25rem !important;
-    transition: background 0.3s, color 0.3s !important;
+    margin: 0 auto 1.25rem auto !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    transition: background 0.3s, color 0.3s, transform 0.2s !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
 }
+
+.sta-quick-card .elementor-icon-box-icon .elementor-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    color: var(--sta-orange) !important;
+}
+
 .sta-quick-card .elementor-icon-box-icon svg,
 .sta-quick-card .elementor-icon-box-icon i,
 .sta-quick-icon-box svg,
 .sta-quick-icon-box i {
-    font-size: 1.75rem !important;
-    width: 1.75rem !important;
-    height: 1.75rem !important;
+    font-size: 2rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    line-height: 1 !important;
+    display: block !important;
+    margin: 0 auto !important;
     color: var(--sta-orange) !important;
+    fill: currentColor !important;
 }
+
+.sta-quick-card .elementor-icon-box-icon img {
+    max-width: 2.25rem !important;
+    max-height: 2.25rem !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
 .sta-quick-card:hover .elementor-icon-box-icon,
 .sta-quick-card:hover .sta-quick-icon-box {
     background: var(--sta-orange) !important;
     color: #ffffff !important;
 }
+
+.sta-quick-card:hover .elementor-icon-box-icon .elementor-icon,
 .sta-quick-card:hover .elementor-icon-box-icon svg,
 .sta-quick-card:hover .elementor-icon-box-icon i {
     color: #ffffff !important;
+    fill: #ffffff !important;
 }
+
 .sta-quick-title,
 .sta-quick-card .elementor-icon-box-title,
 .sta-quick-card .elementor-icon-box-title a {
@@ -1951,7 +2004,7 @@ article.sta-article,
 .sta-news-section,
 .elementor-element.sta-news-section {
     padding: 3.5rem 0 !important;
-    background-color: rgba(4, 24, 23, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
     width: 100% !important;
 }
 .sta-news-header-row,
@@ -2017,13 +2070,19 @@ article.sta-article,
     flex-direction: row !important;
     gap: 2.5rem !important;
     align-items: center !important;
-    background: rgba(7, 38, 36, 0.4) !important;
-    border: 1px solid rgba(61, 148, 139, 0.3) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(158, 207, 201, 0.25) !important;
     border-radius: var(--sta-radius) !important;
     padding: 2.5rem !important;
     margin-bottom: 2.5rem !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+}
+.sta-feature-card:hover,
+.elementor-element.sta-feature-card:hover {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(158, 207, 201, 0.4) !important;
 }
 @media (max-width: 900px) {
     .sta-feature-card,
@@ -2046,7 +2105,7 @@ article.sta-article,
     min-height: 240px !important;
     border-radius: var(--sta-radius-sm) !important;
     overflow: hidden !important;
-    border: 1px solid rgba(61, 148, 139, 0.2) !important;
+    border: 1px solid rgba(158, 207, 201, 0.2) !important;
 }
 @media (max-width: 900px) {
     .sta-feature-img-box,
@@ -2097,18 +2156,75 @@ article.sta-article,
     line-height: 1.6 !important;
     margin: 0 0 1.5rem 0 !important;
 }
+
+/* Feature button and orange buttons: crisp solid brand orange, no grey inner boxes */
+.sta-feature-content .elementor-widget-button,
+.elementor-widget-button.sta-btn-orange,
+.sta-verv-banner .elementor-widget-button {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    width: auto !important;
+}
+
 .sta-feature-content .elementor-button,
-.sta-feature-content .sta-btn-orange {
+.sta-feature-content .sta-btn-orange,
+.sta-verv-banner .elementor-button,
+.sta-verv-banner .sta-btn-orange,
+.sta-btn-orange,
+.elementor-element.sta-btn-orange .elementor-button {
     align-self: flex-start !important;
     width: auto !important;
     display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    background-color: var(--sta-orange) !important;
+    background: var(--sta-orange) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: var(--sta-radius-sm) !important;
+    padding: 0.85rem 1.75rem !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 14px rgba(239, 115, 48, 0.35) !important;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.sta-feature-content .elementor-button:hover,
+.sta-feature-content .sta-btn-orange:hover,
+.sta-verv-banner .elementor-button:hover,
+.sta-verv-banner .sta-btn-orange:hover,
+.sta-btn-orange:hover,
+.elementor-element.sta-btn-orange .elementor-button:hover {
+    background-color: var(--sta-orange-hover) !important;
+    background: var(--sta-orange-hover) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(239, 115, 48, 0.45) !important;
+}
+
+.elementor-button .elementor-button-content-wrapper {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.elementor-button .elementor-button-text,
+.elementor-button .elementor-button-icon {
+    color: #ffffff !important;
 }
 
 /* 6. Collaborating Partners Section & Cards */
 .sta-partners-section,
 .elementor-element.sta-partners-section {
     padding: 4.5rem 0 !important;
-    background-color: rgba(4, 24, 23, 0.6) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
     border-top: 1px solid rgba(158, 207, 201, 0.2) !important;
     width: 100% !important;
     box-sizing: border-box !important;

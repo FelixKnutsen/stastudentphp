@@ -11,11 +11,30 @@ if (!defined('ABSPATH')) {
 get_header();
 $is_en = sta_is_en();
 $is_nn = sta_is_nn();
-$post_slug = !empty($_GET['elementor-preview']) ? '' : (!empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_page'])) : get_post_field('post_name', get_the_ID()));
+
+$current_id = get_the_ID();
+$is_elementor_page = !empty($_GET['elementor-preview']) 
+    || !empty($_GET['preview']) 
+    || (isset($_GET['action']) && $_GET['action'] === 'elementor')
+    || (class_exists('\Elementor\Plugin') && (\Elementor\Plugin::$instance->editor->is_edit_mode() || \Elementor\Plugin::$instance->preview->is_preview_mode() || \Elementor\Plugin::$instance->db->is_built_with_elementor($current_id)))
+    || get_post_meta($current_id, '_elementor_edit_mode', true) === 'builder';
+
+$post_slug = !empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_page'])) : get_post_field('post_name', $current_id);
 ?>
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
-        <?php if ($post_slug === 'om-sta' || $post_slug === 'om-oss' || $post_slug === 'om-oss-2'): ?>
+        <?php if ($is_elementor_page): ?>
+            <article id="page-<?php the_ID(); ?>" <?php post_class('sta-page-content'); ?> style="max-width:1280px; margin:0 auto; width:100%;">
+                <div class="sta-entry-content" style="font-size:1.15rem; line-height:1.8; color:var(--sta-teal-50);">
+                    <?php
+                    while (have_posts()) : the_post();
+                        the_content();
+                    endwhile;
+                    ?>
+                </div>
+            </article>
+
+        <?php elseif ($post_slug === 'om-sta' || $post_slug === 'om-oss' || $post_slug === 'om-oss-2'): ?>
             <header class="sta-page-header" style="text-align:center; max-width:800px; margin:0 auto 3rem;">
                 <span class="sta-badge"><?php echo esc_html(sta_t('Om STA', 'About STA', 'Om STA')); ?></span>
                 <h1 class="sta-hero-title" style="margin-top:0.5rem; font-size:2.75rem;">
