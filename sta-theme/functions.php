@@ -78,3 +78,128 @@ function sta_adjust_news_archive_query($query) {
     }
 }
 add_action('pre_get_posts', 'sta_adjust_news_archive_query');
+
+/**
+ * Automatically ensure all STA pages and custom templates exist in WordPress
+ * so the site works out-of-the-box without manual page recreation.
+ */
+function sta_auto_ensure_pages() {
+    if (get_option('sta_theme_pages_seeded_v2') === 'yes') {
+        return;
+    }
+
+    $pages_to_ensure = array(
+        'forside'                  => array('title' => 'Forside',                  'template' => 'front-page.php',                  'is_front' => true),
+        'sta-styret'               => array('title' => 'STA-styret',               'template' => 'page-sta-styret.php'),
+        'studentparlamentet'       => array('title' => 'Studentparlamentet',       'template' => 'page-studentparlamentet.php'),
+        'ledige-verv'              => array('title' => 'Ledige verv',              'template' => 'page-ledige-verv.php'),
+        'linjeforeninger'          => array('title' => 'Linjeforeninger',          'template' => 'page-linjeforeninger.php'),
+        'studentaktiviteter'       => array('title' => 'Studentaktiviteter',       'template' => 'page-studentaktiviteter.php'),
+        'lokaler'                  => array('title' => 'Lokaler',                  'template' => 'page-lokaler.php'),
+        'dokumenter'               => array('title' => 'Dokumenter',               'template' => 'page-dokumenter.php'),
+        'for-tillitsvalgte'        => array('title' => 'For tillitsvalgte',        'template' => 'page-for-tillitsvalgte.php'),
+        'rad-styrer-og-utvalg'     => array('title' => 'Råd, styrer og utvalg',    'template' => 'page-rad-styrer-og-utvalg.php'),
+        'trygg-organisasjon'       => array('title' => 'Trygg Organisasjon',       'template' => 'page-trygg-organisasjon.php'),
+        'irene-bredals-hederspris' => array('title' => 'Irene Bredals Hederspris', 'template' => 'page-irene-bredals-hederspris.php'),
+        'personvernserklaering'    => array('title' => 'Personvernserklæring',     'template' => 'page-personvernserklaering.php'),
+        'om-sta'                   => array('title' => 'Om STA',                   'template' => 'page.php'),
+        'engasjer-deg'             => array('title' => 'Engasjer deg',             'template' => 'page.php'),
+        'for-foreninger'           => array('title' => 'For foreninger',           'template' => 'page.php'),
+    );
+
+    foreach ($pages_to_ensure as $slug => $data) {
+        $existing = get_page_by_path($slug, OBJECT, 'page');
+        if (!$existing) {
+            $posts = get_posts(array(
+                'name'        => $slug,
+                'post_type'   => 'page',
+                'post_status' => 'publish',
+                'numberposts' => 1,
+            ));
+            if (!empty($posts)) {
+                $existing = $posts[0];
+                if ($existing->post_parent != 0) {
+                    wp_update_post(array('ID' => $existing->ID, 'post_parent' => 0));
+                }
+            }
+        }
+
+        if ($existing) {
+            $page_id = $existing->ID;
+        } else {
+            $page_id = wp_insert_post(array(
+                'post_name'    => $slug,
+                'post_title'   => $data['title'],
+                'post_type'    => 'page',
+                'post_status'  => 'publish',
+                'post_content' => '',
+                'post_parent'  => 0,
+            ));
+        }
+
+        if ($page_id && !is_wp_error($page_id) && !empty($data['template'])) {
+            update_post_meta($page_id, '_wp_page_template', $data['template']);
+        }
+
+        if ($page_id && !is_wp_error($page_id) && !empty($data['is_front'])) {
+            if (get_option('show_on_front') !== 'page' || !get_option('page_on_front')) {
+                update_option('show_on_front', 'page');
+                update_option('page_on_front', $page_id);
+            }
+        }
+    }
+
+    update_option('sta_theme_pages_seeded_v2', 'yes');
+    flush_rewrite_rules();
+}
+add_action('init', 'sta_auto_ensure_pages', 20);
+add_action('after_switch_theme', function () {
+    delete_option('sta_theme_pages_seeded_v2');
+    sta_auto_ensure_pages();
+});
+
+/**
+ * Force STA Theme templates at highest priority (9999999) so page builders
+ * (such as Elementor's header-footer template) on existing sites never replace
+ * our custom PHP templates with old page-builder content.
+ */
+function sta_force_theme_templates($template) {
+    if (is_front_page()) {
+        $front = STA_THEME_PATH . '/front-page.php';
+        if (file_exists($front)) {
+            return $front;
+        }
+    }
+
+    if (is_page()) {
+        $post_id   = get_queried_object_id();
+        $post_slug = $post_id ? get_post_field('post_name', $post_id) : '';
+        if ($post_slug) {
+            $slug_template = STA_THEME_PATH . '/page-' . $post_slug . '.php';
+            if (file_exists($slug_template)) {
+                return $slug_template;
+            }
+        }
+        $default_page = STA_THEME_PATH . '/page.php';
+        if (file_exists($default_page)) {
+            return $default_page;
+        }
+    }
+
+    if (is_singular('post')) {
+        $single = STA_THEME_PATH . '/single.php';
+        if (file_exists($single)) {
+            return $single;
+        }
+    }
+
+    if (is_search()) {
+        $search = STA_THEME_PATH . '/search.php';
+        if (file_exists($search)) {
+            return $search;
+        }
+    }
+
+    return $template;
+}
+add_filter('template_include', 'sta_force_theme_templates', 9999999);

@@ -12,20 +12,64 @@ if (!defined('ABSPATH')) {
 }
 
 /**
+ * Helper: Get WordPress home path prefix (e.g. '' on root domain, or '/staging' on WP Staging)
+ */
+function sta_get_home_base_path() {
+    $home_path = parse_url(home_url(), PHP_URL_PATH);
+    if (!$home_path || $home_path === '/') {
+        return '';
+    }
+    return '/' . trim($home_path, '/');
+}
+
+/**
+ * Early URL Router for /en/ and /nn/ on Apache/Nginx & WP Staging subdirectories.
+ * Rewrites $_SERVER['REQUEST_URI'] before WordPress WP::parse_request() runs so
+ * /en/... and /nn/... route cleanly to the underlying WordPress pages without 404s.
+ */
+function sta_bootstrap_language_routing() {
+    if (is_admin() || !isset($_SERVER['REQUEST_URI'])) {
+        return;
+    }
+
+    $raw_uri = wp_unslash($_SERVER['REQUEST_URI']);
+    $GLOBALS['sta_original_request_uri'] = $raw_uri;
+
+    $req_path  = parse_url($raw_uri, PHP_URL_PATH) ?: '/';
+    $req_query = parse_url($raw_uri, PHP_URL_QUERY);
+    $base_path = sta_get_home_base_path();
+
+    $rel_path = $req_path;
+    if ($base_path !== '' && strpos($rel_path, $base_path) === 0) {
+        $rel_path = substr($rel_path, strlen($base_path));
+        if ($rel_path === '' || $rel_path[0] !== '/') {
+            $rel_path = '/' . $rel_path;
+        }
+    }
+
+    if (preg_match('#^/(en|nn)(?:/(.*))?$#i', $rel_path, $matches)) {
+        $lang = strtolower($matches[1]);
+        $GLOBALS['sta_detected_lang'] = $lang;
+        $_GET['lang'] = $lang;
+        $_COOKIE['sta_lang'] = $lang;
+
+        $subpath = '/' . (isset($matches[2]) ? $matches[2] : '');
+        $new_uri = $base_path . $subpath . ($req_query ? '?' . $req_query : '');
+        $_SERVER['REQUEST_URI'] = $new_uri;
+        $_SERVER['PATH_INFO']   = $subpath;
+        unset($_SERVER['ORIG_PATH_INFO']);
+    }
+}
+sta_bootstrap_language_routing();
+
+/**
  * Detect current active language ('no', 'en', or 'nn')
  * Default is ALWAYS 'no' (Norsk bokmål) unless English or Nynorsk is explicitly requested.
  */
 function sta_get_current_language() {
-    // 1. Check TranslatePress if active
-    if (function_exists('trp_get_current_language')) {
-        $trp_lang = strtolower(trp_get_current_language());
-        if (strpos($trp_lang, 'en') === 0) {
-            return 'en';
-        }
-        if (strpos($trp_lang, 'nn') === 0) {
-            return 'nn';
-        }
-        return 'no';
+    // 1. Check early-detected URL prefix (/en/ or /nn/)
+    if (!empty($GLOBALS['sta_detected_lang'])) {
+        return $GLOBALS['sta_detected_lang'];
     }
 
     // 2. Check query parameter ?lang=en, ?lang=nn, or ?lang=no
@@ -42,7 +86,23 @@ function sta_get_current_language() {
         }
     }
 
-    // 3. Check cookie
+    // 3. Check URL path for /en/ or /nn/ (accounting for any staging subdirectory)
+    $raw_uri = isset($GLOBALS['sta_original_request_uri'])
+        ? $GLOBALS['sta_original_request_uri']
+        : (isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '/');
+    $req_path = parse_url($raw_uri, PHP_URL_PATH) ?: '/';
+    $base_path = sta_get_home_base_path();
+    if ($base_path !== '' && strpos($req_path, $base_path) === 0) {
+        $req_path = substr($req_path, strlen($base_path)) ?: '/';
+    }
+    if (preg_match('#^/en(/|\?|$)#i', $req_path)) {
+        return 'en';
+    }
+    if (preg_match('#^/nn(/|\?|$)#i', $req_path)) {
+        return 'nn';
+    }
+
+    // 4. Check cookie
     if (isset($_COOKIE['sta_lang'])) {
         $cookie_lang = strtolower(sanitize_text_field(wp_unslash($_COOKIE['sta_lang'])));
         if ($cookie_lang === 'en') {
@@ -56,13 +116,13 @@ function sta_get_current_language() {
         }
     }
 
-    // 4. Check URL path for /en/ or /nn/
-    if (isset($_SERVER['REQUEST_URI'])) {
-        $uri = sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI']));
-        if (preg_match('#^/en(/|\?|$)#i', $uri)) {
+    // 5. Fallback to TranslatePress if active and none of the above were set
+    if (function_exists('trp_get_current_language')) {
+        $trp_lang = strtolower(trp_get_current_language());
+        if (strpos($trp_lang, 'en') === 0) {
             return 'en';
         }
-        if (preg_match('#^/nn(/|\?|$)#i', $uri)) {
+        if (strpos($trp_lang, 'nn') === 0) {
             return 'nn';
         }
     }
@@ -122,16 +182,27 @@ function sta_get_localized_url($path = '/', $target_lang = null) {
 }
 
 /**
- * Get target language URL for switcher (retains current subpath)
+ * Get target language URL for switcher (retains current subpath & supports WP Staging subdirectories)
  */
 function sta_get_language_url($target_lang = 'no') {
-    $current_uri = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '/';
+    $current_uri = isset($GLOBALS['sta_original_request_uri'])
+        ? $GLOBALS['sta_original_request_uri']
+        : (isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '/');
     $clean_uri = remove_query_arg('lang', $current_uri);
 
     $path = parse_url($clean_uri, PHP_URL_PATH);
     if (!$path) $path = '/';
     $query = parse_url($clean_uri, PHP_URL_QUERY);
     $query_str = $query ? '?' . $query : '';
+
+    // Strip WP Staging subdirectory prefix if present
+    $base_path = sta_get_home_base_path();
+    if ($base_path !== '' && strpos($path, $base_path) === 0) {
+        $path = substr($path, strlen($base_path));
+        if ($path === '' || $path[0] !== '/') {
+            $path = '/' . $path;
+        }
+    }
 
     // Strip any existing language prefix (/en or /nn)
     $clean_path = preg_replace('#^/(en|nn)(/|$)#i', '/', $path);

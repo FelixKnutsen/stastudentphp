@@ -16,7 +16,7 @@ $post_slug = get_post_field('post_name', get_the_ID());
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <?php while (have_posts()): the_post(); ?>
-        <?php if (($is_en || $is_nn) && ($post_slug === 'om-sta' || $post_slug === 'om-oss' || $post_slug === 'om-oss-2')): ?>
+        <?php if ($post_slug === 'om-sta' || $post_slug === 'om-oss' || $post_slug === 'om-oss-2'): ?>
             <header class="sta-page-header" style="text-align:center; max-width:800px; margin:0 auto 3rem;">
                 <span class="sta-badge"><?php echo esc_html(sta_t('Om STA', 'About STA', 'Om STA')); ?></span>
                 <h1 class="sta-hero-title" style="margin-top:0.5rem; font-size:2.75rem;">
@@ -77,7 +77,7 @@ $post_slug = get_post_field('post_name', get_the_ID());
                 </a>
             </div>
 
-        <?php elseif (($is_en || $is_nn) && $post_slug === 'engasjer-deg'): ?>
+        <?php elseif ($post_slug === 'engasjer-deg'): ?>
             <article id="page-<?php the_ID(); ?>" <?php post_class('sta-page-content'); ?> style="max-width:900px; margin:0 auto;">
                 <header class="sta-page-header">
                     <span class="sta-badge"><?php echo esc_html(sta_t('Engasjement', 'Engagement', 'Engasjement')); ?></span>
@@ -103,7 +103,7 @@ $post_slug = get_post_field('post_name', get_the_ID());
                 </div>
             </article>
 
-        <?php elseif (($is_en || $is_nn) && $post_slug === 'for-foreninger'): ?>
+        <?php elseif ($post_slug === 'for-foreninger'): ?>
             <article id="page-<?php the_ID(); ?>" <?php post_class('sta-page-content'); ?> style="max-width:900px; margin:0 auto;">
                 <header class="sta-page-header">
                     <span class="sta-badge"><?php echo esc_html(sta_t('Foreninger', 'Associations', 'Foreiningar')); ?></span>
