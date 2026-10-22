@@ -222,6 +222,18 @@ function sta_format_date($timestamp_or_str = null, $format = 'j. F Y') {
 }
 
 /**
+ * Normalize a document URL for deduplication (strips staging subdirectory prefixes like /reliant/)
+ */
+function sta_normalize_doc_url_key($url) {
+    $u = rtrim(trim((string) $url), '/');
+    $base_path = function_exists('sta_get_home_base_path') ? sta_get_home_base_path() : '';
+    if ($base_path !== '') {
+        $u = str_replace($base_path . '/', '/', $u);
+    }
+    return strtolower($u);
+}
+
+/**
  * Parse year-grouped document links from WordPress page content (Elementor / Block / Classic editor)
  * and merge any newly added links with the default structured archive so future edits in WordPress
  * immediately appear on the page.
@@ -236,7 +248,7 @@ function sta_merge_editable_year_docs($html, $default_groups) {
     foreach ($default_groups as $yr => $items) {
         foreach ($items as $it) {
             if (!empty($it['href'])) {
-                $existing_urls[rtrim(trim($it['href']), '/')] = true;
+                $existing_urls[sta_normalize_doc_url_key($it['href'])] = true;
             }
         }
     }
@@ -262,7 +274,7 @@ function sta_merge_editable_year_docs($html, $default_groups) {
                 if ($href === '' || $href === '#' || $title === '' || strtolower($title) === 'klikk her') {
                     continue;
                 }
-                $norm_href = rtrim($href, '/');
+                $norm_href = sta_normalize_doc_url_key($href);
                 if (!isset($existing_urls[$norm_href])) {
                     $existing_urls[$norm_href] = true;
                     $new_for_year[] = array(
