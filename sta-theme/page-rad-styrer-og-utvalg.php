@@ -192,20 +192,13 @@ if ($committees_file && file_exists($committees_file)) {
                     ?>
                         <div class="sta-card" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
                             <div>
-                                <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.75rem; margin-bottom:0.75rem;">
-                                    <div style="display:flex; align-items:center; gap:0.65rem;">
-                                        <div style="width:2.25rem; height:2.25rem; border-radius:0.5rem; background:rgba(239,115,48,0.18); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                        </div>
-                                        <h3 style="font-size:1.1rem; font-weight:700; color:#fff; margin:0; line-height:1.3;">
-                                            <?php echo esc_html($item_name); ?>
-                                        </h3>
+                                <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.85rem;">
+                                    <div style="width:2.25rem; height:2.25rem; border-radius:0.5rem; background:rgba(239,115,48,0.18); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                                     </div>
-                                    <?php if (!empty($item_pos)): ?>
-                                        <span class="sta-badge" style="font-size:0.7rem; padding:0.2rem 0.6rem; flex-shrink:0; background:rgba(239,115,48,0.2); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); margin:0;">
-                                            <?php echo esc_html($item_pos); ?>
-                                        </span>
-                                    <?php endif; ?>
+                                    <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0; line-height:1.35; overflow-wrap:break-word; word-break:break-word;">
+                                        <?php echo esc_html($item_name); ?>
+                                    </h3>
                                 </div>
                                 <?php if (!empty($item_desc)): ?>
                                     <p style="font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
@@ -216,7 +209,7 @@ if ($committees_file && file_exists($committees_file)) {
 
                             <?php if (!empty($final_url)): ?>
                                 <div style="margin-top:1.25rem; padding-top:0.85rem; border-top:1px solid rgba(158,207,201,0.18);">
-                                    <a href="<?php echo esc_url($final_url); ?>" <?php echo $is_ext ? 'target="_blank" rel="noopener noreferrer"' : ''; ?> style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange); text-decoration:none;">
+                                    <a href="<?php echo esc_url($final_url); ?>" <?php echo $is_ext ? 'target="_blank" rel="noopener noreferrer"' : ''; ?> style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange); text-decoration:none;">
                                         <span><?php echo esc_html($info_label); ?></span>
                                         <?php if ($is_ext): ?>
                                             <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
