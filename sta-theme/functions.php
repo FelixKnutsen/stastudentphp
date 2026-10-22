@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.0.6');
+define('STA_THEME_VERSION', '1.0.7');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -85,7 +85,7 @@ add_action('pre_get_posts', 'sta_adjust_news_archive_query');
  * so the site works out-of-the-box without manual page recreation.
  */
 function sta_auto_ensure_pages() {
-    if (get_option('sta_theme_pages_seeded_v5') === 'yes') {
+    if (get_option('sta_theme_pages_seeded_v6') === 'yes') {
         return;
     }
 
@@ -102,6 +102,7 @@ function sta_auto_ensure_pages() {
         'referat-fra-moter-i-studentparlamentet' => array('title' => 'Protokoller fra møter i Studentparlamentet', 'template' => 'page-referat-fra-moter-i-studentparlamentet.php'),
         'for-tillitsvalgte'        => array('title' => 'For tillitsvalgte',        'template' => 'page-for-tillitsvalgte.php'),
         'rad-styrer-og-utvalg'     => array('title' => 'Råd, styrer og utvalg',    'template' => 'page-rad-styrer-og-utvalg.php'),
+        'valgkomiteen'             => array('title' => 'Valgkomitéen',             'template' => 'page-valgkomiteen.php'),
         'trygg-organisasjon'       => array('title' => 'Trygg Organisasjon',       'template' => 'page-trygg-organisasjon.php'),
         'irene-bredals-hederspris' => array('title' => 'Irene Bredals Hederspris', 'template' => 'page-irene-bredals-hederspris.php'),
         'personvernserklaering'    => array('title' => 'Personvernserklæring',     'template' => 'page-personvernserklaering.php'),
@@ -161,12 +162,12 @@ function sta_auto_ensure_pages() {
         }
     }
 
-    update_option('sta_theme_pages_seeded_v5', 'yes');
+    update_option('sta_theme_pages_seeded_v6', 'yes');
     flush_rewrite_rules();
 }
 add_action('init', 'sta_auto_ensure_pages', 20);
 add_action('after_switch_theme', function () {
-    delete_option('sta_theme_pages_seeded_v5');
+    delete_option('sta_theme_pages_seeded_v6');
     sta_auto_ensure_pages();
 });
 

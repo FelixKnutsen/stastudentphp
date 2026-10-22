@@ -146,9 +146,11 @@ if ($committees_file && file_exists($committees_file)) {
             $cat_name = $is_en ? ($cat['titleEn'] ?? $cat['nameEn'] ?? $raw_cat_title) : $raw_cat_title;
             if ($is_nn) {
                 $nn_cat_map = array(
-                    'STA-Verv'                  => 'STA-verv',
-                    'STAs Politiske Utvalg'     => 'STA sine politiske utval',
-                    'Universitetsorganer (UiA)' => 'Universitetsorgan (UiA)',
+                    'STA-Verv'                             => 'STA-verv',
+                    'STAs Politiske Utvalg'                => 'STA sine politiske utval',
+                    'STAs Organisatoriske Utvalg'          => 'STA sine organisatoriske utval',
+                    'Universitetsorganer og utvalg ved UiA'=> 'Universitetsorgan og utval ved UiA',
+                    'Universitetsorganer (UiA)'            => 'Universitetsorgan (UiA)',
                 );
                 if (isset($nn_cat_map[$raw_cat_title])) {
                     $cat_name = $nn_cat_map[$raw_cat_title];

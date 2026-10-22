@@ -72,27 +72,9 @@ if ($is_en) {
                     <?php echo esc_html(sta_t('Verv', 'Get involved', 'Verv')); ?>
                 </a>
 
-                <!-- Dokumenter Dropdown -->
-                <div class="sta-dropdown-container">
-                    <a href="<?php echo esc_url(sta_get_localized_url('/dokumenter')); ?>" class="sta-nav-link sta-dropdown-toggle <?php echo (strpos($current_url, 'dokumenter') !== false || strpos($current_url, 'sakspapirer') !== false || strpos($current_url, 'referat-fra-moter') !== false) ? 'is-active' : ''; ?>" aria-expanded="false" aria-haspopup="true" style="text-decoration:none;">
-                        <span><?php echo esc_html(sta_t('Dokumenter', 'Documents', 'Dokument')); ?></span>
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </a>
-                    <div class="sta-dropdown-menu" role="menu">
-                        <a href="<?php echo esc_url(sta_get_localized_url('/dokumenter')); ?>" class="sta-dropdown-item" role="menuitem">
-                            <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Styringsdokumenter & resolusjoner', 'Policy Documents & Resolutions', 'Styringsdokument & resolusjonar')); ?></span>
-                            <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Vedtekter, handlingsplan, politiske dokumenter og reglement', 'Statutes, action plan, policy documents and guidelines', 'Vedtekter, handlingsplan, politiske dokument og reglement')); ?></span>
-                        </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/sakspapirer')); ?>" class="sta-dropdown-item" role="menuitem">
-                            <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Sakspapirer', 'Meeting Papers (Agenda)', 'Sakspapir')); ?></span>
-                            <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Innkallinger og sakspapirer til møter i Studentparlamentet', 'Agendas and meeting papers for the Student Parliament', 'Innkallingar og sakspapir til møte i Studentparlamentet')); ?></span>
-                        </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/referat-fra-moter-i-studentparlamentet')); ?>" class="sta-dropdown-item" role="menuitem">
-                            <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Protokoller', 'Minutes & Protocols', 'Protokollar')); ?></span>
-                            <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Referater og protokoller fra møter i Studentparlamentet', 'Adopted minutes and protocols from the Student Parliament', 'Referat og protokollar frå møte i Studentparlamentet')); ?></span>
-                        </a>
-                    </div>
-                </div>
+                <a href="<?php echo esc_url(sta_get_localized_url('/dokumenter')); ?>" class="sta-nav-link <?php echo (strpos($current_url, 'dokumenter') !== false || strpos($current_url, 'sakspapirer') !== false || strpos($current_url, 'referat-fra-moter') !== false) ? 'is-active' : ''; ?>">
+                    <?php echo esc_html(sta_t('Dokumenter', 'Documents', 'Dokument')); ?>
+                </a>
 
                 <a href="<?php echo esc_url(sta_get_localized_url('/for-tillitsvalgte')); ?>" class="sta-nav-link <?php echo strpos($current_url, 'for-tillitsvalgte') !== false ? 'is-active' : ''; ?>">
                     <?php echo esc_html(sta_t('Tillitsvalgt', 'Student representatives', 'Tillitsvald')); ?>

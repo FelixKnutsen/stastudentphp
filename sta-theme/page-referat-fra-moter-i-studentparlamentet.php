@@ -106,17 +106,11 @@ $groups = sta_merge_editable_year_docs($wp_page ? $wp_page->post_content : '', $
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <!-- Breadcrumb / Back Link -->
-    <div style="margin-bottom:1.5rem; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem;">
+    <div style="margin-bottom:1.5rem;">
         <a href="<?php echo esc_url(sta_get_localized_url('/dokumenter')); ?>" style="display:inline-flex; align-items:center; gap:0.5rem; color:var(--sta-teal-200); font-size:0.9rem; font-weight:600; text-decoration:none;">
             <span aria-hidden="true">&larr;</span>
             <span><?php echo esc_html(sta_t('Tilbake til Dokumenter', 'Back to Documents', 'Tilbake til Dokument')); ?></span>
         </a>
-
-        <?php if ($wp_page && current_user_can('edit_post', $wp_page->ID)): ?>
-            <a href="<?php echo esc_url(get_edit_post_link($wp_page->ID)); ?>" class="sta-btn sta-btn-outline" style="padding:0.4rem 0.9rem; font-size:0.8rem;">
-                <?php echo esc_html(sta_t('Rediger protokoller i WordPress', 'Edit protocols in WordPress', 'Rediger protokollar i WordPress')); ?>
-            </a>
-        <?php endif; ?>
     </div>
 
     <header class="sta-page-header">
