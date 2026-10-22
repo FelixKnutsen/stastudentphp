@@ -31,8 +31,18 @@ if ($is_en) {
     <link rel="icon" type="image/svg+xml" href="<?php echo esc_url(get_template_directory_uri() . '/assets/images/favicon.svg'); ?>">
     <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/images/favicon.ico'); ?>">
     <?php wp_head(); ?>
+    <style>
+        html, body, body.custom-background, body[class*="elementor-kit-"], #page, #content, #main-content, .sta-site-main {
+            background-color: #0e4c47 !important;
+            background-image: none !important;
+            color: #ffffff !important;
+        }
+        #trp-floater-ls, .trp-language-switcher-container {
+            display: none !important;
+        }
+    </style>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="background-color:#0e4c47; color:#ffffff; min-height:100vh;">
 <?php wp_body_open(); ?>
 
 <a class="sta-skiplink" href="#main-content"><?php echo esc_html(sta_t('Hopp til hovedinnhold', 'Skip to main content', 'Hopp til hovudinnhald')); ?></a>

@@ -35,14 +35,25 @@
     box-sizing: border-box;
 }
 
-body {
+html,
+body,
+body.custom-background,
+body[class*="elementor-kit-"],
+#main-content,
+.sta-site-main {
     margin: 0;
     padding: 0;
     font-family: var(--sta-font);
-    background-color: var(--sta-bg);
-    color: var(--sta-fg);
+    background-color: #0e4c47 !important;
+    background-image: none !important;
+    color: #ffffff !important;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+}
+
+#trp-floater-ls,
+.trp-language-switcher-container {
+    display: none !important;
 }
 
 body.sta-no-scroll {

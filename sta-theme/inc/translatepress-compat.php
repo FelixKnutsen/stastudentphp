@@ -166,11 +166,35 @@ function sta_t($no_text, $en_text, $nn_text = null) {
 }
 
 /**
+ * Determine whether to use query-string (?lang=nn/en/no) language routing.
+ * Enabled automatically on WP Staging subdirectories (e.g. /reliant/) or when
+ * TranslatePress is active on the server so Apache/LiteSpeed/TranslatePress
+ * never 404s or hijacks /nn/ and /en/ routes.
+ */
+function sta_use_query_lang_routing() {
+    if (sta_get_home_base_path() !== '') {
+        return true;
+    }
+    if (function_exists('trp_get_current_language') || class_exists('TRP_Translate_Press')) {
+        return true;
+    }
+    return false;
+}
+
+/**
  * Helper to build language-aware internal URL
  */
 function sta_get_localized_url($path = '/', $target_lang = null) {
     $path = '/' . ltrim($path, '/');
     $lang = $target_lang ?: sta_get_current_language();
+
+    if (sta_use_query_lang_routing()) {
+        $base_url = home_url($path);
+        if ($lang === 'en' || $lang === 'nn') {
+            return add_query_arg('lang', $lang, $base_url);
+        }
+        return $base_url;
+    }
 
     if ($lang === 'en') {
         return home_url('/en' . ($path === '/' ? '/' : $path));
@@ -208,6 +232,11 @@ function sta_get_language_url($target_lang = 'no') {
     $clean_path = preg_replace('#^/(en|nn)(/|$)#i', '/', $path);
     if (!$clean_path) $clean_path = '/';
 
+    if (sta_use_query_lang_routing()) {
+        $base_url = home_url($clean_path . $query_str);
+        return add_query_arg('lang', $target_lang, $base_url);
+    }
+
     if ($target_lang === 'en') {
         return home_url('/en' . ($clean_path === '/' ? '/' : ('/' . ltrim($clean_path, '/'))) . $query_str);
     }
@@ -216,6 +245,12 @@ function sta_get_language_url($target_lang = 'no') {
     }
     return home_url($clean_path . $query_str);
 }
+
+/**
+ * Stop TranslatePress output buffer & floating language switcher from conflicting
+ * with STA Theme's built-in 3-language (Bokmål, Nynorsk, English) architecture.
+ */
+add_filter('trp_stop_translating_page', '__return_true', 999999);
 
 /**
  * Backward-compatible toggle language url
