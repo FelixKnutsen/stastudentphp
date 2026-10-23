@@ -280,9 +280,6 @@ add_filter('post_link', function ($permalink, $post) {
 }, 9999, 2);
 
 add_filter('page_link', function ($permalink, $post_id) {
-    if (!empty($_GET['elementor-preview']) || (isset($_GET['action']) && $_GET['action'] === 'elementor')) {
-        return $permalink;
-    }
     if (sta_use_query_lang_routing() && $post_id) {
         if ((int) $post_id === (int) get_option('page_on_front')) {
             return sta_get_localized_url('/');
@@ -295,6 +292,55 @@ add_filter('page_link', function ($permalink, $post_id) {
     }
     return $permalink;
 }, 9999, 2);
+
+/**
+ * Filter preview links so WordPress and Elementor never send preview clicks to 404 URLs on staging.
+ */
+add_filter('preview_post_link', function ($preview_link, $post) {
+    if (sta_use_query_lang_routing() && isset($post->ID)) {
+        if (isset($post->post_type) && $post->post_type === 'page') {
+            return add_query_arg(array('page_id' => $post->ID, 'preview' => 'true'), home_url('/'));
+        }
+        return add_query_arg(array('p' => $post->ID, 'preview' => 'true'), home_url('/'));
+    }
+    return $preview_link;
+}, 9999, 2);
+
+/**
+ * Ensure Elementor Document Preview URLs always hit index.php directly on staging
+ * so the editor preview iframe NEVER gets a 404, eliminating the infinite loading spinner.
+ */
+add_filter('elementor/document/urls/preview', function($preview_url, $document) {
+    if (!$document) {
+        return $preview_url;
+    }
+    $post_id = $document->get_main_id();
+    if ($post_id === (int) get_option('page_on_front')) {
+        return add_query_arg(array(
+            'elementor-preview' => $post_id,
+            'ver'               => time(),
+        ), home_url('/'));
+    }
+    return add_query_arg(array(
+        'page_id'           => $post_id,
+        'elementor-preview' => $post_id,
+        'ver'               => time(),
+    ), home_url('/'));
+}, 99999, 2);
+
+add_filter('elementor/document/urls/wp_preview', function($wp_preview_url, $document) {
+    if (!$document) {
+        return $wp_preview_url;
+    }
+    $post_id = $document->get_main_id();
+    if ($post_id === (int) get_option('page_on_front')) {
+        return add_query_arg('preview', 'true', home_url('/'));
+    }
+    return add_query_arg(array(
+        'page_id' => $post_id,
+        'preview' => 'true',
+    ), home_url('/'));
+}, 99999, 2);
 
 /**
  * Stop TranslatePress output buffer & floating language switcher from conflicting

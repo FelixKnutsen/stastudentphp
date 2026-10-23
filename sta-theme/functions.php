@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.2.0');
+define('STA_THEME_VERSION', '1.2.1');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -190,7 +190,7 @@ function sta_force_theme_templates($template) {
 
     // 0. If Elementor editor/preview is active
     if ($is_elementor_active) {
-        $preview_id = !empty($_GET['elementor-preview']) ? intval($_GET['elementor-preview']) : get_queried_object_id();
+        $preview_id = !empty($_GET['elementor-preview']) ? intval($_GET['elementor-preview']) : (!empty($_GET['page_id']) ? intval($_GET['page_id']) : (!empty($_GET['p']) ? intval($_GET['p']) : get_queried_object_id()));
         if ($preview_id === (int) get_option('page_on_front') || is_front_page()) {
             $front = STA_THEME_PATH . '/front-page.php';
             if (file_exists($front)) {
@@ -231,6 +231,24 @@ function sta_force_theme_templates($template) {
             $docs_tpl = STA_THEME_PATH . '/page-dokumenter.php';
             if (file_exists($docs_tpl)) {
                 return $docs_tpl;
+            }
+        }
+
+        // If this page was built or edited in Elementor, route to page.php so the_content() is rendered!
+        $page_obj = get_page_by_path($slug, OBJECT, 'page');
+        $is_built_with_elementor = false;
+        if ($page_obj) {
+            if (class_exists('\Elementor\Plugin') && \Elementor\Plugin::$instance->db->is_built_with_elementor($page_obj->ID)) {
+                $is_built_with_elementor = true;
+            } elseif (get_post_meta($page_obj->ID, '_elementor_edit_mode', true) === 'builder') {
+                $is_built_with_elementor = true;
+            }
+        }
+
+        if ($is_built_with_elementor) {
+            $default_page = STA_THEME_PATH . '/page.php';
+            if (file_exists($default_page)) {
+                return $default_page;
             }
         }
 
@@ -315,13 +333,28 @@ add_filter('script_loader_tag', function($tag, $handle, $src) {
 }, 99999, 3);
 
 /**
- * Automatically ensure WP-Optimize has defer_jquery turned off to safeguard Elementor editor.
+ * Automatically ensure WP-Optimize has defer_jquery turned off and .htaccess is configured for staging.
  */
 add_action('admin_init', function() {
     $wpo_minify = get_option('wp_optimize_minify_settings', null);
     if (is_array($wpo_minify) && !empty($wpo_minify['defer_jquery'])) {
         $wpo_minify['defer_jquery'] = false;
         update_option('wp_optimize_minify_settings', $wpo_minify);
+    }
+
+    // Try to ensure .htaccess has proper RewriteBase /reliant/ if writable
+    $htaccess_file = ABSPATH . '.htaccess';
+    if (is_writable($htaccess_file) && function_exists('insert_with_markers')) {
+        $marker = 'WordPress';
+        $rules = array(
+            'RewriteEngine On',
+            'RewriteBase /reliant/',
+            'RewriteRule ^index\.php$ - [L]',
+            'RewriteCond %{REQUEST_FILENAME} !-f',
+            'RewriteCond %{REQUEST_FILENAME} !-d',
+            'RewriteRule . /reliant/index.php [L]',
+        );
+        insert_with_markers($htaccess_file, $marker, $rules);
     }
 });
 

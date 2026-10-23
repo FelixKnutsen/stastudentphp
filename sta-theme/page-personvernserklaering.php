@@ -7,6 +7,11 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+if (class_exists('\Elementor\Plugin') && (\Elementor\Plugin::$instance->editor->is_edit_mode() || \Elementor\Plugin::$instance->preview->is_preview_mode() || \Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID()))) {
+    include STA_THEME_PATH . '/page.php';
+    return;
+}
+
 get_header();
 $is_en = sta_is_en();
 $is_nn = sta_is_nn();
