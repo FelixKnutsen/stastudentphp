@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.2.3');
+define('STA_THEME_VERSION', '1.2.4');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -66,7 +66,10 @@ function sta_theme_scripts() {
         wp_enqueue_script('sta-directory-filter', STA_THEME_URL . '/assets/js/directory-filter.js', array(), STA_THEME_VERSION, true);
     }
 }
-add_action('wp_enqueue_scripts', 'sta_theme_scripts');
+add_action('wp_enqueue_scripts', 'sta_theme_scripts', 999);
+add_action('elementor/preview/enqueue_styles', function() {
+    wp_enqueue_style('sta-main-style', STA_THEME_URL . '/assets/css/main.css', array(), STA_THEME_VERSION);
+}, 999);
 
 /**
  * Set news archive post query to 10 articles per page (matching reference 19 pages)

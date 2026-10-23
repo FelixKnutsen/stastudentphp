@@ -2375,60 +2375,295 @@ article.sta-article,
     color: #ffffff;
 }
 
-/* Force dark, legible typography on any white or light containers */
-.sta-page-content [style*="background-color: #fff"],
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"],
-.sta-page-content [style*="background-color: #ffffff"],
-.sta-page-content [style*="background-color:white"],
-.sta-page-content [style*="background: #fff"],
-.sta-page-content [style*="background: rgb(255, 255, 255)"],
-.sta-page-content [style*="background: #ffffff"],
-.sta-page-content [style*="background:white"],
-.sta-page-content .elementor-element[style*="background-color: #fff"],
-.sta-page-content .elementor-element[style*="background-color: rgb(255, 255, 255)"],
-.sta-page-content .elementor-element[style*="background-color: #ffffff"],
-.sta-page-content .elementor-element[style*="background-color:white"] {
-    color: #1a202c !important;
+/* ==========================================================================
+   Elementor Subpage Harmonization (v1.2.4)
+   Restores the attractive redesigned dark teal visual identity across all pages
+   while preserving full native Elementor editability.
+   - Eliminates clashing white background boxes on subpages.
+   - Converts HappyAddons cards to themed semi-transparent cards (--sta-card-bg).
+   - Replaces peach headers (#F5A674) with clean, transparent/dark headers.
+   - High-contrast crisp white titles, soft teal descriptions, and orange accents.
+   - Explicitly preserves white backgrounds ONLY on homepage partner logo boxes.
+   ========================================================================== */
+
+/* 1. Peach Header Section Harmonization */
+.sta-page-content [style*="background-color: #F5A674"],
+.sta-page-content [style*="background-color: #f5a674"],
+.sta-page-content [style*="background-color: rgb(245, 166, 116)"],
+.sta-page-content [style*="background: #F5A674"],
+.sta-page-content [style*="background: #f5a674"],
+.sta-page-content [style*="background: rgb(245, 166, 116)"],
+.sta-page-content [data-settings*="F5A674"],
+.sta-page-content [data-settings*="f5a674"],
+.sta-entry-content [style*="background-color: #F5A674"],
+.sta-entry-content [style*="background-color: #f5a674"],
+.sta-entry-content [style*="background-color: rgb(245, 166, 116)"],
+.sta-entry-content [style*="background: #F5A674"],
+.sta-entry-content [style*="background: #f5a674"],
+.sta-entry-content [style*="background: rgb(245, 166, 116)"],
+.elementor-element[style*="background-color: #F5A674"],
+.elementor-element[style*="background-color: #f5a674"],
+.elementor-element[style*="background-color: rgb(245, 166, 116)"],
+.elementor-element[style*="background: #F5A674"],
+.elementor-element[style*="background: #f5a674"],
+.elementor-element[style*="background: rgb(245, 166, 116)"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
 }
 
-.sta-page-content [style*="background-color: #fff"] p,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] p,
-.sta-page-content [style*="background-color: #ffffff"] p,
-.sta-page-content [style*="background-color:white"] p,
-.sta-page-content [style*="background: #fff"] p,
-.sta-page-content [style*="background: rgb(255, 255, 255)"] p,
-.sta-page-content [style*="background: #ffffff"] p,
-.sta-page-content [style*="background:white"] p {
-    color: #2d3748 !important;
+.sta-page-content [style*="background-color: #F5A674"] h1,
+.sta-page-content [style*="background-color: #F5A674"] h2,
+.sta-page-content [style*="background-color: #f5a674"] h1,
+.sta-page-content [style*="background-color: #f5a674"] h2,
+.sta-page-content [style*="background-color: rgb(245, 166, 116)"] h1,
+.sta-page-content [style*="background-color: rgb(245, 166, 116)"] h2,
+.sta-page-content [style*="background: #F5A674"] h1,
+.sta-page-content [style*="background: #F5A674"] h2,
+.sta-page-content [style*="background: #f5a674"] h1,
+.sta-page-content [style*="background: #f5a674"] h2,
+.sta-page-content [style*="background: rgb(245, 166, 116)"] h1,
+.sta-page-content [style*="background: rgb(245, 166, 116)"] h2,
+.sta-entry-content [style*="background-color: #F5A674"] .elementor-heading-title,
+.sta-entry-content [style*="background-color: #f5a674"] .elementor-heading-title,
+.sta-entry-content [style*="background-color: rgb(245, 166, 116)"] .elementor-heading-title,
+.sta-entry-content [style*="background: #F5A674"] .elementor-heading-title,
+.sta-entry-content [style*="background: #f5a674"] .elementor-heading-title,
+.sta-entry-content [style*="background: rgb(245, 166, 116)"] .elementor-heading-title {
+    color: #ffffff !important;
+    font-size: clamp(2rem, 5vw, 2.75rem) !important;
+    font-weight: 800 !important;
+    text-align: center !important;
 }
 
-.sta-page-content [style*="background-color: #fff"] h1,
-.sta-page-content [style*="background-color: #fff"] h2,
-.sta-page-content [style*="background-color: #fff"] h3,
-.sta-page-content [style*="background-color: #fff"] h4,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h1,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h2,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h3,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h4 {
-    color: #1a202c !important;
+.sta-page-content [style*="background-color: #F5A674"] p,
+.sta-page-content [style*="background-color: #f5a674"] p,
+.sta-page-content [style*="background-color: rgb(245, 166, 116)"] p,
+.sta-page-content [style*="background: #F5A674"] p,
+.sta-page-content [style*="background: #f5a674"] p,
+.sta-page-content [style*="background: rgb(245, 166, 116)"] p,
+.sta-entry-content [style*="background-color: #F5A674"] p,
+.sta-entry-content [style*="background-color: #f5a674"] p,
+.sta-entry-content [style*="background-color: rgb(245, 166, 116)"] p,
+.sta-entry-content [style*="background: #F5A674"] p,
+.sta-entry-content [style*="background: #f5a674"] p,
+.sta-entry-content [style*="background: rgb(245, 166, 116)"] p {
+    color: var(--sta-teal-100) !important;
+    font-size: 1.15rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    max-width: 800px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-.sta-page-content [style*="background-color: #fff"] a,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] a {
+/* 2. White Box & Container Transformation */
+/* Convert any white subpage container to modern semi-transparent dark teal cards */
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: #fff"],
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: rgb(255, 255, 255)"],
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: #ffffff"],
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color:white"],
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background: #fff"],
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background: rgb(255, 255, 255)"],
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background: #ffffff"],
+.sta-page-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background:white"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background-color: #fff"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background-color: #ffffff"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background-color:white"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background: #fff"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background: rgb(255, 255, 255)"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background: #ffffff"],
+.sta-page-content section:not(.sta-partner-logo-box)[style*="background:white"],
+.sta-entry-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: #fff"],
+.sta-entry-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: rgb(255, 255, 255)"],
+.sta-entry-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: #ffffff"],
+.sta-entry-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color:white"],
+.elementor-14055 [style*="background-color: #fff"],
+.elementor-14055 [style*="background-color: rgb(255, 255, 255)"],
+.elementor-14055 [style*="background-color: #ffffff"],
+.elementor-14055 [style*="background: #fff"],
+.elementor-14055 [style*="background: rgb(255, 255, 255)"],
+.elementor-14055 [style*="background: #ffffff"],
+.elementor-14055 .elementor-section.elementor-top-section > .elementor-container {
+    background: var(--sta-card-bg) !important;
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    color: var(--sta-teal-100) !important;
+}
+
+/* Headings inside transformed white containers */
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] h1,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] h2,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] h3,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] h4,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] h1,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] h2,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] h3,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] h4,
+.elementor-14055 h1,
+.elementor-14055 h2,
+.elementor-14055 h3,
+.elementor-14055 h4,
+.elementor-14055 .elementor-heading-title {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Paragraphs inside transformed white containers */
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] p,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] p,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #ffffff"] p,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background: #fff"] p,
+.elementor-14055 p {
+    color: var(--sta-teal-100) !important;
+    line-height: 1.7 !important;
+}
+
+/* Links inside transformed white containers */
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] a,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] a,
+.elementor-14055 a {
     color: var(--sta-orange) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
 }
 
-.sta-page-content [style*="background-color: #fff"] a:hover,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] a:hover {
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] a:hover,
+.sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] a:hover,
+.elementor-14055 a:hover {
     color: var(--sta-orange-hover) !important;
 }
 
-/* HappyAddons InfoBox Widget Harmonization */
-/* Default for infoboxes sitting directly on dark teal background (e.g. Page 325 RSU) */
+/* 3. HappyAddons Card Widget Theming */
+.sta-page-content .ha-card,
+.sta-page-content .elementor-widget-ha-card,
+.sta-page-content .ha-card .ha-card__inner,
+.sta-page-content .ha-card .ha-card-inner,
+.sta-entry-content .ha-card,
+.sta-entry-content .elementor-widget-ha-card,
+.sta-entry-content .ha-card .ha-card__inner,
+.sta-entry-content .ha-card .ha-card-inner,
+.elementor-widget-ha-card .ha-card,
+.elementor-widget-ha-card .ha-card__inner,
+.elementor-widget-ha-card .ha-card-inner {
+    background: var(--sta-card-bg) !important;
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    overflow: hidden !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    color: #ffffff !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease !important;
+}
+
+.sta-page-content .ha-card:hover,
+.sta-page-content .elementor-widget-ha-card:hover,
+.sta-page-content .ha-card:hover .ha-card__inner,
+.sta-entry-content .ha-card:hover,
+.sta-entry-content .elementor-widget-ha-card:hover,
+.sta-entry-content .ha-card:hover .ha-card__inner,
+.elementor-widget-ha-card:hover .ha-card,
+.elementor-widget-ha-card:hover .ha-card__inner {
+    background: var(--sta-card-hover) !important;
+    background-color: var(--sta-card-hover) !important;
+    border-color: rgba(239, 115, 48, 0.5) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Card Titles */
+.sta-entry-content .elementor-widget-ha-card .ha-card-title,
+.sta-entry-content .ha-card .ha-card-title,
+.sta-entry-content .ha-card .ha-card__title,
+.sta-entry-content .ha-card h2,
+.sta-entry-content .ha-card h3,
+.sta-page-content .ha-card-title,
+.sta-page-content .ha-card .ha-card-title,
+.sta-page-content .ha-card .ha-card__title,
+.ha-card .ha-card-title,
+.ha-card .ha-card__title,
+.ha-card h2.ha-card-title,
+.ha-card h3.ha-card-title {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    transition: color 0.2s ease !important;
+}
+
+.sta-page-content .ha-card:hover .ha-card-title,
+.sta-page-content .ha-card:hover .ha-card__title,
+.sta-entry-content .ha-card:hover .ha-card-title,
+.sta-entry-content .ha-card:hover .ha-card__title {
+    color: var(--sta-orange) !important;
+}
+
+/* Card Descriptions and Body */
+.ha-card .ha-card__description,
+.ha-card .ha-card-description,
+.ha-card .ha-card__description p,
+.ha-card .ha-card-description p,
+.ha-card .ha-card__body p,
+.ha-card .ha-card-body p,
+.elementor-widget-ha-card p {
+    color: var(--sta-teal-100) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Card Badges */
+.ha-card .ha-card__badge,
+.ha-card .ha-card-badge,
+.elementor-widget-ha-card .ha-card-badge {
+    background-color: var(--sta-orange) !important;
+    color: #ffffff !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    padding: 0.3rem 0.75rem !important;
+    border-radius: 9999px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}
+
+/* Card Figures / Images */
+.ha-card .ha-card__figure,
+.ha-card .ha-card-figure,
+.elementor-widget-ha-card figure {
+    border-radius: var(--sta-radius-sm) var(--sta-radius-sm) 0 0 !important;
+    overflow: hidden !important;
+}
+
+.ha-card .ha-card__figure img,
+.ha-card .ha-card-figure img,
+.elementor-widget-ha-card img {
+    border-radius: inherit !important;
+    object-fit: cover !important;
+    transition: transform 0.3s ease !important;
+}
+
+.ha-card:hover .ha-card__figure img,
+.elementor-widget-ha-card:hover img {
+    transform: scale(1.03) !important;
+}
+
+/* 4. InfoBox Widget Theming */
+.ha-infobox,
+.elementor-widget-ha-infobox,
+.elementor-widget-ha-infobox .ha-infobox-body {
+    color: #ffffff !important;
+}
+
 .ha-infobox .ha-infobox-title,
-.elementor-widget-ha-infobox .ha-infobox-title,
-.elementor-325 .elementor-widget-ha-infobox .ha-infobox-title,
-.sta-entry-content > .elementor-element .elementor-widget-ha-infobox .ha-infobox-title {
+.elementor-widget-ha-infobox .ha-infobox-title {
     color: #ffffff !important;
     font-weight: 700 !important;
 }
@@ -2436,85 +2671,32 @@ article.sta-article,
 .ha-infobox .ha-infobox-description,
 .ha-infobox p,
 .elementor-widget-ha-infobox .ha-infobox-description,
-.elementor-widget-ha-infobox p,
-.elementor-325 .elementor-widget-ha-infobox .ha-infobox-description,
-.elementor-325 .elementor-widget-ha-infobox p {
-    color: #eaf5f4 !important;
+.elementor-widget-ha-infobox p {
+    color: var(--sta-teal-100) !important;
     line-height: 1.7 !important;
 }
 
-/* Infoboxes inside white/light containers or on Prinsipprogram (14055) */
-.elementor-14055 .ha-infobox-title,
-.elementor-14055 .elementor-widget-ha-infobox .ha-infobox-title,
-.sta-page-content [style*="background-color: #fff"] .ha-infobox-title,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] .ha-infobox-title,
-.sta-page-content [style*="background-color: #ffffff"] .ha-infobox-title,
-.sta-page-content [style*="background-color:white"] .ha-infobox-title,
-.elementor-widget-container[style*="background"] .ha-infobox-title {
-    color: #1a202c !important;
+.ha-infobox a,
+.elementor-widget-ha-infobox a {
+    color: var(--sta-orange) !important;
 }
 
-.elementor-14055 .ha-infobox-description,
-.elementor-14055 .ha-infobox p,
-.elementor-14055 .elementor-widget-ha-infobox .ha-infobox-description,
-.elementor-14055 .elementor-widget-ha-infobox p,
-.sta-page-content [style*="background-color: #fff"] .ha-infobox-description,
-.sta-page-content [style*="background-color: rgb(255, 255, 255)"] .ha-infobox-description,
-.sta-page-content [style*="background-color: #ffffff"] .ha-infobox-description,
-.sta-page-content [style*="background-color:white"] .ha-infobox-description,
-.elementor-widget-container[style*="background"] .ha-infobox-description {
-    color: #2d3748 !important;
-}
-
-/* HappyAddons Card Widget Harmonization (Valgkomitéen, Dokumenter, etc.) */
-.ha-card,
-.elementor-widget-ha-card {
-    border-radius: var(--sta-radius-md) !important;
-    overflow: hidden !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-}
-
-.ha-card:hover,
-.elementor-widget-ha-card:hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.25) !important;
-}
-
-.ha-card .ha-card__inner,
-.ha-card .ha-card-inner {
-    border-radius: inherit !important;
-}
-
-/* High-contrast dark title on white card background */
-.sta-entry-content .elementor-widget-ha-card .ha-card-title,
-.sta-entry-content .ha-card .ha-card-title,
-.sta-page-content .ha-card-title,
-.ha-card .ha-card-title,
-.ha-card .ha-card__title,
-.ha-card h2.ha-card-title {
-    font-size: 1.25rem !important;
-    font-weight: 700 !important;
-    color: #1a202c !important;
-}
-
-.ha-card .ha-card__description,
-.ha-card .ha-card-description,
-.ha-card .ha-card__description p,
-.ha-card .ha-card-description p,
-.elementor-widget-ha-card p {
-    color: #4a5568 !important;
-    font-size: 0.95rem !important;
-}
-
-.ha-card .ha-card__badge,
-.ha-card .ha-card-badge {
-    background-color: var(--sta-teal-600) !important;
+/* 5. Subpage Button Harmonization */
+.sta-page-content .elementor-button,
+.sta-entry-content .elementor-button {
+    background-color: var(--sta-orange) !important;
     color: #ffffff !important;
-    font-size: 0.75rem !important;
+    border-radius: var(--sta-radius-sm) !important;
     font-weight: 700 !important;
-    padding: 0.25rem 0.65rem !important;
-    border-radius: 9999px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.05em !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(239, 115, 48, 0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+.sta-page-content .elementor-button:hover,
+.sta-entry-content .elementor-button:hover {
+    background-color: var(--sta-orange-hover) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(239, 115, 48, 0.45) !important;
 }
 
