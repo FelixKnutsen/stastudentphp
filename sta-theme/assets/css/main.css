@@ -2387,20 +2387,42 @@ article.sta-article,
    ========================================================================== */
 
 /* 1. Peach Header Section Harmonization */
+.page-id-14071 .elementor-element-d798f3f,
+.page-id-163 .elementor-section:first-child,
+.page-id-163 .e-con:first-child,
+.page-id-14055 .elementor-section:first-child,
+.page-id-14055 .e-con:first-child,
+.sta-entry-content > .elementor > .elementor-element:first-child,
+.sta-page-content > .sta-entry-content > .elementor > .elementor-element:first-child,
+.sta-page-content [style*="f4a377"],
+.sta-page-content [style*="F4A377"],
+.sta-page-content [style*="244, 163, 119"],
+.sta-page-content [style*="rgb(244, 163, 119)"],
 .sta-page-content [style*="background-color: #F5A674"],
 .sta-page-content [style*="background-color: #f5a674"],
 .sta-page-content [style*="background-color: rgb(245, 166, 116)"],
 .sta-page-content [style*="background: #F5A674"],
 .sta-page-content [style*="background: #f5a674"],
 .sta-page-content [style*="background: rgb(245, 166, 116)"],
+.sta-page-content [data-settings*="f4a377"],
+.sta-page-content [data-settings*="F4A377"],
+.sta-page-content [data-settings*="244, 163, 119"],
 .sta-page-content [data-settings*="F5A674"],
 .sta-page-content [data-settings*="f5a674"],
+.sta-entry-content [style*="f4a377"],
+.sta-entry-content [style*="F4A377"],
+.sta-entry-content [style*="244, 163, 119"],
+.sta-entry-content [style*="rgb(244, 163, 119)"],
 .sta-entry-content [style*="background-color: #F5A674"],
 .sta-entry-content [style*="background-color: #f5a674"],
 .sta-entry-content [style*="background-color: rgb(245, 166, 116)"],
 .sta-entry-content [style*="background: #F5A674"],
 .sta-entry-content [style*="background: #f5a674"],
 .sta-entry-content [style*="background: rgb(245, 166, 116)"],
+.elementor-element[style*="f4a377"],
+.elementor-element[style*="F4A377"],
+.elementor-element[style*="244, 163, 119"],
+.elementor-element[style*="rgb(244, 163, 119)"],
 .elementor-element[style*="background-color: #F5A674"],
 .elementor-element[style*="background-color: #f5a674"],
 .elementor-element[style*="background-color: rgb(245, 166, 116)"],
@@ -2415,6 +2437,21 @@ article.sta-article,
     padding-bottom: 2rem !important;
 }
 
+.page-id-14071 .elementor-element-d798f3f h1,
+.page-id-14071 .elementor-element-d798f3f h2,
+.page-id-14071 .elementor-element-d798f3f .elementor-heading-title,
+.page-id-163 .elementor-section:first-child h1,
+.page-id-163 .elementor-section:first-child h2,
+.page-id-163 .elementor-section:first-child .elementor-heading-title,
+.page-id-14055 .elementor-section:first-child h1,
+.page-id-14055 .elementor-section:first-child h2,
+.page-id-14055 .elementor-section:first-child .elementor-heading-title,
+.sta-page-content [style*="f4a377"] h1,
+.sta-page-content [style*="f4a377"] h2,
+.sta-page-content [style*="f4a377"] .elementor-heading-title,
+.sta-page-content [style*="244, 163, 119"] h1,
+.sta-page-content [style*="244, 163, 119"] h2,
+.sta-page-content [style*="244, 163, 119"] .elementor-heading-title,
 .sta-page-content [style*="background-color: #F5A674"] h1,
 .sta-page-content [style*="background-color: #F5A674"] h2,
 .sta-page-content [style*="background-color: #f5a674"] h1,
@@ -2427,6 +2464,8 @@ article.sta-article,
 .sta-page-content [style*="background: #f5a674"] h2,
 .sta-page-content [style*="background: rgb(245, 166, 116)"] h1,
 .sta-page-content [style*="background: rgb(245, 166, 116)"] h2,
+.sta-entry-content [style*="f4a377"] .elementor-heading-title,
+.sta-entry-content [style*="244, 163, 119"] .elementor-heading-title,
 .sta-entry-content [style*="background-color: #F5A674"] .elementor-heading-title,
 .sta-entry-content [style*="background-color: #f5a674"] .elementor-heading-title,
 .sta-entry-content [style*="background-color: rgb(245, 166, 116)"] .elementor-heading-title,
@@ -2439,12 +2478,16 @@ article.sta-article,
     text-align: center !important;
 }
 
+.sta-page-content [style*="f4a377"] p,
+.sta-page-content [style*="244, 163, 119"] p,
 .sta-page-content [style*="background-color: #F5A674"] p,
 .sta-page-content [style*="background-color: #f5a674"] p,
 .sta-page-content [style*="background-color: rgb(245, 166, 116)"] p,
 .sta-page-content [style*="background: #F5A674"] p,
 .sta-page-content [style*="background: #f5a674"] p,
 .sta-page-content [style*="background: rgb(245, 166, 116)"] p,
+.sta-entry-content [style*="f4a377"] p,
+.sta-entry-content [style*="244, 163, 119"] p,
 .sta-entry-content [style*="background-color: #F5A674"] p,
 .sta-entry-content [style*="background-color: #f5a674"] p,
 .sta-entry-content [style*="background-color: rgb(245, 166, 116)"] p,
@@ -2566,6 +2609,24 @@ article.sta-article,
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease !important;
 }
 
+/* HappyAddons Card Inner Container Transparency Fix (Neutralizes solid white container inside .ha-card) */
+.sta-page-content .ha-card > .elementor-widget-container,
+.sta-page-content .elementor-widget-ha-card .elementor-widget-container,
+.sta-entry-content .ha-card > .elementor-widget-container,
+.sta-entry-content .elementor-widget-ha-card .elementor-widget-container,
+.elementor-widget-ha-card .elementor-widget-container,
+.ha-card .elementor-widget-container,
+.ha-card .ha-card__inner,
+.ha-card .ha-card-inner,
+.ha-card .ha-card__body,
+.ha-card .ha-card-body,
+.ha-card .ha-card__figure,
+.ha-card .ha-card-figure {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
 .sta-page-content .ha-card:hover,
 .sta-page-content .elementor-widget-ha-card:hover,
 .sta-page-content .ha-card:hover .ha-card__inner,
@@ -2656,6 +2717,33 @@ article.sta-article,
 }
 
 /* 4. InfoBox Widget Theming */
+.sta-page-content .elementor-widget-ha-infobox .elementor-widget-container,
+.sta-entry-content .elementor-widget-ha-infobox .elementor-widget-container,
+.elementor-14055 .elementor-widget-ha-infobox .elementor-widget-container,
+.elementor-widget-ha-infobox .ha-infobox,
+.elementor-14055 .ha-infobox {
+    background: var(--sta-card-bg) !important;
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    padding: 2rem !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    color: #ffffff !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease !important;
+}
+
+.sta-page-content .elementor-widget-ha-infobox:hover .elementor-widget-container,
+.sta-entry-content .elementor-widget-ha-infobox:hover .elementor-widget-container,
+.elementor-14055 .elementor-widget-ha-infobox:hover .elementor-widget-container,
+.elementor-widget-ha-infobox:hover .ha-infobox,
+.elementor-14055 .ha-infobox:hover {
+    background: var(--sta-card-hover) !important;
+    background-color: var(--sta-card-hover) !important;
+    border-color: rgba(239, 115, 48, 0.5) !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35) !important;
+    transform: translateY(-4px) !important;
+}
+
 .ha-infobox,
 .elementor-widget-ha-infobox,
 .elementor-widget-ha-infobox .ha-infobox-body {
