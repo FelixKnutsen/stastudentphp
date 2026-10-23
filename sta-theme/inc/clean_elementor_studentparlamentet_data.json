@@ -1,0 +1,942 @@
+[
+  {
+    "id": "sp_wrap_h1b4e8f",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "0",
+        "row": "44",
+        "isLinked": false
+      },
+      "css_classes": "sta-subpage-root sta-studentparlamentet-root",
+      "_css_classes": "sta-subpage-root sta-studentparlamentet-root"
+    },
+    "elements": [
+      {
+        "id": "sp_hdr_5b4uexf",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "text_align": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "sp_b_fny1rxi",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "<span class=\"sta-badge\">Studentdemokrati</span>",
+              "header_size": "div",
+              "align": "center",
+              "css_classes": "sta-badge-wrap",
+              "_css_classes": "sta-badge-wrap"
+            },
+            "elements": []
+          },
+          {
+            "id": "sp_t_l2jlrdv",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Studentparlamentet 2026/2027",
+              "header_size": "h1",
+              "align": "center",
+              "css_classes": "sta-hero-title",
+              "_css_classes": "sta-hero-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "sp_sub_v6vhyvx",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color:var(--sta-teal-100); font-size:1.15rem; max-width:800px; margin:0 auto; line-height:1.6;\">UiAs øverste studentorgan og demokratiske forsamling</p>",
+              "css_classes": "sta-hero-subtitle",
+              "_css_classes": "sta-hero-subtitle"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "sp_banner_1z7vr9o",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "border_radius": {
+            "unit": "px",
+            "top": "16",
+            "right": "16",
+            "bottom": "16",
+            "left": "16",
+            "isLinked": true
+          },
+          "overflow": "hidden",
+          "border_border": "solid",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          },
+          "border_color": "rgba(158,207,201,0.3)",
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 20,
+            "blur": 25,
+            "spread": -5,
+            "color": "rgba(0,0,0,0.4)"
+          },
+          "css_classes": "sta-photo-banner",
+          "_css_classes": "sta-photo-banner"
+        },
+        "elements": [
+          {
+            "id": "sp_b_img_6ylj2zr",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://stastudent.no/wp-content/uploads/2025/09/IMG_4688-–-Kopi-CROPPED-1536x581.jpg",
+                "source": "library"
+              },
+              "image_size": "large"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "sp_intro_d8nbelx",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<div style=\"max-width:48rem; margin:0 auto; font-size:1rem; color:var(--sta-teal-100); line-height:1.75; display:flex; flex-direction:column; gap:1.25rem;\">\n                                    <p style=\"margin:0;\">Studentene har en viktig stemme i demokratiet på UiA. Derfor er Studentparlamentet øverste beslutningsorgan i STA. Studentparlamentet består av 25 representanter fra alle fakultetene og Avdeling for lærerutdanning. Det er disse representantene som skal ta politiske avgjørelser på vegne av UiAs studentmasse.</p>\n                                    <p style=\"margin:0;\">Studentparlamentet har møter én gang i måneden hvor parlamentsmedlemmene skal diskutere og vedta saker som STA-styret legger frem. Møtene blir holdt annenhver gang i Kristiansand, og annenhver gang i Grimstad.</p>\n                                 </div>"
+        },
+        "elements": []
+      },
+      {
+        "id": "sp_quick_grid_1hpy05c",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_justify_content": "center",
+          "flex_gap": {
+            "unit": "px",
+            "column": "24",
+            "row": "24",
+            "isLinked": true
+          },
+          "css_classes": "sta-quick-links-grid",
+          "_css_classes": "sta-quick-links-grid"
+        },
+        "elements": [
+          {
+            "id": "sp_ql1_8jsjla8",
+            "elType": "widget",
+            "widgetType": "icon-box",
+            "settings": {
+              "title_text": "Sakspapirer til parlamentsmøter",
+              "description_text": "Se innkallinger og saksliste<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Åpne sakspapirer &rarr;</span>",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=sakspapirer"
+              },
+              "position": "top",
+              "selected_icon": {
+                "value": "fas fa-file-alt",
+                "library": "fa-solid"
+              },
+              "primary_color": "#ef7330",
+              "css_classes": "sta-card sta-action-card",
+              "_css_classes": "sta-card sta-action-card"
+            },
+            "elements": []
+          },
+          {
+            "id": "sp_ql2_cjv1l4g",
+            "elType": "widget",
+            "widgetType": "icon-box",
+            "settings": {
+              "title_text": "Protokoll fra parlamentsmøter",
+              "description_text": "Vedtatte resolusjoner og referater<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Åpne protokoller &rarr;</span>",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=referat-fra-moter-i-studentparlamentet"
+              },
+              "position": "top",
+              "selected_icon": {
+                "value": "fas fa-clipboard-check",
+                "library": "fa-solid"
+              },
+              "primary_color": "#ef7330",
+              "css_classes": "sta-card sta-action-card",
+              "_css_classes": "sta-card sta-action-card"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "sp_resp_sec_umdkbm1",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "sp_resp_title_bycmtml",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Ansvarlige for Studentparlamentet",
+              "header_size": "h2",
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "sp_resp_grid_wa5q8ra",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_justify_content": "center",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-leadership-grid",
+              "_css_classes": "sta-leadership-grid"
+            },
+            "elements": [
+              {
+                "id": "sp_r1_w13tsk5",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_align_items": "center",
+                  "text_align": "center",
+                  "padding": {
+                    "unit": "px",
+                    "top": "28",
+                    "right": "28",
+                    "bottom": "28",
+                    "left": "28",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-leader-card",
+                  "_css_classes": "sta-card sta-leader-card"
+                },
+                "elements": [
+                  {
+                    "id": "sp_r1_img_xv264le",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/a0da7b30-a50f-4dd3-9b89-6ec47da958aa.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "thumbnail",
+                      "css_classes": "sta-leader-avatar",
+                      "_css_classes": "sta-leader-avatar"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "sp_r1_name_n4v25up",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Mia Sandøy",
+                      "header_size": "h3",
+                      "align": "center"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "sp_r1_role_ln12ag7",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Førstekonsulent i STA",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "align": "center"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "sp_r1_mail_ep9yxcf",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p style=\"margin:0; text-align:center;\"><a href=\"mailto:sta@uia.no\" style=\"color:var(--sta-teal-100); text-decoration:none; font-size:0.85rem;\">sta@uia.no</a></p>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "sp_r2_kfflvnh",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_align_items": "center",
+                  "text_align": "center",
+                  "padding": {
+                    "unit": "px",
+                    "top": "28",
+                    "right": "28",
+                    "bottom": "28",
+                    "left": "28",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-leader-card",
+                  "_css_classes": "sta-card sta-leader-card"
+                },
+                "elements": [
+                  {
+                    "id": "sp_r2_img_9tfss11",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/Karen-Smil-1024x683.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "thumbnail",
+                      "css_classes": "sta-leader-avatar",
+                      "_css_classes": "sta-leader-avatar"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "sp_r2_name_k3pj4xf",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Karen Elise Stenersen",
+                      "header_size": "h3",
+                      "align": "center"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "sp_r2_role_dci0of2",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Studentleder ved UiA",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "align": "center"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "sp_r2_mail_nefs76q",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p style=\"margin:0; text-align:center;\"><a href=\"mailto:staleder@uia.no\" style=\"color:var(--sta-teal-100); text-decoration:none; font-size:0.85rem;\">staleder@uia.no</a></p>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "sp_fac_sec_t3ck4p9",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "sp_fac_title_7k1ycbl",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Representanter etter fakultet",
+              "header_size": "h2",
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "sp_fac_sub_5rk9d4q",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-200); text-align:center; margin:0 0 2rem 0;\">Totalt 25 faste folkevalgte representanter og deres personlige varamedlemmer.</p>"
+            },
+            "elements": []
+          },
+          {
+            "id": "sp_fac_grid_2dl4pq2",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-parliament-faculties-grid",
+              "_css_classes": "sta-parliament-faculties-grid"
+            },
+            "elements": [
+              {
+                "id": "fac_wnes40q",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-parliament-faculty-card",
+                  "_css_classes": "sta-card sta-parliament-faculty-card"
+                },
+                "elements": [
+                  {
+                    "id": "fac_hdr_skj9sj2",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Handelshøyskolen ved UiA",
+                      "header_size": "h3",
+                      "css_classes": "sta-faculty-title",
+                      "_css_classes": "sta-faculty-title"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "fac_body_q6hyspb",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;\">\n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;\">Faste representanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Martine Holmoe Tengs</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Agnes Nymark</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Sunniva Skolås</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Thea Korneliussen</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;\">Vararepresentanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>1. vara: Emil Briskelund</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>2. vara: Kenneth Engeland Smith</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>3. vara: Vår Flåtene Bolstad</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                 </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "fac_9tr4bz3",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-parliament-faculty-card",
+                  "_css_classes": "sta-card sta-parliament-faculty-card"
+                },
+                "elements": [
+                  {
+                    "id": "fac_hdr_dxd1kt4",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Fakultetet for Teknologi og realfag",
+                      "header_size": "h3",
+                      "css_classes": "sta-faculty-title",
+                      "_css_classes": "sta-faculty-title"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "fac_body_629fnfe",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;\">\n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;\">Faste representanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Jakob Moen Bekken</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Asif Soltani</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Morten Andreas Myrstad</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Ole Andrè Rønsåsbjørg</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;\">Vararepresentanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>1. vara: William Skauge</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>2. vara: Helene Aspelund</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>3. vara: Kim Andrè Lønø</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>4. vara: Nasiba Salehin</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                 </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "fac_o0mi0vc",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-parliament-faculty-card",
+                  "_css_classes": "sta-card sta-parliament-faculty-card"
+                },
+                "elements": [
+                  {
+                    "id": "fac_hdr_v8zaova",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Fakultetet for Samfunnsvitenskap",
+                      "header_size": "h3",
+                      "css_classes": "sta-faculty-title",
+                      "_css_classes": "sta-faculty-title"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "fac_body_9e0k4ni",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;\">\n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;\">Faste representanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Mia Gjermstad</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Eirik Arnestad Næss</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Even Skotnes</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Adam Omar</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;\">Vararepresentanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>1. vara: Amir Krpo</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>2. vara: Simen Dovland Paulsen</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>3. vara: Rikke Sofie Moltumyr</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>4. vara: Yasir A. Mohamed</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                 </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "fac_5umvmt7",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-parliament-faculty-card",
+                  "_css_classes": "sta-card sta-parliament-faculty-card"
+                },
+                "elements": [
+                  {
+                    "id": "fac_hdr_ax2vt1l",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Avdeling for Lærerutdanning",
+                      "header_size": "h3",
+                      "css_classes": "sta-faculty-title",
+                      "_css_classes": "sta-faculty-title"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "fac_body_rpyuomq",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;\">\n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;\">Faste representanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Ingrid Lenes Trulsvik</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Kristian Sand</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Iver Berle Lokshall</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Daniel Rørvik</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;\">Vararepresentanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>1. vara: Silje Bruun Haugen</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>2. vara: Katarina Lyng</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                 </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "fac_kwkxowm",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-parliament-faculty-card",
+                  "_css_classes": "sta-card sta-parliament-faculty-card"
+                },
+                "elements": [
+                  {
+                    "id": "fac_hdr_yuijw28",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Fakultetet for Helse- og idrettsvitenskap",
+                      "header_size": "h3",
+                      "css_classes": "sta-faculty-title",
+                      "_css_classes": "sta-faculty-title"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "fac_body_r021t6x",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;\">\n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;\">Faste representanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Hedda Yvonne M. Semb-Røren</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Hedda Røe Åkra</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Otilie Vangen</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Andrea Furuholt</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;\">Vararepresentanter (4)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                 </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "fac_zi54nmk",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-parliament-faculty-card",
+                  "_css_classes": "sta-card sta-parliament-faculty-card"
+                },
+                "elements": [
+                  {
+                    "id": "fac_hdr_dlsj0kr",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Fakultetet for Humaniora og Pedagogikk",
+                      "header_size": "h3",
+                      "css_classes": "sta-faculty-title",
+                      "_css_classes": "sta-faculty-title"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "fac_body_w1veqwt",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;\">\n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;\">Faste representanter (3)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Synne Mjøs Sørensen</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Danli Peters</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Federico Agostini</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;\">Vararepresentanter (3)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span style=\"color:var(--sta-orange); font-style:italic;\">Ledig verv – kontakt sta@uia.no</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                 </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "fac_u0oxy30",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-parliament-faculty-card",
+                  "_css_classes": "sta-card sta-parliament-faculty-card"
+                },
+                "elements": [
+                  {
+                    "id": "fac_hdr_ifry7al",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Fakultetet for Kunstfag",
+                      "header_size": "h3",
+                      "css_classes": "sta-faculty-title",
+                      "_css_classes": "sta-faculty-title"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "fac_body_hw9dd60",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;\">\n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;\">Faste representanter (2)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Antonina Zerbst</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;\"></span>\n                            <span>Sophia Hansteen Jeffery</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                    \n            <div>\n                <h4 style=\"font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;\">Vararepresentanter (2)</h4>\n                <ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;\">\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>1. vara: Gustav Sæterøy</span>\n                        </li>\n                    \n                        <li style=\"display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                            <span style=\"width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;\"></span>\n                            <span>2. vara: Eskil Andresen</span>\n                        </li>\n                    \n                </ul>\n            </div>\n        \n                                 </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "sp_bot_cta_nfyirh3",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "sp_cta_btn_cwj57dk",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Still til ledig verv i parlamentet →",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=ledige-verv"
+              },
+              "button_background_color": "#ef7330",
+              "css_classes": "sta-btn sta-btn-orange",
+              "_css_classes": "sta-btn sta-btn-orange"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]

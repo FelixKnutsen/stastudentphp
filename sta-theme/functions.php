@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.2.7');
+define('STA_THEME_VERSION', '1.2.8');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -548,10 +548,32 @@ add_action('admin_init', function() {
                 'title'        => 'Prinsipprogram',
                 'preferred_id' => 14055,
             ),
+            'sta-styret' => array(
+                'slug'         => 'sta-styret',
+                'file'         => 'clean_elementor_sta_styret_data.json',
+                'title'        => 'STA-Styret',
+                'preferred_id' => 30,
+            ),
+            'rad-styrer-og-utvalg' => array(
+                'slug'         => 'rad-styrer-og-utvalg',
+                'file'         => 'clean_elementor_rad_styrer_og_utvalg_data.json',
+                'title'        => 'Råd, Styrer og Utvalg',
+                'preferred_id' => 325,
+            ),
+            'studentparlamentet' => array(
+                'slug'         => 'studentparlamentet',
+                'file'         => 'clean_elementor_studentparlamentet_data.json',
+                'title'        => 'Studentparlamentet',
+                'preferred_id' => 161,
+            ),
         );
 
         $to_process = array();
-        if ($target === 'all_pilot' || $target === 'pilot' || $target === 'all') {
+        if ($target === 'all_pilot' || $target === 'pilot') {
+            $to_process = array('valgkomiteen', 'dokumenter', 'prinsipprogram');
+        } elseif ($target === 'batch2') {
+            $to_process = array('sta-styret', 'rad-styrer-og-utvalg', 'studentparlamentet');
+        } elseif ($target === 'all') {
             $to_process = array_keys($subpages);
         } elseif (isset($subpages[$target])) {
             $to_process = array($target);

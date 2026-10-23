@@ -1,0 +1,836 @@
+[
+  {
+    "id": "styret_wrap_991dcor",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "0",
+        "row": "40",
+        "isLinked": false
+      },
+      "css_classes": "sta-subpage-root sta-styret-root",
+      "_css_classes": "sta-subpage-root sta-styret-root"
+    },
+    "elements": [
+      {
+        "id": "styret_hdr_o89mslp",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "text_align": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "styret_b_bhjhmrb",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "<span class=\"sta-badge\">Ledelse</span>",
+              "header_size": "div",
+              "align": "center",
+              "css_classes": "sta-badge-wrap",
+              "_css_classes": "sta-badge-wrap"
+            },
+            "elements": []
+          },
+          {
+            "id": "styret_t_0i5n506",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "STA-styret og Sekretariatet 2026-2027",
+              "header_size": "h1",
+              "align": "center",
+              "css_classes": "sta-hero-title",
+              "_css_classes": "sta-hero-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "styret_sub_ldx7z4w",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color:var(--sta-teal-100); font-size:1.15rem; max-width:800px; margin:0 auto; line-height:1.6;\">STA-styret og Sekretariatet står for den daglige driften av organisasjonen og har hovedansvaret for studentdemokratiet på Universitetet i Agder.</p>",
+              "css_classes": "sta-hero-subtitle",
+              "_css_classes": "sta-hero-subtitle"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "styret_gp_gd0kroe",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "border_radius": {
+            "unit": "px",
+            "top": "16",
+            "right": "16",
+            "bottom": "16",
+            "left": "16",
+            "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          },
+          "border_color": "rgba(61,148,139,0.3)",
+          "overflow": "hidden",
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 25,
+            "blur": 50,
+            "spread": -12,
+            "color": "rgba(0,0,0,0.5)"
+          },
+          "css_classes": "sta-banner-container",
+          "_css_classes": "sta-banner-container"
+        },
+        "elements": [
+          {
+            "id": "styret_gp_img_8lyo1ms",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://stastudent.no/wp-content/uploads/2026/08/Gruppebilde-STA-styret-1024x683.jpg",
+                "source": "library"
+              },
+              "image_size": "large"
+            },
+            "elements": []
+          },
+          {
+            "id": "styret_gp_cap_9r22yl5",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style=\"background:rgba(4,24,23,0.9); padding:1.25rem 1.75rem; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1rem; font-size:0.85rem; color:var(--sta-teal-100);\">\n                                            <p style=\"margin:0;\"><strong style=\"color:#fff;\">Pressehenvendelser:</strong> Alle pressehenvendelser går til studentleder Karen Elise Stenersen.</p>\n                                            <a href=\"https://www.skyfish.com/p/uia/2397359\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-flex; align-items:center; gap:0.4rem; font-weight:700; color:var(--sta-orange); text-decoration:none;\">\n                                                <span>Last ned pressebilder (Skyfish) &rarr;</span>\n                                            </a>\n                                         </div>"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "styret_grid_ass9jf3",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_gap": {
+            "unit": "px",
+            "column": "24",
+            "row": "24",
+            "isLinked": true
+          },
+          "css_classes": "sta-board-grid",
+          "_css_classes": "sta-board-grid"
+        },
+        "elements": [
+          {
+            "id": "mcard_ym1l74k",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_justify_content": "space-between",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "rgba(61, 148, 139, 0.3)",
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card sta-board-card",
+              "_css_classes": "sta-card sta-board-card"
+            },
+            "elements": [
+              {
+                "id": "m_top_l5oahj7",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column"
+                },
+                "elements": [
+                  {
+                    "id": "m_img_ism3lsl",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/Karen-Smil-1024x683.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "medium_large",
+                      "css_classes": "sta-board-photo",
+                      "_css_classes": "sta-board-photo"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_name_hy5gs71",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Karen Elise Stenersen",
+                      "header_size": "h3",
+                      "css_classes": "sta-board-name",
+                      "_css_classes": "sta-board-name"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_role_3xdyui5",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Studentleder",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "css_classes": "sta-board-role",
+                      "_css_classes": "sta-board-role"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_resp_j0t86ph",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);\">\n                 <p style=\"font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:rgba(255,255,255,0.9); margin:0 0 0.5rem;\">Hovedansvar</p>\n                 <ul style=\"font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1.1rem; margin:0;\">\n                   <li>Daglig leder, pressekontakt og representasjon</li>\n                 </ul>\n               </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "m_bot_shf0qyg",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "\n            <div style=\"margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2); display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;\">\n                \n                <a href=\"mailto:staleder@uia.no\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n                    <span style=\"overflow:hidden; text-overflow:ellipsis; white-space:nowrap;\">staleder@uia.no</span>\n                </a>\n                \n                <a href=\"tel:+4792351334\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>\n                    <span>+47 923 51 334</span>\n                </a>\n            </div>\n        "
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "mcard_6t3e5qk",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_justify_content": "space-between",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "rgba(61, 148, 139, 0.3)",
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card sta-board-card",
+              "_css_classes": "sta-card sta-board-card"
+            },
+            "elements": [
+              {
+                "id": "m_top_w6vusqq",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column"
+                },
+                "elements": [
+                  {
+                    "id": "m_img_brjzfeu",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/Sondre-Smil-1024x683.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "medium_large",
+                      "css_classes": "sta-board-photo",
+                      "_css_classes": "sta-board-photo"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_name_rq3p8t0",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Sondre Jørgensen Evjen",
+                      "header_size": "h3",
+                      "css_classes": "sta-board-name",
+                      "_css_classes": "sta-board-name"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_role_z6wzrtk",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Nestleder",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "css_classes": "sta-board-role",
+                      "_css_classes": "sta-board-role"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_resp_1m35ck2",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);\">\n                 <p style=\"font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:rgba(255,255,255,0.9); margin:0 0 0.5rem;\">Hovedansvar</p>\n                 <ul style=\"font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1.1rem; margin:0;\">\n                   <li>Leders stedfortreder, kommunikasjonsansvarlig</li>\n                 </ul>\n               </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "m_bot_12toxzd",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "\n            <div style=\"margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2); display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;\">\n                \n                <a href=\"mailto:stanestleder@uia.no\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n                    <span style=\"overflow:hidden; text-overflow:ellipsis; white-space:nowrap;\">stanestleder@uia.no</span>\n                </a>\n                \n            </div>\n        "
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "mcard_u7h45wp",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_justify_content": "space-between",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "rgba(61, 148, 139, 0.3)",
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card sta-board-card",
+              "_css_classes": "sta-card sta-board-card"
+            },
+            "elements": [
+              {
+                "id": "m_top_89vf6yj",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column"
+                },
+                "elements": [
+                  {
+                    "id": "m_img_jhlq17r",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/Felix-Smil-1024x683.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "medium_large",
+                      "css_classes": "sta-board-photo",
+                      "_css_classes": "sta-board-photo"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_name_82783ns",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Felix Fabricius Knutsen",
+                      "header_size": "h3",
+                      "css_classes": "sta-board-name",
+                      "_css_classes": "sta-board-name"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_role_w741z4v",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Læringsmiljøpolitisk ansvarlig",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "css_classes": "sta-board-role",
+                      "_css_classes": "sta-board-role"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_resp_oduh9ev",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);\">\n                 <p style=\"font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:rgba(255,255,255,0.9); margin:0 0 0.5rem;\">Hovedansvar</p>\n                 <ul style=\"font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1.1rem; margin:0;\">\n                   <li>Læringsmiljøpolitikk, kontaktperson for tillitsvalgte, bærekraft og miljø</li>\n                 </ul>\n               </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "m_bot_vwepe82",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "\n            <div style=\"margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2); display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;\">\n                \n                <a href=\"mailto:stalaringsmiljo@uia.no\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n                    <span style=\"overflow:hidden; text-overflow:ellipsis; white-space:nowrap;\">stalaringsmiljo@uia.no</span>\n                </a>\n                \n            </div>\n        "
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "mcard_wfn23sl",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_justify_content": "space-between",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "rgba(61, 148, 139, 0.3)",
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card sta-board-card",
+              "_css_classes": "sta-card sta-board-card"
+            },
+            "elements": [
+              {
+                "id": "m_top_36tmgd4",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column"
+                },
+                "elements": [
+                  {
+                    "id": "m_img_jrhkp6w",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/Torres-Smil-1024x683.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "medium_large",
+                      "css_classes": "sta-board-photo",
+                      "_css_classes": "sta-board-photo"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_name_drj5j2t",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Tørres Andreas Båshus",
+                      "header_size": "h3",
+                      "css_classes": "sta-board-name",
+                      "_css_classes": "sta-board-name"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_role_lccit7z",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Utdanningspolitisk ansvarlig",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "css_classes": "sta-board-role",
+                      "_css_classes": "sta-board-role"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_resp_444c3g3",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);\">\n                 <p style=\"font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:rgba(255,255,255,0.9); margin:0 0 0.5rem;\">Hovedansvar</p>\n                 <ul style=\"font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1.1rem; margin:0;\">\n                   <li>Utdanning- og forskningspolitikk, kontaktperson for RSU, utvikling av kvalitetssystemet</li>\n                 </ul>\n               </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "m_bot_8ay3bg6",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "\n            <div style=\"margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2); display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;\">\n                \n                <a href=\"mailto:stafag@uia.no\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n                    <span style=\"overflow:hidden; text-overflow:ellipsis; white-space:nowrap;\">stafag@uia.no</span>\n                </a>\n                \n            </div>\n        "
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "mcard_zi5ch5h",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_justify_content": "space-between",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "rgba(61, 148, 139, 0.3)",
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card sta-board-card",
+              "_css_classes": "sta-card sta-board-card"
+            },
+            "elements": [
+              {
+                "id": "m_top_6aykxsq",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column"
+                },
+                "elements": [
+                  {
+                    "id": "m_img_zf4uc12",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/Oda-Smil-1024x683.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "medium_large",
+                      "css_classes": "sta-board-photo",
+                      "_css_classes": "sta-board-photo"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_name_2ta9048",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Oda Isnes Tyse",
+                      "header_size": "h3",
+                      "css_classes": "sta-board-name",
+                      "_css_classes": "sta-board-name"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_role_o6cj2d1",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Mangfoldspolitisk ansvarlig",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "css_classes": "sta-board-role",
+                      "_css_classes": "sta-board-role"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_resp_o26hc3v",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);\">\n                 <p style=\"font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:rgba(255,255,255,0.9); margin:0 0 0.5rem;\">Hovedansvar</p>\n                 <ul style=\"font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1.1rem; margin:0;\">\n                   <li>Internasjonalisering, likestilling, språk og mangfold</li>\n                 </ul>\n               </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "m_bot_ige0gjn",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "\n            <div style=\"margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2); display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;\">\n                \n                <a href=\"mailto:stamangfold@uia.no\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n                    <span style=\"overflow:hidden; text-overflow:ellipsis; white-space:nowrap;\">stamangfold@uia.no</span>\n                </a>\n                \n            </div>\n        "
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "mcard_wa7068w",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_justify_content": "space-between",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "rgba(61, 148, 139, 0.3)",
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card sta-board-card",
+              "_css_classes": "sta-card sta-board-card"
+            },
+            "elements": [
+              {
+                "id": "m_top_lk9hopu",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column"
+                },
+                "elements": [
+                  {
+                    "id": "m_img_caa5bvr",
+                    "elType": "widget",
+                    "widgetType": "image",
+                    "settings": {
+                      "image": {
+                        "url": "https://stastudent.no/wp-content/uploads/2026/08/a0da7b30-a50f-4dd3-9b89-6ec47da958aa.jpg",
+                        "source": "library"
+                      },
+                      "image_size": "medium_large",
+                      "css_classes": "sta-board-photo",
+                      "_css_classes": "sta-board-photo"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_name_z8xvad7",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Mia Sandøy",
+                      "header_size": "h3",
+                      "css_classes": "sta-board-name",
+                      "_css_classes": "sta-board-name"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_role_ygorm9b",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Sekretariatet",
+                      "header_size": "p",
+                      "custom_color": "#ef7330",
+                      "css_classes": "sta-board-role",
+                      "_css_classes": "sta-board-role"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "m_resp_z0pgejp",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<div style=\"margin-top:1rem; padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);\">\n                 <p style=\"font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:rgba(255,255,255,0.9); margin:0 0 0.5rem;\">Hovedansvar</p>\n                 <ul style=\"font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1.1rem; margin:0;\">\n                   <li>Alt sekretærarbeid, HMS-leder, daglig økonomiansvar og resepsjonsarbeid</li>\n                 </ul>\n               </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "m_bot_1oydhze",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "\n            <div style=\"margin-top:1.5rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2); display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;\">\n                \n                <a href=\"mailto:sta@uia.no\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n                    <span style=\"overflow:hidden; text-overflow:ellipsis; white-space:nowrap;\">sta@uia.no</span>\n                </a>\n                \n                <a href=\"tel:+4738142010\" style=\"display:flex; align-items:center; gap:0.5rem; color:var(--sta-teal-100); text-decoration:none;\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path></svg>\n                    <span>+47 381 42 010</span>\n                </a>\n            </div>\n        "
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "styret_contact_189ybk5",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<div style=\"padding:2rem; border-radius:1rem; background:rgba(7,38,36,0.4); border:1px solid rgba(61,148,139,0.3); display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:2rem; font-size:0.85rem; color:var(--sta-teal-200);\">\n                                    <div>\n                                        <h4 style=\"font-size:1rem; font-weight:700; color:#fff; margin:0 0 0.5rem;\">Campus Kristiansand</h4>\n                                        <p style=\"margin:0;\">Universitetsveien 24, 4630 Kristiansand S</p>\n                                    </div>\n                                    <div>\n                                        <h4 style=\"font-size:1rem; font-weight:700; color:#fff; margin:0 0 0.5rem;\">Campus Grimstad</h4>\n                                        <p style=\"margin:0;\">Jon Lilletuns vei 9, 4879 Grimstad</p>\n                                    </div>\n                                    <div>\n                                        <h4 style=\"font-size:1rem; font-weight:700; color:#fff; margin:0 0 0.5rem;\">Felles kontakt</h4>\n                                        <p style=\"margin:0 0 0.25rem;\">E-post: sta@uia.no</p>\n                                        <p style=\"margin:0 0 0.25rem;\">Tlf: +47 38 14 20 10</p>\n                                        <p style=\"margin:0;\">Org.nr: 981 596 412</p>\n                                    </div>\n                                 </div>"
+        },
+        "elements": []
+      }
+    ],
+    "isInner": false
+  }
+]

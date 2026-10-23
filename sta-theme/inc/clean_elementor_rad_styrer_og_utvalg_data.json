@@ -1,0 +1,2789 @@
+[
+  {
+    "id": "rsu_wrap_pd3ie7i",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "0",
+        "row": "44",
+        "isLinked": false
+      },
+      "css_classes": "sta-subpage-root sta-rsu-root",
+      "_css_classes": "sta-subpage-root sta-rsu-root"
+    },
+    "elements": [
+      {
+        "id": "rsu_hdr_jmb76xb",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "text_align": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "rsu_b_5u5tezx",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "<span class=\"sta-badge\">Studentdemokrati</span>",
+              "header_size": "div",
+              "align": "center",
+              "css_classes": "sta-badge-wrap",
+              "_css_classes": "sta-badge-wrap"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_t_h68j2a1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Råd, Styrer og Utvalg (RSU)",
+              "header_size": "h1",
+              "align": "center",
+              "css_classes": "sta-hero-title",
+              "_css_classes": "sta-hero-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_sub_7ma6lu1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color:var(--sta-teal-100); font-size:1.15rem; max-width:800px; margin:0 auto; line-height:1.6;\">Hos STA kan alle UiA-studenter stille til valg! Bli med på å forme studentenes hverdag.</p>",
+              "css_classes": "sta-hero-subtitle",
+              "_css_classes": "sta-hero-subtitle"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_intro_dh54k8b",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "text_align": "center",
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "auto",
+            "bottom": "0",
+            "left": "auto",
+            "isLinked": false
+          },
+          "css_classes": "sta-intro-box",
+          "_css_classes": "sta-intro-box"
+        },
+        "elements": [
+          {
+            "id": "rsu_intro_txt_bq06i39",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-size:1rem; color:var(--sta-teal-100); line-height:1.7; max-width:768px; margin:0 auto 1.5rem auto;\">Valg til råd, styrer og utvalg (RSU) skjer på en valgforsamling, hvor Studentparlamentet stemmer over hvem som får plassene. Valgene lyses ut på stastudent.no og deles i våre kanaler på våren – så følg med! Ved spørsmål, ta gjerne kontakt på <a href=\"mailto:sta@uia.no\" style=\"color:var(--sta-orange); font-weight:700; text-decoration:underline;\">sta@uia.no</a>.</p>"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_intro_btn_5trm1vd",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Se ledige verv nå →",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=ledige-verv"
+              },
+              "button_background_color": "#ef7330",
+              "css_classes": "sta-btn sta-btn-orange",
+              "_css_classes": "sta-btn sta-btn-orange"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_reasons_sec_inf111e",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "rsu_r_title_xk9jeol",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "6 gode grunner til hvorfor du skal ta på deg verv:",
+              "header_size": "h2",
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_r_grid_o8bc1is",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-reasons-grid",
+              "_css_classes": "sta-reasons-grid"
+            },
+            "elements": [
+              {
+                "id": "r_c_aaiwtfs",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "title_text": "1. Representere studentene",
+                  "description_text": "Være med på å forbedre UiA for studentene, og gjøre studiehverdagen bedre for 14 000 medstudenter.",
+                  "position": "top",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-reason-card",
+                  "_css_classes": "sta-card sta-reason-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "r_c_w0bnpll",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "title_text": "2. Nettverksbygging",
+                  "description_text": "Få et bredt og tverrfaglig nettverk på tvers av studier, campus og med universitetsledelsen.",
+                  "position": "top",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-reason-card",
+                  "_css_classes": "sta-card sta-reason-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "r_c_wof0urt",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "title_text": "3. Arbeidslivsrelevant",
+                  "description_text": "Utfordre deg selv, få verdifull leder- og samfunnserfaring og skaff deg en solid attest til CV-en.",
+                  "position": "top",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-reason-card",
+                  "_css_classes": "sta-card sta-reason-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "r_c_av4ms1t",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "title_text": "4. Organisasjonserfaring",
+                  "description_text": "Få dypere innsikt i hvordan store kunnskapsorganisasjoner, styrer og demokratiske prosesser fungerer i praksis.",
+                  "position": "top",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-reason-card",
+                  "_css_classes": "sta-card sta-reason-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "r_c_9aw23kv",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "title_text": "5. God diskusjonsevne",
+                  "description_text": "Lære å se saker fra flere sider, argumentere saklig, forhandle og bygge gode kompromisser.",
+                  "position": "top",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-reason-card",
+                  "_css_classes": "sta-card sta-reason-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "r_c_z1k51sf",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "title_text": "6. Å bygge seg selv",
+                  "description_text": "Det viktigste punktet av alle: Du vokser som menneske. Du blir litt glupere, mer reflektert og modnere.",
+                  "position": "top",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-reason-card",
+                  "_css_classes": "sta-card sta-reason-card"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_banner_0477e2z",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "border_radius": {
+            "unit": "px",
+            "top": "16",
+            "right": "16",
+            "bottom": "16",
+            "left": "16",
+            "isLinked": true
+          },
+          "overflow": "hidden",
+          "border_border": "solid",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          },
+          "border_color": "rgba(61,148,139,0.3)",
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 20,
+            "blur": 25,
+            "spread": -5,
+            "color": "rgba(0,0,0,0.4)"
+          },
+          "css_classes": "sta-photo-banner",
+          "_css_classes": "sta-photo-banner"
+        },
+        "elements": [
+          {
+            "id": "rsu_b_img_e15wkom",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://stastudent.no/wp-content/uploads/2025/10/IMG_4439-1024x683.jpg",
+                "source": "library"
+              },
+              "image_size": "large"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_cat_qia532k",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "20",
+            "isLinked": false
+          },
+          "css_classes": "sta-rsu-cat-section",
+          "_css_classes": "sta-rsu-cat-section"
+        },
+        "elements": [
+          {
+            "id": "rsu_cat_hdr_lqigbjg",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "12",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "1",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_color": "rgba(158,207,201,0.25)",
+              "css_classes": "sta-rsu-cat-hdr",
+              "_css_classes": "sta-rsu-cat-hdr"
+            },
+            "elements": [
+              {
+                "id": "rsu_ch_title_4a33vjx",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "STA-Verv",
+                  "header_size": "h2"
+                },
+                "elements": []
+              },
+              {
+                "id": "rsu_ch_badge_imb3eq0",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "<span class=\"sta-badge\" style=\"background:rgba(239,115,48,0.18); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); font-size:0.75rem;\">6 organer / utvalg</span>",
+                  "header_size": "div"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "rsu_cat_desc_c240pri",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Sentrale tillitsverv i Studentorganisasjonen i Agder og tilknyttede studentorganisasjoner.</p>"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_cat_grid_9xu068m",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-rsu-grid",
+              "_css_classes": "sta-rsu-grid"
+            },
+            "elements": [
+              {
+                "id": "rsu_item_4ea2ouy",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_p6uatmg",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_3y50pge",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Styret (STA-Styret)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_ri7z4bb",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">STAs daglige ledelse. Leder og nestleder er 100 % frikjøpt (fulltid), mens fagpolitisk, læringsmiljøpolitisk og mangfoldspolitisk ansvarlig er 50 % frikjøpt. Har hovedansvaret for studentdemokratiet ved UiA.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_qhi08i7",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Les mer om STA-styret →",
+                      "link": {
+                        "url": "https://stastudent.no/reliant/?sta_page=sta-styret",
+                        "is_external": ""
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_q4lqgmo",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_br12j3f",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_z4zll9b",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Velferdstinget i Agder (VT)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_hlkqon7",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Velferdstinget (VT) er et organ for alle studenter ved SiAs medlemslag, og jobber for alle studenters velferdsrettigheter i Agder. VT fordeler studentsosialemidler til studentaktiviteter og er rådgivende organ for styret i Studentsamskipnaden (SiA). VT velger også studentrepresentanter til styret i SiA og SiA Kulturfond.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_3rwtzn2",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Besøk Velferdstinget (vt-agder.no) →",
+                      "link": {
+                        "url": "https://vt-agder.no/",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_vnqzwrm",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_fzam8dz",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_2s3tfht",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Studentutvalget i Grimstad (SIG)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_v88thki",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Kommunalt rådgivende råd hvor STA, Velferdstinget, fagskolen og en politisk representant fra Grimstad kommune sitter. Sikrer at kommunen hører studentenes stemme når relevante saker avgjøres. 1 fast representant med personlig vara velges i mai (må ha tilknytning til Grimstad). Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_7t5nkju",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Grimstad kommune →",
+                      "link": {
+                        "url": "https://www.grimstad.kommune.no/",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_lblu4pp",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_zn5pwhw",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_az9cla1",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Unikumstyret",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_hhmqifv",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Styret for studentavisen Unikum ved UiA. Har ansvar for økonomi, ansettelser i faste stillinger, lønnsnivå og styringsdokumenter for studentavisen. Styret består av representanter fra UiA, SiA, STA og Studentavisen Unikum. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_22ql3eq",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Unikum nettavis →",
+                      "link": {
+                        "url": "https://www.unikumnett.no/",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_p52vbx0",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_v75f7u1",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_nk2iek1",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Landsmøtedelegasjonen (NSO)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_d15jltl",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">UiAs offisielle delegasjon til Norsk studentorganisasjons (NSO) landsmøte, der nasjonal studentpolitikk vedtas. Studentparlamentet vedtar mandat for delegasjonen. Valg reguleres av NSO og STAs valgreglement.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_mw94i6h",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Norsk studentorganisasjon (NSO) →",
+                      "link": {
+                        "url": "https://student.no/",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_5e2tgid",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_autxui5",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_5c57iw2",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Forthem Student Council",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_1b78o68",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Forthem er en europeisk universitetsallianse hvor UiA er 1 av 9 medlemsuniversiteter. Student Council fungerer som studentstemmen innad i alliansen, og består av to studenter fra hvert universitet. Som representant representerer du UiAs studenter på europeisk nivå. Arbeidsspråk er engelsk. Funksjonsperiode: 01.08 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_cldo0c7",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Forthem Alliance (forthem-alliance.eu) →",
+                      "link": {
+                        "url": "https://www.forthem-alliance.eu/",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_cat_c5rtyoc",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "20",
+            "isLinked": false
+          },
+          "css_classes": "sta-rsu-cat-section",
+          "_css_classes": "sta-rsu-cat-section"
+        },
+        "elements": [
+          {
+            "id": "rsu_cat_hdr_xwiir2v",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "12",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "1",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_color": "rgba(158,207,201,0.25)",
+              "css_classes": "sta-rsu-cat-hdr",
+              "_css_classes": "sta-rsu-cat-hdr"
+            },
+            "elements": [
+              {
+                "id": "rsu_ch_title_17ro458",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "STAs Politiske Utvalg",
+                  "header_size": "h2"
+                },
+                "elements": []
+              },
+              {
+                "id": "rsu_ch_badge_1kloq62",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "<span class=\"sta-badge\" style=\"background:rgba(239,115,48,0.18); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); font-size:0.75rem;\">4 organer / utvalg</span>",
+                  "header_size": "div"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "rsu_cat_desc_6ojoujx",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Politiske fagutvalg som bistår STA-styrets tillitsvalgte med politikkutvikling og dokumentrevisjon.</p>"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_cat_grid_9qlay2m",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-rsu-grid",
+              "_css_classes": "sta-rsu-grid"
+            },
+            "elements": [
+              {
+                "id": "rsu_item_4c03fzq",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_hqw4473",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_jvdd2b1",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Fag- og forskningspolitisk utvalg",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_ych9sx2",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Arbeider med fag- og forskningspolitikk for økt utdanningskvalitet i samspillet mellom studenter og ansatte. Arbeidet omfatter blant annet å revidere STAs politiske dokument for utdanningskvalitet. 4 utvalgsmedlemmer velges for ett år (funksjonstid: 01.07 – 30.06).</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_7hqjjip",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Politiske dokumenter (STA) →",
+                      "link": {
+                        "url": "https://stastudent.no/reliant/?sta_page=dokumenter",
+                        "is_external": ""
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_xqfbe9y",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_jtzq4qb",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_4bpxpuk",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Læringsmiljøpolitisk utvalg",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_joyqxth",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Arbeider for økt fokus og tiltak for studentenes læringsmiljø, slik at studenter får bedre betingelser for å fullføre studiene. Arbeidet omfatter blant annet revisjon av STAs politiske dokument for læringsmiljø, samt deltakelse på kurs og konferanser. 4 medlemmer velges for ett år (01.07 – 30.06).</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_1xs0pyn",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Politiske dokumenter (STA) →",
+                      "link": {
+                        "url": "https://stastudent.no/reliant/?sta_page=dokumenter",
+                        "is_external": ""
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_59erley",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_wn21yqg",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_y69h5qq",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Bærekrafts- og miljøpolitisk utvalg",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_e0743dz",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Jobber spesifikt med STAs politikk innen bærekraft og miljø. Bistår i arbeidet med å få bærekraftperspektivet inn i utdanningene og få UiA til å satse mer på miljøvennlige løsninger. Reviderer politisk dokument for bærekraft og miljø. 4 medlemmer velges for ett år (01.07 – 30.06).</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_spuxakb",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Politiske dokumenter (STA) →",
+                      "link": {
+                        "url": "https://stastudent.no/reliant/?sta_page=dokumenter",
+                        "is_external": ""
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_6wijzhw",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_mfia8fo",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_dif9zc7",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Internasjonalt utvalg",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_szlt3up",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Arbeider med STAs politikk vedrørende internasjonalisering. Arbeider for at internasjonale studenter skal kunne fungere som tillitsvalgte, at informasjon er tilgjengelig på engelsk, og støtter opp om den globale studentstemmen. Reviderer politisk dokument for internasjonalisering. 4 medlemmer velges for ett år (01.07 – 30.06).</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_tkwrpfz",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Politiske dokumenter (STA) →",
+                      "link": {
+                        "url": "https://stastudent.no/reliant/?sta_page=dokumenter",
+                        "is_external": ""
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_cat_i7tzwlz",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "20",
+            "isLinked": false
+          },
+          "css_classes": "sta-rsu-cat-section",
+          "_css_classes": "sta-rsu-cat-section"
+        },
+        "elements": [
+          {
+            "id": "rsu_cat_hdr_gknso32",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "12",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "1",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_color": "rgba(158,207,201,0.25)",
+              "css_classes": "sta-rsu-cat-hdr",
+              "_css_classes": "sta-rsu-cat-hdr"
+            },
+            "elements": [
+              {
+                "id": "rsu_ch_title_ca60nlq",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "STAs Organisatoriske Utvalg",
+                  "header_size": "h2"
+                },
+                "elements": []
+              },
+              {
+                "id": "rsu_ch_badge_7vnmukz",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "<span class=\"sta-badge\" style=\"background:rgba(239,115,48,0.18); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); font-size:0.75rem;\">2 organer / utvalg</span>",
+                  "header_size": "div"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "rsu_cat_desc_vpz96ax",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Utvalg som sikrer STAs interne rekruttering, profilering og kommunikasjonsarbeid.</p>"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_cat_grid_xs6skiv",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-rsu-grid",
+              "_css_classes": "sta-rsu-grid"
+            },
+            "elements": [
+              {
+                "id": "rsu_item_ybppehi",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_lv56mga",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_7099lt6",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Valgkomitéen",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_x1pw3ik",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Innstiller på kandidater til verv som velges av Studentparlamentet. Intervjuer alle kandidater som stiller til valg, koordinerer intervjuprosessen og presenterer kandidatene på valgforsamlingen. Gir verdifull leder- og rekrutteringserfaring. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_qzd6coh",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Les mer om Valgkomitéen →",
+                      "link": {
+                        "url": "https://stastudent.no/reliant/?sta_page=ledige-verv",
+                        "is_external": ""
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_5anye12",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_6oqsg0e",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_r4dmyj5",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Kommunikasjonsutvalget",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_mvst9fg",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Jobber spesifikt med STAs synlighet og profil. Bidrar med profilering, nettsideoppdateringer, innhold til Instagram og Facebook, og er svært synlige under studentvalget hver vår. Følger opp og reviderer STAs kommunikasjonsstrategi. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_e4c2rmf",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Om STA →",
+                      "link": {
+                        "url": "https://stastudent.no/reliant/?sta_page=om-sta",
+                        "is_external": ""
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_cat_6svca62",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "20",
+            "isLinked": false
+          },
+          "css_classes": "sta-rsu-cat-section",
+          "_css_classes": "sta-rsu-cat-section"
+        },
+        "elements": [
+          {
+            "id": "rsu_cat_hdr_zljetu9",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "12",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "1",
+                "left": "0",
+                "isLinked": false
+              },
+              "border_color": "rgba(158,207,201,0.25)",
+              "css_classes": "sta-rsu-cat-hdr",
+              "_css_classes": "sta-rsu-cat-hdr"
+            },
+            "elements": [
+              {
+                "id": "rsu_ch_title_8kxg1w2",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Universitetsorganer og utvalg ved UiA",
+                  "header_size": "h2"
+                },
+                "elements": []
+              },
+              {
+                "id": "rsu_ch_badge_152qzyn",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "<span class=\"sta-badge\" style=\"background:rgba(239,115,48,0.18); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); font-size:0.75rem;\">11 organer / utvalg</span>",
+                  "header_size": "div"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "rsu_cat_desc_88o226f",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Lovfestede styrer, råd og fagutvalg ved Universitetet i Agder med studentrepresentasjon.</p>"
+            },
+            "elements": []
+          },
+          {
+            "id": "rsu_cat_grid_yozxg64",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-rsu-grid",
+              "_css_classes": "sta-rsu-grid"
+            },
+            "elements": [
+              {
+                "id": "rsu_item_jkqfun3",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_m0l5xg5",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_b9wkkto",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Universitetsstyret",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_mpsthju",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Universitetet i Agders øverste styringsorgan. Behandler institusjonens overordnede strategi, årsbudsjett, prioriteringer, opprettelse og nedleggelse av studier, og ansettelse av toppledelsen. 6–8 heldagsmøter i året. Vervet er honorert. Funksjonstid: 01.08 – 31.07.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_3yneau4",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for Universitetsstyret →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/universitetsstyret.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_oatys44",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_9ue3tfg",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_slkkdo8",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Læringsmiljøutvalget (LMU)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_2ecgjbi",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Lovfestet utvalg som arbeider for å sikre et fullt forsvarlig fysisk, psykososialt, digitalt og velferdsmessig læringsmiljø ved UiA i samarbeid med SiA. Studentene har 3 faste møtende plasser og leder utvalget annethvert år. Rapporterer årlig til Universitetsstyret. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_2zovdk2",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for LMU →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/leringsmiljoutvalget.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_crcnirl",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_x0xw1dr",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_0egw388",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Utdanningsutvalget",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_auugftz",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Fatter vedtak om godkjenning av studie- og fagplaner for nye studier, utdanningsplaner, retningslinjer for studiekvalitet og universitetets årlige utdanningsmelding. Koordinerende organ mellom universitetet sentralt og fakultetene. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_36a3ily",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for Utdanningsutvalget →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/utdanningsutvalg.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_9zpufk9",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_o9boym0",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_tc58n6r",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Likestillings- og inkluderingsutvalget (LIU)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_jvg4kuk",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Initiativtakende og rådgivende organ oppnevnt av Universitetsstyret for å fremme reell likestilling ved UiA uavhengig av kjønn, etnisitet og funksjonsevne. Fremmer studentperspektivet i saker om kjønnsbalanse og mangfold på studiene. Ca. 4 møter per semester. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_wnpobcw",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for LIU →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/likestillings--og-inkluderingsutvalget.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_c029zvv",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_98iz280",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_n17gtho",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Forsknings- og innovasjonsutvalget",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_l085agf",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">UiA-styrets rådgivende og utøvende organ i saker som gjelder forskning og utvikling, forskerutdanning (ph.d.), formidling, samt samfunnskontakt og nyskaping. Ledes av viserektor for forskning. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_rfhzujo",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for Forskningsutvalget →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/forsknings--og-innovasjonsutvalg.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_lc16luk",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_wtlvjd0",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_1h7jgvd",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Ansettelsesutvalg for undervisnings- og forskerstillinger",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_n8brjd8",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Gjennomgår og godkjenner alle ansettelser av vitenskapelig personell (professorer, førsteamanuenser, lektorer, stipendiater) ved Universitetet i Agder. 1 studentrepresentant møter med fulle rettigheter og 1 som observatør. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_jbqblm2",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell møteportal for Ansettelsesutvalget →",
+                      "link": {
+                        "url": "https://opengov.360online.com/Meetings/uia/Boards/Details/213435",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_tpsnr0s",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_8w24x2p",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_l2l7qvl",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Prisutvalget UiA (Utdanningsprisen)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_1vktpna",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Vurderer nominerte kandidater til UiAs Utdanningspris for markert innsats for læringsmiljø og studiekvalitet. Innstiller vinneren overfor Universitetsstyret. Prisen deles ut på universitetets årsfest. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_mlo6esf",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell side for Utdanningsprisen →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/utdanningsprisen/",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_r853l2z",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_b1x9ozt",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_67qo6by",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Skikkethetsnemnda",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_7gmoj6d",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Oppnevnt av Universitetsstyret for å vurdere om studenter i profesjonsutdanninger (lærerutdanning, helse- og sosialfag) er skikket for yrket i tilfeller der det foreligger tvilsmelding. Studentene må gå på en profesjonsutdanning. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_qxg0e7r",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for Skikkethetsnemnda →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/skikkethetsnemnd.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_dqcisb9",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_dcdhoe5",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_k6bofcz",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Nemnd for studentsaker (Klagenemnda)",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_3jfj0yq",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Lovfestet nemnd etter Universitets- og høyskoleloven som behandler klager over enkeltvedtak, fusk på eksamen, bortvisning, utestenging og politiattestsaker. Vervet er honorert. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_u1ao7q8",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for Nemnd for studentsaker →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/nemnd-for-studentsaker.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_qrg6zpc",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_v4y0gjl",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_c4g107k",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Museumsråd – Naturmuseum og Botanisk hage",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_yqg6iiz",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Strategisk rådgivende organ som bistår direktøren i å utvikle museet og styrke faglige nettverk regionalt, nasjonalt og internasjonalt. Møtes 2–3 ganger i året i NBH sine lokaler på Campus Kristiansand. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_kqtzi8h",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Naturmuseum og Botanisk hage →",
+                      "link": {
+                        "url": "https://www.uia.no/naturmuseum/",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "rsu_item_0nkjbu1",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(61, 148, 139, 0.3)",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card sta-rsu-card",
+                  "_css_classes": "sta-card sta-rsu-card"
+                },
+                "elements": [
+                  {
+                    "id": "rsu_top_2t7efss",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "rsu_title_7q3wy1r",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Valgstyret ved UiA",
+                          "header_size": "h3",
+                          "css_classes": "sta-rsu-item-title",
+                          "_css_classes": "sta-rsu-item-title"
+                        },
+                        "elements": []
+                      },
+                      {
+                        "id": "rsu_desc_255dsys",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"font-size:0.875rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">Ansvarlig for at alle valg ved universitetet blir gjennomført i henhold til lov og reglement. Forbereder, organiserer og administrerer valgene av rektor og universitetsstyret. Funksjonstid: 01.07 – 30.06.</p>"
+                        },
+                        "elements": []
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "rsu_link_ie2fb48",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Offisiell UiA-side for Valgstyret →",
+                      "link": {
+                        "url": "https://www.uia.no/om-uia/styrer-og-utvalg/valstyret.html",
+                        "is_external": "on"
+                      },
+                      "css_classes": "sta-rsu-item-btn",
+                      "_css_classes": "sta-rsu-item-btn"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "rsu_bot_cta_wmllnkr",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "rsu_cta_btn_whvoqcu",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Se alle ledige verv og søk nå →",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=ledige-verv"
+              },
+              "button_background_color": "#ef7330",
+              "css_classes": "sta-btn sta-btn-orange",
+              "_css_classes": "sta-btn sta-btn-orange"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]
