@@ -1,0 +1,192 @@
+[
+  {
+    "id": "sec_heders_7y7y1wn",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "48",
+        "row": "48",
+        "isLinked": true
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "css_classes": "sta-container",
+      "_css_classes": "sta-container"
+    },
+    "elements": [
+      {
+        "id": "hp_header_6b0350o",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "hp_badge_4h5rs50",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "<div style=\"text-align:center;\"><span class=\"sta-badge\" style=\"display:inline-block; padding:0.25rem 0.85rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; background:rgba(239,115,48,0.15); color:var(--sta-orange); border:1px solid rgba(239,115,48,0.3);\">HEDERSPRIS</span></div>"
+            },
+            "elements": []
+          },
+          {
+            "id": "hp_title_igws98j",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Irene Bredals Hederspris",
+              "header_size": "h1",
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "hp_subtitle_vuq1ao1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"max-width:800px; margin:0.5rem auto 0 auto; text-align:center; font-size:1.1rem; color:var(--sta-teal-100); line-height:1.6;\">En utmerkelse til personer som over tid har vist dedikasjon og ekstraordinær innsats for studentenes beste ved Universitetet i Agder.</p>"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "hp_intro_card_8iwihcl",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+            "unit": "px",
+            "top": "32",
+            "right": "32",
+            "bottom": "32",
+            "left": "32",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          },
+          "border_radius": {
+            "unit": "px",
+            "top": "16",
+            "right": "16",
+            "bottom": "16",
+            "left": "16",
+            "isLinked": true
+          },
+          "css_classes": "sta-card",
+          "_css_classes": "sta-card"
+        },
+        "elements": [
+          {
+            "id": "hp_intro_body_np33o84",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "\n                                <div>\n                                    <div style=\"display:flex; align-items:center; gap:1rem; margin-bottom:1.25rem;\">\n                                        <div style=\"width:3.5rem; height:3.5rem; border-radius:1rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;\">\n                                            <svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"8\" r=\"7\"></circle><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"></polyline></svg>\n                                        </div>\n                                        <div>\n                                            <h2 style=\"font-size:1.5rem; font-weight:700; color:#fff; margin:0;\">Om hedersprisen</h2>\n                                            <p style=\"font-size:0.75rem; color:var(--sta-orange); font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin:0.25rem 0 0 0;\">\n                                                Opprettet 2024/2025\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <p style=\"font-size:1.05rem; color:var(--sta-teal-100); line-height:1.7; margin:0 0 1.5rem 0;\">\n                                        Studentorganisasjonen i Agders hederspris gis ut til personer som over tid har vist dedikasjon og innsats i arbeid for UiA studentenes beste. Alle personer kan nomineres til prisen, så lenge mottaker har utvist arbeid for å styrke STA og studentstemmen på UiA.\n                                    </p>\n                                    <div style=\"padding:1.25rem 1.5rem; border-radius:12px; background:rgba(14,76,71,0.8); border:1px solid rgba(158,207,201,0.3); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.25rem;\">\n                                        <div>\n                                            <h3 style=\"font-size:1rem; font-weight:700; color:#fff; margin:0 0 0.25rem 0;\">Ønsker du å nominere noen?</h3>\n                                            <p style=\"font-size:0.85rem; color:var(--sta-teal-200); margin:0;\">Les statuttene eller send en nominasjon på e-post til STA.</p>\n                                        </div>\n                                        <div style=\"display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;\">\n                                            <a href=\"https://stastudent.no/wp-content/uploads/2025/11/her.pdf\" \n                                               target=\"_blank\" \n                                               rel=\"noopener noreferrer\" \n                                               class=\"sta-btn sta-btn-outline\" \n                                               style=\"padding:0.5rem 1.15rem; font-size:0.85rem; display:inline-flex; align-items:center; gap:0.4rem; border:1px solid rgba(158,207,201,0.4); border-radius:9999px; color:#fff; text-decoration:none;\">\n                                                <svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"12\"></line><line x1=\"9\" y1=\"15\" x2=\"15\" y2=\"15\"></line></svg>\n                                                <span>Statutter for prisen (PDF)</span>\n                                            </a>\n                                            <a href=\"mailto:sta@uia.no?subject=Nominasjon%3A%20Irene%20Bredals%20Hederspris\" \n                                               class=\"sta-btn sta-btn-orange\" \n                                               style=\"padding:0.5rem 1.35rem; font-size:0.85rem; font-weight:700; border-radius:9999px; background:var(--sta-orange); color:#fff; text-decoration:none;\">\n                                                <span>Send nominasjon</span>\n                                            </a>\n                                        </div>\n                                    </div>\n                                </div>"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "hp_winners_sec_ieki44l",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "hp_win_title_2x45p68",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "<h2 style=\"font-size:1.75rem; font-weight:700; color:#fff; text-align:center; margin:0 0 2rem 0;\">Mottakere av hedersprisen</h2>"
+            },
+            "elements": []
+          },
+          {
+            "id": "hp_win_card_rnl0xrm",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "padding": {
+                "unit": "px",
+                "top": "32",
+                "right": "32",
+                "bottom": "32",
+                "left": "32",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "hp_win_content_irzns55",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div style=\"display:flex; flex-wrap:wrap; gap:2.5rem; align-items:flex-start;\">\n                                            <div style=\"position:relative; width:14rem; height:18rem; border-radius:1rem; overflow:hidden; border:2px solid rgba(239,115,48,0.5); box-shadow:0 10px 25px rgba(0,0,0,0.5); flex-shrink:0;\">\n                                                <img src=\"https://stastudent.no/wp-content/uploads/2025/06/Kopi-av-Kopi-av-Overskrift-1024x1448.png\" \n                                                     alt=\"Irene Bredal mottar hedersprisen\" \n                                                     style=\"width:100%; height:100%; object-fit:cover;\">\n                                            </div>\n                                            <div style=\"flex:1; min-width:300px;\">\n                                                <div style=\"display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;\">\n                                                    <span class=\"sta-badge\" style=\"background:var(--sta-orange); color:#fff; border:none; font-size:0.75rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:9999px;\">\n                                                        2025\n                                                    </span>\n                                                    <span style=\"font-size:0.85rem; color:var(--sta-teal-200);\">Første hedersprismottaker</span>\n                                                </div>\n                                                <h3 style=\"font-size:1.85rem; font-weight:800; color:#fff; margin:0 0 0.25rem 0;\">Irene Bredal</h3>\n                                                <p style=\"font-size:0.95rem; color:var(--sta-orange); font-weight:600; margin:0 0 1.25rem 0;\">\n                                                    Tidligere organisasjonskonsulent i STA\n                                                </p>\n                                                <div style=\"padding:1rem 1.25rem; border-left:3px solid var(--sta-orange); background:rgba(7,36,34,0.6); border-radius:0 8px 8px 0; margin-bottom:1.25rem;\">\n                                                    <p style=\"font-size:0.925rem; color:var(--sta-teal-100); font-style:italic; line-height:1.6; margin:0;\">\n                                                        «Irene Bredal hedres for sitt utrettelige og brennende engasjement for studentene ved Universitetet i Agder over en årrekke. Som organisasjonskonsulent har hun vært en uvurderlig støttespiller for utallige studenttillitsvalgte og styrer.»\n                                                    </p>\n                                                </div>\n                                                <p style=\"font-size:0.9rem; color:var(--sta-teal-200); line-height:1.6; margin:0;\">\n                                                    Prisen ble overrakt under det høytidelige konstituerende møtet til Studentparlamentet, som en anerkjennelse av hennes enestående innsats for studentdemokratiet i Agder.\n                                                </p>\n                                            </div>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]

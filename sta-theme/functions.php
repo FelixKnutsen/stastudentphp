@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.2.8');
+define('STA_THEME_VERSION', '1.2.9');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -566,6 +566,36 @@ add_action('admin_init', function() {
                 'title'        => 'Studentparlamentet',
                 'preferred_id' => 161,
             ),
+            'ledige-verv' => array(
+                'slug'         => 'ledige-verv',
+                'file'         => 'clean_elementor_ledige_verv_data.json',
+                'title'        => 'Ledige verv',
+                'preferred_id' => 13129,
+            ),
+            'lokaler' => array(
+                'slug'         => 'lokaler',
+                'file'         => 'clean_elementor_lokaler_data.json',
+                'title'        => 'Lokaler',
+                'preferred_id' => 8218,
+            ),
+            'for-tillitsvalgte' => array(
+                'slug'         => 'for-tillitsvalgte',
+                'file'         => 'clean_elementor_for_tillitsvalgte_data.json',
+                'title'        => 'For tillitsvalgte',
+                'preferred_id' => 127,
+            ),
+            'trygg-organisasjon' => array(
+                'slug'         => 'trygg-organisasjon',
+                'file'         => 'clean_elementor_trygg_organisasjon_data.json',
+                'title'        => 'Trygg Organisasjon',
+                'preferred_id' => 13219,
+            ),
+            'irene-bredals-hederspris' => array(
+                'slug'         => 'irene-bredals-hederspris',
+                'file'         => 'clean_elementor_irene_bredals_hederspris_data.json',
+                'title'        => 'Irene Bredals Hederspris',
+                'preferred_id' => 16160,
+            ),
         );
 
         $to_process = array();
@@ -573,6 +603,8 @@ add_action('admin_init', function() {
             $to_process = array('valgkomiteen', 'dokumenter', 'prinsipprogram');
         } elseif ($target === 'batch2') {
             $to_process = array('sta-styret', 'rad-styrer-og-utvalg', 'studentparlamentet');
+        } elseif ($target === 'batch3') {
+            $to_process = array('ledige-verv', 'lokaler', 'for-tillitsvalgte', 'trygg-organisasjon', 'irene-bredals-hederspris');
         } elseif ($target === 'all') {
             $to_process = array_keys($subpages);
         } elseif (isset($subpages[$target])) {

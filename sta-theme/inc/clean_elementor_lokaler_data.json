@@ -1,0 +1,288 @@
+[
+  {
+    "id": "sec_lok_g3ny1jh",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "48",
+        "row": "48",
+        "isLinked": true
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "css_classes": "sta-container",
+      "_css_classes": "sta-container"
+    },
+    "elements": [
+      {
+        "id": "lok_header_89b8vvw",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "lok_badge_9ja5lei",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "<div style=\"text-align:center;\"><span class=\"sta-badge\" style=\"display:inline-block; padding:0.25rem 0.85rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; background:rgba(239,115,48,0.15); color:var(--sta-orange); border:1px solid rgba(239,115,48,0.3);\">STUDENTLOKALER</span></div>"
+            },
+            "elements": []
+          },
+          {
+            "id": "lok_title_mcb89le",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Lokaler",
+              "header_size": "h1",
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "lok_subtitle_pc9k5zw",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"max-width:800px; margin:0.5rem auto 0 auto; text-align:center; font-size:1.1rem; color:var(--sta-teal-100); line-height:1.6;\">Alle studentaktiviteter og linjeforeninger som er medlem av STA kan booke Alibiet og Bluebox lokalene til STA.</p>"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "lok_alibiet_sec_j1qdov7",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "24",
+            "row": "24",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "lok_alibiet_hdr_4dqk05l",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "\n                                <div style=\"display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;\">\n                                    <span class=\"sta-badge\" style=\"background:rgba(239,115,48,0.2); color:var(--sta-orange); border:none; font-size:0.75rem; font-weight:800; padding:0.25rem 0.75rem; border-radius:9999px;\">\n                                        CAMPUS KRISTIANSAND\n                                    </span>\n                                    <h2 style=\"font-size:2rem; font-weight:800; color:#fff; margin:0;\">Alibiet</h2>\n                                </div>"
+            },
+            "elements": []
+          },
+          {
+            "id": "lok_alibiet_grid_jcbxv0r",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "28",
+                "row": "28",
+                "isLinked": true
+              },
+              "css_classes": "sta-venue-grid",
+              "_css_classes": "sta-venue-grid"
+            },
+            "elements": [
+              {
+                "id": "lok_alibiet_photos_d2lqgaz",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 58
+                  },
+                  "flex_direction": "column",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "12",
+                    "row": "12",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "lok_alibiet_main_img_4frghkt",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                                                <div style=\"border-radius:14px; overflow:hidden; border:1px solid rgba(158,207,201,0.25); box-shadow:0 10px 25px rgba(0,0,0,0.4); position:relative; aspect-ratio:4/3; background:#072422;\">\n                                                    <img id=\"sta-alibiet-main-img\" src=\"https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_092836179-768x576.jpg\" alt=\"Utenfor Alibiet\" style=\"width:100%; height:100%; object-fit:cover; display:block;\">\n                                                    <div style=\"position:absolute; bottom:0; left:0; right:0; padding:0.75rem 1rem; background:linear-gradient(transparent, rgba(5,26,24,0.9)); color:#fff; font-size:0.85rem; font-weight:600;\">\n                                                        Utenfor Alibiet\n                                                    </div>\n                                                </div>"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "lok_alibiet_thumbs_4rie6gk",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                                                <div style=\"display:grid; grid-template-columns:repeat(6, 1fr); gap:8px;\">\n                                                    <img src=\"https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_093006806-768x576.jpg\" alt=\"Inngang\" style=\"width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid rgba(158,207,201,0.25);\">\n                                                    <img src=\"https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_093021348.MP_-768x576.jpg\" alt=\"Arrangementsareal\" style=\"width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid rgba(158,207,201,0.25);\">\n                                                    <img src=\"https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_093039894.MP_-768x576.jpg\" alt=\"Kjøkken\" style=\"width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid rgba(158,207,201,0.25);\">\n                                                    <img src=\"https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_113150219-768x576.jpg\" alt=\"Kontor\" style=\"width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid rgba(158,207,201,0.25);\">\n                                                    <img src=\"https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_113156984.MP_-768x576.jpg\" alt=\"TV-krok\" style=\"width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid rgba(158,207,201,0.25);\">\n                                                    <img src=\"https://stastudent.no/wp-content/uploads/2022/08/PXL_20220819_113132165-768x576.jpg\" alt=\"Møteplass\" style=\"width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid rgba(158,207,201,0.25);\">\n                                                </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "lok_alibiet_details_5t4oic4",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 38
+                  },
+                  "flex_direction": "column",
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "24",
+                    "bottom": "24",
+                    "left": "24",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "14",
+                    "right": "14",
+                    "bottom": "14",
+                    "left": "14",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card",
+                  "_css_classes": "sta-card"
+                },
+                "elements": [
+                  {
+                    "id": "lok_alibiet_info_bf4omp7",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                                                <div>\n                                                    <h3 style=\"font-size:1.35rem; font-weight:800; color:#fff; margin:0 0 0.75rem 0;\">Om Alibiet</h3>\n                                                    <p style=\"font-size:0.925rem; color:var(--sta-teal-100); line-height:1.6; margin:0 0 1.25rem 0;\">\n                                                        Alibiet er STAs arrangementslokale på Campus Kristiansand. Lokalet er tilgjengelig for alle medlemsforeninger og aktiviteter til møter, sosiale samlinger, filmkvelder og fester.\n                                                    </p>\n                                                    <div style=\"display:flex; flex-direction:column; gap:0.6rem; font-size:0.85rem; color:var(--sta-teal-100); margin-bottom:1.5rem; padding-bottom:1.25rem; border-bottom:1px solid rgba(158,207,201,0.2);\">\n                                                        <div style=\"display:flex; align-items:center; gap:0.5rem;\">\n                                                            <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"9\" cy=\"7\" r=\"4\"></circle><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"></path><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path></svg>\n                                                            <span><strong>Kapasitet:</strong> Sitteplasser til ca. 60 personer</span>\n                                                        </div>\n                                                        <div style=\"display:flex; align-items:center; gap:0.5rem;\">\n                                                            <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect><line x1=\"6\" y1=\"6\" x2=\"6.01\" y2=\"6\"></line><line x1=\"6\" y1=\"18\" x2=\"6.01\" y2=\"18\"></line></svg>\n                                                            <span><strong>Fasiliteter:</strong> Fullt kjøkken, projektor, lydanlegg, TV</span>\n                                                        </div>\n                                                        <div style=\"display:flex; align-items:center; gap:0.5rem;\">\n                                                            <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path></svg>\n                                                            <span><strong>Adgang:</strong> Nøkkelkort via SiA Bolig</span>\n                                                        </div>\n                                                    </div>\n                                                    <div style=\"display:flex; flex-direction:column; gap:0.75rem;\">\n                                                        <a href=\"mailto:sta@uia.no?subject=Booking%20av%20Alibiet\" \n                                                           class=\"sta-btn sta-btn-orange\" \n                                                           style=\"display:flex; align-items:center; justify-content:center; gap:0.5rem; padding:0.75rem 1.25rem; border-radius:9999px; background:var(--sta-orange); color:#ffffff; font-weight:700; text-decoration:none; font-size:0.9rem; text-align:center;\">\n                                                            <span>Book Alibiet via e-post →</span>\n                                                        </a>\n                                                        <a href=\"https://stastudent.no/wp-content/uploads/2023/04/Trivselsregler-Alibiet.pdf\" \n                                                           target=\"_blank\" \n                                                           rel=\"noopener noreferrer\" \n                                                           style=\"display:flex; align-items:center; justify-content:center; gap:0.4rem; padding:0.6rem 1.25rem; border-radius:9999px; background:transparent; border:1px solid rgba(158,207,201,0.4); color:#ffffff; font-weight:600; text-decoration:none; font-size:0.85rem; text-align:center;\">\n                                                            <svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line><polyline points=\"10 9 9 9 8 9\"></polyline></svg>\n                                                            <span>Trivselsregler og retningslinjer (PDF)</span>\n                                                        </a>\n                                                    </div>\n                                                </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "lok_bluebox_sec_9lo0x2v",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "24",
+            "row": "24",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "lok_bluebox_hdr_ww78s05",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "\n                                <div style=\"display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;\">\n                                    <span class=\"sta-badge\" style=\"background:rgba(239,115,48,0.2); color:var(--sta-orange); border:none; font-size:0.75rem; font-weight:800; padding:0.25rem 0.75rem; border-radius:9999px;\">\n                                        CAMPUS GRIMSTAD\n                                    </span>\n                                    <h2 style=\"font-size:2rem; font-weight:800; color:#fff; margin:0;\">Bluebox</h2>\n                                </div>"
+            },
+            "elements": []
+          },
+          {
+            "id": "lok_bluebox_card_4ec4dv1",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "lok_bluebox_info_f2uhm8r",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div style=\"max-width:800px;\">\n                                            <h3 style=\"font-size:1.35rem; font-weight:800; color:#fff; margin:0 0 0.75rem 0;\">Studenthuset og konsertscenen i Grimstad</h3>\n                                            <p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0 0 1.25rem 0;\">\n                                                Bluebox er studenthuset og arrangementsscenen på Campus Grimstad. Det drives av og for studenter, og er den naturlige møteplassen for konserter, quiz, temafester og studentfrivillighet i Grimstad.\n                                            </p>\n                                            <div style=\"display:flex; flex-wrap:wrap; gap:1.5rem; margin-bottom:1.5rem; font-size:0.875rem; color:var(--sta-teal-200);\">\n                                                <div style=\"display:flex; align-items:center; gap:0.5rem;\">\n                                                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>\n                                                    <span>Konserter, arrangementer & pub</span>\n                                                </div>\n                                                <div style=\"display:flex; align-items:center; gap:0.5rem;\">\n                                                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"var(--sta-orange)\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"9\" cy=\"7\" r=\"4\"></circle></svg>\n                                                    <span>Møterom for linjeforeninger</span>\n                                                </div>\n                                            </div>\n                                            <div style=\"display:flex; align-items:center; gap:1rem; flex-wrap:wrap;\">\n                                                <a href=\"https://bluebox.no\" \n                                                   target=\"_blank\" \n                                                   rel=\"noopener noreferrer\" \n                                                   class=\"sta-btn sta-btn-orange\" \n                                                   style=\"display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.5rem; border-radius:9999px; background:var(--sta-orange); color:#ffffff; font-weight:700; text-decoration:none; font-size:0.9rem;\">\n                                                    <span>Besøk Bluebox på bluebox.no →</span>\n                                                </a>\n                                                <a href=\"mailto:post@bluebox.no\" \n                                                   style=\"display:inline-flex; align-items:center; gap:0.4rem; padding:0.65rem 1.25rem; border-radius:9999px; background:transparent; border:1px solid rgba(158,207,201,0.4); color:#ffffff; font-weight:600; text-decoration:none; font-size:0.85rem;\">\n                                                    <svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n                                                    <span>Kontakt: post@bluebox.no</span>\n                                                </a>\n                                            </div>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]

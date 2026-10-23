@@ -1,0 +1,464 @@
+[
+  {
+    "id": "sec_ftv_egmimlf",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "40",
+        "row": "40",
+        "isLinked": true
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "css_classes": "sta-container",
+      "_css_classes": "sta-container"
+    },
+    "elements": [
+      {
+        "id": "ftv_header_mdsf5re",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "ftv_badge_82lbpu0",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "<div style=\"text-align:center;\"><span class=\"sta-badge\" style=\"display:inline-block; padding:0.25rem 0.85rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; background:rgba(239,115,48,0.15); color:var(--sta-orange); border:1px solid rgba(239,115,48,0.3);\">STUDENTDEMOKRATI</span></div>"
+            },
+            "elements": []
+          },
+          {
+            "id": "ftv_title_zfuof46",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Studenttillitsvalgt",
+              "header_size": "h1",
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "ftv_subtitle_ev7anm5",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"max-width:800px; margin:0.5rem auto 0 auto; text-align:center; font-size:1.1rem; color:var(--sta-teal-100); line-height:1.6;\">Les om det å være studenttillitsvalgt på Universitetet i Agder og hvordan STA bidrar inn i arbeidet med kvalitetssystemet.</p>"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "ftv_resources_grid_wllgrnu",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_gap": {
+            "unit": "px",
+            "column": "24",
+            "row": "24",
+            "isLinked": true
+          },
+          "css_classes": "sta-quick-grid",
+          "_css_classes": "sta-quick-grid"
+        },
+        "elements": [
+          {
+            "id": "ftv_res1_qlhsu4n",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 31
+              },
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "14",
+                "right": "14",
+                "bottom": "14",
+                "left": "14",
+                "isLinked": true
+              },
+              "css_classes": "sta-quick-card",
+              "_css_classes": "sta-quick-card"
+            },
+            "elements": [
+              {
+                "id": "ftv_res1_content_cnzhbss",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <a href=\"https://stastudent.no/wp-content/uploads/2025/09/TILLITSVALGTHANDBOKEN-STUDENTORGANISASJONEN-I-AGDER.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none; color:inherit; display:flex; flex-direction:column; align-items:center; text-align:center;\">\n                                            <div class=\"sta-quick-icon-box\" style=\"width:3.5rem; height:3.5rem; border-radius:1rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; margin-bottom:1rem;\">\n                                                <svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"12\"></line><line x1=\"9\" y1=\"15\" x2=\"15\" y2=\"15\"></line></svg>\n                                            </div>\n                                            <h3 class=\"sta-quick-title\" style=\"font-size:1.15rem; font-weight:800; color:#fff; margin:0 0 0.4rem 0;\">Tillitsvalgthåndboken</h3>\n                                            <p class=\"sta-quick-desc\" style=\"font-size:0.85rem; color:var(--sta-teal-100); margin:0;\">Last ned håndboken som PDF</p>\n                                        </a>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "ftv_res2_qgpywy0",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 31
+              },
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "14",
+                "right": "14",
+                "bottom": "14",
+                "left": "14",
+                "isLinked": true
+              },
+              "css_classes": "sta-quick-card",
+              "_css_classes": "sta-quick-card"
+            },
+            "elements": [
+              {
+                "id": "ftv_res2_content_qgnyxwb",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <a href=\"https://stastudent.no/wp-content/uploads/2024/05/Sjekkliste-for-studentevaluering-av-emner.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none; color:inherit; display:flex; flex-direction:column; align-items:center; text-align:center;\">\n                                            <div class=\"sta-quick-icon-box\" style=\"width:3.5rem; height:3.5rem; border-radius:1rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; margin-bottom:1rem;\">\n                                                <svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line><polyline points=\"10 9 9 9 8 9\"></polyline></svg>\n                                            </div>\n                                            <h3 class=\"sta-quick-title\" style=\"font-size:1.15rem; font-weight:800; color:#fff; margin:0 0 0.4rem 0;\">Mal for emneevaluering</h3>\n                                            <p class=\"sta-quick-desc\" style=\"font-size:0.85rem; color:var(--sta-teal-100); margin:0;\">Sjekkliste og mal for evalueringer</p>\n                                        </a>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "ftv_res3_la3s5lt",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 31
+              },
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "14",
+                "right": "14",
+                "bottom": "14",
+                "left": "14",
+                "isLinked": true
+              },
+              "css_classes": "sta-quick-card",
+              "_css_classes": "sta-quick-card"
+            },
+            "elements": [
+              {
+                "id": "ftv_res3_content_3ptuuz9",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <a href=\"https://forms.office.com/Pages/ShareFormPage.aspx?id=HoiChJk2P0uxNc9IALwe-5paDL8Z10RCgktRPOD_6vhUQzFYVlo1UU1JVjQzUDQ3NVZESDdYSjJETy4u&sharetoken=0qiUY8Cn2iKY2FHAUTax\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none; color:inherit; display:flex; flex-direction:column; align-items:center; text-align:center;\">\n                                            <div class=\"sta-quick-icon-box\" style=\"width:3.5rem; height:3.5rem; border-radius:1rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; margin-bottom:1rem;\">\n                                                <svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><path d=\"M8 13h8M8 17h8M8 9h2\"></path></svg>\n                                            </div>\n                                            <h3 class=\"sta-quick-title\" style=\"font-size:1.15rem; font-weight:800; color:#fff; margin:0 0 0.4rem 0;\">Studieprogramevaluering</h3>\n                                            <p class=\"sta-quick-desc\" style=\"font-size:0.85rem; color:var(--sta-teal-100); margin:0;\">Åpne mal i Microsoft Forms</p>\n                                        </a>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "ftv_info_sec_ivafquu",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "24",
+            "row": "24",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "ftv_card1_s896cs4",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "ftv_card1_body_ome9uhu",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div>\n                                            <h3 style=\"font-size:1.45rem; font-weight:800; color:#fff; margin:0 0 1rem 0;\">Din rolle som studenttillitsvalgt</h3>\n                                            <p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0 0 1.25rem 0;\">\n                                                En tillitsvalgt er en valgt person som har oppnådd tilliten fra sine medstudenter på Universitetet i Agder (UiA) til å representere dem i prosesser, møter og samlinger hvor studentenes stemme skal løftes. Som tillitsvalgt spiller du en avgjørende rolle for kvalitetssystemet ved UiA.\n                                            </p>\n                                            <div style=\"padding:1rem 1.25rem; border-radius:10px; background:rgba(9,50,47,0.8); border:1px solid rgba(239,115,48,0.4); font-size:0.875rem; color:#fff; line-height:1.6;\">\n                                                <strong style=\"color:var(--sta-orange);\">Viktig:</strong> \n                                                Når du er valgt, må du registrere deg på \n                                                <a href=\"https://innsia.uia.no\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:var(--sta-orange); font-weight:700; text-decoration:underline;\">innsia.uia.no</a> \n                                                for å motta viktig informasjon, invitasjoner til tillitsvalgtsamlinger og opplæring.\n                                            </div>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "ftv_card2_kwe76pg",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "ftv_card2_body_ysv2per",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div>\n                                            <h3 style=\"font-size:1.45rem; font-weight:800; color:#fff; margin:0 0 1.25rem 0;\">Hvem skal du henvende deg til ved problemer?</h3>\n                                            <div style=\"display:flex; flex-direction:column; gap:1.25rem;\">\n                                                <div style=\"display:flex; align-items:flex-start; gap:1rem;\">\n                                                    <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.9rem; flex-shrink:0;\">1</span>\n                                                    <p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                                        <strong>Første trinn:</strong> Forhold deg først til studentgruppen din, emneansvarlig, og instituttleder/studieleder ved lærerutdanningen, samt studierådet.\n                                                    </p>\n                                                </div>\n                                                <div style=\"display:flex; align-items:flex-start; gap:1rem;\">\n                                                    <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.9rem; flex-shrink:0;\">2</span>\n                                                    <p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                                        <strong>Andre trinn:</strong> Ta kontakt med kontaktpersonen for studenttillitsvalgte på ditt fakultet eller avdeling (se oversikt på UiAs nettsider).\n                                                    </p>\n                                                </div>\n                                                <div style=\"display:flex; align-items:flex-start; gap:1rem;\">\n                                                    <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.9rem; flex-shrink:0;\">3</span>\n                                                    <p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                                        <strong>Tredje trinn:</strong> Hvis saken ikke løses lokalt, ta kontakt med STA på e-post <a href=\"mailto:stafag@uia.no\" style=\"color:var(--sta-orange); text-decoration:underline;\">stafag@uia.no</a> eller <a href=\"mailto:stalaringsmiljo@uia.no\" style=\"color:var(--sta-orange); text-decoration:underline;\">stalaringsmiljo@uia.no</a>.\n                                                    </p>\n                                                </div>\n                                            </div>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "ftv_card3_nekd5mw",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "ftv_card3_body_f40cfu3",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div>\n                                            <h3 style=\"font-size:1.45rem; font-weight:800; color:#fff; margin:0 0 1rem 0;\">Opplæring og tillitsvalgtsamlinger</h3>\n                                            <p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0;\">\n                                                Hvert semester arrangerer STA tillitsvalgtsamlinger i samarbeid med Universitetet i Agder. Her får du grundig innføring i studenters rettigheter, møteteknikk, sakspapirlesing og hvordan du best kan fremme dine medstudenters interesser overfor universitetets ledelse.\n                                            </p>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "ftv_card4_v1kfsll",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "16",
+                "right": "16",
+                "bottom": "16",
+                "left": "16",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "ftv_card4_body_0ngru9k",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div>\n                                            <h3 style=\"font-size:1.45rem; font-weight:800; color:#fff; margin:0 0 1rem 0;\">Attest og godkjenning av verv</h3>\n                                            <p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.7; margin:0 0 1.25rem 0;\">\n                                                Som tillitsvalgt har du rett til attest ved fullført verv. Attesten dokumenterer ditt samfunnsengasjement og ledelseserfaring, og er et verdifullt tillegg til din CV ved jobbsøking.\n                                            </p>\n                                            <div style=\"display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;\">\n                                                <a href=\"mailto:sta@uia.no?subject=Foresp%C3%B8rsel%20om%20tillitsvalgtattest\" \n                                                   class=\"sta-btn sta-btn-orange\" \n                                                   style=\"display:inline-flex; align-items:center; gap:0.5rem; padding:0.65rem 1.25rem; border-radius:9999px; background:var(--sta-orange); color:#ffffff; font-weight:700; text-decoration:none; font-size:0.875rem;\">\n                                                    <span>Be om tillitsvalgtattest →</span>\n                                                </a>\n                                            </div>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]

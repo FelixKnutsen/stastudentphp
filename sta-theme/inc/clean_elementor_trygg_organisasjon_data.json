@@ -1,0 +1,669 @@
+[
+  {
+    "id": "sec_trygg_6icjk2w",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "40",
+        "row": "40",
+        "isLinked": true
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "css_classes": "sta-container",
+      "_css_classes": "sta-container"
+    },
+    "elements": [
+      {
+        "id": "to_header_gywwmcu",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "to_badge_wt7c5d0",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "<div style=\"text-align:center;\"><span class=\"sta-badge\" style=\"display:inline-block; padding:0.25rem 0.85rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; background:rgba(239,115,48,0.15); color:var(--sta-orange); border:1px solid rgba(239,115,48,0.3);\">RETNINGSLINJER</span></div>"
+            },
+            "elements": []
+          },
+          {
+            "id": "to_title_nynxttp",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Trygg Organisasjon",
+              "header_size": "h1",
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "to_subtitle_gkyc86l",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"max-width:800px; margin:0.5rem auto 0 auto; text-align:center; font-size:1.1rem; color:var(--sta-teal-100); line-height:1.6;\">Det skal være gøy, lærerikt og motiverende å engasjere seg i STA.</p>"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "to_intro_card_y7omf7f",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "padding": {
+            "unit": "px",
+            "top": "28",
+            "right": "28",
+            "bottom": "28",
+            "left": "28",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "border_border": "solid",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          },
+          "border_radius": {
+            "unit": "px",
+            "top": "16",
+            "right": "16",
+            "bottom": "16",
+            "left": "16",
+            "isLinked": true
+          },
+          "css_classes": "sta-card",
+          "_css_classes": "sta-card"
+        },
+        "elements": [
+          {
+            "id": "to_intro_body_9108fck",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "\n                                <div>\n                                    <div style=\"display:flex; align-items:center; gap:1rem; margin-bottom:1.25rem;\">\n                                        <div style=\"width:3.25rem; height:3.25rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;\">\n                                            <svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path><path d=\"m9 12 2 2 4-4\"></path></svg>\n                                        </div>\n                                        <div>\n                                            <h2 style=\"font-size:1.45rem; font-weight:700; color:#fff; margin:0;\">Nulltoleranse for trakassering</h2>\n                                            <p style=\"font-size:0.75rem; color:var(--sta-orange); font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin:0.25rem 0 0 0;\">\n                                                Vedtatt av Studentparlamentet\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <p style=\"font-size:1rem; color:var(--sta-teal-100); line-height:1.7; margin:0;\">\n                                        Studentorganisasjonen i Agder har nulltoleranse for alle former for mobbing, seksuell trakassering, rasisme og diskriminering. Alle arrangementer, møter og sosiale sammenkomster i regi av STA eller våre medlemsforeninger skal være trygge arenaer for alle studenter uavhengig av bakgrunn, kjønn eller legning.\n                                    </p>\n                                </div>"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "to_principles_sec_gefelnf",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "to_pr_title_e7sx6iv",
+            "elType": "widget",
+            "widgetType": "html",
+            "settings": {
+              "html": "<h2 style=\"font-size:1.6rem; font-weight:700; color:#fff; margin:0 0 1.5rem 0; text-align:center;\">Prinsipper for trygg organisasjon</h2>"
+            },
+            "elements": []
+          },
+          {
+            "id": "to_pr_grid_gg9m7nt",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "20",
+                "row": "20",
+                "isLinked": true
+              },
+              "css_classes": "sta-principles-grid",
+              "_css_classes": "sta-principles-grid"
+            },
+            "elements": [
+              {
+                "id": "pr_card_yq0omhi",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 48
+                  },
+                  "flex_direction": "row",
+                  "flex_align_items": "flex-start",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "16",
+                    "row": "16",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "22",
+                    "right": "22",
+                    "bottom": "22",
+                    "left": "22",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "14",
+                    "right": "14",
+                    "bottom": "14",
+                    "left": "14",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card",
+                  "_css_classes": "sta-card"
+                },
+                "elements": [
+                  {
+                    "id": "pr_card_body_6o9crmo",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                        <div style=\"display:flex; gap:1rem; align-items:flex-start;\">\n                            <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem; flex-shrink:0;\">\n                                1\n                            </span>\n                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                Alle skal føle seg velkommen og respektert i STA. Dette betyr at man skal avstå fra uttalelser og/eller fysisk atferd som oppleves som ubehagelig, diskriminerende, trakasserende eller krenkende for andre.\n                            </p>\n                        </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pr_card_i0wxt2j",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 48
+                  },
+                  "flex_direction": "row",
+                  "flex_align_items": "flex-start",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "16",
+                    "row": "16",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "22",
+                    "right": "22",
+                    "bottom": "22",
+                    "left": "22",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "14",
+                    "right": "14",
+                    "bottom": "14",
+                    "left": "14",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card",
+                  "_css_classes": "sta-card"
+                },
+                "elements": [
+                  {
+                    "id": "pr_card_body_7uukyux",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                        <div style=\"display:flex; gap:1rem; align-items:flex-start;\">\n                            <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem; flex-shrink:0;\">\n                                2\n                            </span>\n                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                Alle har et ansvar for å bidra til et inkluderende miljø, både ved formelle og uformelle arrangement.\n                            </p>\n                        </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pr_card_t0sew5h",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 48
+                  },
+                  "flex_direction": "row",
+                  "flex_align_items": "flex-start",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "16",
+                    "row": "16",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "22",
+                    "right": "22",
+                    "bottom": "22",
+                    "left": "22",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "14",
+                    "right": "14",
+                    "bottom": "14",
+                    "left": "14",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card",
+                  "_css_classes": "sta-card"
+                },
+                "elements": [
+                  {
+                    "id": "pr_card_body_yjqh0gg",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                        <div style=\"display:flex; gap:1rem; align-items:flex-start;\">\n                            <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem; flex-shrink:0;\">\n                                3\n                            </span>\n                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                Alle skal vise respekt for hverandres grenser.\n                            </p>\n                        </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pr_card_1jebtcm",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 48
+                  },
+                  "flex_direction": "row",
+                  "flex_align_items": "flex-start",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "16",
+                    "row": "16",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "22",
+                    "right": "22",
+                    "bottom": "22",
+                    "left": "22",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "14",
+                    "right": "14",
+                    "bottom": "14",
+                    "left": "14",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card",
+                  "_css_classes": "sta-card"
+                },
+                "elements": [
+                  {
+                    "id": "pr_card_body_8uzkf9l",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                        <div style=\"display:flex; gap:1rem; align-items:flex-start;\">\n                            <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem; flex-shrink:0;\">\n                                4\n                            </span>\n                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                Press rundt bruk av alkohol og andre rusmidler skal ikke finne sted. Ved alle arrangement i regi av en studentaktivitet eller linjeforening skal man ha 1–2 tillitspersoner.\n                            </p>\n                        </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pr_card_h5kj6go",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 48
+                  },
+                  "flex_direction": "row",
+                  "flex_align_items": "flex-start",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "16",
+                    "row": "16",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "22",
+                    "right": "22",
+                    "bottom": "22",
+                    "left": "22",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "14",
+                    "right": "14",
+                    "bottom": "14",
+                    "left": "14",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card",
+                  "_css_classes": "sta-card"
+                },
+                "elements": [
+                  {
+                    "id": "pr_card_body_hi2e8ci",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                        <div style=\"display:flex; gap:1rem; align-items:flex-start;\">\n                            <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem; flex-shrink:0;\">\n                                5\n                            </span>\n                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                Alle har et ansvar i å forhindre mobbing. STA har nulltoleranse for mobbing.\n                            </p>\n                        </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "pr_card_cr4akyd",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 48
+                  },
+                  "flex_direction": "row",
+                  "flex_align_items": "flex-start",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "16",
+                    "row": "16",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "22",
+                    "right": "22",
+                    "bottom": "22",
+                    "left": "22",
+                    "isLinked": true
+                  },
+                  "background_background": "classic",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "14",
+                    "right": "14",
+                    "bottom": "14",
+                    "left": "14",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-card",
+                  "_css_classes": "sta-card"
+                },
+                "elements": [
+                  {
+                    "id": "pr_card_body_g02v51b",
+                    "elType": "widget",
+                    "widgetType": "html",
+                    "settings": {
+                      "html": "\n                        <div style=\"display:flex; gap:1rem; align-items:flex-start;\">\n                            <span style=\"width:2.25rem; height:2.25rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem; flex-shrink:0;\">\n                                6\n                            </span>\n                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;\">\n                                Alle skal vise respekt for hverandres ytringer og møte hverandre på en konstruktiv måte.\n                            </p>\n                        </div>"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "to_varsling_sec_7veyi85",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_gap": {
+            "unit": "px",
+            "column": "24",
+            "row": "24",
+            "isLinked": true
+          },
+          "css_classes": "sta-varsling-grid",
+          "_css_classes": "sta-varsling-grid"
+        },
+        "elements": [
+          {
+            "id": "to_varsel_uia_m1j7i6w",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 48
+              },
+              "flex_direction": "column",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "14",
+                "right": "14",
+                "bottom": "14",
+                "left": "14",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "to_varsel_uia_content_bo1bz3s",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div>\n                                            <h3 style=\"font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 0.75rem 0;\">Si fra til UiA</h3>\n                                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0 0 1.25rem 0;\">\n                                                Dersom du opplever kritikkverdige forhold i læringsmiljøet, på forelesning eller på campus, kan du benytte UiAs offisielle Si fra-system for å melde fra sikkert og konfidensielt.\n                                            </p>\n                                            <a href=\"https://www.uia.no/om-uia/si-fra\" \n                                               target=\"_blank\" \n                                               rel=\"noopener noreferrer\" \n                                               class=\"sta-btn sta-btn-orange\" \n                                               style=\"display:inline-flex; align-items:center; gap:0.4rem; padding:0.65rem 1.25rem; border-radius:9999px; background:var(--sta-orange); color:#ffffff; font-weight:700; text-decoration:none; font-size:0.875rem;\">\n                                                <span>Gå til UiA Si fra →</span>\n                                            </a>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "to_varsel_sta_pltmjr8",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 48
+              },
+              "flex_direction": "column",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "14",
+                "right": "14",
+                "bottom": "14",
+                "left": "14",
+                "isLinked": true
+              },
+              "css_classes": "sta-card",
+              "_css_classes": "sta-card"
+            },
+            "elements": [
+              {
+                "id": "to_varsel_sta_content_02uy5pj",
+                "elType": "widget",
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n                                        <div>\n                                            <h3 style=\"font-size:1.25rem; font-weight:700; color:#fff; margin:0 0 0.75rem 0;\">Kontakt STA eller Sikresiden.no</h3>\n                                            <p style=\"font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0 0 1.25rem 0;\">\n                                                Du kan også kontakte STAs ledelse i full fortrolighet på <a href=\"mailto:stastyret@uia.no\" style=\"color:var(--sta-orange); text-decoration:underline;\">stastyret@uia.no</a>. For akutt hjelp, ulykker og krisehåndtering, se veiledning på Sikresiden.\n                                            </p>\n                                            <a href=\"https://sikresiden.no\" \n                                               target=\"_blank\" \n                                               rel=\"noopener noreferrer\" \n                                               style=\"display:inline-flex; align-items:center; gap:0.4rem; padding:0.65rem 1.25rem; border-radius:9999px; background:transparent; border:1px solid rgba(158,207,201,0.4); color:#ffffff; font-weight:600; text-decoration:none; font-size:0.875rem;\">\n                                                <span>Åpne sikresiden.no</span>\n                                            </a>\n                                        </div>"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "to_pdf_sec_tr9fdf8",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "to_pdf_btn_jfyptsi",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Last ned Retningslinjer for trygg organisasjon (PDF) →",
+              "link": {
+                "url": "https://stastudent.no/wp-content/uploads/2023/10/Retningslinjer-for-trygg-organisasjon-STA.pdf"
+              },
+              "button_background_color": "#ef7330",
+              "css_classes": "sta-btn sta-btn-orange",
+              "_css_classes": "sta-btn sta-btn-orange"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]
