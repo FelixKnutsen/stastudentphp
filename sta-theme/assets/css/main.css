@@ -2353,3 +2353,132 @@ article.sta-article,
 .sta-partner-card:hover .elementor-heading-title {
     color: #ffffff !important;
 }
+
+/* ==========================================================================
+   Subpage Elementor Widgets & Contrast Harmonization (v1.2.2)
+   Preserves full Elementor styling while ensuring readability on dark/light
+   containers across HappyAddons cards, infoboxes, and custom pages.
+   ========================================================================== */
+
+.sta-page-content {
+    color: var(--sta-teal-50);
+}
+
+.sta-page-content a {
+    color: var(--sta-teal-200);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.sta-page-content a:hover {
+    color: #ffffff;
+}
+
+/* Force dark, legible typography on any white or light containers */
+.sta-page-content [style*="background-color: #fff"],
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"],
+.sta-page-content [style*="background-color: #ffffff"],
+.sta-page-content [style*="background-color:white"],
+.sta-page-content [style*="background: #fff"],
+.sta-page-content [style*="background: rgb(255, 255, 255)"],
+.sta-page-content [style*="background: #ffffff"],
+.sta-page-content [style*="background:white"],
+.sta-page-content .elementor-element[style*="background-color: #fff"],
+.sta-page-content .elementor-element[style*="background-color: rgb(255, 255, 255)"],
+.sta-page-content .elementor-element[style*="background-color: #ffffff"],
+.sta-page-content .elementor-element[style*="background-color:white"] {
+    color: #1a202c !important;
+}
+
+.sta-page-content [style*="background-color: #fff"] p,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] p,
+.sta-page-content [style*="background-color: #ffffff"] p,
+.sta-page-content [style*="background-color:white"] p,
+.sta-page-content [style*="background: #fff"] p,
+.sta-page-content [style*="background: rgb(255, 255, 255)"] p,
+.sta-page-content [style*="background: #ffffff"] p,
+.sta-page-content [style*="background:white"] p {
+    color: #2d3748 !important;
+}
+
+.sta-page-content [style*="background-color: #fff"] h1,
+.sta-page-content [style*="background-color: #fff"] h2,
+.sta-page-content [style*="background-color: #fff"] h3,
+.sta-page-content [style*="background-color: #fff"] h4,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h1,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h2,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h3,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] h4 {
+    color: #1a202c !important;
+}
+
+.sta-page-content [style*="background-color: #fff"] a,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] a {
+    color: var(--sta-orange) !important;
+}
+
+.sta-page-content [style*="background-color: #fff"] a:hover,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] a:hover {
+    color: var(--sta-orange-hover) !important;
+}
+
+/* HappyAddons InfoBox Widget Harmonization */
+.ha-infobox,
+.elementor-widget-ha-infobox .ha-infobox-body {
+    color: #1a202c;
+}
+
+.ha-infobox .ha-infobox-title,
+.elementor-widget-ha-infobox .ha-infobox-title {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+}
+
+.ha-infobox .ha-infobox-description,
+.ha-infobox p,
+.elementor-widget-ha-infobox .ha-infobox-description,
+.elementor-widget-ha-infobox p {
+    color: #2d3748 !important;
+    line-height: 1.7 !important;
+}
+
+/* HappyAddons Card Widget Harmonization */
+.ha-card {
+    border-radius: var(--sta-radius-md) !important;
+    overflow: hidden !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.ha-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.25) !important;
+}
+
+.ha-card .ha-card__inner {
+    border-radius: inherit !important;
+}
+
+.ha-card .ha-card__title {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #1a202c !important;
+}
+
+.ha-card .ha-card__description,
+.ha-card .ha-card__description p {
+    color: #4a5568 !important;
+    font-size: 0.95rem !important;
+}
+
+.ha-card .ha-card__badge {
+    background-color: var(--sta-teal-600) !important;
+    color: #ffffff !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    padding: 0.25rem 0.65rem !important;
+    border-radius: 9999px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}
+

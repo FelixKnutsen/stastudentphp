@@ -25,7 +25,7 @@ $post_slug = !empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_pa
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
         <?php if ($is_elementor_page): ?>
             <article id="page-<?php the_ID(); ?>" <?php post_class('sta-page-content'); ?> style="max-width:1280px; margin:0 auto; width:100%;">
-                <div class="sta-entry-content" style="font-size:1.15rem; line-height:1.8; color:var(--sta-teal-50);">
+                <div class="sta-entry-content" style="font-size:1.15rem; line-height:1.8;">
                     <?php
                     while (have_posts()) : the_post();
                         the_content();
@@ -180,7 +180,7 @@ $post_slug = !empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_pa
                     </header>
                 <?php endif; ?>
 
-                <div class="sta-entry-content" style="font-size:1.15rem; line-height:1.8; color:var(--sta-teal-50);">
+                <div class="sta-entry-content" style="font-size:1.15rem; line-height:1.8;">
                     <?php the_content(); ?>
                 </div>
             </article>

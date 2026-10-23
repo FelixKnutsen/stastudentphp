@@ -182,10 +182,70 @@ function sta_use_query_lang_routing() {
 }
 
 /**
+ * Helper: Map known page slugs directly to WordPress page IDs
+ * for instant resolution without extra database queries.
+ */
+function sta_get_page_id_by_slug($slug) {
+    static $known_slugs = array(
+        'sta-styret'                            => 30,
+        'studentparlamentet'                    => 161,
+        'ledige-verv'                           => 13129,
+        'linjeforeninger'                       => 6302,
+        'studentaktiviteter'                    => 6304,
+        'lokaler'                               => 8218,
+        'dokumenter'                            => 163,
+        'sakspapirer'                           => 6443,
+        'referat-fra-moter-i-studentparlamentet'=> 6445,
+        'for-tillitsvalgte'                     => 127,
+        'rad-styrer-og-utvalg'                  => 325,
+        'valgkomiteen'                          => 14071,
+        'trygg-organisasjon'                    => 13219,
+        'irene-bredals-hederspris'              => 16160,
+        'prinsipprogram'                        => 14055,
+        'personvernserklaering'                 => 3,
+        'om-sta'                                => 13186,
+        'om-oss'                                => 13186,
+        'om-oss-2'                              => 13186,
+        'resolusjoner'                          => 6450,
+        'engasjer-deg'                          => 17378,
+        'for-foreninger'                        => 17379,
+    );
+    if (isset($known_slugs[$slug])) {
+        return $known_slugs[$slug];
+    }
+    $page = get_page_by_path($slug, OBJECT, 'page');
+    if ($page) {
+        return (int) $page->ID;
+    }
+    return 0;
+}
+
+/**
+ * Early request filter to map ?sta_page=<slug> to native WordPress page_id
+ * so that any direct or legacy requests query the exact target page instead of the front page.
+ */
+add_filter('request', function ($query_vars) {
+    if (!empty($_GET['sta_page'])) {
+        $slug = sanitize_title(wp_unslash($_GET['sta_page']));
+        if ($slug === 'forside' || $slug === 'studentorganisasjonen-i-agder-2') {
+            $query_vars['page_id'] = (int) get_option('page_on_front');
+        } elseif ($slug === 'nyheter' || $slug === 'siste-nytt' || $slug === 'aktuelt') {
+            $query_vars['category_name'] = 'nyheter';
+        } else {
+            $page_id = sta_get_page_id_by_slug($slug);
+            if ($page_id) {
+                $query_vars['page_id'] = $page_id;
+            }
+        }
+    }
+    return $query_vars;
+}, 1);
+
+/**
  * Helper to build language-aware internal URL.
  * When running on WP Staging subdirectories (e.g. /reliant/) where Nginx/Apache
  * rewrite rules are not configured for the subfolder, all subpages route via
- * home_url('/?sta_page=...') so every link hits /reliant/index.php directly.
+ * home_url('/?page_id=...') so every link hits /reliant/index.php directly with native WordPress query routing.
  */
 function sta_get_localized_url($path = '/', $target_lang = null) {
     $clean_slug = trim($path, '/');
@@ -194,14 +254,19 @@ function sta_get_localized_url($path = '/', $target_lang = null) {
 
     if (sta_use_query_lang_routing()) {
         $base_url = home_url('/');
-        if ($clean_slug !== '') {
+        if ($clean_slug !== '' && $clean_slug !== 'forside') {
             if ($clean_slug === 'nyheter' || $clean_slug === 'category/nyheter') {
                 $base_url = add_query_arg('sta_page', 'nyheter', $base_url);
             } elseif (strpos($clean_slug, 'nyheter/') === 0) {
                 $post_slug = substr($clean_slug, strlen('nyheter/'));
                 $base_url = add_query_arg('name', $post_slug, $base_url);
             } else {
-                $base_url = add_query_arg('sta_page', $clean_slug, $base_url);
+                $page_id = sta_get_page_id_by_slug($clean_slug);
+                if ($page_id) {
+                    $base_url = add_query_arg('page_id', $page_id, $base_url);
+                } else {
+                    $base_url = add_query_arg('sta_page', $clean_slug, $base_url);
+                }
             }
         }
         if ($lang === 'en' || $lang === 'nn') {
@@ -284,11 +349,12 @@ add_filter('page_link', function ($permalink, $post_id) {
         if ((int) $post_id === (int) get_option('page_on_front')) {
             return sta_get_localized_url('/');
         }
-        $slug = get_post_field('post_name', $post_id);
-        if ($slug && $slug !== 'forside' && $slug !== 'studentorganisasjonen-i-agder-2') {
-            return sta_get_localized_url('/' . $slug);
+        $url = add_query_arg('page_id', (int) $post_id, home_url('/'));
+        $lang = sta_get_current_language();
+        if ($lang === 'en' || $lang === 'nn') {
+            $url = add_query_arg('lang', $lang, $url);
         }
-        return sta_get_localized_url('/');
+        return $url;
     }
     return $permalink;
 }, 9999, 2);

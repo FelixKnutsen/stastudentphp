@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.2.1');
+define('STA_THEME_VERSION', '1.2.2');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -188,10 +188,12 @@ function sta_force_theme_templates($template) {
         || (isset($_GET['action']) && $_GET['action'] === 'elementor')
         || (class_exists('\Elementor\Plugin') && (\Elementor\Plugin::$instance->editor->is_edit_mode() || \Elementor\Plugin::$instance->preview->is_preview_mode()));
 
+    $front_id = (int) get_option('page_on_front');
+
     // 0. If Elementor editor/preview is active
     if ($is_elementor_active) {
         $preview_id = !empty($_GET['elementor-preview']) ? intval($_GET['elementor-preview']) : (!empty($_GET['page_id']) ? intval($_GET['page_id']) : (!empty($_GET['p']) ? intval($_GET['p']) : get_queried_object_id()));
-        if ($preview_id === (int) get_option('page_on_front') || is_front_page()) {
+        if ($preview_id === $front_id) {
             $front = STA_THEME_PATH . '/front-page.php';
             if (file_exists($front)) {
                 return $front;
@@ -278,9 +280,12 @@ function sta_force_theme_templates($template) {
     }
 
     if (is_front_page()) {
-        $front = STA_THEME_PATH . '/front-page.php';
-        if (file_exists($front)) {
-            return $front;
+        $post_id = get_queried_object_id();
+        if (!$post_id || $post_id === $front_id) {
+            $front = STA_THEME_PATH . '/front-page.php';
+            if (file_exists($front)) {
+                return $front;
+            }
         }
     }
 
