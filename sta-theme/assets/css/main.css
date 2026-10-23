@@ -2944,3 +2944,174 @@ body[class*="elementor-kit-"],
     color: #ffffff !important;
 }
 
+/* ==========================================================================
+   STA Theme v1.2.7: Native Elementor Pilot Subpages Styling
+   ========================================================================== */
+.sta-subpage-root {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+}
+
+/* Valgkomiteen Leader Card */
+.sta-leader-card {
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.sta-leader-photo img {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    width: 12rem !important;
+    height: 12rem !important;
+    border: 3px solid var(--sta-orange) !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35) !important;
+}
+
+.sta-leader-name h2,
+.sta-leader-name .elementor-heading-title {
+    font-size: 1.75rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 0.35rem 0 !important;
+}
+
+/* Valgkomiteen Members Grid */
+.sta-member-card {
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    padding: 1.5rem !important;
+    text-align: center !important;
+    flex: 1 1 240px !important;
+    max-width: 280px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.sta-member-card .elementor-icon-box-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.sta-member-card .elementor-icon-box-icon {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    border-radius: 50% !important;
+    background: rgba(239, 115, 48, 0.18) !important;
+    color: var(--sta-orange) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 1rem auto !important;
+}
+
+.sta-member-card .elementor-icon-box-icon svg,
+.sta-member-card .elementor-icon-box-icon i {
+    font-size: 1.5rem !important;
+    color: var(--sta-orange) !important;
+}
+
+.sta-member-card .elementor-icon-box-title,
+.sta-member-card .elementor-icon-box-title span {
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin-bottom: 0.35rem !important;
+}
+
+.sta-member-card .elementor-icon-box-description {
+    font-size: 0.85rem !important;
+    color: var(--sta-teal-200) !important;
+}
+
+/* Dokumenter Document & Action Cards */
+.sta-doc-card,
+.sta-action-card {
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    padding: 1.5rem !important;
+    flex: 1 1 280px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+}
+
+.sta-doc-card:hover,
+.sta-action-card:hover {
+    transform: translateY(-2px) !important;
+    border-color: rgba(239, 115, 48, 0.5) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+.sta-doc-card .elementor-icon-box-wrapper,
+.sta-action-card .elementor-icon-box-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+    text-align: left !important;
+}
+
+.sta-doc-card .elementor-icon-box-icon,
+.sta-action-card .elementor-icon-box-icon {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 0.5rem !important;
+    background: rgba(239, 115, 48, 0.2) !important;
+    color: var(--sta-orange) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 0 0.75rem 0 !important;
+}
+
+.sta-doc-card .elementor-icon-box-icon svg,
+.sta-doc-card .elementor-icon-box-icon i,
+.sta-action-card .elementor-icon-box-icon svg,
+.sta-action-card .elementor-icon-box-icon i {
+    font-size: 1.25rem !important;
+    color: var(--sta-orange) !important;
+}
+
+.sta-doc-card .elementor-icon-box-title,
+.sta-action-card .elementor-icon-box-title {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 0 0.5rem 0 !important;
+}
+
+.sta-doc-card .elementor-icon-box-description,
+.sta-action-card .elementor-icon-box-description {
+    font-size: 0.875rem !important;
+    color: var(--sta-teal-100) !important;
+    line-height: 1.5 !important;
+}
+
+/* Prinsipprogram Notice Card */
+.sta-notice-card {
+    background-color: rgba(239, 115, 48, 0.1) !important;
+    border: 1px solid rgba(239, 115, 48, 0.4) !important;
+    border-radius: var(--sta-radius) !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25) !important;
+}
+
+.sta-notice-title h2,
+.sta-notice-title .elementor-heading-title {
+    font-size: 1.35rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 0.5rem 0 !important;
+}
+
+/* Prinsipprogram Historical Pillars */
+.sta-pillar-card {
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+}
+

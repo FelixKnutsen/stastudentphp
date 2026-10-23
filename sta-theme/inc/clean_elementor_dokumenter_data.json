@@ -1,0 +1,771 @@
+[
+  {
+    "id": "doc_wrap_bt7aexl",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "0",
+        "row": "36",
+        "isLinked": false
+      },
+      "css_classes": "sta-subpage-root sta-dokumenter-root",
+      "_css_classes": "sta-subpage-root sta-dokumenter-root"
+    },
+    "elements": [
+      {
+        "id": "doc_hdr_gxltjus",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "text_align": "center",
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "doc_b_p9p0g1g",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "<span class=\"sta-badge\">Styringsdokumenter</span>",
+              "header_size": "div",
+              "align": "center",
+              "css_classes": "sta-badge-wrap",
+              "_css_classes": "sta-badge-wrap"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_t_7qjrre1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Dokumenter",
+              "header_size": "h1",
+              "align": "center",
+              "css_classes": "sta-hero-title",
+              "_css_classes": "sta-hero-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_sub_rnx5m6e",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color:var(--sta-teal-100); font-size:1.15rem; max-width:800px; margin:0 auto; line-height:1.6;\">Oversikt over STAs vedtekter, handlingsplaner, politiske dokumenter, sakspapirer og resolusjoner.</p>",
+              "css_classes": "sta-hero-subtitle",
+              "_css_classes": "sta-hero-subtitle"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "doc_tabs_k93ofdq",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_justify_content": "center",
+          "flex_gap": {
+            "unit": "px",
+            "column": "12",
+            "row": "12",
+            "isLinked": true
+          },
+          "css_classes": "sta-subnav-tabs",
+          "_css_classes": "sta-subnav-tabs"
+        },
+        "elements": [
+          {
+            "id": "doc_tab1_efdjfc2",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Styringsdokumenter & resolusjoner",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=dokumenter"
+              },
+              "button_background_color": "#ef7330",
+              "css_classes": "sta-filter-btn is-active",
+              "_css_classes": "sta-filter-btn is-active"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_tab2_bvck717",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Sakspapirer (SP-møter)",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=sakspapirer"
+              },
+              "css_classes": "sta-filter-btn",
+              "_css_classes": "sta-filter-btn"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_tab3_3xx1ok4",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Protokoller fra SP-møter",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=referat-fra-moter-i-studentparlamentet"
+              },
+              "css_classes": "sta-filter-btn",
+              "_css_classes": "sta-filter-btn"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "doc_sec_sp_olukunf",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "16",
+            "isLinked": false
+          },
+          "css_classes": "sta-docs-section",
+          "_css_classes": "sta-docs-section"
+        },
+        "elements": [
+          {
+            "id": "doc_sp_title_9g1m1ii",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Sakspapirer og protokoller (Studentparlamentet)",
+              "header_size": "h2",
+              "css_classes": "sta-section-title",
+              "_css_classes": "sta-section-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_sp_grid_89cc034",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-docs-grid",
+              "_css_classes": "sta-docs-grid"
+            },
+            "elements": [
+              {
+                "id": "doc_sp_c1_qa5zzot",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-file-lines",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Sakspapirer til møter i Studentparlamentet",
+                  "description_text": "Se alle innkallinger og sakspapirer til parlamentsmøter (2018–2026).<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Åpne sakspapirer &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/reliant/?sta_page=sakspapirer"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-action-card",
+                  "_css_classes": "sta-card sta-action-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "doc_sp_c2_13m5euu",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-clipboard-check",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Protokoller fra møter i Studentparlamentet",
+                  "description_text": "Les vedtatte protokoller og referater fra møter og valgforsamlinger.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Åpne protokoller &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/reliant/?sta_page=referat-fra-moter-i-studentparlamentet"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-action-card",
+                  "_css_classes": "sta-card sta-action-card"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "doc_sec_ovrige_z7d576d",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "16",
+            "isLinked": false
+          },
+          "css_classes": "sta-docs-section",
+          "_css_classes": "sta-docs-section"
+        },
+        "elements": [
+          {
+            "id": "doc_ovr_title_tt1iqdf",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Øvrige styringsdokumenter",
+              "header_size": "h2",
+              "css_classes": "sta-section-title",
+              "_css_classes": "sta-section-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_ovr_grid_zchpswb",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-docs-grid",
+              "_css_classes": "sta-docs-grid"
+            },
+            "elements": [
+              {
+                "id": "doc_ovr_c1_q1luful",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-file-pdf",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Vedtekter",
+                  "description_text": "Organisasjonens regler.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Last ned (PDF) &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/05/STAs-Vedtekter.pdf",
+                    "is_external": "on"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-doc-card",
+                  "_css_classes": "sta-card sta-doc-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "doc_ovr_c2_0nfj3sy",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-file-pdf",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Handlingsplan",
+                  "description_text": "Våre politiske prioriteringer.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Last ned (PDF) &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/06/STAs-Handlingsplan-2026-2027_1.pdf",
+                    "is_external": "on"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-doc-card",
+                  "_css_classes": "sta-card sta-doc-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "doc_ovr_c3_dkerhv7",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-file-pdf",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Stillingsbeskrivelser",
+                  "description_text": "Styrets arbeidsoppgaver.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Last ned (PDF) &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/05/STAs-Stillingsbeskrivelser.pdf",
+                    "is_external": "on"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-doc-card",
+                  "_css_classes": "sta-card sta-doc-card"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "doc_sec_pol_ik4klmm",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "16",
+            "isLinked": false
+          },
+          "css_classes": "sta-docs-section",
+          "_css_classes": "sta-docs-section"
+        },
+        "elements": [
+          {
+            "id": "doc_pol_title_u73dvln",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Politiske dokumenter",
+              "header_size": "h2",
+              "css_classes": "sta-section-title",
+              "_css_classes": "sta-section-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_pol_grid_4asbwyt",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "20",
+                "row": "20",
+                "isLinked": true
+              },
+              "css_classes": "sta-docs-grid",
+              "_css_classes": "sta-docs-grid"
+            },
+            "elements": [
+              {
+                "id": "doc_pol_c1_5ig5nxx",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-heart",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Studentvelferd",
+                  "description_text": "Les om vår velferdspolitikk.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Last ned (PDF) &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/05/Politisk-dokument-for-Studentvelferd-2026.pdf",
+                    "is_external": "on"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-doc-card",
+                  "_css_classes": "sta-card sta-doc-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "doc_pol_c2_jknoyhz",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-leaf",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Læringsmiljø og bærekraft",
+                  "description_text": "Les om vår politikk på læringsmiljø og bærekraft.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Last ned (PDF) &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/05/Politisk-dokument-for-Laeringsmiljo-og-Baerekraft.pdf",
+                    "is_external": "on"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-doc-card",
+                  "_css_classes": "sta-card sta-doc-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "doc_pol_c3_ad68uvn",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-graduation-cap",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Utdanningskvalitet",
+                  "description_text": "Les om vår utdanning- og forskningspolitikk.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Last ned (PDF) &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/05/Politisk-dokument-for-Utdanningskvalitet-2026.pdf",
+                    "is_external": "on"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-doc-card",
+                  "_css_classes": "sta-card sta-doc-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "doc_pol_c4_j81nual",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-globe",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Mangfold og internasjonalisering",
+                  "description_text": "Les om vår politikk på mangfold og internasjonalisering.<br><br><span style=\"color:var(--sta-orange); font-weight:700;\">Last ned (PDF) &rarr;</span>",
+                  "link": {
+                    "url": "https://stastudent.no/wp-content/uploads/2026/05/Politisk-dokument-for-Mangfold-og-Internasjonalisering.pdf",
+                    "is_external": "on"
+                  },
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-doc-card",
+                  "_css_classes": "sta-card sta-doc-card"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "doc_sec_res_ye3o7l3",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "16",
+            "isLinked": false
+          },
+          "css_classes": "sta-docs-section",
+          "_css_classes": "sta-docs-section"
+        },
+        "elements": [
+          {
+            "id": "doc_res_title_kzoxssn",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Resolusjoner vedtatt av Studentparlamentet",
+              "header_size": "h2",
+              "css_classes": "sta-section-title",
+              "_css_classes": "sta-section-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_res_grid_wlwemlz",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-res-grid",
+              "_css_classes": "sta-res-grid"
+            },
+            "elements": [
+              {
+                "id": "doc_res_2025_1lv7oim",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "0",
+                    "row": "12",
+                    "isLinked": false
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "28",
+                    "bottom": "24",
+                    "left": "28",
+                    "isLinked": false
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "12",
+                    "right": "12",
+                    "bottom": "12",
+                    "left": "12",
+                    "isLinked": true
+                  },
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(158, 207, 201, 0.15)",
+                  "background_background": "classic",
+                  "background_color": "rgba(255, 255, 255, 0.04)",
+                  "css_classes": "sta-card sta-resolutions-card",
+                  "_css_classes": "sta-card sta-resolutions-card"
+                },
+                "elements": [
+                  {
+                    "id": "doc_res_2025_h_lsk4wl5",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "<span style=\"color:var(--sta-orange); font-size:1.3rem; font-weight:800;\">2025</span>",
+                      "header_size": "h3",
+                      "css_classes": "sta-res-year",
+                      "_css_classes": "sta-res-year"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "doc_res_2025_list_wt131ff",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;\"><li><a href=\"https://stastudent.no/wp-content/uploads/2025/12/29.10.25-Resolusjon-Studentfrivillighet-for-fremtiden.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>29.10.25 Resolusjon – Studentfrivillighet for fremtiden (PDF)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2025/12/24.09.25-Resolusjon-nynorsk-pa-UiA.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>24.09.25 Resolusjon nynorsk på UiA (PDF)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2025/05/21.05.25-Resolusjon-eksamensrettigheter.docx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>21.05.25 Resolusjon eksamensrettigheter (DOCX)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2025/05/22.01.25-Resolusjon-KI.docx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>22.01.25 Resolusjon kunstig intelligens (DOCX)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li></ul>",
+                      "css_classes": "sta-res-list",
+                      "_css_classes": "sta-res-list"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "doc_res_2024_keera99",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "column",
+                  "flex_gap": {
+                    "unit": "px",
+                    "column": "0",
+                    "row": "12",
+                    "isLinked": false
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "24",
+                    "right": "28",
+                    "bottom": "24",
+                    "left": "28",
+                    "isLinked": false
+                  },
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "12",
+                    "right": "12",
+                    "bottom": "12",
+                    "left": "12",
+                    "isLinked": true
+                  },
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "border_color": "rgba(158, 207, 201, 0.15)",
+                  "background_background": "classic",
+                  "background_color": "rgba(255, 255, 255, 0.04)",
+                  "css_classes": "sta-card sta-resolutions-card",
+                  "_css_classes": "sta-card sta-resolutions-card"
+                },
+                "elements": [
+                  {
+                    "id": "doc_res_2024_h_a6yl8g5",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "<span style=\"color:var(--sta-orange); font-size:1.3rem; font-weight:800;\">2024</span>",
+                      "header_size": "h3",
+                      "css_classes": "sta-res-year",
+                      "_css_classes": "sta-res-year"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "doc_res_2024_list_u691m7c",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;\"><li><a href=\"https://stastudent.no/wp-content/uploads/2024/10/23.10.24-Resolusjon-om-fleksible-studier-og-studenter.docx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>23.10.24 Resolusjon om fleksible studier og studenter (DOCX)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2024/10/23.10.24-Resolusjon-om-fravaer-blant-undervisere.docx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>23.10.24 Resolusjon om fravær blant undervisere (DOCX)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2024/09/22.05.24-Resolusjon-akademisk-frihet-og-demokrati.docx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>22.05.24 Resolusjon akademisk frihet og demokrati (DOCX)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li></ul>",
+                      "css_classes": "sta-res-list",
+                      "_css_classes": "sta-res-list"
+                    },
+                    "elements": []
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "doc_sec_andre_l57oozn",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "16",
+            "isLinked": false
+          },
+          "css_classes": "sta-docs-section",
+          "_css_classes": "sta-docs-section"
+        },
+        "elements": [
+          {
+            "id": "doc_andre_title_9tlbnr9",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Andre reglementer og retningslinjer",
+              "header_size": "h2",
+              "css_classes": "sta-section-title",
+              "_css_classes": "sta-section-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "doc_andre_box_qsdj0h6",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "28",
+                "bottom": "24",
+                "left": "28",
+                "isLinked": false
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "12",
+                "right": "12",
+                "bottom": "12",
+                "left": "12",
+                "isLinked": true
+              },
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "rgba(158, 207, 201, 0.15)",
+              "background_background": "classic",
+              "background_color": "rgba(255, 255, 255, 0.04)",
+              "css_classes": "sta-card sta-regulations-card",
+              "_css_classes": "sta-card sta-regulations-card"
+            },
+            "elements": [
+              {
+                "id": "doc_andre_list_kjq5b14",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<ul style=\"list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;\"><li><a href=\"https://stastudent.no/wp-content/uploads/2025/06/STAs-Reglement-for-studentaktivitetene.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>Reglement for studentaktiviteter (PDF)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2024/09/Forretningsorden-SP.doc\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>Forretningsorden (DOC)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2026/05/STAs-Okonomireglement.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>Økonomireglement (PDF)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2026/05/STAs-Valgreglement.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>Valgreglement (PDF)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/wp-content/uploads/2025/06/Fravaerssystem-for-Studentparlamentet.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span>Fraværssystem for Studentparlamentet (PDF)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li><li><a href=\"https://stastudent.no/reliant/?sta_page=prinsipprogram\" class=\"sta-doc-row-link\" style=\"display:flex; justify-content:space-between; align-items:center; padding:0.6rem 0.8rem; border-radius:6px; background:rgba(0,48,51,0.5); color:#fff; text-decoration:none;\"><span style=\"color:var(--sta-teal-100); font-weight:600;\">Prinsipprogram (historisk arkiv)</span><span style=\"color:var(--sta-orange);\">&rarr;</span></a></li></ul>",
+                  "css_classes": "sta-regulations-list",
+                  "_css_classes": "sta-regulations-list"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]

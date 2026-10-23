@@ -1,0 +1,540 @@
+[
+  {
+    "id": "vk_wrap_leskeph",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1200
+      },
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "64",
+        "left": "20",
+        "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "column": "0",
+        "row": "32",
+        "isLinked": false
+      },
+      "css_classes": "sta-subpage-root sta-valgkomiteen-root",
+      "_css_classes": "sta-subpage-root sta-valgkomiteen-root"
+    },
+    "elements": [
+      {
+        "id": "vk_bc_xvpxddz",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "<a href=\"https://stastudent.no/reliant/?sta_page=rad-styrer-og-utvalg\" style=\"color:var(--sta-teal-200); font-size:0.95rem; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem;\">&larr; Tilbake til Råd, Styrer og Utvalg</a>",
+          "header_size": "div",
+          "css_classes": "sta-breadcrumb-link",
+          "_css_classes": "sta-breadcrumb-link"
+        },
+        "elements": []
+      },
+      {
+        "id": "vk_hdr_ydza41u",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "text_align": "center",
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "16",
+            "left": "0",
+            "isLinked": false
+          },
+          "css_classes": "sta-page-header",
+          "_css_classes": "sta-page-header"
+        },
+        "elements": [
+          {
+            "id": "vk_badge_45qt3ts",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "<span class=\"sta-badge\">Studentdemokrati</span>",
+              "header_size": "div",
+              "align": "center",
+              "css_classes": "sta-badge-wrap",
+              "_css_classes": "sta-badge-wrap"
+            },
+            "elements": []
+          },
+          {
+            "id": "vk_title_jskz2y2",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Valgkomitéen 2025/2026",
+              "header_size": "h1",
+              "align": "center",
+              "css_classes": "sta-hero-title",
+              "_css_classes": "sta-hero-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "vk_sub_22sen96",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"color:var(--sta-teal-100); font-size:1.15rem; max-width:800px; margin:0 auto; line-height:1.6;\">Valgkomitéen har ansvaret for rekruttering, intervjuer og innstilling av kandidater til alle verv som velges av Studentparlamentet ved UiA.</p>",
+              "css_classes": "sta-hero-subtitle",
+              "_css_classes": "sta-hero-subtitle"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "vk_leader_sec_joecw77",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 768
+          },
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "auto",
+            "bottom": "16",
+            "left": "auto",
+            "isLinked": false
+          },
+          "padding": {
+            "unit": "px",
+            "top": "32",
+            "right": "32",
+            "bottom": "32",
+            "left": "32",
+            "isLinked": true
+          },
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_align_items": "center",
+          "flex_justify_content": "center",
+          "flex_gap": {
+            "unit": "px",
+            "column": "32",
+            "row": "24",
+            "isLinked": false
+          },
+          "border_radius": {
+            "unit": "px",
+            "top": "12",
+            "right": "12",
+            "bottom": "12",
+            "left": "12",
+            "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          },
+          "border_color": "rgba(158, 207, 201, 0.15)",
+          "background_background": "classic",
+          "background_color": "rgba(255, 255, 255, 0.04)",
+          "css_classes": "sta-card sta-leader-card",
+          "_css_classes": "sta-card sta-leader-card"
+        },
+        "elements": [
+          {
+            "id": "vk_leader_img_col_0qbwzlk",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_align_items": "center",
+              "flex_justify_content": "center",
+              "width": {
+                "unit": "px",
+                "size": 192
+              },
+              "css_classes": "sta-leader-img-box",
+              "_css_classes": "sta-leader-img-box"
+            },
+            "elements": [
+              {
+                "id": "vk_leader_img_2xq59hn",
+                "elType": "widget",
+                "widgetType": "image",
+                "settings": {
+                  "image": {
+                    "url": "https://stastudent.no/wp-content/uploads/2023/06/WTS-6-1024x683.jpg",
+                    "source": "library"
+                  },
+                  "image_size": "medium_large",
+                  "border_border": "solid",
+                  "border_width": {
+                    "unit": "px",
+                    "top": "3",
+                    "right": "3",
+                    "bottom": "3",
+                    "left": "3",
+                    "isLinked": true
+                  },
+                  "border_color": "#ef7330",
+                  "border_radius": {
+                    "unit": "%",
+                    "top": "50",
+                    "right": "50",
+                    "bottom": "50",
+                    "left": "50",
+                    "isLinked": true
+                  },
+                  "css_classes": "sta-leader-photo",
+                  "_css_classes": "sta-leader-photo"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "vk_leader_info_col_2v8migg",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_align_items": "flex-start",
+              "flex_align_items_mobile": "center",
+              "text_align": "left",
+              "text_align_mobile": "center",
+              "css_classes": "sta-leader-info",
+              "_css_classes": "sta-leader-info"
+            },
+            "elements": [
+              {
+                "id": "vk_l_badge_lxrac0s",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "<span class=\"sta-badge\" style=\"background:var(--sta-orange); color:#fff; border:none; font-size:0.75rem; padding:0.25rem 0.6rem;\">Leder</span>",
+                  "header_size": "div",
+                  "css_classes": "sta-leader-badge",
+                  "_css_classes": "sta-leader-badge"
+                },
+                "elements": []
+              },
+              {
+                "id": "vk_l_name_rv73nve",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "William T. Svendsen",
+                  "header_size": "h2",
+                  "css_classes": "sta-leader-name",
+                  "_css_classes": "sta-leader-name"
+                },
+                "elements": []
+              },
+              {
+                "id": "vk_l_role_os8vekp",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"color:var(--sta-teal-100); font-size:0.95rem; font-weight:600; margin:0 0 1rem 0;\">Leder av Valgkomitéen 2025/2026</p>",
+                  "css_classes": "sta-leader-role",
+                  "_css_classes": "sta-leader-role"
+                },
+                "elements": []
+              },
+              {
+                "id": "vk_l_email_poilxy7",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "<a href=\"mailto:stavalg@uia.no\" style=\"color:var(--sta-orange); font-size:0.95rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem;\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg><span>stavalg@uia.no</span></a>",
+                  "header_size": "div",
+                  "css_classes": "sta-leader-email",
+                  "_css_classes": "sta-leader-email"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "vk_members_sec_uqkhvj4",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 900
+          },
+          "margin": {
+            "unit": "px",
+            "top": "16",
+            "right": "auto",
+            "bottom": "16",
+            "left": "auto",
+            "isLinked": false
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "20",
+            "isLinked": false
+          },
+          "css_classes": "sta-members-section",
+          "_css_classes": "sta-members-section"
+        },
+        "elements": [
+          {
+            "id": "vk_m_title_ph1vg83",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Medlemmer av Valgkomitéen",
+              "header_size": "h2",
+              "align": "center",
+              "css_classes": "sta-section-title",
+              "_css_classes": "sta-section-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "vk_m_grid_o52tb51",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_justify_content": "center",
+              "flex_gap": {
+                "unit": "px",
+                "column": "24",
+                "row": "24",
+                "isLinked": true
+              },
+              "css_classes": "sta-members-grid",
+              "_css_classes": "sta-members-grid"
+            },
+            "elements": [
+              {
+                "id": "vk_m1_zdav008",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-user-circle",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Lisa K. Fredsvik",
+                  "description_text": "Medlem av Valgkomitéen",
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-member-card",
+                  "_css_classes": "sta-card sta-member-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "vk_m2_dwtnia7",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-user-circle",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Rania Farah",
+                  "description_text": "Medlem av Valgkomitéen",
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-member-card",
+                  "_css_classes": "sta-card sta-member-card"
+                },
+                "elements": []
+              },
+              {
+                "id": "vk_m3_jq2wrfd",
+                "elType": "widget",
+                "widgetType": "icon-box",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-user-circle",
+                    "library": "fa-solid"
+                  },
+                  "title_text": "Andrea M. Åmodt",
+                  "description_text": "Medlem av Valgkomitéen",
+                  "position": "top",
+                  "primary_color": "#ef7330",
+                  "css_classes": "sta-card sta-member-card",
+                  "_css_classes": "sta-card sta-member-card"
+                },
+                "elements": []
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "vk_resp_sec_bay776g",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 850
+          },
+          "margin": {
+            "unit": "px",
+            "top": "16",
+            "right": "auto",
+            "bottom": "16",
+            "left": "auto",
+            "isLinked": false
+          },
+          "padding": {
+            "unit": "px",
+            "top": "32",
+            "right": "36",
+            "bottom": "32",
+            "left": "36",
+            "isLinked": false
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "column": "0",
+            "row": "16",
+            "isLinked": false
+          },
+          "border_radius": {
+            "unit": "px",
+            "top": "12",
+            "right": "12",
+            "bottom": "12",
+            "left": "12",
+            "isLinked": true
+          },
+          "border_border": "solid",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          },
+          "border_color": "rgba(158, 207, 201, 0.15)",
+          "background_background": "classic",
+          "background_color": "rgba(255, 255, 255, 0.04)",
+          "css_classes": "sta-card sta-responsibilities-card",
+          "_css_classes": "sta-card sta-responsibilities-card"
+        },
+        "elements": [
+          {
+            "id": "vk_resp_title_2wbnne9",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Hva gjør Valgkomitéen?",
+              "header_size": "h2",
+              "css_classes": "sta-card-title",
+              "_css_classes": "sta-card-title"
+            },
+            "elements": []
+          },
+          {
+            "id": "vk_resp_txt_2flkb9j",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.75; margin-bottom:1rem;\">Valgkomiteens oppgave er å innstille på kandidater til verv som velges av Studentparlamentet. For å kunne gi den beste anbefalingen intervjuer komiteens medlemmer alle kandidater som har stilt til valg innenfor en gitt frist som settes av komiteens leder og STA-styret. Komiteens leder har et ansvar for å koordinere intervjuprosessen, slik at alle kandidater vet hvor og når de skal møte til intervju, samt for at innstillingen er klar til offentliggjøringen til rett tid.</p><p style=\"font-size:0.95rem; color:var(--sta-teal-100); line-height:1.75; margin-bottom:0;\">Å være medlem av Valgkomiteen er et spennende arbeid. Man får erfaring med rekruttering av flinke folk, og med å intervjue dem. Å bli trygg på rollen som intervjuer er en nyttig erfaring som gjør at man forstår en rekrutteringsprosess bedre når man selv søker stillinger i arbeidslivet. Leder og 3 medlemmer velges i mai, med funksjonstid fra 01.07 til 30.06.</p>",
+              "css_classes": "sta-card-body",
+              "_css_classes": "sta-card-body"
+            },
+            "elements": []
+          },
+          {
+            "id": "vk_resp_footer_4h6rflc",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "<div style=\"padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem;\"><span style=\"font-size:0.85rem; color:var(--sta-teal-200);\">Har du spørsmål om valgprosessen?</span><a href=\"mailto:stavalg@uia.no\" style=\"display:inline-flex; align-items:center; gap:0.4rem; color:var(--sta-orange); font-weight:700; font-size:0.9rem; text-decoration:none;\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg><span>stavalg@uia.no</span></a></div>",
+              "header_size": "div",
+              "css_classes": "sta-card-footer",
+              "_css_classes": "sta-card-footer"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "vk_cta_sec_b3hazdh",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_align_items": "center",
+          "flex_justify_content": "center",
+          "text_align": "center",
+          "margin": {
+            "unit": "px",
+            "top": "16",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "css_classes": "sta-cta-wrap",
+          "_css_classes": "sta-cta-wrap"
+        },
+        "elements": [
+          {
+            "id": "vk_cta_btn_gpdnon5",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Se ledige verv og still til valg",
+              "link": {
+                "url": "https://stastudent.no/reliant/?sta_page=ledige-verv",
+                "is_external": "",
+                "nofollow": ""
+              },
+              "selected_icon": {
+                "value": "fas fa-arrow-right",
+                "library": "fa-solid"
+              },
+              "icon_align": "right",
+              "button_background_color": "#ef7330",
+              "css_classes": "sta-btn sta-btn-orange",
+              "_css_classes": "sta-btn sta-btn-orange"
+            },
+            "elements": []
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]

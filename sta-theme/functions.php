@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.2.6');
+define('STA_THEME_VERSION', '1.2.7');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -517,6 +517,126 @@ add_action('admin_init', function() {
         wp_send_json_success(array(
             'message' => 'Clean Elementor homepage structure restored successfully for Post ' . $post_id . '!',
             'sections' => count($data)
+        ));
+    }
+});
+
+/**
+ * Admin action hook to restore clean, native Elementor structure for subpages.
+ * Accessible via /wp-admin/?sta_restore_subpage_elementor=valgkomiteen (or dokumenter, prinsipprogram, all_pilot)
+ */
+add_action('admin_init', function() {
+    if (isset($_GET['sta_restore_subpage_elementor']) && current_user_can('manage_options')) {
+        $target = sanitize_text_field(wp_unslash($_GET['sta_restore_subpage_elementor']));
+        
+        $subpages = array(
+            'valgkomiteen' => array(
+                'slug'         => 'valgkomiteen',
+                'file'         => 'clean_elementor_valgkomiteen_data.json',
+                'title'        => 'Valgkomitéen',
+                'preferred_id' => 14071,
+            ),
+            'dokumenter' => array(
+                'slug'         => 'dokumenter',
+                'file'         => 'clean_elementor_dokumenter_data.json',
+                'title'        => 'Dokumenter',
+                'preferred_id' => 163,
+            ),
+            'prinsipprogram' => array(
+                'slug'         => 'prinsipprogram',
+                'file'         => 'clean_elementor_prinsipprogram_data.json',
+                'title'        => 'Prinsipprogram',
+                'preferred_id' => 14055,
+            ),
+        );
+
+        $to_process = array();
+        if ($target === 'all_pilot' || $target === 'pilot' || $target === 'all') {
+            $to_process = array_keys($subpages);
+        } elseif (isset($subpages[$target])) {
+            $to_process = array($target);
+        } else {
+            wp_send_json_error(array('message' => 'Invalid subpage key: ' . $target));
+        }
+
+        $results = array();
+        foreach ($to_process as $key) {
+            $conf = $subpages[$key];
+            $json_file = STA_THEME_PATH . '/inc/' . $conf['file'];
+            if (!file_exists($json_file)) {
+                $results[$key] = array('status' => 'error', 'message' => 'File not found: ' . $conf['file']);
+                continue;
+            }
+            $raw = file_get_contents($json_file);
+            $data = json_decode($raw, true);
+            if (!is_array($data)) {
+                $results[$key] = array('status' => 'error', 'message' => 'Invalid JSON in ' . $conf['file']);
+                continue;
+            }
+
+            // Find post ID
+            $post_id = 0;
+            if (!empty($conf['preferred_id'])) {
+                $check_post = get_post($conf['preferred_id']);
+                if ($check_post) {
+                    $post_id = $conf['preferred_id'];
+                }
+            }
+            if (!$post_id) {
+                $page = get_page_by_path($conf['slug'], OBJECT, 'page');
+                if ($page) {
+                    $post_id = $page->ID;
+                } else {
+                    $pages = get_posts(array(
+                        'name'        => $conf['slug'],
+                        'post_type'   => 'page',
+                        'post_status' => 'any',
+                        'numberposts' => 1,
+                    ));
+                    if (!empty($pages)) {
+                        $post_id = $pages[0]->ID;
+                    }
+                }
+            }
+
+            if (!$post_id) {
+                $results[$key] = array('status' => 'error', 'message' => 'Post not found for slug ' . $conf['slug']);
+                continue;
+            }
+
+            // Update postmeta
+            update_post_meta($post_id, '_elementor_data', wp_slash(json_encode($data)));
+            update_post_meta($post_id, '_elementor_edit_mode', 'builder');
+            update_post_meta($post_id, '_elementor_template_type', 'wp-page');
+
+            wp_update_post(array(
+                'ID'          => $post_id,
+                'post_status' => 'publish'
+            ));
+
+            if (class_exists('\Elementor\Plugin')) {
+                if (isset(\Elementor\Plugin::$instance->files_manager)) {
+                    \Elementor\Plugin::$instance->files_manager->clear_cache();
+                }
+                if (isset(\Elementor\Plugin::$instance->db)) {
+                    \Elementor\Plugin::$instance->db->save_editor($post_id, $data);
+                }
+            }
+
+            $results[$key] = array(
+                'status'   => 'success',
+                'post_id'  => $post_id,
+                'sections' => count($data)
+            );
+        }
+
+        if (class_exists('WP_Optimize')) {
+            do_action('wpo_purge_all_caches');
+        }
+
+        wp_send_json_success(array(
+            'message' => 'Clean Elementor structures restored successfully!',
+            'results' => $results
         ));
     }
 });
