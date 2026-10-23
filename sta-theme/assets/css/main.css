@@ -2424,54 +2424,90 @@ article.sta-article,
 }
 
 /* HappyAddons InfoBox Widget Harmonization */
-.ha-infobox,
-.elementor-widget-ha-infobox .ha-infobox-body {
-    color: #1a202c;
-}
-
+/* Default for infoboxes sitting directly on dark teal background (e.g. Page 325 RSU) */
 .ha-infobox .ha-infobox-title,
-.elementor-widget-ha-infobox .ha-infobox-title {
-    color: #1a202c !important;
+.elementor-widget-ha-infobox .ha-infobox-title,
+.elementor-325 .elementor-widget-ha-infobox .ha-infobox-title,
+.sta-entry-content > .elementor-element .elementor-widget-ha-infobox .ha-infobox-title {
+    color: #ffffff !important;
     font-weight: 700 !important;
 }
 
 .ha-infobox .ha-infobox-description,
 .ha-infobox p,
 .elementor-widget-ha-infobox .ha-infobox-description,
-.elementor-widget-ha-infobox p {
-    color: #2d3748 !important;
+.elementor-widget-ha-infobox p,
+.elementor-325 .elementor-widget-ha-infobox .ha-infobox-description,
+.elementor-325 .elementor-widget-ha-infobox p {
+    color: #eaf5f4 !important;
     line-height: 1.7 !important;
 }
 
-/* HappyAddons Card Widget Harmonization */
-.ha-card {
+/* Infoboxes inside white/light containers or on Prinsipprogram (14055) */
+.elementor-14055 .ha-infobox-title,
+.elementor-14055 .elementor-widget-ha-infobox .ha-infobox-title,
+.sta-page-content [style*="background-color: #fff"] .ha-infobox-title,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] .ha-infobox-title,
+.sta-page-content [style*="background-color: #ffffff"] .ha-infobox-title,
+.sta-page-content [style*="background-color:white"] .ha-infobox-title,
+.elementor-widget-container[style*="background"] .ha-infobox-title {
+    color: #1a202c !important;
+}
+
+.elementor-14055 .ha-infobox-description,
+.elementor-14055 .ha-infobox p,
+.elementor-14055 .elementor-widget-ha-infobox .ha-infobox-description,
+.elementor-14055 .elementor-widget-ha-infobox p,
+.sta-page-content [style*="background-color: #fff"] .ha-infobox-description,
+.sta-page-content [style*="background-color: rgb(255, 255, 255)"] .ha-infobox-description,
+.sta-page-content [style*="background-color: #ffffff"] .ha-infobox-description,
+.sta-page-content [style*="background-color:white"] .ha-infobox-description,
+.elementor-widget-container[style*="background"] .ha-infobox-description {
+    color: #2d3748 !important;
+}
+
+/* HappyAddons Card Widget Harmonization (Valgkomitéen, Dokumenter, etc.) */
+.ha-card,
+.elementor-widget-ha-card {
     border-radius: var(--sta-radius-md) !important;
     overflow: hidden !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-.ha-card:hover {
+.ha-card:hover,
+.elementor-widget-ha-card:hover {
     transform: translateY(-4px) !important;
     box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.25) !important;
 }
 
-.ha-card .ha-card__inner {
+.ha-card .ha-card__inner,
+.ha-card .ha-card-inner {
     border-radius: inherit !important;
 }
 
-.ha-card .ha-card__title {
+/* High-contrast dark title on white card background */
+.sta-entry-content .elementor-widget-ha-card .ha-card-title,
+.sta-entry-content .ha-card .ha-card-title,
+.sta-page-content .ha-card-title,
+.ha-card .ha-card-title,
+.ha-card .ha-card__title,
+.ha-card h2.ha-card-title {
     font-size: 1.25rem !important;
     font-weight: 700 !important;
     color: #1a202c !important;
 }
 
 .ha-card .ha-card__description,
-.ha-card .ha-card__description p {
+.ha-card .ha-card-description,
+.ha-card .ha-card__description p,
+.ha-card .ha-card-description p,
+.elementor-widget-ha-card p {
     color: #4a5568 !important;
     font-size: 0.95rem !important;
 }
 
-.ha-card .ha-card__badge {
+.ha-card .ha-card__badge,
+.ha-card .ha-card-badge {
     background-color: var(--sta-teal-600) !important;
     color: #ffffff !important;
     font-size: 0.75rem !important;
