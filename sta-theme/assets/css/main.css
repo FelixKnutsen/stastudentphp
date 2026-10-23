@@ -2788,3 +2788,159 @@ article.sta-article,
     box-shadow: 0 6px 16px rgba(239, 115, 48, 0.45) !important;
 }
 
+/* ==========================================================================
+   STA Theme v1.2.6 - Universal Elementor Kit & HappyAddons Theming
+   Applies across Batches 2, 3, 4 & 5 to ensure consistent dark teal branding,
+   high-contrast white headings, and elimination of clashing containers.
+   ========================================================================== */
+
+/* 1. Global Elementor Kit Color Variable Overrides */
+body.elementor-kit-10402,
+body[class*="elementor-kit-"],
+:root {
+    --e-global-color-secondary: #eaf5f4 !important;
+    --e-global-color-text: #ffffff !important;
+}
+
+.sta-page-content .elementor-heading-title,
+.sta-entry-content .elementor-heading-title,
+.elementor-heading-title {
+    color: #ffffff !important;
+}
+
+/* 2. Universal HappyAddons Widget Theming */
+/* Cards & Badges */
+.ha-card {
+    background: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    color: #ffffff !important;
+}
+
+.ha-badge,
+.ha-card-figure .ha-badge {
+    background-color: rgba(0, 48, 51, 0.85) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--sta-card-border) !important;
+    padding: 0.25rem 0.65rem !important;
+    border-radius: 9999px !important;
+    font-size: 0.75rem !important;
+}
+
+/* Creative Buttons */
+.ha-creative-btn {
+    background: var(--sta-card-bg) !important;
+    color: #ffffff !important;
+    border: 1.5px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius-sm) !important;
+    transition: all 0.2s ease !important;
+}
+
+.ha-creative-btn:hover {
+    background: var(--sta-card-hover) !important;
+    border-color: var(--sta-orange) !important;
+    color: var(--sta-orange) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* List Groups (Trygg Organisasjon, etc.) */
+.ha-list-group .ha-item-wrap {
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius-sm) !important;
+    color: #ffffff !important;
+    margin-bottom: 0.75rem !important;
+    padding: 1rem 1.25rem !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ha-list-group .ha-list-title,
+.ha-list-group .ha-text {
+    color: #ffffff !important;
+}
+
+.ha-list-group .ha-list-icon i,
+.ha-list-group .ha-list-icon svg {
+    color: var(--sta-teal-100) !important;
+    fill: var(--sta-teal-100) !important;
+}
+
+/* Tabs (Råd, Styrer og Utvalg, etc.) */
+.ha-tab__content,
+.ha-tab__title {
+    background: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    color: #ffffff !important;
+    border-radius: var(--sta-radius-sm) !important;
+}
+
+.ha-tab__title.ha-tab__title--active {
+    background: var(--sta-orange) !important;
+    border-color: var(--sta-orange) !important;
+    color: #ffffff !important;
+}
+
+/* 3. Page-Specific Hardcoded Container Neutralizations */
+/* Studentparlamentet (Page 161): Clear light-gray containers around faculties */
+.page-id-161 .elementor-element-a048440,
+.page-id-161 .elementor-element-0db5d4d,
+.page-id-161 .elementor-element-117caf5,
+.page-id-161 .elementor-element-ec66879,
+.page-id-161 .elementor-element-9d10fe0,
+.page-id-161 .elementor-element-8733af6,
+.page-id-161 .elementor-element-cf97f4f,
+.page-id-161 .elementor-element-1e75c0b {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.page-id-161 .elementor-element-a048440 .ha-card,
+.page-id-161 .elementor-element-ec66879 .ha-card,
+.page-id-161 .elementor-element-cf97f4f .ha-card {
+    background: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    color: #ffffff !important;
+}
+
+/* Råd, Styrer og Utvalg (Page 325): "Hva er et verv?" container */
+.page-id-325 .elementor-element-6edec2b {
+    background: var(--sta-card-bg) !important;
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    color: #ffffff !important;
+    padding: 2rem !important;
+}
+
+/* For tillitsvalgte (Page 127): Bottom gray section container & cards */
+.page-id-127 .elementor-element-ef095e7 {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.page-id-127 .elementor-element-a3aadd3,
+.page-id-127 .elementor-element-80a4a18,
+.page-id-127 .elementor-element-a98a088 {
+    background: var(--sta-card-bg) !important;
+    background-color: var(--sta-card-bg) !important;
+    border: 1px solid var(--sta-card-border) !important;
+    border-radius: var(--sta-radius) !important;
+    color: #ffffff !important;
+    padding: 1.5rem !important;
+}
+
+/* Irene Bredals Hederspris (Page 16160): Text contrast & section headings */
+.page-id-16160 .elementor-element-67ad149 p,
+.page-id-16160 .elementor-element-67ad149 {
+    color: var(--sta-teal-100) !important;
+}
+
+.page-id-16160 .elementor-element-10afc8b .elementor-heading-title,
+.page-id-16160 h2,
+.page-id-16160 h3 {
+    color: #ffffff !important;
+}
+
