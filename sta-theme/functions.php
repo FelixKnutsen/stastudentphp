@@ -7,12 +7,13 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.6');
+define('STA_THEME_VERSION', '1.3.7');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
 // Include helper modules
 require_once STA_THEME_PATH . '/inc/translatepress-compat.php';
+require_once STA_THEME_PATH . '/inc/translatepress-bridge.php';
 require_once STA_THEME_PATH . '/inc/template-tags.php';
 
 /**

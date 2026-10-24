@@ -411,8 +411,12 @@ add_filter('elementor/document/urls/wp_preview', function($wp_preview_url, $docu
 /**
  * Stop TranslatePress output buffer & floating language switcher from conflicting
  * with STA Theme's built-in 3-language (Bokmål, Nynorsk, English) architecture.
+ * English pages are the exception: page content is translated by TranslatePress
+ * (see translatepress-bridge.php).
  */
-add_filter('trp_stop_translating_page', '__return_true', 999999);
+add_filter('trp_stop_translating_page', function () {
+    return !(sta_is_en() && function_exists('sta_trp_english_code') && sta_trp_english_code() !== '');
+}, 999999);
 
 /**
  * Backward-compatible toggle language url
