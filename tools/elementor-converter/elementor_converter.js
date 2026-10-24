@@ -422,6 +422,7 @@ window.STAConvert = async function (opts) {
         if (JSON.stringify(src[k]) !== JSON.stringify(ref[k])) out[k + '_' + bp] = src[k];
       }
     }
+    for (const k of ['width', 'flex_wrap']) if (m[k] !== undefined && out[k + '_mobile'] === undefined) out[k + '_mobile'] = m[k];
     return out;
   }
 
@@ -433,7 +434,7 @@ window.STAConvert = async function (opts) {
       const f = document.createElement('iframe');
       f.style.cssText = 'position:absolute;left:-10000px;top:0;width:' + w + 'px;height:1000px;border:0;';
       f.src = location.href;
-      f.onload = () => setTimeout(() => res(f), 600);
+      f.onload = () => { const st = f.contentDocument.createElement('style'); st.textContent = 'html{scrollbar-width:none}html::-webkit-scrollbar{display:none}'; f.contentDocument.head.appendChild(st); setTimeout(() => res(f), 700); };
       document.body.appendChild(f);
     });
   }

@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.2');
+define('STA_THEME_VERSION', '1.3.4');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -491,6 +491,25 @@ function sta_render_frontpage_news_shortcode($atts) {
     return ob_get_clean();
 }
 add_shortcode('sta_frontpage_news', 'sta_render_frontpage_news_shortcode');
+
+/**
+ * Filterable directory (filter pills, search, count and cards) for Elementor pages.
+ * Usage: [sta_directory type="linjeforeninger"] or [sta_directory type="studentaktiviteter"]
+ * Renders the matching page template without its page header; cards come from the
+ * sta_association / sta_activity post types, so entries are managed in WP Admin.
+ */
+function sta_render_directory_shortcode($atts) {
+    $atts = shortcode_atts(array(
+        'type' => 'linjeforeninger'
+    ), $atts);
+    $type = in_array($atts['type'], array('linjeforeninger', 'studentaktiviteter'), true) ? $atts['type'] : 'linjeforeninger';
+
+    $sta_directory_only = true;
+    ob_start();
+    include STA_THEME_PATH . '/page-' . $type . '.php';
+    return ob_get_clean();
+}
+add_shortcode('sta_directory', 'sta_render_directory_shortcode');
 
 /**
  * Admin action hook to restore clean, native Elementor structure for the front page (Post 11503).

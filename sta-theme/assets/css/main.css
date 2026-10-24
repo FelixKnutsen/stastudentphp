@@ -3132,6 +3132,8 @@ body:not(.sta-native-layout).page-id-16160 h3 {
 .sta-native-layout .elementor-heading-title {
     margin: 0;
     display: block;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 .sta-native-layout .elementor-widget-text-editor p,
 .sta-native-layout .elementor-widget-text-editor ul,

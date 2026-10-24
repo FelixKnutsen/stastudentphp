@@ -7,12 +7,14 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-if (class_exists('\Elementor\Plugin') && (\Elementor\Plugin::$instance->editor->is_edit_mode() || \Elementor\Plugin::$instance->preview->is_preview_mode() || \Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID()))) {
+if (empty($sta_directory_only) && class_exists('\Elementor\Plugin') && (\Elementor\Plugin::$instance->editor->is_edit_mode() || \Elementor\Plugin::$instance->preview->is_preview_mode() || \Elementor\Plugin::$instance->db->is_built_with_elementor(get_the_ID()))) {
     include STA_THEME_PATH . '/page.php';
     return;
 }
 
-get_header();
+if (empty($sta_directory_only)) {
+    get_header();
+}
 $is_en = sta_is_en();
 $is_nn = sta_is_nn();
 
@@ -90,6 +92,7 @@ foreach ($items as $item) {
 }
 ?>
 
+<?php if (empty($sta_directory_only)) : ?>
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">
     <header class="sta-page-header">
         <span class="sta-badge"><?php echo esc_html(sta_t('Studentmiljø', 'Student Life', 'Studentmiljø')); ?></span>
@@ -100,6 +103,9 @@ foreach ($items as $item) {
             <?php echo esc_html(sta_t('Her finner du oversikt over alle linjeforeningene ved Universitetet i Agder i Kristiansand og Grimstad.', 'Here is the overview of all academic student associations at the University of Agder in Kristiansand and Grimstad.', 'Her finn du oversikt over alle linjeforeiningane ved Universitetet i Agder i Kristiansand og Grimstad.')); ?>
         </p>
     </header>
+<?php else : ?>
+<div class="sta-directory-embed">
+<?php endif; ?>
 
     <!-- Interactive Search and Filter Controls -->
     <div class="sta-directory-controls" style="max-width:56rem; margin:0 auto 2.5rem auto;">
@@ -218,4 +224,6 @@ foreach ($items as $item) {
 </div>
 
 <?php
-get_footer();
+if (empty($sta_directory_only)) {
+    get_footer();
+}
