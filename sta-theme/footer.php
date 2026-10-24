@@ -15,6 +15,7 @@ $contact = get_option('sta_contact_info', array(
     'facebook'     => 'https://www.facebook.com/stastudent/',
     'instagram'    => 'https://www.instagram.com/stagder/',
     'linkedin'     => 'https://www.linkedin.com/company/studentorganisasjonen-i-agder',
+    'twitter'      => 'https://twitter.com/stastudent',
 ));
 
 $is_en = sta_is_en();
@@ -52,6 +53,10 @@ $is_nn = sta_is_nn();
                     <span style="color:var(--sta-teal-700);">&bull;</span>
                     <a href="<?php echo esc_url($contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
                         LinkedIn
+                    </a>
+                    <span style="color:var(--sta-teal-700);">&bull;</span>
+                    <a href="<?php echo esc_url($contact['twitter']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
+                        X (Twitter)
                     </a>
                 </div>
             </div>

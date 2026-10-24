@@ -87,6 +87,10 @@ if ($is_en) {
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                     <div class="sta-dropdown-menu" role="menu">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/om-oss-2')); ?>" class="sta-dropdown-item" role="menuitem">
+                            <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Om oss', 'About us', 'Om oss')); ?></span>
+                            <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Oversikt over STA og studentdemokratiet', 'Overview of STA and student democracy', 'Oversikt over STA og studentdemokratiet')); ?></span>
+                        </a>
                         <a href="<?php echo esc_url(sta_get_localized_url('/sta-styret')); ?>" class="sta-dropdown-item" role="menuitem">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('STA-Styret', 'The STA-board', 'STA-styret')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Det daglige styret i studentorganisasjonen', 'The daily board of the student organisation', 'Det daglege styret i studentorganisasjonen')); ?></span>
@@ -234,6 +238,7 @@ if ($is_en) {
                         <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="sta-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                     <ul class="sta-mobile-subnav" style="display:none;">
+                        <li><a href="<?php echo esc_url(sta_get_localized_url('/om-oss-2')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Om oss', 'About us', 'Om oss')); ?></a></li>
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/sta-styret')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('STA-Styret', 'The STA-board', 'STA-styret')); ?></a></li>
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Studentparlamentet', 'The Student Parliament', 'Studentparlamentet')); ?></a></li>
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/linjeforeninger')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Linjeforeninger', 'Academic associations', 'Linjeforeiningar')); ?></a></li>

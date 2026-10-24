@@ -3185,3 +3185,10 @@ body:not(.sta-native-layout).page-id-16160 h3 {
 .sta-native-layout a.e-con:hover {
     transform: translateY(-2px);
 }
+
+/* Long Norwegian compounds (no hyphenation dictionary in some browsers) must not widen cards on phones. */
+@media (max-width: 767px) {
+    .sta-native-layout .elementor-heading-title {
+        overflow-wrap: anywhere;
+    }
+}
