@@ -20,6 +20,22 @@ $is_elementor_page = !empty($_GET['elementor-preview'])
     || get_post_meta($current_id, '_elementor_edit_mode', true) === 'builder';
 
 $post_slug = !empty($_GET['sta_page']) ? sanitize_title(wp_unslash($_GET['sta_page'])) : get_post_field('post_name', $current_id);
+
+// Native Elementor layout: pages set to Page Layout "Elementor Full Width" render the
+// saved Elementor document directly, so all spacing, widths and typography come from Elementor.
+if ($is_elementor_page && sta_is_native_elementor_layout($current_id)) :
+?>
+<div class="sta-native-content">
+    <?php
+    while (have_posts()) : the_post();
+        the_content();
+    endwhile;
+    ?>
+</div>
+<?php
+    get_footer();
+    return;
+endif;
 ?>
 
 <div class="sta-container" style="padding-top:3.5rem; padding-bottom:5rem;">

@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.2.9');
+define('STA_THEME_VERSION', '1.3.2');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -326,6 +326,27 @@ function sta_force_theme_templates($template) {
     return $template;
 }
 add_filter('template_include', 'sta_force_theme_templates', 9999999);
+
+/**
+ * True when a page uses Elementor's "Elementor Full Width" (or Canvas) page layout.
+ * Such pages are rendered by page.php without the legacy sta-container/sta-entry-content
+ * wrappers, so the Elementor document fully controls the content area.
+ */
+function sta_is_native_elementor_layout($post_id) {
+    if (!$post_id || (int) $post_id === (int) get_option('page_on_front')) {
+        return false;
+    }
+    $tpl = get_page_template_slug($post_id);
+    return in_array($tpl, array('elementor_header_footer', 'elementor_canvas'), true);
+}
+
+add_filter('body_class', function ($classes) {
+    $post_id = !empty($_GET['elementor-preview']) ? intval($_GET['elementor-preview']) : get_queried_object_id();
+    if (is_page() && sta_is_native_elementor_layout($post_id)) {
+        $classes[] = 'sta-native-layout';
+    }
+    return $classes;
+});
 
 /**
  * Safeguard: Prevent WP-Optimize, Autoptimize, or other minification tools from

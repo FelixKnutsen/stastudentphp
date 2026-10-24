@@ -2206,7 +2206,7 @@ article.sta-article,
     box-shadow: 0 6px 18px rgba(239, 115, 48, 0.45) !important;
 }
 
-.elementor-button .elementor-button-content-wrapper {
+body:not(.sta-native-layout) .elementor-button .elementor-button-content-wrapper {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -2215,8 +2215,8 @@ article.sta-article,
     gap: 0.5rem !important;
 }
 
-.elementor-button .elementor-button-text,
-.elementor-button .elementor-button-icon {
+body:not(.sta-native-layout) .elementor-button .elementor-button-text,
+body:not(.sta-native-layout) .elementor-button .elementor-button-icon {
     color: #ffffff !important;
 }
 
@@ -2387,11 +2387,11 @@ article.sta-article,
    ========================================================================== */
 
 /* 1. Peach Header Section Harmonization */
-.page-id-14071 .elementor-element-d798f3f,
-.page-id-163 .elementor-section:first-child,
-.page-id-163 .e-con:first-child,
-.page-id-14055 .elementor-section:first-child,
-.page-id-14055 .e-con:first-child,
+body:not(.sta-native-layout).page-id-14071 .elementor-element-d798f3f,
+body:not(.sta-native-layout).page-id-163 .elementor-section:first-child,
+body:not(.sta-native-layout).page-id-163 .e-con:first-child,
+body:not(.sta-native-layout).page-id-14055 .elementor-section:first-child,
+body:not(.sta-native-layout).page-id-14055 .e-con:first-child,
 .sta-entry-content > .elementor > .elementor-element:first-child,
 .sta-page-content > .sta-entry-content > .elementor > .elementor-element:first-child,
 .sta-page-content [style*="f4a377"],
@@ -2437,15 +2437,15 @@ article.sta-article,
     padding-bottom: 2rem !important;
 }
 
-.page-id-14071 .elementor-element-d798f3f h1,
-.page-id-14071 .elementor-element-d798f3f h2,
-.page-id-14071 .elementor-element-d798f3f .elementor-heading-title,
-.page-id-163 .elementor-section:first-child h1,
-.page-id-163 .elementor-section:first-child h2,
-.page-id-163 .elementor-section:first-child .elementor-heading-title,
-.page-id-14055 .elementor-section:first-child h1,
-.page-id-14055 .elementor-section:first-child h2,
-.page-id-14055 .elementor-section:first-child .elementor-heading-title,
+body:not(.sta-native-layout).page-id-14071 .elementor-element-d798f3f h1,
+body:not(.sta-native-layout).page-id-14071 .elementor-element-d798f3f h2,
+body:not(.sta-native-layout).page-id-14071 .elementor-element-d798f3f .elementor-heading-title,
+body:not(.sta-native-layout).page-id-163 .elementor-section:first-child h1,
+body:not(.sta-native-layout).page-id-163 .elementor-section:first-child h2,
+body:not(.sta-native-layout).page-id-163 .elementor-section:first-child .elementor-heading-title,
+body:not(.sta-native-layout).page-id-14055 .elementor-section:first-child h1,
+body:not(.sta-native-layout).page-id-14055 .elementor-section:first-child h2,
+body:not(.sta-native-layout).page-id-14055 .elementor-section:first-child .elementor-heading-title,
 .sta-page-content [style*="f4a377"] h1,
 .sta-page-content [style*="f4a377"] h2,
 .sta-page-content [style*="f4a377"] .elementor-heading-title,
@@ -2525,13 +2525,13 @@ article.sta-article,
 .sta-entry-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: rgb(255, 255, 255)"],
 .sta-entry-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color: #ffffff"],
 .sta-entry-content div:not(.sta-partner-logo-box):not(.sta-partner-card)[style*="background-color:white"],
-.elementor-14055 [style*="background-color: #fff"],
-.elementor-14055 [style*="background-color: rgb(255, 255, 255)"],
-.elementor-14055 [style*="background-color: #ffffff"],
-.elementor-14055 [style*="background: #fff"],
-.elementor-14055 [style*="background: rgb(255, 255, 255)"],
-.elementor-14055 [style*="background: #ffffff"],
-.elementor-14055 .elementor-section.elementor-top-section > .elementor-container {
+body:not(.sta-native-layout) .elementor-14055 [style*="background-color: #fff"],
+body:not(.sta-native-layout) .elementor-14055 [style*="background-color: rgb(255, 255, 255)"],
+body:not(.sta-native-layout) .elementor-14055 [style*="background-color: #ffffff"],
+body:not(.sta-native-layout) .elementor-14055 [style*="background: #fff"],
+body:not(.sta-native-layout) .elementor-14055 [style*="background: rgb(255, 255, 255)"],
+body:not(.sta-native-layout) .elementor-14055 [style*="background: #ffffff"],
+body:not(.sta-native-layout) .elementor-14055 .elementor-section.elementor-top-section > .elementor-container {
     background: var(--sta-card-bg) !important;
     background-color: var(--sta-card-bg) !important;
     border: 1px solid var(--sta-card-border) !important;
@@ -2551,11 +2551,11 @@ article.sta-article,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] h2,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] h3,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] h4,
-.elementor-14055 h1,
-.elementor-14055 h2,
-.elementor-14055 h3,
-.elementor-14055 h4,
-.elementor-14055 .elementor-heading-title {
+body:not(.sta-native-layout) .elementor-14055 h1,
+body:not(.sta-native-layout) .elementor-14055 h2,
+body:not(.sta-native-layout) .elementor-14055 h3,
+body:not(.sta-native-layout) .elementor-14055 h4,
+body:not(.sta-native-layout) .elementor-14055 .elementor-heading-title {
     color: #ffffff !important;
     font-weight: 700 !important;
 }
@@ -2565,7 +2565,7 @@ article.sta-article,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] p,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #ffffff"] p,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background: #fff"] p,
-.elementor-14055 p {
+body:not(.sta-native-layout) .elementor-14055 p {
     color: var(--sta-teal-100) !important;
     line-height: 1.7 !important;
 }
@@ -2573,7 +2573,7 @@ article.sta-article,
 /* Links inside transformed white containers */
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] a,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] a,
-.elementor-14055 a {
+body:not(.sta-native-layout) .elementor-14055 a {
     color: var(--sta-orange) !important;
     text-decoration: underline !important;
     text-underline-offset: 3px !important;
@@ -2581,7 +2581,7 @@ article.sta-article,
 
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] a:hover,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] a:hover,
-.elementor-14055 a:hover {
+body:not(.sta-native-layout) .elementor-14055 a:hover {
     color: var(--sta-orange-hover) !important;
 }
 
@@ -2719,9 +2719,9 @@ article.sta-article,
 /* 4. InfoBox Widget Theming */
 .sta-page-content .elementor-widget-ha-infobox .elementor-widget-container,
 .sta-entry-content .elementor-widget-ha-infobox .elementor-widget-container,
-.elementor-14055 .elementor-widget-ha-infobox .elementor-widget-container,
+body:not(.sta-native-layout) .elementor-14055 .elementor-widget-ha-infobox .elementor-widget-container,
 .elementor-widget-ha-infobox .ha-infobox,
-.elementor-14055 .ha-infobox {
+body:not(.sta-native-layout) .elementor-14055 .ha-infobox {
     background: var(--sta-card-bg) !important;
     background-color: var(--sta-card-bg) !important;
     border: 1px solid var(--sta-card-border) !important;
@@ -2734,9 +2734,9 @@ article.sta-article,
 
 .sta-page-content .elementor-widget-ha-infobox:hover .elementor-widget-container,
 .sta-entry-content .elementor-widget-ha-infobox:hover .elementor-widget-container,
-.elementor-14055 .elementor-widget-ha-infobox:hover .elementor-widget-container,
+body:not(.sta-native-layout) .elementor-14055 .elementor-widget-ha-infobox:hover .elementor-widget-container,
 .elementor-widget-ha-infobox:hover .ha-infobox,
-.elementor-14055 .ha-infobox:hover {
+body:not(.sta-native-layout) .elementor-14055 .ha-infobox:hover {
     background: var(--sta-card-hover) !important;
     background-color: var(--sta-card-hover) !important;
     border-color: rgba(239, 115, 48, 0.5) !important;
@@ -2804,8 +2804,13 @@ body[class*="elementor-kit-"],
 
 .sta-page-content .elementor-heading-title,
 .sta-entry-content .elementor-heading-title,
-.elementor-heading-title {
+.elementor-11503 .elementor-heading-title {
     color: #ffffff !important;
+}
+
+/* Default heading colour; colours set in Elementor override it (v1.3.0). */
+body .elementor-widget-heading .elementor-heading-title {
+    color: #ffffff;
 }
 
 /* 2. Universal HappyAddons Widget Theming */
@@ -2882,30 +2887,30 @@ body[class*="elementor-kit-"],
 
 /* 3. Page-Specific Hardcoded Container Neutralizations */
 /* Studentparlamentet (Page 161): Clear light-gray containers around faculties */
-.page-id-161 .elementor-element-a048440,
-.page-id-161 .elementor-element-0db5d4d,
-.page-id-161 .elementor-element-117caf5,
-.page-id-161 .elementor-element-ec66879,
-.page-id-161 .elementor-element-9d10fe0,
-.page-id-161 .elementor-element-8733af6,
-.page-id-161 .elementor-element-cf97f4f,
-.page-id-161 .elementor-element-1e75c0b {
+body:not(.sta-native-layout).page-id-161 .elementor-element-a048440,
+body:not(.sta-native-layout).page-id-161 .elementor-element-0db5d4d,
+body:not(.sta-native-layout).page-id-161 .elementor-element-117caf5,
+body:not(.sta-native-layout).page-id-161 .elementor-element-ec66879,
+body:not(.sta-native-layout).page-id-161 .elementor-element-9d10fe0,
+body:not(.sta-native-layout).page-id-161 .elementor-element-8733af6,
+body:not(.sta-native-layout).page-id-161 .elementor-element-cf97f4f,
+body:not(.sta-native-layout).page-id-161 .elementor-element-1e75c0b {
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-.page-id-161 .elementor-element-a048440 .ha-card,
-.page-id-161 .elementor-element-ec66879 .ha-card,
-.page-id-161 .elementor-element-cf97f4f .ha-card {
+body:not(.sta-native-layout).page-id-161 .elementor-element-a048440 .ha-card,
+body:not(.sta-native-layout).page-id-161 .elementor-element-ec66879 .ha-card,
+body:not(.sta-native-layout).page-id-161 .elementor-element-cf97f4f .ha-card {
     background: var(--sta-card-bg) !important;
     border: 1px solid var(--sta-card-border) !important;
     color: #ffffff !important;
 }
 
 /* Råd, Styrer og Utvalg (Page 325): "Hva er et verv?" container */
-.page-id-325 .elementor-element-6edec2b {
+body:not(.sta-native-layout).page-id-325 .elementor-element-6edec2b {
     background: var(--sta-card-bg) !important;
     background-color: var(--sta-card-bg) !important;
     border: 1px solid var(--sta-card-border) !important;
@@ -2915,15 +2920,15 @@ body[class*="elementor-kit-"],
 }
 
 /* For tillitsvalgte (Page 127): Bottom gray section container & cards */
-.page-id-127 .elementor-element-ef095e7 {
+body:not(.sta-native-layout).page-id-127 .elementor-element-ef095e7 {
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
 }
 
-.page-id-127 .elementor-element-a3aadd3,
-.page-id-127 .elementor-element-80a4a18,
-.page-id-127 .elementor-element-a98a088 {
+body:not(.sta-native-layout).page-id-127 .elementor-element-a3aadd3,
+body:not(.sta-native-layout).page-id-127 .elementor-element-80a4a18,
+body:not(.sta-native-layout).page-id-127 .elementor-element-a98a088 {
     background: var(--sta-card-bg) !important;
     background-color: var(--sta-card-bg) !important;
     border: 1px solid var(--sta-card-border) !important;
@@ -2933,14 +2938,14 @@ body[class*="elementor-kit-"],
 }
 
 /* Irene Bredals Hederspris (Page 16160): Text contrast & section headings */
-.page-id-16160 .elementor-element-67ad149 p,
-.page-id-16160 .elementor-element-67ad149 {
+body:not(.sta-native-layout).page-id-16160 .elementor-element-67ad149 p,
+body:not(.sta-native-layout).page-id-16160 .elementor-element-67ad149 {
     color: var(--sta-teal-100) !important;
 }
 
-.page-id-16160 .elementor-element-10afc8b .elementor-heading-title,
-.page-id-16160 h2,
-.page-id-16160 h3 {
+body:not(.sta-native-layout).page-id-16160 .elementor-element-10afc8b .elementor-heading-title,
+body:not(.sta-native-layout).page-id-16160 h2,
+body:not(.sta-native-layout).page-id-16160 h3 {
     color: #ffffff !important;
 }
 
@@ -3115,3 +3120,66 @@ body[class*="elementor-kit-"],
     border-radius: var(--sta-radius) !important;
 }
 
+
+/* ==========================================================================
+   STA Theme v1.3.0 - Native Elementor layout (Page Layout: Elementor Full Width)
+   page.php renders these pages without legacy wrappers. Only neutral resets live
+   here; every visual property is set on the Elementor elements themselves.
+   ========================================================================== */
+.sta-native-content {
+    width: 100%;
+}
+.sta-native-layout .elementor-heading-title {
+    margin: 0;
+    display: block;
+}
+.sta-native-layout .elementor-widget-text-editor p,
+.sta-native-layout .elementor-widget-text-editor ul,
+.sta-native-layout .elementor-widget-text-editor ol {
+    margin: 0 0 1em;
+}
+.sta-native-layout .elementor-widget-text-editor p:last-child,
+.sta-native-layout .elementor-widget-text-editor ul:last-child,
+.sta-native-layout .elementor-widget-text-editor ol:last-child {
+    margin-bottom: 0;
+}
+.sta-native-layout .elementor-widget-text-editor ul,
+.sta-native-layout .elementor-widget-text-editor ol {
+    padding-left: 1.25em;
+}
+.sta-native-layout .elementor-widget-text-editor a {
+    color: inherit;
+}
+.sta-native-layout .elementor-widget-image img {
+    display: block;
+}
+/* Buttons are inline-block: drop the inherited line box so the widget is exactly as tall as the button. */
+.sta-native-layout .elementor-widget-button,
+.sta-native-layout .elementor-widget-button > .elementor-widget-container {
+    line-height: 0;
+}
+.sta-native-layout .elementor-widget-button .elementor-button {
+    line-height: 1.6;
+    vertical-align: top;
+}
+.sta-native-layout .elementor-widget-button .elementor-button {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.sta-native-layout .elementor-widget-button .elementor-button:hover {
+    transform: translateY(-1px);
+}
+/* Icon lists: icon box exactly as wide as the icon; spacing comes from the widget's Text Indent. */
+.sta-native-layout .elementor-widget-icon-list .elementor-icon-list-icon {
+    padding-inline-end: 0;
+}
+.sta-native-layout .elementor-widget-icon-list .elementor-icon-list-icon i {
+    width: 1em;
+}
+.sta-native-layout a.e-con {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.sta-native-layout a.e-con:hover {
+    transform: translateY(-2px);
+}
