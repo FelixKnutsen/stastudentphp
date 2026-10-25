@@ -86,6 +86,13 @@ function sta_get_current_language() {
         }
     }
 
+    // 2b. TranslatePress strips /en/ from the request before the theme loads and
+    // stores the URL language in $TRP_LANGUAGE, so honour it before the cookie.
+    global $TRP_LANGUAGE;
+    if (!empty($TRP_LANGUAGE) && stripos($TRP_LANGUAGE, 'en') === 0) {
+        return 'en';
+    }
+
     // 3. Check URL path for /en/ or /nn/ (accounting for any staging subdirectory)
     $raw_uri = isset($GLOBALS['sta_original_request_uri'])
         ? $GLOBALS['sta_original_request_uri']
