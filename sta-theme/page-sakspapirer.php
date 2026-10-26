@@ -164,7 +164,7 @@ $groups = sta_merge_editable_year_docs($wp_page ? $wp_page->post_content : '', $
         <?php foreach ($groups as $year => $items): ?>
             <div class="sta-card" style="padding:1.5rem 1.75rem;">
                 <div style="display:flex; align-items:center; justify-content:space-between; gap:0.75rem; margin-bottom:1rem; padding-bottom:0.65rem; border-bottom:1px solid rgba(158,207,201,0.22);">
-                    <h2 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange); margin:0;">
+                    <h2 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange-text); margin:0;">
                         <?php echo esc_html($year); ?>
                     </h2>
                     <span class="sta-badge" style="margin:0; font-size:0.7rem; padding:0.2rem 0.55rem; background:rgba(255,255,255,0.06); border:1px solid rgba(158,207,201,0.2); color:var(--sta-teal-100);">

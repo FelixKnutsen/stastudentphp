@@ -58,8 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
-            filterButtons.forEach(b => b.classList.remove('is-active'));
+            filterButtons.forEach(function (b) {
+                b.classList.remove('is-active');
+                b.setAttribute('aria-pressed', 'false');
+            });
             btn.classList.add('is-active');
+            btn.setAttribute('aria-pressed', 'true');
             currentCategory = btn.getAttribute('data-filter') || 'all';
             filterCards();
         });

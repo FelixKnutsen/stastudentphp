@@ -249,6 +249,59 @@ add_filter('request', function ($query_vars) {
 }, 1);
 
 /**
+ * Pretty links on sites without pretty permalinks (WP Staging copies under /reliant/).
+ * Page content saved with /reliant/<slug>/ links would otherwise open the front page,
+ * because WordPress ignores the path when permalink_structure is empty. Resolve the path
+ * to the page, post or attachment it names. No effect when pretty permalinks are on.
+ */
+add_filter('request', function ($query_vars) {
+    if (get_option('permalink_structure') || is_admin() || !empty($_GET['sta_page'])) {
+        return $query_vars;
+    }
+    foreach (array('page_id', 'p', 'name', 'pagename', 's', 'cat', 'category_name', 'attachment_id', 'preview', 'feed') as $key) {
+        if (isset($_GET[$key]) || !empty($query_vars[$key])) {
+            return $query_vars;
+        }
+    }
+    $path = parse_url(isset($_SERVER['REQUEST_URI']) ? wp_unslash($_SERVER['REQUEST_URI']) : '/', PHP_URL_PATH) ?: '/';
+    $base_path = sta_get_home_base_path();
+    if ($base_path !== '' && strpos($path, $base_path) === 0) {
+        $path = substr($path, strlen($base_path));
+    }
+    $rel = trim(rawurldecode($path), '/');
+    // TranslatePress may put the language back into the path (en/..., nn/...).
+    $rel = preg_replace('#^(en|nn)(/|$)#i', '', $rel);
+    if ($rel === '' || $rel === 'index.php' || strpos($rel, 'wp-') === 0 || preg_match('#\.[a-z0-9]{2,5}$#i', $rel)) {
+        return $query_vars;
+    }
+    if (in_array($rel, array('nyheter', 'siste-nytt', 'category/nyheter'), true)) {
+        return array('category_name' => 'nyheter');
+    }
+    if (preg_match('#^category/([^/]+)$#', $rel, $m)) {
+        return array('category_name' => sanitize_title($m[1]));
+    }
+    $slug = sanitize_title(basename($rel));
+    $page = get_page_by_path($rel);
+    if (!$page && $slug !== '') {
+        $page_id = sta_get_page_id_by_slug($slug);
+        $page = $page_id ? get_post($page_id) : null;
+    }
+    if ($page) {
+        return array('page_id' => (int) $page->ID);
+    }
+    $post = get_page_by_path($slug, OBJECT, 'post');
+    if ($post) {
+        return array('p' => (int) $post->ID);
+    }
+    $attachment = get_page_by_path($slug, OBJECT, 'attachment');
+    if ($attachment) {
+        return array('attachment_id' => (int) $attachment->ID);
+    }
+    // Unknown path: leave the request to WordPress as before.
+    return $query_vars;
+}, 2);
+
+/**
  * Helper to build language-aware internal URL.
  * When running on WP Staging subdirectories (e.g. /reliant/) where Nginx/Apache
  * rewrite rules are not configured for the subfolder, all subpages route via

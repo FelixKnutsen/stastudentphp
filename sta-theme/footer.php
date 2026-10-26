@@ -15,7 +15,6 @@ $contact = get_option('sta_contact_info', array(
     'facebook'     => 'https://www.facebook.com/stastudent/',
     'instagram'    => 'https://www.instagram.com/stagder/',
     'linkedin'     => 'https://www.linkedin.com/company/studentorganisasjonen-i-agder',
-    'twitter'      => 'https://twitter.com/stastudent',
 ));
 
 $is_en = sta_is_en();
@@ -46,17 +45,13 @@ $is_nn = sta_is_nn();
                     <a href="<?php echo esc_url($contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
                         Facebook
                     </a>
-                    <span style="color:var(--sta-teal-700);">&bull;</span>
+                    <span aria-hidden="true" style="color:var(--sta-teal-700);">&bull;</span>
                     <a href="<?php echo esc_url($contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
                         Instagram
                     </a>
-                    <span style="color:var(--sta-teal-700);">&bull;</span>
+                    <span aria-hidden="true" style="color:var(--sta-teal-700);">&bull;</span>
                     <a href="<?php echo esc_url($contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
                         LinkedIn
-                    </a>
-                    <span style="color:var(--sta-teal-700);">&bull;</span>
-                    <a href="<?php echo esc_url($contact['twitter']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
-                        X
                     </a>
                 </div>
             </div>
@@ -130,7 +125,7 @@ $is_nn = sta_is_nn();
                         &nbsp;|&nbsp;
                         <span><?php echo esc_html($contact['phone']); ?></span>
                     </p>
-                    <p style="margin:0.25rem 0 0 0; font-size:0.75rem; color:var(--sta-teal-300);">
+                    <p style="margin:0.25rem 0 0 0; font-size:0.75rem; color:var(--sta-teal-200);">
                         Org.nr: <?php echo esc_html($contact['org_number']); ?>
                     </p>
                 </div>
@@ -138,7 +133,7 @@ $is_nn = sta_is_nn();
         </div>
 
         <!-- Bottom Copyright & Links -->
-        <div style="padding-top:1.5rem; border-top:1px solid rgba(14,76,71,0.5); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; font-size:0.75rem; color:var(--sta-teal-300);">
+        <div style="padding-top:1.5rem; border-top:1px solid rgba(14,76,71,0.5); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; font-size:0.75rem; color:var(--sta-teal-200);">
             <div>
                 &copy; <?php echo date('Y'); ?> Studentorganisasjonen i Agder (STA). <?php echo esc_html(sta_t('Alle rettigheter forbeholdt.', 'All rights reserved.', 'Alle rettar reserverte.')); ?>
             </div>
@@ -149,7 +144,7 @@ $is_nn = sta_is_nn();
                 <a href="<?php echo esc_url(sta_get_localized_url('/trygg-organisasjon')); ?>" style="color:var(--sta-teal-200); text-decoration:none;">
                     <?php echo esc_html(sta_t('Trygg Organisasjon', 'Safe Organization', 'Trygg organisasjon')); ?>
                 </a>
-                <a href="#main-content" style="color:var(--sta-orange); text-decoration:none; font-weight:600;">
+                <a href="#main-content" style="color:var(--sta-orange-text); text-decoration:none; font-weight:600;">
                     <?php echo esc_html(sta_t('Til toppen &uarr;', 'Back to top &uarr;', 'Til toppen &uarr;')); ?>
                 </a>
             </div>

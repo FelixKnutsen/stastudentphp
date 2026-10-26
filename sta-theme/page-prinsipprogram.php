@@ -41,7 +41,7 @@ $is_nn = sta_is_nn();
     <!-- Notice Card: Current Policy Status -->
     <div style="max-width:900px; margin:0 auto 4rem; background:rgba(239,115,48,0.1); border:1px solid rgba(239,115,48,0.4); border-radius:var(--sta-radius); padding:2rem; box-shadow:0 12px 32px rgba(0,0,0,0.25);">
         <div style="display:flex; align-items:flex-start; gap:1.25rem;">
-            <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.25); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.25); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
             </div>
             <div>
@@ -80,7 +80,7 @@ $is_nn = sta_is_nn();
         <div style="display:flex; flex-direction:column; gap:1.75rem;">
             <!-- Pillar 1 -->
             <div class="sta-card" style="padding:2rem;">
-                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange); margin:0 0 0.75rem 0;">
+                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange-text); margin:0 0 0.75rem 0;">
                     1. Studiesituasjon
                 </h3>
                 <div style="font-size:0.95rem; color:var(--sta-teal-50); line-height:1.75;">
@@ -98,7 +98,7 @@ $is_nn = sta_is_nn();
 
             <!-- Pillar 2 -->
             <div class="sta-card" style="padding:2rem;">
-                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange); margin:0 0 0.75rem 0;">
+                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange-text); margin:0 0 0.75rem 0;">
                     2. Kvalitetskultur og dannelse
                 </h3>
                 <div style="font-size:0.95rem; color:var(--sta-teal-50); line-height:1.75;">
@@ -116,7 +116,7 @@ $is_nn = sta_is_nn();
 
             <!-- Pillar 3 -->
             <div class="sta-card" style="padding:2rem;">
-                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange); margin:0 0 0.75rem 0;">
+                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange-text); margin:0 0 0.75rem 0;">
                     3. Akademias samfunnsansvar
                 </h3>
                 <div style="font-size:0.95rem; color:var(--sta-teal-50); line-height:1.75;">
@@ -131,7 +131,7 @@ $is_nn = sta_is_nn();
 
             <!-- Pillar 4 -->
             <div class="sta-card" style="padding:2rem;">
-                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange); margin:0 0 0.75rem 0;">
+                <h3 style="font-size:1.35rem; font-weight:800; color:var(--sta-orange-text); margin:0 0 0.75rem 0;">
                     4. Internasjonalisering
                 </h3>
                 <div style="font-size:0.95rem; color:var(--sta-teal-50); line-height:1.75;">

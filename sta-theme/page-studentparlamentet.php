@@ -69,7 +69,7 @@ if ($json_file && file_exists($json_file)) {
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; max-width:44rem; margin:0 auto 4rem auto;">
         <a href="<?php echo esc_url(sta_get_localized_url('/sakspapirer')); ?>" 
            class="sta-parliament-quick-link">
-            <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
             </div>
             <div>
@@ -84,7 +84,7 @@ if ($json_file && file_exists($json_file)) {
 
         <a href="<?php echo esc_url(sta_get_localized_url('/referat-fra-moter-i-studentparlamentet')); ?>" 
            class="sta-parliament-quick-link">
-            <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
             </div>
             <div>
@@ -112,7 +112,7 @@ if ($json_file && file_exists($json_file)) {
                          loading="lazy">
                 </div>
                 <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">Mia Sandøy</h3>
-                <p style="font-size:0.75rem; font-weight:600; color:var(--sta-orange); margin:0.25rem 0 0.75rem 0;">
+                <p style="font-size:0.75rem; font-weight:600; color:var(--sta-orange-text); margin:0.25rem 0 0.75rem 0;">
                     <?php echo esc_html(sta_t('Førstekonsulent i STA', 'First Consultant at STA', 'Førstekonsulent i STA')); ?>
                 </p>
                 <a href="mailto:sta@uia.no" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.75rem; color:var(--sta-teal-100); text-decoration:none;">
@@ -129,7 +129,7 @@ if ($json_file && file_exists($json_file)) {
                          loading="lazy">
                 </div>
                 <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0;">Karen Elise Stenersen</h3>
-                <p style="font-size:0.75rem; font-weight:600; color:var(--sta-orange); margin:0.25rem 0 0.75rem 0;">
+                <p style="font-size:0.75rem; font-weight:600; color:var(--sta-orange-text); margin:0.25rem 0 0.75rem 0;">
                     <?php echo esc_html(sta_t('Studentleder ved UiA', 'Student President at UiA', 'Studentleiar ved UiA')); ?>
                 </p>
                 <a href="mailto:staleder@uia.no" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.75rem; color:var(--sta-teal-100); text-decoration:none;">
@@ -168,13 +168,13 @@ if ($json_file && file_exists($json_file)) {
                         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem;">
                             <!-- Regulars -->
                             <div>
-                                <h4 style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.6rem 0;">
+                                <h4 style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange-text); margin:0 0 0.6rem 0;">
                                     <?php printf(esc_html(sta_t('Faste representanter (%d)', 'Regular members (%d)', 'Faste representantar (%d)')), count($fac['representatives'])); ?>
                                 </h4>
                                 <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;">
                                     <?php foreach ($fac['representatives'] as $rep): ?>
                                         <li style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);">
-                                            <span style="width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange); flex-shrink:0;"></span>
+                                            <span style="width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-orange-bg); flex-shrink:0;"></span>
                                             <span><?php echo esc_html($rep['name']); ?></span>
                                         </li>
                                     <?php endforeach; ?>
@@ -183,7 +183,7 @@ if ($json_file && file_exists($json_file)) {
 
                             <!-- Substitutes -->
                             <div>
-                                <h4 style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-300); margin:0 0 0.6rem 0;">
+                                <h4 style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-teal-200); margin:0 0 0.6rem 0;">
                                     <?php printf(esc_html(sta_t('Vararepresentanter (%d)', 'Substitutes (%d)', 'Vararepresentantar (%d)')), count($fac['substitutes'])); ?>
                                 </h4>
                                 <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;">
@@ -193,7 +193,7 @@ if ($json_file && file_exists($json_file)) {
                                         <li style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; color:var(--sta-teal-100);">
                                             <span style="width:0.4rem; height:0.4rem; border-radius:50%; background:var(--sta-teal-400); flex-shrink:0;"></span>
                                             <?php if ($is_vacant): ?>
-                                                <span style="color:var(--sta-orange); font-style:italic;">
+                                                <span style="color:var(--sta-orange-text); font-style:italic;">
                                                     <?php echo esc_html(sta_t('Ledig verv – kontakt sta@uia.no', 'Vacant – contact sta@uia.no', 'Ledig verv – kontakt sta@uia.no')); ?>
                                                 </span>
                                             <?php else: ?>

@@ -12,7 +12,7 @@ get_header();
 
 <div class="sta-container" style="padding-top:5rem; padding-bottom:6rem; text-align:center;">
     <div style="max-width:600px; margin:0 auto;">
-        <span class="sta-badge" style="background:#ef7330;">404</span>
+        <span class="sta-badge" style="background:var(--sta-orange-bg);">404</span>
         <h1 style="font-size:3rem; font-weight:900; margin:1rem 0; color:#fff;">
             <?php echo esc_html(sta_t('Siden ble ikke funnet', 'Page not found', 'Sida vart ikkje funnen')); ?>
         </h1>

@@ -32,14 +32,14 @@ $is_nn = sta_is_nn();
     <div style="max-width:56rem; margin:0 auto 4rem auto;">
         <div class="sta-card" style="padding:2.5rem; display:flex; flex-direction:column; gap:1.75rem;">
             <div style="display:flex; align-items:center; gap:1rem;">
-                <div style="width:3.5rem; height:3.5rem; border-radius:1rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <div style="width:3.5rem; height:3.5rem; border-radius:1rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                     <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
                 </div>
                 <div>
                     <h2 style="font-size:1.5rem; font-weight:700; color:#fff; margin:0;">
                         <?php echo esc_html(sta_t('Om hedersprisen', 'About the Honour Award', 'Om heidersprisen')); ?>
                     </h2>
-                    <p style="font-size:0.75rem; color:var(--sta-orange); font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin:0.25rem 0 0 0;">
+                    <p style="font-size:0.75rem; color:var(--sta-orange-text); font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin:0.25rem 0 0 0;">
                         <?php echo esc_html(sta_t('Opprettet 2024/2025', 'Established 2024/2025', 'Oppretta 2024/2025')); ?>
                     </p>
                 </div>
@@ -96,7 +96,7 @@ $is_nn = sta_is_nn();
                 <!-- Award Content -->
                 <div style="flex:1;">
                     <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
-                        <span class="sta-badge" style="background:var(--sta-orange); color:#fff; border:none; font-size:0.75rem;">
+                        <span class="sta-badge" style="background:var(--sta-orange-bg); color:#fff; border:none; font-size:0.75rem;">
                             2025
                         </span>
                         <span style="font-size:0.8rem; color:var(--sta-teal-200); font-weight:600;">
@@ -107,7 +107,7 @@ $is_nn = sta_is_nn();
                     <h3 style="font-size:1.6rem; font-weight:800; color:#fff; margin:0 0 0.5rem 0;">
                         Irene Bredal
                     </h3>
-                    <p style="font-size:0.9rem; color:var(--sta-orange); font-weight:600; margin:0 0 1.25rem 0;">
+                    <p style="font-size:0.9rem; color:var(--sta-orange-text); font-weight:600; margin:0 0 1.25rem 0;">
                         <?php echo esc_html(sta_t('Tidligere organisasjonskonsulent i STA', 'Former Organizational Consultant at STA', 'Tidlegare organisasjonskonsulent i STA')); ?>
                     </p>
 

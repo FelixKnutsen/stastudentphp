@@ -82,36 +82,36 @@ if ($is_en) {
 
                 <!-- Om Oss Dropdown with Fixed Hover Buffer -->
                 <div class="sta-dropdown-container">
-                    <button type="button" class="sta-nav-link sta-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                    <button type="button" class="sta-nav-link sta-dropdown-toggle" aria-expanded="false">
                         <span><?php echo esc_html(sta_t('Om Oss', 'About', 'Om oss')); ?></span>
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
-                    <div class="sta-dropdown-menu" role="menu">
-                        <a href="<?php echo esc_url(sta_get_localized_url('/om-oss-2')); ?>" class="sta-dropdown-item" role="menuitem">
+                    <div class="sta-dropdown-menu">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/om-oss-2')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Om oss', 'About us', 'Om oss')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Oversikt over STA og studentdemokratiet', 'Overview of STA and student democracy', 'Oversikt over STA og studentdemokratiet')); ?></span>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/sta-styret')); ?>" class="sta-dropdown-item" role="menuitem">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/sta-styret')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('STA-Styret', 'The STA-board', 'STA-styret')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Det daglige styret i studentorganisasjonen', 'The daily board of the student organisation', 'Det daglege styret i studentorganisasjonen')); ?></span>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-dropdown-item" role="menuitem">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Studentparlamentet', 'The Student Parliament', 'Studentparlamentet')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('UiAs øverste studentdemokratiske organ', "UiA's highest student democratic body", 'Det øvste studentdemokratiske organet ved UiA')); ?></span>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/linjeforeninger')); ?>" class="sta-dropdown-item" role="menuitem">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/linjeforeninger')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Linjeforeninger', 'Academic associations', 'Linjeforeiningar')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Fag- og linjeforeninger i Kristiansand og Grimstad', 'Student associations at UiA campuses', 'Fag- og linjeforeiningar i Kristiansand og Grimstad')); ?></span>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/studentaktiviteter')); ?>" class="sta-dropdown-item" role="menuitem">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/studentaktiviteter')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Studentaktiviteter', 'Student Activities', 'Studentaktivitetar')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Interesseforeninger, idrett og kultur', 'Sports, culture and student organisations', 'Interesseforeiningar, idrett og kultur')); ?></span>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/lokaler')); ?>" class="sta-dropdown-item" role="menuitem">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/lokaler')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Lokaler', 'Our premises', 'Lokale')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Alibiet og Bluebox – lokaler for studenter', 'Alibiet and Bluebox – student venues', 'Alibiet og Bluebox – lokale for studentar')); ?></span>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/irene-bredals-hederspris')); ?>" class="sta-dropdown-item" role="menuitem">
+                        <a href="<?php echo esc_url(sta_get_localized_url('/irene-bredals-hederspris')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Irene Bredals Hederspris', 'Irene Bredals Hederspris', 'Irene Bredals Heiderspris')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Ærespris for ekstraordinært studentengasjement', 'Award for extraordinary student engagement', 'Heiderspris for ekstraordinært studentengasjement')); ?></span>
                         </a>
@@ -128,21 +128,21 @@ if ($is_en) {
 
                 <!-- Language Switcher Dropdown (Desktop: Bokmål, Nynorsk, English) -->
                 <div class="sta-dropdown-container sta-lang-dropdown" style="position:relative;">
-                    <button type="button" class="sta-lang-btn sta-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-label="<?php echo esc_attr(sta_t('Bytt språk', 'Switch language', 'Byt språk')); ?>" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.35rem 0.85rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; cursor:pointer;">
+                    <button type="button" class="sta-lang-btn sta-dropdown-toggle" aria-expanded="false" aria-label="<?php echo esc_attr(sta_t('Bytt språk', 'Switch language', 'Byt språk')); ?>" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.35rem 0.85rem; border-radius:9999px; background:rgba(9,50,47,0.7); border:1px solid rgba(158,207,201,0.25); color:#fff; font-size:0.75rem; font-weight:700; cursor:pointer;">
                         <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                         <span><?php echo esc_html($current_lang_label); ?></span>
                         <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
-                    <div class="sta-dropdown-menu" role="menu" style="min-width:160px; right:0; left:auto; padding:0.5rem 0;">
-                        <a href="<?php echo esc_url(sta_get_language_url('no')); ?>" class="sta-dropdown-item sta-lang-option <?php echo sta_is_no() ? 'is-active' : ''; ?>" data-lang="no" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                    <div class="sta-dropdown-menu" style="min-width:160px; right:0; left:auto; padding:0.5rem 0;">
+                        <a href="<?php echo esc_url(sta_get_language_url('no')); ?>" class="sta-dropdown-item sta-lang-option <?php echo sta_is_no() ? 'is-active' : ''; ?>" data-lang="no" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
                             <span>Norsk bokmål</span>
                             <?php if (sta_is_no()): ?><svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg><?php endif; ?>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_language_url('nn')); ?>" class="sta-dropdown-item sta-lang-option <?php echo sta_is_nn() ? 'is-active' : ''; ?>" data-lang="nn" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                        <a href="<?php echo esc_url(sta_get_language_url('nn')); ?>" class="sta-dropdown-item sta-lang-option <?php echo sta_is_nn() ? 'is-active' : ''; ?>" data-lang="nn" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
                             <span>Norsk nynorsk</span>
                             <?php if (sta_is_nn()): ?><svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg><?php endif; ?>
                         </a>
-                        <a href="<?php echo esc_url(sta_get_language_url('en')); ?>" class="sta-dropdown-item sta-lang-option <?php echo sta_is_en() ? 'is-active' : ''; ?>" data-lang="en" role="menuitem" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
+                        <a href="<?php echo esc_url(sta_get_language_url('en')); ?>" class="sta-dropdown-item sta-lang-option <?php echo sta_is_en() ? 'is-active' : ''; ?>" data-lang="en" style="padding:0.5rem 1rem; display:flex; align-items:center; justify-content:space-between; font-size:0.85rem; text-decoration:none;">
                             <span>English</span>
                             <?php if (sta_is_en()): ?><svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--sta-orange)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg><?php endif; ?>
                         </a>
@@ -171,7 +171,7 @@ if ($is_en) {
                 </button>
             </div>
             <form action="<?php echo esc_url(home_url('/')); ?>" method="get" class="sta-modal-search-form">
-                <input type="search" name="s" id="sta-modal-input" class="sta-modal-input" placeholder="<?php echo esc_attr(sta_t('Hva leter du etter? (f.eks. verv, vedtekter, linjeforening...)', 'What are you looking for? (e.g. positions, statutes, associations...)', 'Kva leitar du etter? (t.d. verv, vedtekter, linjeforeining...)')); ?>">
+                <input type="search" name="s" id="sta-modal-input" class="sta-modal-input" aria-labelledby="sta-modal-title" placeholder="<?php echo esc_attr(sta_t('Hva leter du etter? (f.eks. verv, vedtekter, linjeforening...)', 'What are you looking for? (e.g. positions, statutes, associations...)', 'Kva leitar du etter? (t.d. verv, vedtekter, linjeforeining...)')); ?>">
                 <?php if ($is_en): ?><input type="hidden" name="lang" value="en"><?php elseif ($is_nn): ?><input type="hidden" name="lang" value="nn"><?php endif; ?>
                 <button type="submit" class="sta-modal-submit"><?php echo esc_html(sta_t('Søk', 'Search', 'Søk')); ?></button>
             </form>
@@ -190,13 +190,13 @@ if ($is_en) {
             <div style="display:flex; align-items:center; gap:0.5rem;">
                 <!-- Mobile 3-Language Segment Control -->
                 <div style="display:inline-flex; align-items:center; background:rgba(9,50,47,0.85); border:1px solid rgba(158,207,201,0.25); border-radius:9999px; padding:2px;">
-                    <a href="<?php echo esc_url(sta_get_language_url('no')); ?>" class="sta-lang-option" data-lang="no" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; <?php echo sta_is_no() ? 'background:var(--sta-orange); color:#fff;' : 'color:var(--sta-teal-100);'; ?>" aria-label="Norsk bokmål">
+                    <a href="<?php echo esc_url(sta_get_language_url('no')); ?>" class="sta-lang-option" data-lang="no" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; <?php echo sta_is_no() ? 'background:var(--sta-orange-bg); color:#fff;' : 'color:var(--sta-teal-100);'; ?>" aria-label="Norsk bokmål">
                         NB
                     </a>
-                    <a href="<?php echo esc_url(sta_get_language_url('nn')); ?>" class="sta-lang-option" data-lang="nn" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; <?php echo sta_is_nn() ? 'background:var(--sta-orange); color:#fff;' : 'color:var(--sta-teal-100);'; ?>" aria-label="Norsk nynorsk">
+                    <a href="<?php echo esc_url(sta_get_language_url('nn')); ?>" class="sta-lang-option" data-lang="nn" style="display:inline-flex; align-items:center; justify-content:center; padding:0.3rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; <?php echo sta_is_nn() ? 'background:var(--sta-orange-bg); color:#fff;' : 'color:var(--sta-teal-100);'; ?>" aria-label="Norsk nynorsk">
                         NN
                     </a>
-                    <a href="<?php echo esc_url(sta_get_language_url('en')); ?>" class="sta-lang-option" data-lang="en" style="display:inline-flex; align-items:center; justify-content:center; padding:0.35rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; <?php echo sta_is_en() ? 'background:var(--sta-orange); color:#fff;' : 'color:var(--sta-teal-100);'; ?>" aria-label="English">
+                    <a href="<?php echo esc_url(sta_get_language_url('en')); ?>" class="sta-lang-option" data-lang="en" style="display:inline-flex; align-items:center; justify-content:center; padding:0.35rem 0.55rem; border-radius:9999px; font-size:0.75rem; font-weight:700; text-decoration:none; <?php echo sta_is_en() ? 'background:var(--sta-orange-bg); color:#fff;' : 'color:var(--sta-teal-100);'; ?>" aria-label="English">
                         EN
                     </a>
                 </div>

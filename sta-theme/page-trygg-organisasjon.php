@@ -61,14 +61,14 @@ $principles = $is_en ? $principles_en : ($is_nn ? $principles_nn : $principles_n
         <!-- Intro statement Card -->
         <div class="sta-card" style="padding:2rem;">
             <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.25rem;">
-                <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
                 </div>
                 <div>
                     <h2 style="font-size:1.35rem; font-weight:700; color:#fff; margin:0;">
                         <?php echo esc_html(sta_t('Nulltoleranse for trakassering', 'Zero Tolerance for Harassment', 'Nulltoleranse for trakassering')); ?>
                     </h2>
-                    <p style="font-size:0.75rem; color:var(--sta-orange); font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin:0.25rem 0 0 0;">
+                    <p style="font-size:0.75rem; color:var(--sta-orange-text); font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin:0.25rem 0 0 0;">
                         <?php echo esc_html(sta_t('Vedtatt av Studentparlamentet', 'Adopted by the Student Parliament', 'Vedteke av Studentparlamentet')); ?>
                     </p>
                 </div>
@@ -92,7 +92,7 @@ $principles = $is_en ? $principles_en : ($is_nn ? $principles_nn : $principles_n
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem;">
                 <?php foreach ($principles as $idx => $principle): ?>
                     <div class="sta-card" style="padding:1.5rem; display:flex; gap:1rem; align-items:flex-start;">
-                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
+                        <span style="width:2rem; height:2rem; border-radius:50%; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem; flex-shrink:0;">
                             <?php echo $idx + 1; ?>
                         </span>
                         <p style="font-size:0.9rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">

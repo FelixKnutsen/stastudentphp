@@ -99,7 +99,7 @@ if ($committees_file && file_exists($committees_file)) {
     <div style="max-width:768px; margin:0 auto 4rem; text-align:center;">
         <p style="font-size:1rem; color:var(--sta-teal-100); line-height:1.7; margin-bottom:1.5rem;">
             <?php echo esc_html(sta_t('Valg til råd, styrer og utvalg (RSU) skjer på en valgforsamling, hvor Studentparlamentet stemmer over hvem som får plassene. Valgene lyses ut på stastudent.no og deles i våre kanaler på våren – så følg med! Ved spørsmål, ta gjerne kontakt på', 'Elections to councils and boards occur at election assemblies where the Student Parliament votes. Positions are published on stastudent.no every spring. For questions, contact', 'Val til råd, styre og utval (RSU) skjer på ei valforsamling, der Studentparlamentet røystar over kven som får plassane. Vala blir lyste ut på stastudent.no og delte i kanalane våre om våren – så følg med! Ved spørsmål, ta gjerne kontakt på')); ?> 
-            <a href="mailto:sta@uia.no" style="color:var(--sta-orange); font-weight:700; text-decoration:underline;">sta@uia.no</a>.
+            <a href="mailto:sta@uia.no" style="color:var(--sta-orange-text); font-weight:700; text-decoration:underline;">sta@uia.no</a>.
         </p>
         <a href="<?php echo esc_url(sta_get_localized_url('/ledige-verv')); ?>" class="sta-btn sta-btn-orange" style="font-size:1rem; padding:0.85rem 1.75rem;">
             <span><?php echo esc_html(sta_t('Se ledige verv nå', 'View vacant positions now', 'Sjå ledige verv no')); ?></span>
@@ -118,7 +118,7 @@ if ($committees_file && file_exists($committees_file)) {
                 $r_desc  = $is_en ? $reason['desc_en'] : ($is_nn ? ($reason['desc_nn'] ?? $reason['desc']) : $reason['desc']);
             ?>
                 <div class="sta-card sta-reason-card">
-                    <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; margin-bottom:1rem; flex-shrink:0;">
+                    <div style="width:3rem; height:3rem; border-radius:0.75rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; margin-bottom:1rem; flex-shrink:0;">
                         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <?php echo $reason['icon']; ?>
                         </svg>
@@ -169,7 +169,7 @@ if ($committees_file && file_exists($committees_file)) {
                     <h2 style="font-size:1.6rem; font-weight:800; color:#fff; margin:0;">
                         <?php echo esc_html($cat_name); ?>
                     </h2>
-                    <span class="sta-badge" style="margin:0; background:rgba(239,115,48,0.18); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange); font-size:0.75rem;">
+                    <span class="sta-badge" style="margin:0; background:rgba(239,115,48,0.18); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange-text); font-size:0.75rem;">
                         <?php printf(esc_html(sta_t('%d organer / utvalg', '%d boards / committees', '%d organ / utval')), count($items)); ?>
                     </span>
                 </div>
@@ -198,7 +198,7 @@ if ($committees_file && file_exists($committees_file)) {
                         <div class="sta-card" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
                             <div>
                                 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.85rem;">
-                                    <div style="width:2.25rem; height:2.25rem; border-radius:0.5rem; background:rgba(239,115,48,0.18); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                    <div style="width:2.25rem; height:2.25rem; border-radius:0.5rem; background:rgba(239,115,48,0.18); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                         <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                                     </div>
                                     <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0; line-height:1.35; overflow-wrap:break-word; word-break:break-word;">
@@ -214,7 +214,7 @@ if ($committees_file && file_exists($committees_file)) {
 
                             <?php if (!empty($final_url)): ?>
                                 <div style="margin-top:1.25rem; padding-top:0.85rem; border-top:1px solid rgba(158,207,201,0.18);">
-                                    <a href="<?php echo esc_url($final_url); ?>" <?php echo $is_ext ? 'target="_blank" rel="noopener noreferrer"' : ''; ?> style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange); text-decoration:none;">
+                                    <a href="<?php echo esc_url($final_url); ?>" <?php echo $is_ext ? 'target="_blank" rel="noopener noreferrer"' : ''; ?> style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange-text); text-decoration:none;">
                                         <span><?php echo esc_html($info_label); ?></span>
                                         <?php if ($is_ext): ?>
                                             <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>

@@ -17,7 +17,10 @@
     --sta-teal-900: #041817;
 
     --sta-orange: #ef7330;
-    --sta-orange-hover: #d95716;
+    --sta-orange-hover: #a8420f;
+    /* WCAG AA: fills behind white text / orange text on the teal backgrounds */
+    --sta-orange-bg: #c44f14;
+    --sta-orange-text: #ffab78;
     --sta-orange-light: #fee9dd;
 
     --sta-bg: #0e4c47;
@@ -73,7 +76,7 @@ img {
 
 /* Accessibility Focus Rings */
 :focus-visible {
-    outline: 2px solid var(--sta-orange);
+    outline: 2px solid var(--sta-orange-text);
     outline-offset: 3px;
     border-radius: 4px;
 }
@@ -82,7 +85,7 @@ img {
     position: absolute;
     top: -999px;
     left: 1rem;
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
     color: #fff;
     padding: 0.75rem 1.5rem;
     border-radius: var(--sta-radius-sm);
@@ -160,7 +163,7 @@ img {
     transition: color 0.2s;
 }
 .sta-logo-link:hover .sta-logo-text {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
 }
 
 .sta-logo-sub {
@@ -201,7 +204,7 @@ img {
 }
 .sta-nav-link:hover, .sta-nav-link.is-active {
     background-color: rgba(255, 255, 255, 0.1);
-    color: var(--sta-orange);
+    color: #ffc39c;
 }
 
 /* Dropdown Container & Menu */
@@ -262,7 +265,7 @@ img {
     transition: all 0.2s;
 }
 .sta-lang-btn:hover {
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
     border-color: var(--sta-orange);
 }
 
@@ -300,7 +303,7 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    background-color: var(--sta-orange);
+    background-color: var(--sta-orange-bg);
     color: #fff;
     border-radius: 9999px;
     margin-bottom: 1.25rem;
@@ -342,7 +345,7 @@ img {
     text-align: center;
 }
 .sta-btn-orange {
-    background-color: var(--sta-orange);
+    background-color: var(--sta-orange-bg);
     color: #fff;
 }
 .sta-btn-orange:hover {
@@ -442,7 +445,7 @@ button.sta-card:hover,
 }
 .sta-doc-row-link:hover span,
 .sta-doc-row-link:focus span {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
 }
 
 
@@ -679,7 +682,7 @@ article.sta-article,
 }
 .sta-article-content a,
 .sta-entry-content a {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
     text-decoration: underline;
     text-underline-offset: 3px;
     transition: color 0.2s ease;
@@ -774,7 +777,7 @@ article.sta-article,
     font-family: inherit;
 }
 .sta-filter-btn:hover, .sta-filter-btn.is-active {
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
     border-color: var(--sta-orange);
 }
 
@@ -832,7 +835,7 @@ article.sta-article,
     transition: color 0.2s;
 }
 .sta-dir-socials a:hover {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
 }
 
 /* Board Photo Presentation (3:2 Aspect Ratio Preserved) */
@@ -883,7 +886,7 @@ article.sta-article,
     align-items: center;
     gap: 0.4rem;
     font-weight: 700;
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
     transition: color 0.2s;
     shrink: 0;
 }
@@ -1070,7 +1073,7 @@ article.sta-article,
     overflow-wrap: break-word;
 }
 .sta-partner-card:hover .sta-partner-name {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
 }
 
 /* Pagination */
@@ -1103,11 +1106,11 @@ article.sta-article,
     transition: all 0.2s;
 }
 .sta-pagination a:hover {
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
     border-color: var(--sta-orange);
 }
 .sta-pagination span.current {
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
     border-color: var(--sta-orange);
 }
 
@@ -1164,7 +1167,7 @@ article.sta-article,
     transition: color 0.2s;
 }
 .sta-footer-group a:hover {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
 }
 .sta-footer-bottom {
     padding-top: 2rem;
@@ -1268,7 +1271,7 @@ article.sta-article,
     right: 0.4rem;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
@@ -1353,7 +1356,7 @@ article.sta-article,
 }
 .sta-mobile-drawer-close:hover,
 .sta-mobile-drawer-close:focus {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
     background: rgba(255, 255, 255, 0.1);
 }
 .sta-mobile-nav {
@@ -1391,7 +1394,7 @@ article.sta-article,
 }
 .sta-mobile-nav-link:hover,
 .sta-mobile-nav-link:focus {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
     background: rgba(255, 255, 255, 0.05);
 }
 .sta-mobile-subnav {
@@ -1516,7 +1519,7 @@ article.sta-article,
     height: 4rem;
     border-radius: var(--sta-radius);
     background: rgba(239, 115, 48, 0.15);
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1524,7 +1527,7 @@ article.sta-article,
     transition: background 0.3s, color 0.3s;
 }
 .sta-quick-card:hover .sta-quick-icon-box {
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
     color: #fff;
 }
 .sta-quick-title {
@@ -1535,7 +1538,7 @@ article.sta-article,
     transition: color 0.3s;
 }
 .sta-quick-card:hover .sta-quick-title {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
 }
 .sta-quick-desc {
     font-size: 0.85rem;
@@ -1677,7 +1680,7 @@ article.sta-article,
     z-index: 5;
 }
 .sta-slider-btn:hover {
-    background: var(--sta-orange);
+    background: var(--sta-orange-bg);
 }
 .sta-slider-btn.prev { left: 0.75rem; }
 .sta-slider-btn.next { right: 0.75rem; }
@@ -1916,7 +1919,7 @@ article.sta-article,
     min-height: 4.5rem !important;
     border-radius: var(--sta-radius) !important;
     background: rgba(239, 115, 48, 0.15) !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -1937,7 +1940,7 @@ article.sta-article,
     margin: 0 !important;
     padding: 0 !important;
     line-height: 1 !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
 }
 
 .sta-quick-card .elementor-icon-box-icon svg,
@@ -1950,7 +1953,7 @@ article.sta-article,
     line-height: 1 !important;
     display: block !important;
     margin: 0 auto !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
     fill: currentColor !important;
 }
 
@@ -1966,7 +1969,7 @@ article.sta-article,
 
 .sta-quick-card:hover .elementor-icon-box-icon,
 .sta-quick-card:hover .sta-quick-icon-box {
-    background: var(--sta-orange) !important;
+    background: var(--sta-orange-bg) !important;
     color: #ffffff !important;
 }
 
@@ -1990,7 +1993,7 @@ article.sta-article,
 .sta-quick-card:hover .elementor-icon-box-title,
 .sta-quick-card:hover .elementor-icon-box-title a,
 .sta-quick-card:hover .sta-quick-title {
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
 }
 .sta-quick-desc,
 .sta-quick-card .elementor-icon-box-description {
@@ -2028,7 +2031,7 @@ article.sta-article,
 }
 .sta-news-all-btn a,
 .sta-news-all-btn .elementor-button {
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
     font-size: 0.95rem !important;
     font-weight: 700 !important;
     background: transparent !important;
@@ -2180,8 +2183,8 @@ article.sta-article,
     align-items: center !important;
     justify-content: center !important;
     gap: 0.5rem !important;
-    background-color: var(--sta-orange) !important;
-    background: var(--sta-orange) !important;
+    background-color: var(--sta-orange-bg) !important;
+    background: var(--sta-orange-bg) !important;
     color: #ffffff !important;
     border: none !important;
     border-radius: var(--sta-radius-sm) !important;
@@ -2577,7 +2580,7 @@ body:not(.sta-native-layout) .elementor-14055 p {
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: #fff"] a,
 .sta-page-content div:not(.sta-partner-logo-box)[style*="background-color: rgb(255, 255, 255)"] a,
 body:not(.sta-native-layout) .elementor-14055 a {
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
     text-decoration: underline !important;
     text-underline-offset: 3px !important;
 }
@@ -2668,7 +2671,7 @@ body:not(.sta-native-layout) .elementor-14055 a:hover {
 .sta-page-content .ha-card:hover .ha-card__title,
 .sta-entry-content .ha-card:hover .ha-card-title,
 .sta-entry-content .ha-card:hover .ha-card__title {
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
 }
 
 /* Card Descriptions and Body */
@@ -2688,7 +2691,7 @@ body:not(.sta-native-layout) .elementor-14055 a:hover {
 .ha-card .ha-card__badge,
 .ha-card .ha-card-badge,
 .elementor-widget-ha-card .ha-card-badge {
-    background-color: var(--sta-orange) !important;
+    background-color: var(--sta-orange-bg) !important;
     color: #ffffff !important;
     font-size: 0.75rem !important;
     font-weight: 700 !important;
@@ -2769,13 +2772,13 @@ body:not(.sta-native-layout) .elementor-14055 .ha-infobox:hover {
 
 .ha-infobox a,
 .elementor-widget-ha-infobox a {
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
 }
 
 /* 5. Subpage Button Harmonization */
 .sta-page-content .elementor-button,
 .sta-entry-content .elementor-button {
-    background-color: var(--sta-orange) !important;
+    background-color: var(--sta-orange-bg) !important;
     color: #ffffff !important;
     border-radius: var(--sta-radius-sm) !important;
     font-weight: 700 !important;
@@ -2847,7 +2850,7 @@ body .elementor-widget-heading .elementor-heading-title {
 .ha-creative-btn:hover {
     background: var(--sta-card-hover) !important;
     border-color: var(--sta-orange) !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
     transform: translateY(-2px) !important;
 }
 
@@ -2883,7 +2886,7 @@ body .elementor-widget-heading .elementor-heading-title {
 }
 
 .ha-tab__title.ha-tab__title--active {
-    background: var(--sta-orange) !important;
+    background: var(--sta-orange-bg) !important;
     border-color: var(--sta-orange) !important;
     color: #ffffff !important;
 }
@@ -3011,7 +3014,7 @@ body:not(.sta-native-layout).page-id-16160 h3 {
     height: 3.5rem !important;
     border-radius: 50% !important;
     background: rgba(239, 115, 48, 0.18) !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -3021,7 +3024,7 @@ body:not(.sta-native-layout).page-id-16160 h3 {
 .sta-member-card .elementor-icon-box-icon svg,
 .sta-member-card .elementor-icon-box-icon i {
     font-size: 1.5rem !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
 }
 
 .sta-member-card .elementor-icon-box-title,
@@ -3070,7 +3073,7 @@ body:not(.sta-native-layout).page-id-16160 h3 {
     height: 2.5rem !important;
     border-radius: 0.5rem !important;
     background: rgba(239, 115, 48, 0.2) !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -3082,7 +3085,7 @@ body:not(.sta-native-layout).page-id-16160 h3 {
 .sta-action-card .elementor-icon-box-icon svg,
 .sta-action-card .elementor-icon-box-icon i {
     font-size: 1.25rem !important;
-    color: var(--sta-orange) !important;
+    color: var(--sta-orange-text) !important;
 }
 
 .sta-doc-card .elementor-icon-box-title,
@@ -3218,7 +3221,7 @@ body:not(.sta-native-layout).page-id-16160 h3 {
 }
 .sta-back-link:hover,
 .sta-back-link:focus-visible {
-    color: var(--sta-orange);
+    color: var(--sta-orange-text);
 }
 .sta-back-link:hover svg {
     transform: translateX(-3px);
@@ -3230,4 +3233,55 @@ body:not(.sta-native-layout).page-id-16160 h3 {
     .sta-backbar {
         padding: 0.75rem 16px 0;
     }
+}
+
+/* Visually hidden but read by screen readers (WordPress convention) */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+/* Respect the visitor's reduced-motion setting (hover lifts, slides, smooth scrolling) */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .sta-partner-card:hover,
+    .elementor-element.sta-partner-card:hover,
+    .sta-news-card:hover,
+    .sta-quick-card:hover {
+        transform: none !important;
+    }
+}
+
+/* Inline brand-orange styles saved inside Elementor text (links, labels): use the AA-contrast shades */
+.elementor [style*="color:var(--sta-orange)"],
+.elementor [style*="color: var(--sta-orange)"] {
+    color: var(--sta-orange-text) !important;
+}
+.elementor [style*="background:var(--sta-orange)"],
+.elementor [style*="background: var(--sta-orange)"],
+.elementor [style*="background-color:var(--sta-orange)"],
+.elementor [style*="background-color: var(--sta-orange)"] {
+    background-color: var(--sta-orange-bg) !important;
+    color: #ffffff !important;
+}
+
+/* Badges always sit on the orange fill: keep their text white (legacy page rules recolour spans) */
+.elementor .sta-badge,
+.sta-page-content .sta-badge {
+    color: #ffffff !important;
 }

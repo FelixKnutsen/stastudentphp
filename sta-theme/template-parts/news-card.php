@@ -19,7 +19,7 @@ $category_name = (!empty($categories) && $categories[0]->name !== 'Uncategorized
         <?php if (!empty($thumb_url)): ?>
             <img src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
         <?php else: ?>
-            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:var(--sta-teal-800); color:var(--sta-teal-300); font-weight:700;">
+            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:var(--sta-teal-800); color:var(--sta-teal-200); font-weight:700;">
                 STA
             </div>
         <?php endif; ?>
@@ -35,9 +35,9 @@ $category_name = (!empty($categories) && $categories[0]->name !== 'Uncategorized
             </time>
         </div>
 
-        <h3 class="sta-news-title">
+        <h2 class="sta-news-title">
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </h3>
+        </h2>
 
         <div class="sta-news-excerpt">
             <?php echo wp_trim_words(get_the_excerpt(), 18, '...'); ?>

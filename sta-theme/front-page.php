@@ -31,13 +31,14 @@ if (have_posts()) {
 
 if ($has_elementor) :
 ?>
-<main id="main-content" class="sta-site-main sta-front-page-elementor">
+<div class="sta-front-page-elementor">
+    <h1 class="screen-reader-text"><?php echo esc_html(sta_t('Studentorganisasjonen i Agder (STA)', 'Student Organisation of Agder (STA)', 'Studentorganisasjonen i Agder (STA)')); ?></h1>
     <?php
     while (have_posts()) : the_post();
         the_content();
     endwhile;
     ?>
-</main>
+</div>
 <?php
 else :
     $is_en = sta_is_en();
@@ -180,7 +181,7 @@ if (empty($news_items)) {
             <a href="<?php echo esc_url(sta_get_localized_url('/nyheter')); ?>" style="font-size:1.75rem; font-weight:800; color:#fff; letter-spacing:0.05em;">
                 <?php echo esc_html(sta_t('SISTE NYTT', 'LATEST NEWS', 'SISTE NYTT')); ?>
             </a>
-            <a href="<?php echo esc_url(sta_get_localized_url('/nyheter')); ?>" style="display:flex; align-items:center; gap:0.35rem; color:var(--sta-orange); font-size:0.85rem; font-weight:700;">
+            <a href="<?php echo esc_url(sta_get_localized_url('/nyheter')); ?>" style="display:flex; align-items:center; gap:0.35rem; color:var(--sta-orange-text); font-size:0.85rem; font-weight:700;">
                 <span><?php echo esc_html(sta_t('Se alle nyheter', 'View all news', 'Sjå alle nyheiter')); ?></span>
                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
@@ -194,7 +195,7 @@ if (empty($news_items)) {
                             <img src="<?php echo esc_url($article['thumbnail']); ?>" alt="<?php echo esc_attr($article['title']); ?>" style="width:100%; height:100%; object-fit:cover;">
                         <?php endif; ?>
                         <div style="position:absolute; top:0.75rem; left:0.75rem;">
-                            <span class="sta-badge" style="background:var(--sta-orange); color:#fff; border:none; font-size:0.7rem; padding:0.25rem 0.6rem;">
+                            <span class="sta-badge" style="background:var(--sta-orange-bg); color:#fff; border:none; font-size:0.7rem; padding:0.25rem 0.6rem;">
                                 <?php echo esc_html($article['category']); ?>
                             </span>
                         </div>
@@ -216,7 +217,7 @@ if (empty($news_items)) {
                             </p>
                         </div>
                         <div style="margin-top:1.25rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                            <a href="<?php echo esc_url($article['url']); ?>" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.25rem;">
+                            <a href="<?php echo esc_url($article['url']); ?>" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange-text); display:inline-flex; align-items:center; gap:0.25rem;">
                                 <span><?php echo esc_html(sta_t('Les hele saken', 'Read full article', 'Les heile saka')); ?> &rarr;</span>
                             </a>
                         </div>

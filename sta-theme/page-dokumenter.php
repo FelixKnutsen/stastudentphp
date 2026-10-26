@@ -191,7 +191,7 @@ $resolusjoner = array(
             <a href="<?php echo esc_url(sta_get_localized_url('/sakspapirer')); ?>" class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between; text-decoration:none;">
                 <div>
                     <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
-                        <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                        <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                             <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                         </div>
                         <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0;">
@@ -202,7 +202,7 @@ $resolusjoner = array(
                         <?php echo esc_html(sta_t('Se alle innkallinger og sakspapirer til parlamentsmøter (2018–2026).', 'View all agendas and meeting papers for Student Parliament meetings (2018–2026).', 'Sjå alle innkallingar og sakspapir til parlamentsmøte (2018–2026).')); ?>
                     </p>
                 </div>
-                <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange); display:flex; align-items:center; gap:0.35rem;">
+                <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange-text); display:flex; align-items:center; gap:0.35rem;">
                     <span><?php echo esc_html(sta_t('Åpne sakspapirer &rarr;', 'Open meeting papers &rarr;', 'Opne sakspapir &rarr;')); ?></span>
                 </div>
             </a>
@@ -210,7 +210,7 @@ $resolusjoner = array(
             <a href="<?php echo esc_url(sta_get_localized_url('/referat-fra-moter-i-studentparlamentet')); ?>" class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between; text-decoration:none;">
                 <div>
                     <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
-                        <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                        <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                             <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><polyline points="9 15 11 17 15 13"></polyline></svg>
                         </div>
                         <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0;">
@@ -221,7 +221,7 @@ $resolusjoner = array(
                         <?php echo esc_html(sta_t('Les vedtatte protokoller og referater fra møter og valgforsamlinger.', 'Read adopted minutes and protocols from Student Parliament sessions and elections.', 'Les vedtekne protokollar og referat frå møte og valforsamlingar.')); ?>
                     </p>
                 </div>
-                <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange); display:flex; align-items:center; gap:0.35rem;">
+                <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange-text); display:flex; align-items:center; gap:0.35rem;">
                     <span><?php echo esc_html(sta_t('Åpne protokoller &rarr;', 'Open minutes & protocols &rarr;', 'Opne protokollar &rarr;')); ?></span>
                 </div>
             </a>
@@ -241,7 +241,7 @@ $resolusjoner = array(
                 <a href="<?php echo esc_url($doc['href']); ?>" target="_blank" rel="noopener noreferrer" class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between; text-decoration:none;">
                     <div>
                         <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
-                            <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                             </div>
                             <h3 style="font-size:1.25rem; font-weight:700; color:#fff; margin:0;">
@@ -252,7 +252,7 @@ $resolusjoner = array(
                             <?php echo esc_html($sub); ?>
                         </p>
                     </div>
-                    <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange); display:flex; align-items:center; gap:0.25rem;">
+                    <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange-text); display:flex; align-items:center; gap:0.25rem;">
                         <span><?php echo esc_html(sta_t('Last ned (PDF)', 'Download (PDF)', 'Last ned (PDF)')); ?></span>
                         <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </div>
@@ -274,7 +274,7 @@ $resolusjoner = array(
                 <a href="<?php echo esc_url($doc['href']); ?>" target="_blank" rel="noopener noreferrer" class="sta-card" style="display:flex; flex-direction:column; justify-content:space-between; text-decoration:none;">
                     <div>
                         <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
-                            <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <div style="width:2.5rem; height:2.5rem; border-radius:0.5rem; background:rgba(239,115,48,0.2); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
                             </div>
                             <h3 style="font-size:1.2rem; font-weight:700; color:#fff; margin:0; line-height:1.3;">
@@ -285,7 +285,7 @@ $resolusjoner = array(
                             <?php echo esc_html($sub); ?>
                         </p>
                     </div>
-                    <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange); display:flex; align-items:center; gap:0.25rem;">
+                    <div style="margin-top:1.25rem; font-size:0.8rem; font-weight:700; color:var(--sta-orange-text); display:flex; align-items:center; gap:0.25rem;">
                         <span><?php echo esc_html(sta_t('Last ned (PDF)', 'Download (PDF)', 'Last ned (PDF)')); ?></span>
                         <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </div>
@@ -302,7 +302,7 @@ $resolusjoner = array(
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem; align-items:start;">
             <?php foreach ($resolusjoner as $group): ?>
                 <div class="sta-card" style="padding:1.5rem 2rem;">
-                    <h3 style="font-size:1.2rem; font-weight:800; color:var(--sta-orange); margin:0 0 1rem 0; border-bottom:1px solid rgba(158,207,201,0.2); padding-bottom:0.5rem;">
+                    <h3 style="font-size:1.2rem; font-weight:800; color:var(--sta-orange-text); margin:0 0 1rem 0; border-bottom:1px solid rgba(158,207,201,0.2); padding-bottom:0.5rem;">
                         <?php echo esc_html($group['year']); ?>
                     </h3>
                     <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.25rem;">

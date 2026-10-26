@@ -111,11 +111,11 @@ foreach ($items as $item) {
     <div class="sta-directory-controls" style="max-width:56rem; margin:0 auto 2.5rem auto;">
         <div class="sta-search-box" style="max-width:100%;">
             <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input type="search" class="sta-directory-search-input" placeholder="<?php echo esc_attr(sta_t('Søk etter linjeforening, studieprogram eller fag...', 'Search associations, study programs or subjects...', 'Søk etter linjeforeining, studieprogram eller fag...')); ?>" style="border-radius:9999px;">
+            <input type="search" class="sta-directory-search-input" aria-label="<?php echo esc_attr(sta_t('Søk i linjeforeninger', 'Search associations', 'Søk i linjeforeiningar')); ?>" placeholder="<?php echo esc_attr(sta_t('Søk etter linjeforening, studieprogram eller fag...', 'Search associations, study programs or subjects...', 'Søk etter linjeforeining, studieprogram eller fag...')); ?>" style="border-radius:9999px;">
         </div>
 
-        <div class="sta-filters-pills" role="toolbar" aria-label="<?php echo esc_attr(sta_t('Filtrer etter fakultet', 'Filter by faculty', 'Filtrer etter fakultet')); ?>" style="padding-top:0.5rem;">
-            <button type="button" class="sta-filter-btn is-active" data-filter="all">
+        <div class="sta-filters-pills" role="group" aria-label="<?php echo esc_attr(sta_t('Filtrer etter fakultet', 'Filter by faculty', 'Filtrer etter fakultet')); ?>" style="padding-top:0.5rem;">
+            <button type="button" class="sta-filter-btn is-active" data-filter="all" aria-pressed="true">
                 <?php echo esc_html(sta_t('Alle fakulteter', 'All faculties', 'Alle fakultet')); ?> (<?php echo count($items); ?>)
             </button>
             <?php foreach ($faculties_map as $slug => $label): 
@@ -124,13 +124,13 @@ foreach ($items as $item) {
                     if ($it['facultySlug'] === $slug) $count++;
                 }
             ?>
-                <button type="button" class="sta-filter-btn" data-filter="<?php echo esc_attr($slug); ?>">
+                <button type="button" class="sta-filter-btn" data-filter="<?php echo esc_attr($slug); ?>" aria-pressed="false">
                     <?php echo esc_html($label); ?> (<?php echo $count; ?>)
                 </button>
             <?php endforeach; ?>
         </div>
 
-        <div class="sta-directory-count" data-unit="<?php echo esc_attr(sta_t('linjeforeninger', 'associations', 'linjeforeiningar')); ?>" style="color:var(--sta-teal-200); font-size:0.85rem; font-weight:600; margin-top:0.25rem;">
+        <div class="sta-directory-count" role="status" aria-live="polite" data-unit="<?php echo esc_attr(sta_t('linjeforeninger', 'associations', 'linjeforeiningar')); ?>" style="color:var(--sta-teal-200); font-size:0.85rem; font-weight:600; margin-top:0.25rem;">
             <?php printf(esc_html(sta_t('Viser %d av %d linjeforeninger', 'Showing %d of %d associations', 'Viser %d av %d linjeforeiningar')), count($items), count($items)); ?>
         </div>
     </div>
@@ -146,13 +146,13 @@ foreach ($items as $item) {
                             <?php if (!empty($item['logoUrl'])): ?>
                                 <img src="<?php echo esc_url($item['logoUrl']); ?>" alt="<?php echo esc_attr($item['name']); ?> logo" style="max-height:100%; max-width:100%; object-fit:contain;" loading="lazy">
                             <?php else: ?>
-                                <span style="font-size:1.5rem; font-weight:900; color:var(--sta-orange);"><?php echo esc_html(mb_substr($item['name'], 0, 1)); ?></span>
+                                <span style="font-size:1.5rem; font-weight:900; color:var(--sta-orange-text);"><?php echo esc_html(mb_substr($item['name'], 0, 1)); ?></span>
                             <?php endif; ?>
                         </div>
 
                         <div style="min-width:0;">
                             <?php if (!empty($item['campus'])): ?>
-                                <span style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); display:block;">
+                                <span style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange-text); display:block;">
                                     <?php echo esc_html($item['campus']); ?>
                                 </span>
                             <?php endif; ?>
@@ -203,12 +203,12 @@ foreach ($items as $item) {
                     </div>
 
                     <?php if (!empty($item['website'])): ?>
-                        <a href="<?php echo esc_url($item['website']); ?>" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
+                        <a href="<?php echo esc_url($item['website']); ?>" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; font-weight:700; color:var(--sta-orange-text); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
                             <span><?php echo esc_html(sta_t('Nettside', 'Website', 'Nettside')); ?></span>
                             <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>
                     <?php else: ?>
-                        <span style="font-size:0.7rem; color:var(--sta-teal-300);">
+                        <span style="font-size:0.7rem; color:var(--sta-teal-200);">
                             <?php echo esc_html(sta_t('Medlem i STA', 'Member of STA', 'Medlem i STA')); ?>
                         </span>
                     <?php endif; ?>

@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.14');
+define('STA_THEME_VERSION', '1.3.20');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -460,7 +460,7 @@ function sta_render_frontpage_news_shortcode($atts) {
             <article class="sta-card" style="display:flex; flex-direction:column; overflow:hidden; border-radius:var(--sta-radius-md); background:var(--sta-card-bg); border:1px solid rgba(158,207,201,0.15); transition:transform 0.2s ease, box-shadow 0.2s ease;">
                 <a href="<?php echo esc_url($article['url']); ?>" style="display:block; position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--sta-teal-900);">
                     <img src="<?php echo esc_url($article['thumbnail']); ?>" alt="<?php echo esc_attr($article['title']); ?>" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
-                    <span style="position:absolute; top:0.75rem; left:0.75rem; background:var(--sta-orange); color:#fff; font-size:0.7rem; font-weight:700; text-transform:uppercase; padding:0.25rem 0.6rem; border-radius:4px; letter-spacing:0.05em;">
+                    <span style="position:absolute; top:0.75rem; left:0.75rem; background:var(--sta-orange-bg); color:#fff; font-size:0.7rem; font-weight:700; text-transform:uppercase; padding:0.25rem 0.6rem; border-radius:4px; letter-spacing:0.05em;">
                         <?php echo esc_html($article['category']); ?>
                     </span>
                 </a>
@@ -480,7 +480,7 @@ function sta_render_frontpage_news_shortcode($atts) {
                         </p>
                     </div>
                     <div style="margin-top:1.25rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
-                        <a href="<?php echo esc_url($article['url']); ?>" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
+                        <a href="<?php echo esc_url($article['url']); ?>" style="font-size:0.85rem; font-weight:700; color:var(--sta-orange-text); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
                             <span><?php echo esc_html(sta_t('Les hele saken', 'Read full article', 'Les heile saka')); ?> &rarr;</span>
                         </a>
                     </div>
@@ -763,3 +763,28 @@ function sta_back_link_fallback() {
     }
     return sta_get_localized_url('/');
 }
+
+/**
+ * Meta description fallback: when a page or post has no Yoast description, use the
+ * start of its own text so search results and link previews still get a summary.
+ */
+add_filter('wpseo_metadesc', function ($description) {
+    if (trim((string) $description) !== '' || !is_singular()) {
+        return $description;
+    }
+    $post = get_queried_object();
+    if (!$post instanceof WP_Post) {
+        return $description;
+    }
+    $text = has_excerpt($post) ? $post->post_excerpt : $post->post_content;
+    $text = trim(preg_replace('/\s+/u', ' ', wp_strip_all_tags(strip_shortcodes($text))));
+    // Skip the page title and short labels Elementor puts before the first paragraph.
+    $title = get_the_title($post);
+    if ($title !== '' && strpos($text, $title) === 0) {
+        $text = trim(substr($text, strlen($title)));
+    }
+    if (mb_strlen($text) < 40) {
+        return $description;
+    }
+    return wp_html_excerpt($text, 155, '…');
+});

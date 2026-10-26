@@ -74,7 +74,7 @@ $members = array(
                      loading="eager">
             </div>
             <div style="text-align:center; flex:1;">
-                <span class="sta-badge" style="background:var(--sta-orange); color:#fff; border:none; font-size:0.75rem; margin-bottom:0.5rem;">
+                <span class="sta-badge" style="background:var(--sta-orange-bg); color:#fff; border:none; font-size:0.75rem; margin-bottom:0.5rem;">
                     <?php echo esc_html(sta_t('Leder', 'Chair', 'Leiar')); ?>
                 </span>
                 <h2 style="font-size:1.75rem; font-weight:800; color:#fff; margin:0 0 0.35rem 0;">
@@ -83,7 +83,7 @@ $members = array(
                 <p style="font-size:0.95rem; font-weight:600; color:var(--sta-teal-100); margin:0 0 1rem 0;">
                     <?php echo esc_html($leader['role']); ?>
                 </p>
-                <a href="mailto:<?php echo esc_attr($leader['email']); ?>" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--sta-orange); font-weight:700; font-size:0.95rem; text-decoration:none;">
+                <a href="mailto:<?php echo esc_attr($leader['email']); ?>" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--sta-orange-text); font-weight:700; font-size:0.95rem; text-decoration:none;">
                     <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                     <span><?php echo esc_html($leader['email']); ?></span>
                 </a>
@@ -99,7 +99,7 @@ $members = array(
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.5rem; max-width:54rem; margin:0 auto;">
             <?php foreach ($members as $mem): ?>
                 <div class="sta-card" style="padding:1.5rem; text-align:center; display:flex; flex-direction:column; align-items:center;">
-                    <div style="width:3.5rem; height:3.5rem; border-radius:50%; background:rgba(239,115,48,0.18); color:var(--sta-orange); display:flex; align-items:center; justify-content:center; margin-bottom:1rem; flex-shrink:0;">
+                    <div style="width:3.5rem; height:3.5rem; border-radius:50%; background:rgba(239,115,48,0.18); color:var(--sta-orange-text); display:flex; align-items:center; justify-content:center; margin-bottom:1rem; flex-shrink:0;">
                         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                     </div>
                     <h3 style="font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 0.35rem 0;">
@@ -137,7 +137,7 @@ $members = array(
                 <span style="font-size:0.85rem; color:var(--sta-teal-200);">
                     <?php echo esc_html(sta_t('Har du spørsmål om valgprosessen?', 'Questions about the election process?', 'Har du spørsmål om valprosessen?')); ?>
                 </span>
-                <a href="mailto:stavalg@uia.no" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--sta-orange); font-weight:700; font-size:0.9rem; text-decoration:none;">
+                <a href="mailto:stavalg@uia.no" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--sta-orange-text); font-weight:700; font-size:0.9rem; text-decoration:none;">
                     <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                     <span>stavalg@uia.no</span>
                 </a>

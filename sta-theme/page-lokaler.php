@@ -63,7 +63,7 @@ $alibiet_images = array(
     <!-- Venue 1: Alibiet (Campus Kristiansand) -->
     <div style="margin-bottom:5rem;">
         <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.5rem;">
-            <span class="sta-badge" style="background:rgba(239,115,48,0.2); color:var(--sta-orange); border:none; font-size:0.75rem; font-weight:800;">
+            <span class="sta-badge" style="background:rgba(239,115,48,0.2); color:var(--sta-orange-text); border:none; font-size:0.75rem; font-weight:800;">
                 CAMPUS KRISTIANSAND
             </span>
             <h2 style="font-size:2rem; font-weight:800; color:#fff; margin:0;">Alibiet</h2>
@@ -112,11 +112,11 @@ $alibiet_images = array(
                         </p>
 
                         <div style="padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);">
-                            <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.5rem;">
+                            <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange-text); margin:0 0 0.5rem;">
                                 <?php echo esc_html(sta_t('Bookingregler', 'Booking Rules', 'Bookingreglar')); ?>
                             </h4>
                             <ul style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; padding-left:1rem; margin:0;">
-                                <li><?php echo esc_html(sta_t('Booking foregår via e-post til:', 'Booking takes place via email to:', 'Booking føregår via e-post til:')); ?> <a href="mailto:sta@uia.no" style="color:var(--sta-orange); text-decoration:underline;">sta@uia.no</a></li>
+                                <li><?php echo esc_html(sta_t('Booking foregår via e-post til:', 'Booking takes place via email to:', 'Booking føregår via e-post til:')); ?> <a href="mailto:sta@uia.no" style="color:var(--sta-orange-text); text-decoration:underline;">sta@uia.no</a></li>
                                 <li><?php echo esc_html(sta_t('Foreninger bookes inn fortløpende i kalenderen.', 'Associations are booked consecutively into the calendar.', 'Foreiningar blir booka fortløpande i kalenderen.')); ?></li>
                                 <li><?php echo esc_html(sta_t('Skriftlig bekreftelse sendes innen 1–3 virkedager.', 'Written confirmation is sent within 1–3 business days.', 'Skriftleg stadfesting blir sendt innan 1–3 vyrkedagar.')); ?></li>
                                 <li><?php echo esc_html(sta_t('Booking må sendes fra foreningens offisielle e-post.', 'Booking must be sent from the association\'s official email.', 'Booking må sendast frå den offisielle e-posten til foreininga.')); ?></li>
@@ -124,7 +124,7 @@ $alibiet_images = array(
                         </div>
 
                         <div style="padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);">
-                            <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.5rem;">
+                            <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange-text); margin:0 0 0.5rem;">
                                 <?php echo esc_html(sta_t('Kontorlokalet', 'Office Space', 'Kontorlokalet')); ?>
                             </h4>
                             <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
@@ -133,7 +133,7 @@ $alibiet_images = array(
                         </div>
 
                         <div style="padding-top:0.5rem;">
-                            <a href="https://stastudent.no/wp-content/uploads/2025/10/Alibireglement.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange);">
+                            <a href="https://stastudent.no/wp-content/uploads/2025/10/Alibireglement.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange-text);">
                                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
                                 <span><?php echo esc_html(sta_t('Last ned Alibireglementet (PDF)', 'Download Alibi regulations (PDF)', 'Last ned Alibireglementet (PDF)')); ?></span>
                             </a>
@@ -151,7 +151,7 @@ $alibiet_images = array(
     <!-- Venue 2: Bluebox (Campus Grimstad) -->
     <div>
         <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.5rem;">
-            <span class="sta-badge" style="background:rgba(239,115,48,0.2); color:var(--sta-orange); border:none; font-size:0.75rem; font-weight:800;">
+            <span class="sta-badge" style="background:rgba(239,115,48,0.2); color:var(--sta-orange-text); border:none; font-size:0.75rem; font-weight:800;">
                 CAMPUS GRIMSTAD
             </span>
             <h2 style="font-size:2rem; font-weight:800; color:#fff; margin:0;">Bluebox</h2>
@@ -177,7 +177,7 @@ $alibiet_images = array(
                 </p>
 
                 <div style="padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2);">
-                    <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange); margin:0 0 0.5rem;">
+                    <h4 style="font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--sta-orange-text); margin:0 0 0.5rem;">
                         <?php echo esc_html(sta_t('Bookingmetode', 'Booking Method', 'Bookingmetode')); ?>
                     </h4>
                     <p style="font-size:0.85rem; color:var(--sta-teal-100); line-height:1.6; margin:0;">
@@ -186,7 +186,7 @@ $alibiet_images = array(
                 </div>
 
                 <div style="padding-top:0.5rem;">
-                    <a href="https://bluebox.no" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange);">
+                    <a href="https://bluebox.no" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.85rem; font-weight:700; color:var(--sta-orange-text);">
                         <span><?php echo esc_html(sta_t('Besøk Bluebox sin offisielle nettside', 'Visit official Bluebox website', 'Besøk Bluebox si offisielle nettside')); ?></span>
                         <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </a>

@@ -107,11 +107,11 @@ foreach ($items as $item) {
     <div class="sta-directory-controls" style="max-width:56rem; margin:0 auto 2.5rem auto;">
         <div class="sta-search-box" style="max-width:100%;">
             <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input type="search" class="sta-directory-search-input" placeholder="<?php echo esc_attr(sta_t('Søk etter kor, idrett, teater, forening...', 'Search choirs, sports, theatre, clubs...', 'Søk etter kor, idrett, teater, foreining...')); ?>" style="border-radius:9999px;">
+            <input type="search" class="sta-directory-search-input" aria-label="<?php echo esc_attr(sta_t('Søk i studentaktiviteter', 'Search student activities', 'Søk i studentaktivitetar')); ?>" placeholder="<?php echo esc_attr(sta_t('Søk etter kor, idrett, teater, forening...', 'Search choirs, sports, theatre, clubs...', 'Søk etter kor, idrett, teater, foreining...')); ?>" style="border-radius:9999px;">
         </div>
 
-        <div class="sta-filters-pills" role="toolbar" aria-label="<?php echo esc_attr(sta_t('Filtrer etter kategori', 'Filter by category', 'Filtrer etter kategori')); ?>" style="padding-top:0.5rem;">
-            <button type="button" class="sta-filter-btn is-active" data-filter="all">
+        <div class="sta-filters-pills" role="group" aria-label="<?php echo esc_attr(sta_t('Filtrer etter kategori', 'Filter by category', 'Filtrer etter kategori')); ?>" style="padding-top:0.5rem;">
+            <button type="button" class="sta-filter-btn is-active" data-filter="all" aria-pressed="true">
                 <?php echo esc_html(sta_t('Alle aktiviteter', 'All activities', 'Alle aktivitetar')); ?> (<?php echo count($items); ?>)
             </button>
             <?php foreach ($categories_map as $slug => $label): 
@@ -120,13 +120,13 @@ foreach ($items as $item) {
                     if ($it['categorySlug'] === $slug) $count++;
                 }
             ?>
-                <button type="button" class="sta-filter-btn" data-filter="<?php echo esc_attr($slug); ?>">
+                <button type="button" class="sta-filter-btn" data-filter="<?php echo esc_attr($slug); ?>" aria-pressed="false">
                     <?php echo esc_html($label); ?> (<?php echo $count; ?>)
                 </button>
             <?php endforeach; ?>
         </div>
 
-        <div class="sta-directory-count" data-unit="<?php echo esc_attr(sta_t('aktiviteter', 'activities', 'aktivitetar')); ?>" style="color:var(--sta-teal-200); font-size:0.85rem; font-weight:600; margin-top:0.25rem;">
+        <div class="sta-directory-count" role="status" aria-live="polite" data-unit="<?php echo esc_attr(sta_t('aktiviteter', 'activities', 'aktivitetar')); ?>" style="color:var(--sta-teal-200); font-size:0.85rem; font-weight:600; margin-top:0.25rem;">
             <?php printf(esc_html(sta_t('Viser %d av %d aktiviteter', 'Showing %d of %d activities', 'Viser %d av %d aktivitetar')), count($items), count($items)); ?>
         </div>
     </div>
@@ -148,7 +148,7 @@ foreach ($items as $item) {
                     </div>
 
                     <div style="margin-bottom:0.5rem;">
-                        <span class="sta-badge" style="font-size:0.65rem; padding:0.2rem 0.55rem; background:rgba(239,115,48,0.2); border:1px solid rgba(239,115,48,0.4); color:var(--sta-orange);">
+                        <span class="sta-badge" style="font-size:0.65rem; padding:0.2rem 0.55rem; background:rgba(239,115,48,0.2); border:1px solid rgba(239,115,48,0.4); color:#ffc39c;">
                             <?php echo esc_html($item['category']); ?>
                         </span>
                     </div>
@@ -182,7 +182,7 @@ foreach ($items as $item) {
                     </div>
 
                     <?php if (!empty($item['website'])): ?>
-                        <a href="<?php echo esc_url($item['website']); ?>" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; font-weight:700; color:var(--sta-orange); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
+                        <a href="<?php echo esc_url($item['website']); ?>" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; font-weight:700; color:var(--sta-orange-text); display:inline-flex; align-items:center; gap:0.25rem; text-decoration:none;">
                             <span><?php echo esc_html(sta_t('Nettside', 'Website', 'Nettside')); ?></span>
                             <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </a>

@@ -81,7 +81,7 @@ if ($json_file && file_exists($json_file)) {
                                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="var(--sta-orange)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:0.15rem;" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                                 </div>
 
-                                <p style="font-size:0.8rem; color:var(--sta-orange); font-weight:600; margin-bottom:0.5rem;">
+                                <p style="font-size:0.8rem; color:var(--sta-orange-text); font-weight:600; margin-bottom:0.5rem;">
                                     <?php echo esc_html($item_pos); ?>
                                 </p>
 
@@ -91,7 +91,7 @@ if ($json_file && file_exists($json_file)) {
                                 </div>
 
                                 <?php if (!empty($item_elig)): ?>
-                                    <p style="font-size:0.75rem; color:var(--sta-teal-300); font-style:italic; margin-bottom:0.75rem; line-height:1.4;">
+                                    <p style="font-size:0.75rem; color:var(--sta-teal-200); font-style:italic; margin-bottom:0.75rem; line-height:1.4;">
                                         <strong><?php echo esc_html(sta_t('Kvalifikasjonskrav:', 'Eligibility:', 'Kvalifikasjonskrav:')); ?></strong> <?php echo esc_html($item_elig); ?>
                                     </p>
                                 <?php endif; ?>
@@ -101,7 +101,7 @@ if ($json_file && file_exists($json_file)) {
                                 <div style="padding-top:0.75rem; border-top:1px solid rgba(158,207,201,0.2); margin-top:0.5rem;">
                                     <a href="<?php echo esc_url($info_url); ?>" 
                                        <?php echo $is_external ? 'target="_blank" rel="noopener noreferrer"' : ''; ?>
-                                       style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.8rem; font-weight:600; color:var(--sta-orange); text-decoration:none;">
+                                       style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.8rem; font-weight:600; color:var(--sta-orange-text); text-decoration:none;">
                                         <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                                         <span><?php echo esc_html($info_label); ?></span>
                                         <?php if ($is_external): ?>
