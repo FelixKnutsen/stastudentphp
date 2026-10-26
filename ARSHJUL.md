@@ -124,9 +124,7 @@ Ny funksjonsperiode starter 1. juli. Gjør dette i løpet av de første ukene.
 ### Forsiden og Om oss
 - [ ] Bytt det store bildet øverst på forsiden hvis det finnes et nytt: [Forsiden](https://stastudent.no/wp-admin/post.php?post=11503&action=elementor).
 - [ ] Bytt bildet av styret på [Om oss](https://stastudent.no/wp-admin/post.php?post=13186&action=elementor) ([se siden](https://stastudent.no/om-oss-2/)).
-- [ ] Sjekk antall studenter i teksten «Bli med og gjør en forskjell for over 15 000 studenter» på forsiden og «… 14 000 medstudenter» på [Råd, styrer og utvalg](https://stastudent.no/wp-admin/post.php?post=325&action=elementor). Bruk tallet fra UiA og samme tall begge steder.
-
-> ⚠️ **Gjelder nå:** forsiden sier «over 15 000» og Råd, styrer og utvalg sier «14 000». Velg ett tall.
+- [ ] Sjekk antall studenter (i dag **15 000**) i teksten «Bli med og gjør en forskjell for over 15 000 studenter» på forsiden og «… 15 000 medstudenter» på [Råd, styrer og utvalg](https://stastudent.no/wp-admin/post.php?post=325&action=elementor). Bruk tallet fra UiA og samme tall begge steder.
 
 ### Råd, styrer og utvalg
 - [ ] Les gjennom beskrivelsene av vervene. Er noen verv endret, nye eller lagt ned?
