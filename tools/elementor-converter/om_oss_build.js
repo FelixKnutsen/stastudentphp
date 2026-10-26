@@ -1,6 +1,10 @@
 // Rebuilds "Om oss" (page 13186) as native Elementor containers in the redesign style.
 // Run in the Elementor editor of page 13186. Expects window.__om = {img, maps} taken from
 // the previous page data (photo setting and the two OpenStreetMap HTML widgets).
+// After the first run these were adjusted in the editor: CTA text shrinks (_flex_size custom 1/1);
+// committee cards became a centred wrapped row (32% / 48% / 100%) with the icon beside the name;
+// "Møt styret" -> "Les mer"; internal links changed to /reliant/?page_id=30, 161, 14071 and 325
+// because staging has pretty permalinks off.
 (async () => {
     const id = () => elementorCommon.helpers.getUniqueId();
     const px = (n) => ({ unit: 'px', size: n, sizes: [] });
