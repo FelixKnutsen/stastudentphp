@@ -27,12 +27,15 @@ Denne veiledningen er skrevet for deg som skal holde nettsiden oppdatert, også 
 | Gi en ny person tilgang | [Legg til bruker](https://stastudent.no/wp-admin/user-new.php) |
 | Bytte mitt passord | [Min profil](https://stastudent.no/wp-admin/profile.php) |
 | Få endringene mine til å vises | Klikk **Purge cache** i den svarte linja øverst ([forklaring](#8-få-endringene-til-å-vises-tømme-hurtigbufferen)) |
+| Se hva som må oppdateres hvert år (nytt styre, valg, dokumenter) | [Årshjul og årlig sjekkliste](ARSHJUL.md) |
 
 > **Testsiden:** Alle lenkene over går til den ekte nettsiden. På testsiden setter du inn `/reliant` etter `stastudent.no`, for eksempel [stastudent.no/reliant/wp-admin](https://stastudent.no/reliant/wp-admin). Les mer i [kapittel 3](#3-testsiden-og-den-ekte-nettsiden).
 
 ---
 
 # Del 1 – For redaktører
+
+> 📅 **Hva må gjøres når?** Se [Årshjul og årlig sjekkliste](ARSHJUL.md): alt som må oppdateres hvert år (nytt styre 1. juli, valg om våren, dokumenter etter hvert møte), med lenker og fremgangsmåte.
 
 ## 1. Ord du bør kjenne
 
