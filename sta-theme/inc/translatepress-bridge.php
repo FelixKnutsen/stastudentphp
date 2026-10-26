@@ -28,13 +28,22 @@ function sta_trp_english_code() {
 }
 
 add_action('init', function () {
-    if (is_admin() || !class_exists('TRP_Translate_Press') || !sta_is_en()) {
+    if (is_admin() || !class_exists('TRP_Translate_Press')) {
         return;
     }
+    global $TRP_LANGUAGE;
     $code = sta_trp_english_code();
-    if ($code) {
-        global $TRP_LANGUAGE;
+    if (sta_is_en() && $code) {
         $TRP_LANGUAGE = $code;
+        return;
+    }
+    // Keep TranslatePress on the default language whenever the theme is not English.
+    // Otherwise it wraps titles and gettext strings in its markers (trp-post-container,
+    // #!trpst#trp-gettext) that are only removed when it translates the page, so they
+    // would leak into Norwegian pages and the admin bar.
+    $settings = get_option('trp_settings');
+    if (!empty($settings['default-language'])) {
+        $TRP_LANGUAGE = $settings['default-language'];
     }
 }, -10);
 
