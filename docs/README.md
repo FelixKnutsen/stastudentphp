@@ -1,3 +1,5 @@
+> **Merk (oktober 2026):** Den oppdaterte guiden ligger i [README.md](../README.md) i roten av repoet. Sidene redigeres nå i Elementor, og deler av denne filen gjelder den eldre malbaserte løsningen.
+
 # STA WordPress Theme & Core Plugin
 
 > Production-ready, native WordPress theme and companion plugin for **Studentorganisasjonen i Agder (STA)** ([stastudent.no](https://stastudent.no/)).

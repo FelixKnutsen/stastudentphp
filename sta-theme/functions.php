@@ -7,13 +7,14 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.20');
+define('STA_THEME_VERSION', '1.3.21');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
 // Include helper modules
 require_once STA_THEME_PATH . '/inc/translatepress-compat.php';
 require_once STA_THEME_PATH . '/inc/translatepress-bridge.php';
+require_once STA_THEME_PATH . '/inc/nynorsk.php';
 require_once STA_THEME_PATH . '/inc/template-tags.php';
 
 /**
@@ -109,7 +110,6 @@ function sta_auto_ensure_pages() {
         'valgkomiteen'             => array('title' => 'Valgkomitéen',             'template' => 'page-valgkomiteen.php'),
         'trygg-organisasjon'       => array('title' => 'Trygg Organisasjon',       'template' => 'page-trygg-organisasjon.php'),
         'irene-bredals-hederspris' => array('title' => 'Irene Bredals Hederspris', 'template' => 'page-irene-bredals-hederspris.php'),
-        'prinsipprogram'           => array('title' => 'Prinsipprogram',           'template' => 'page-prinsipprogram.php'),
         'personvernserklaering'    => array('title' => 'Personvernserklæring',     'template' => 'page-personvernserklaering.php'),
         'om-sta'                   => array('title' => 'Om STA',                   'template' => 'page.php'),
         'engasjer-deg'             => array('title' => 'Engasjer deg',             'template' => 'page.php'),

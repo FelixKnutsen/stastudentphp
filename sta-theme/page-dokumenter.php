@@ -107,13 +107,6 @@ $andre_docs = array(
         'title' => 'Fraværssystem for Studentparlamentet (PDF)',
         'href'  => 'https://stastudent.no/wp-content/uploads/2025/06/Fravaerssystem-for-Studentparlamentet.pdf'
     ),
-    array(
-        'title'    => 'Prinsipprogram (historisk arkiv)',
-        'title_en' => 'Principles Programme (historical archive)',
-        'title_nn' => 'Prinsipprogram (historisk arkiv)',
-        'href'     => sta_get_localized_url('/prinsipprogram'),
-        'internal' => true,
-    ),
 );
 
 $resolusjoner = array(

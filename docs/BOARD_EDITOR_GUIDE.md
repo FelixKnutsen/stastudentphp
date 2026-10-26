@@ -1,3 +1,5 @@
+> **Merk (oktober 2026):** Den oppdaterte guiden ligger i [README.md](../README.md) i roten av repoet. Sidene redigeres nå i Elementor, og deler av denne filen gjelder den eldre malbaserte løsningen.
+
 # Redaktørhåndbok for STA-Styret
 
 > **Enkel veiledning for publisering og innholdsadministrasjon på stastudent.no**  
