@@ -42,7 +42,7 @@ $is_nn = sta_is_nn();
                     <?php echo esc_html(sta_t('Studentorganisasjonen i Agder (STA) representerer alle studentene ved Universitetet i Agder. Vi jobber for studentenes faglige, sosiale og økonomiske interesser i Kristiansand og Grimstad.', 'The Student Organisation of Agder (STA) represents all students at the University of Agder. We work for students\' academic, social, and economic interests in Kristiansand and Grimstad.', 'Studentorganisasjonen i Agder (STA) representerer alle studentane ved Universitetet i Agder. Vi jobbar for dei faglege, sosiale og økonomiske interessene til studentane i Kristiansand og Grimstad.')); ?>
                 </p>
                 <!-- Social Links -->
-                <div style="display:flex; align-items:center; gap:1rem; font-size:0.85rem;">
+                <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem 1rem; font-size:0.85rem; white-space:nowrap;">
                     <a href="<?php echo esc_url($contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
                         Facebook
                     </a>
@@ -56,7 +56,7 @@ $is_nn = sta_is_nn();
                     </a>
                     <span style="color:var(--sta-teal-700);">&bull;</span>
                     <a href="<?php echo esc_url($contact['twitter']); ?>" target="_blank" rel="noopener noreferrer" style="color:var(--sta-teal-200); text-decoration:none; transition:color 0.2s;">
-                        X (Twitter)
+                        X
                     </a>
                 </div>
             </div>

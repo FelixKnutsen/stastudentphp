@@ -2255,7 +2255,8 @@ body:not(.sta-native-layout) .elementor-button .elementor-button-icon {
 .sta-partners-grid.e-con > .e-con-inner,
 .sta-partners-grid.e-con {
     display: grid !important;
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    /* As many equal columns as there are partners (5 fit on one row at 1232px). */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
     gap: 1.5rem !important;
     width: 100% !important;
     box-sizing: border-box !important;
