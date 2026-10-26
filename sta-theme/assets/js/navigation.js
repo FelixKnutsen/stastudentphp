@@ -238,3 +238,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// "Tilbake" link: go back in history when the previous page was on this site,
+// otherwise follow the link's own fallback URL (parent page, news list or homepage).
+document.addEventListener('click', function (event) {
+    var link = event.target.closest ? event.target.closest('[data-sta-back]') : null;
+    if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) {
+        return;
+    }
+    var fromSameSite = false;
+    try {
+        fromSameSite = document.referrer && new URL(document.referrer).origin === window.location.origin;
+    } catch (e) {}
+    if (fromSameSite && window.history.length > 1) {
+        event.preventDefault();
+        window.history.back();
+    }
+});

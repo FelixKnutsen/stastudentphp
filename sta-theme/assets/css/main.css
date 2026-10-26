@@ -3195,3 +3195,39 @@ body:not(.sta-native-layout).page-id-16160 h3 {
         overflow-wrap: anywhere;
     }
 }
+
+/* "Tilbake" link under the header (all pages except the homepage) */
+.sta-backbar {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 1.25rem 24px 0;
+    box-sizing: border-box;
+}
+.sta-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    min-height: 44px;
+    padding: 0 0.25rem;
+    color: var(--sta-teal-100);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--sta-radius-sm);
+    transition: color 0.2s ease;
+}
+.sta-back-link:hover,
+.sta-back-link:focus-visible {
+    color: var(--sta-orange);
+}
+.sta-back-link:hover svg {
+    transform: translateX(-3px);
+}
+.sta-back-link svg {
+    transition: transform 0.2s ease;
+}
+@media (max-width: 767px) {
+    .sta-backbar {
+        padding: 0.75rem 16px 0;
+    }
+}

@@ -15,13 +15,6 @@ $is_nn = sta_is_nn();
 <div class="sta-container" style="padding-top:3rem; padding-bottom:5rem;">
     <?php while (have_posts()): the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('sta-article'); ?> style="max-width:840px; margin:0 auto; background:transparent !important; background-image:none !important;">
-            <!-- Back navigation link -->
-            <div style="margin-bottom:1.5rem;">
-                <a href="<?php echo esc_url(sta_get_localized_url('/category/nyheter')); ?>" style="color:var(--sta-teal-200); font-size:0.9rem; display:inline-flex; align-items:center; gap:0.35rem;">
-                    &larr; <?php echo esc_html(sta_t('Tilbake til alle nyheter', 'Back to all news', 'Attende til alle nyheiter')); ?>
-                </a>
-            </div>
-
             <!-- Meta & Title -->
             <header style="margin-bottom:2rem;">
                 <?php

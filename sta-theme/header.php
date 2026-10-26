@@ -252,3 +252,11 @@ if ($is_en) {
     </div>
 
 <main id="main-content" class="sta-site-main">
+<?php if (!(is_front_page() && empty($_GET['sta_page']))) : ?>
+    <nav class="sta-backbar" aria-label="<?php echo esc_attr(sta_t('Tilbake', 'Back', 'Tilbake')); ?>">
+        <a href="<?php echo esc_url(sta_back_link_fallback()); ?>" class="sta-back-link" data-sta-back>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.25" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span><?php echo esc_html(sta_t('Tilbake', 'Back', 'Tilbake')); ?></span>
+        </a>
+    </nav>
+<?php endif; ?>

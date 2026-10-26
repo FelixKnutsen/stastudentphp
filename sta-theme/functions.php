@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.12');
+define('STA_THEME_VERSION', '1.3.14');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -736,3 +736,30 @@ add_action('admin_init', function() {
     }
 });
 
+/**
+ * Where the "Tilbake" link in the header goes when there is no page to go back to
+ * (visitor arrived from another site): news articles → news list, subpages → parent page,
+ * everything else → homepage. With history, navigation.js uses history.back() instead.
+ */
+function sta_back_link_fallback() {
+    if (is_singular('post')) {
+        return sta_get_localized_url('/nyheter');
+    }
+    $id = get_queried_object_id();
+    // Pages that belong to a section without being its child page in WordPress.
+    $sections = array(
+        'valgkomiteen'                           => '/rad-styrer-og-utvalg',
+        'prinsipprogram'                         => '/dokumenter',
+        'sakspapirer'                            => '/dokumenter',
+        'referat-fra-moter-i-studentparlamentet' => '/dokumenter',
+    );
+    $slug = ($id && is_page()) ? get_post_field('post_name', $id) : '';
+    if (isset($sections[$slug])) {
+        return sta_get_localized_url($sections[$slug]);
+    }
+    $parent = ($id && is_page()) ? wp_get_post_parent_id($id) : 0;
+    if ($parent) {
+        return sta_get_localized_url('/' . get_page_uri($parent));
+    }
+    return sta_get_localized_url('/');
+}
