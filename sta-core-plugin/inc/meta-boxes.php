@@ -97,9 +97,13 @@ function sta_render_association_meta_box($post) {
     $instagram  = get_post_meta($post->ID, '_sta_instagram', true);
     $facebook   = get_post_meta($post->ID, '_sta_facebook', true);
     $discord    = get_post_meta($post->ID, '_sta_discord', true);
+    $campus     = get_post_meta($post->ID, '_sta_campus', true);
+    $program    = get_post_meta($post->ID, '_sta_study_program', true);
 
     sta_render_field('Beskrivelse (norsk)', '_sta_desc_no', $desc_no, 'textarea');
     sta_render_field('Description (English)', '_sta_desc_en', $desc_en, 'textarea');
+    sta_render_field('Studieprogram', '_sta_study_program', $program);
+    sta_render_field('Campus (Kristiansand eller Grimstad)', '_sta_campus', $campus);
     sta_render_field('Logo bilde-URL (eller bruk uthevet bilde)', '_sta_logo_url', $logo_url, 'url');
     sta_render_field('Kontakt e-post', '_sta_email', $email, 'email');
     sta_render_field('Nettside URL', '_sta_website', $website, 'url');
@@ -230,7 +234,7 @@ function sta_save_meta_box_data($post_id) {
         '_sta_role_no', '_sta_role_en', '_sta_phone', '_sta_campus',
         '_sta_title_en', '_sta_positions_no', '_sta_positions_en',
         '_sta_info_label_no', '_sta_info_label_en',
-        '_sta_eligibility_no', '_sta_eligibility_en', '_sta_rep_type'
+        '_sta_eligibility_no', '_sta_eligibility_en', '_sta_rep_type', '_sta_study_program'
     );
 
     foreach ($text_fields as $field) {

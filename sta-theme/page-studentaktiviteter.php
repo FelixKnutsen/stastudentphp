@@ -23,8 +23,7 @@ $activity_query = new WP_Query(array(
     'post_type'      => 'sta_activity',
     'posts_per_page' => -1,
     'post_status'    => 'publish',
-    'orderby'        => 'title',
-    'order'          => 'ASC'
+    'orderby'        => array('menu_order' => 'ASC', 'title' => 'ASC'),
 ));
 
 $items = array();
@@ -34,7 +33,7 @@ if ($activity_query->have_posts()) {
         $activity_query->the_post();
         $post_id = get_the_ID();
         $categories = get_the_terms($post_id, 'sta_activity_category');
-        $cat_name = (!empty($categories) && !is_wp_error($categories)) ? $categories[0]->name : 'Annet';
+        $cat_name = (!empty($categories) && !is_wp_error($categories)) ? (($is_en && $categories[0]->description !== '') ? $categories[0]->description : $categories[0]->name) : sta_t('Annet', 'Other', 'Anna');
         $cat_slug = (!empty($categories) && !is_wp_error($categories)) ? $categories[0]->slug : 'annet';
 
         $items[] = array(

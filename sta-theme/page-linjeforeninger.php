@@ -23,8 +23,7 @@ $associations_query = new WP_Query(array(
     'post_type'      => 'sta_association',
     'posts_per_page' => -1,
     'post_status'    => 'publish',
-    'orderby'        => 'title',
-    'order'          => 'ASC'
+    'orderby'        => array('menu_order' => 'ASC', 'title' => 'ASC'),
 ));
 
 $items = array();
@@ -34,7 +33,7 @@ if ($associations_query->have_posts()) {
         $associations_query->the_post();
         $post_id = get_the_ID();
         $faculties = get_the_terms($post_id, 'sta_faculty');
-        $faculty_name = (!empty($faculties) && !is_wp_error($faculties)) ? $faculties[0]->name : 'Annet';
+        $faculty_name = (!empty($faculties) && !is_wp_error($faculties)) ? (($is_en && $faculties[0]->description !== '') ? $faculties[0]->description : $faculties[0]->name) : sta_t('Annet', 'Other', 'Anna');
         $faculty_slug = (!empty($faculties) && !is_wp_error($faculties)) ? $faculties[0]->slug : 'annet';
 
         $items[] = array(

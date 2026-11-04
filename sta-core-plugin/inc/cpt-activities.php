@@ -37,7 +37,7 @@ function sta_register_cpt_activities() {
         'hierarchical'       => false,
         'menu_position'      => 21,
         'menu_icon'          => 'dashicons-buddicons-activity',
-        'supports'           => array('title', 'thumbnail', 'revisions'),
+        'supports'           => array('title', 'thumbnail', 'revisions', 'page-attributes'),
         'taxonomies'         => array('sta_activity_category'),
         'show_in_rest'       => true,
     );

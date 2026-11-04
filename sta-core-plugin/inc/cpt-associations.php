@@ -37,7 +37,7 @@ function sta_register_cpt_associations() {
         'hierarchical'       => false,
         'menu_position'      => 20,
         'menu_icon'          => 'dashicons-welcome-learn-more',
-        'supports'           => array('title', 'thumbnail', 'revisions'),
+        'supports'           => array('title', 'thumbnail', 'revisions', 'page-attributes'),
         'taxonomies'         => array('sta_faculty'),
         'show_in_rest'       => true,
     );
