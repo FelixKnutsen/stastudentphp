@@ -239,6 +239,10 @@ Listene med foreninger hentes fra egne registre, ikke fra Elementor.
 
 **Endre eller fjerne en forening:** gå til [alle linjeforeninger](https://stastudent.no/wp-admin/edit.php?post_type=sta_association) eller [alle studentaktiviteter](https://stastudent.no/wp-admin/edit.php?post_type=sta_activity), klikk på navnet for å endre, eller hold musen over og velg **Flytt til papirkurven** for å fjerne.
 
+**Rekkefølge:** foreningene vises i rekkefølgen i feltet **Rekkefølge** (til høyre under «Egenskaper»), lavest først. De som fulgte med fra før har 10, 20, 30 … Vil du ha en ny forening mellom 20 og 30, skriv 25.
+
+**Engelsk navn på et fakultet eller en kategori:** gå til [Fakulteter](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_faculty&post_type=sta_association) (eller [Aktivitetskategorier](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_activity_category&post_type=sta_activity)) og skriv det engelske navnet i feltet **Beskrivelse**.
+
 Filtrene og telleren «Viser X av Y» oppdaterer seg selv.
 
 ### 5.11 Samarbeidspartnere på forsiden
@@ -485,8 +489,15 @@ Menyen er skrevet i `sta-theme/header.php`, én gang for skrivebord (`.sta-deskt
   - `POST /wp-json/sta/v1/translations` – `mode`: `list` (`originals`), `save` (`pairs`), `recent` (`after_id`), `maxid`
   - `POST /wp-json/sta/v1/nynorsk` – `mode`: `list`, `save` (`pairs`)
 
+## Produksjon (stastudent.no) – slik ble den satt opp 4. november 2026
+- Tema byttet fra **Hestia** til **sta-theme** (Hestia ligger fortsatt installert som reserve). STA Core Plugin installert og aktivert; linjeforeninger og studentaktiviteter importert med knappen på den tomme listen.
+- Sideinnholdet ble kopiert fra testsiden side for side i Elementor-editoren (`tools/elementor-converter/migrate_page.js`): `/reliant/` byttet til `/`, VT-logoen lastet opp på nytt (media 17455), sidemal fra testsiden. Ingen database ble overskrevet; hver side har en Elementor-revisjon av den gamle versjonen.
+- Engelske oversettelser (TranslatePress) og nynorsk-ordboken overført med REST-rutene under.
+- **Tilbake til gammel versjon:** [Utseende → Temaer](https://stastudent.no/wp-admin/themes.php) → aktiver Hestia, og hent gamle sider fra Elementor-revisjonene. Full sikkerhetskopi fra før byttet: WP Staging → Backup & Migration (4. nov. 2026 10:33, 3,58 GB).
+- Produksjon bruker «pene» adresser (`/%year%/%monthnum%/%day%/%postname%/`). Testsiden er satt opp likt siden 4. november, slik at den oppfører seg som produksjon.
+
 ## Testsiden og lenker
-Testsiden ligger i `/reliant/` uten «pene» adresser (permalenker). Et `request`-filter i `inc/translatepress-compat.php` gjør at `/reliant/<slug>/` likevel åpner riktig side, innlegg eller vedlegg. Filteret gjør ingenting når permalenker er slått på (produksjon). WP STAGING bytter `/reliant/` til `/` ved push.
+Testsiden ligger i `/reliant/` og bruker samme permalenker som produksjon. Uten pene permalenker (en ny WP Staging-kopi) bytter temaet til `?page_id=`-lenker, og et `request`-filter i `inc/translatepress-compat.php` gjør at `/reliant/<slug>/` likevel virker. Med pene permalenker bestemmer adressen språket (`/en/`, `/nn/`, ingen prefiks = bokmål).
 
 ## Tilgjengelighet og farger
 Nettsiden er sjekket mot WCAG 2.2 AA (kontrast på alle sider, tastaturnavigasjon, overskriftsnivåer, lenkenavn, alternativ tekst, skjemaetiketter, redusert bevegelse). Fargevariabler i `assets/css/main.css`:
