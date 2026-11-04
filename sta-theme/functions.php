@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.21');
+define('STA_THEME_VERSION', '1.3.25');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -170,11 +170,9 @@ function sta_auto_ensure_pages() {
     update_option('sta_theme_pages_seeded_v7', 'yes');
     flush_rewrite_rules();
 }
-add_action('init', 'sta_auto_ensure_pages', 20);
-add_action('after_switch_theme', function () {
-    delete_option('sta_theme_pages_seeded_v6');
-    sta_auto_ensure_pages();
-});
+// sta_auto_ensure_pages() is no longer run automatically: it created placeholder pages and
+// reset the page templates of the STA pages, which would break the Elementor layouts on a site
+// that already has its pages (production). The pages exist; manage them in wp-admin.
 
 /**
  * Force STA Theme templates at highest priority (9999999) so page builders
@@ -363,7 +361,7 @@ add_filter('script_loader_tag', function($tag, $handle, $src) {
 }, 99999, 3);
 
 /**
- * Automatically ensure WP-Optimize has defer_jquery turned off and .htaccess is configured for staging.
+ * Keep WP-Optimize's defer_jquery off (deferring jQuery breaks Elementor widgets).
  */
 add_action('admin_init', function() {
     $wpo_minify = get_option('wp_optimize_minify_settings', null);
@@ -372,20 +370,6 @@ add_action('admin_init', function() {
         update_option('wp_optimize_minify_settings', $wpo_minify);
     }
 
-    // Try to ensure .htaccess has proper RewriteBase /reliant/ if writable
-    $htaccess_file = ABSPATH . '.htaccess';
-    if (is_writable($htaccess_file) && function_exists('insert_with_markers')) {
-        $marker = 'WordPress';
-        $rules = array(
-            'RewriteEngine On',
-            'RewriteBase /reliant/',
-            'RewriteRule ^index\.php$ - [L]',
-            'RewriteCond %{REQUEST_FILENAME} !-f',
-            'RewriteCond %{REQUEST_FILENAME} !-d',
-            'RewriteRule . /reliant/index.php [L]',
-        );
-        insert_with_markers($htaccess_file, $marker, $rules);
-    }
 });
 
 /**

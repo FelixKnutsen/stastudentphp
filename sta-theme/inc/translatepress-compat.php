@@ -109,6 +109,12 @@ function sta_get_current_language() {
         return 'nn';
     }
 
+    // With pretty URLs the address decides: no /en/ or /nn/ prefix means Bokmål. The cookie
+    // is only a fallback for ?lang= links on sites without pretty permalinks.
+    if (!sta_use_query_lang_routing()) {
+        return 'no';
+    }
+
     // 4. Check cookie
     if (isset($_COOKIE['sta_lang'])) {
         $cookie_lang = strtolower(sanitize_text_field(wp_unslash($_COOKIE['sta_lang'])));
@@ -173,19 +179,12 @@ function sta_t($no_text, $en_text, $nn_text = null) {
 }
 
 /**
- * Determine whether to use query-string (?lang=nn/en/no) language routing.
- * Enabled automatically on WP Staging subdirectories (e.g. /reliant/) or when
- * TranslatePress is active on the server so Apache/LiteSpeed/TranslatePress
- * never 404s or hijacks /nn/ and /en/ routes.
+ * Determine whether to use query-string (?page_id=…&lang=…) links instead of pretty URLs.
  */
 function sta_use_query_lang_routing() {
-    if (sta_get_home_base_path() !== '') {
-        return true;
-    }
-    if (function_exists('trp_get_current_language') || class_exists('TRP_Translate_Press')) {
-        return true;
-    }
-    return false;
+    // Only without pretty permalinks (e.g. a WP Staging copy). With pretty permalinks the
+    // normal /slug/, /en/slug/ and /nn/slug/ URLs are used, so canonicals and sitemaps stay clean.
+    return get_option('permalink_structure') === '';
 }
 
 /**
@@ -307,6 +306,14 @@ add_filter('request', function ($query_vars) {
  * rewrite rules are not configured for the subfolder, all subpages route via
  * home_url('/?page_id=...') so every link hits /reliant/index.php directly with native WordPress query routing.
  */
+/**
+ * Site address + path without the home_url filter. TranslatePress filters home_url on English
+ * pages and would add a second /en to links the theme has already prefixed.
+ */
+function sta_unfiltered_home_url($path = '/') {
+    return rtrim(get_option('home'), '/') . '/' . ltrim($path, '/');
+}
+
 function sta_get_localized_url($path = '/', $target_lang = null) {
     $clean_slug = trim($path, '/');
     $path = '/' . $clean_slug;
@@ -336,12 +343,12 @@ function sta_get_localized_url($path = '/', $target_lang = null) {
     }
 
     if ($lang === 'en') {
-        return home_url('/en' . ($path === '/' ? '/' : $path));
+        return sta_unfiltered_home_url('/en' . ($path === '/' ? '/' : $path));
     }
     if ($lang === 'nn') {
-        return home_url('/nn' . ($path === '/' ? '/' : $path));
+        return sta_unfiltered_home_url('/nn' . ($path === '/' ? '/' : $path));
     }
-    return home_url($path);
+    return sta_unfiltered_home_url($path);
 }
 
 /**
@@ -379,13 +386,22 @@ function sta_get_language_url($target_lang = 'no') {
         return add_query_arg('lang', $target_lang, $base_url);
     }
 
+    // On English pages TranslatePress rewrites every internal link to /en/…, which would trap
+    // visitors in English. Send the Bokmål/Nynorsk choice through a small redirect instead.
+    if ($target_lang !== 'en' && sta_is_en() && class_exists('TRP_Translate_Press')) {
+        return add_query_arg(array(
+            'sta_switch_lang' => $target_lang,
+            'sta_to'          => rawurlencode($clean_path),
+        ), sta_unfiltered_home_url('/'));
+    }
+
     if ($target_lang === 'en') {
-        return home_url('/en' . ($clean_path === '/' ? '/' : ('/' . ltrim($clean_path, '/'))) . $query_str);
+        return sta_unfiltered_home_url('/en' . ($clean_path === '/' ? '/' : ('/' . ltrim($clean_path, '/'))) . $query_str);
     }
     if ($target_lang === 'nn') {
-        return home_url('/nn' . ($clean_path === '/' ? '/' : ('/' . ltrim($clean_path, '/'))) . $query_str);
+        return sta_unfiltered_home_url('/nn' . ($clean_path === '/' ? '/' : ('/' . ltrim($clean_path, '/'))) . $query_str);
     }
-    return home_url($clean_path . $query_str);
+    return sta_unfiltered_home_url($clean_path . $query_str);
 }
 
 /**
@@ -537,3 +553,22 @@ add_action('init', function () {
         }
     }
 });
+
+/**
+ * Language switch redirect used from English pages (see sta_get_language_url()).
+ * Only redirects to a path on this site.
+ */
+add_action('init', function () {
+    if (empty($_GET['sta_switch_lang'])) {
+        return;
+    }
+    $lang = sanitize_key(wp_unslash($_GET['sta_switch_lang']));
+    $to = isset($_GET['sta_to']) ? rawurldecode(wp_unslash($_GET['sta_to'])) : '/';
+    $to = '/' . ltrim(preg_replace('#[^a-z0-9/_\-.%]#i', '', (string) parse_url($to, PHP_URL_PATH)), '/');
+    $prefix = ($lang === 'nn') ? '/nn' : '';
+    if (!headers_sent()) {
+        setcookie('sta_lang', $lang === 'nn' ? 'nn' : 'no', time() + (86400 * 30), defined('COOKIEPATH') ? COOKIEPATH : '/');
+    }
+    wp_safe_redirect(sta_unfiltered_home_url($prefix . ($to === '/' ? '/' : $to)), 302);
+    exit;
+}, 1);
