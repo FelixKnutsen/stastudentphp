@@ -18,6 +18,7 @@ Denne veiledningen er skrevet for deg som skal holde nettsiden oppdatert, også 
 | Skrive en nyhet | [Nytt innlegg](https://stastudent.no/wp-admin/post-new.php) ([oppskrift](#6-skrive-en-nyhet)) |
 | Se eller endre nyheter | [Alle innlegg](https://stastudent.no/wp-admin/edit.php) |
 | Laste opp en PDF eller et bilde | [Last opp fil](https://stastudent.no/wp-admin/media-new.php) |
+| Endre personer, grupper, representanter, verv, ledige verv, dokumenter eller samarbeidspartnere | [STA-innhold](https://stastudent.no/wp-admin/admin.php?page=sta-innhold) ([oppskrift](#511b-slik-fungerer-alle-listene-under-sta-innhold)) |
 | Endre linjeforeninger | [Linjeforeninger](https://stastudent.no/wp-admin/edit.php?post_type=sta_association) |
 | Endre studentaktiviteter | [Studentaktiviteter](https://stastudent.no/wp-admin/edit.php?post_type=sta_activity) |
 | Endre adresse, telefon, e-post eller sosiale medier i bunnteksten | [STA Innstillinger](https://stastudent.no/wp-admin/admin.php?page=sta-settings) |
@@ -193,32 +194,40 @@ Den enkleste måten å holde designet likt på er å kopiere et kort som allered
 - **Fjerne:** høyreklikk på det du vil fjerne → **Slett** → **Publiser**.
 - **Skjule midlertidig (anbefalt hvis du er usikker):** klikk på delen → fanen **Avansert** → **Responsiv** → slå på **Skjul på skrivebord**, **Skjul på nettbrett** og **Skjul på mobil** → **Publiser**. Slå av igjen for å vise det.
 
-### 5.5 Nytt styre (STA-styret)
-1. Åpne [STA-styret i Elementor](https://stastudent.no/wp-admin/post.php?post=30&action=elementor).
-2. Endre årstallet i overskriften (f.eks. «2027-2028»).
-3. For hvert medlem: klikk på navnet, rollen, e-posten og telefonen og skriv nytt innhold. Bytt bildet ([5.1](#51-bytte-et-bilde)).
-4. Bytt gruppebildet øverst.
-5. **Publiser** og [oversett endringene](#7-oversette-til-nynorsk-og-engelsk) (navn trenger ikke oversettes).
+### 5.5 Nytt styre, grupper og personer (STA-styret)
+Alt ligger under **STA-innhold** i menyen til venstre. Du trenger ikke åpne Elementor.
+
+1. **Legg inn personen:** [Legg til person](https://stastudent.no/wp-admin/post-new.php?post_type=sta_board_member). Fyll ut navn, rolle, hovedansvar (ett punkt per linje), e-post og telefon. Velg **Portrettbilde** til høyre. Klikk **Publiser**.
+2. **Legg personen i gruppen:** åpne [Grupper](https://stastudent.no/wp-admin/edit.php?post_type=sta_group) → **STA-styret og Sekretariatet**. Klikk **+ Legg til medlem** og velg personen. Dra i ☰ for å endre rekkefølgen. Klikk **Oppdater**.
+3. **Når noen slutter:** klikk **Fjern** på raden i gruppen. Personen slettes ikke og kan brukes igjen senere.
+
+En person vises først på nettsiden når hen er med i en publisert gruppe. Samme person kan være med i flere grupper med ulik rolle: skriv rollen i feltet **Rolle** på raden i gruppen. Står feltet tomt, brukes rollen fra personen. Årstallet i overskriften og gruppebildet endrer du i [STA-styret i Elementor](https://stastudent.no/wp-admin/post.php?post=30&action=elementor).
 
 ### 5.6 Nye representanter i Studentparlamentet
-1. Åpne [Studentparlamentet i Elementor](https://stastudent.no/wp-admin/post.php?post=161&action=elementor).
-2. Under hvert fakultet: klikk på navnene og skriv de nye. Trenger du flere navn, dupliser en linje ([5.3](#53-legge-til-en-ny-boks-et-kort--kopier-en-som-finnes)).
-3. Endre årstallet i overskriften.
-4. **Publiser**.
+1. Hvert nytt år: lag perioden under [Perioder](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_period&post_type=sta_parliament_rep), f.eks. «2027/2028», og kryss av **Vis på nettsiden**. Gjør dette etter at de nye representantene er lagt inn, ellers vises en tom liste så lenge. De gamle representantene blir liggende som historikk.
+2. Gå til [Legg til representant](https://stastudent.no/wp-admin/post-new.php?post_type=sta_parliament_rep). Skriv navnet, og velg **Type**, **Fakultet** og **Periode**. Vararepresentanter får også **Varanummer**.
+3. **Ledig plass:** skriv «Ledig plass» som navn og kryss av **Ledig plass**. Nettsiden viser da «Ledig verv – kontakt sta@uia.no».
+4. Klikk **Publiser**. Antallet i overskriftene («Faste representanter (4)») oppdaterer seg selv.
 
-### 5.7 Ledige verv
-1. Åpne [Ledige verv i Elementor](https://stastudent.no/wp-admin/post.php?post=13129&action=elementor).
-2. Oppdater datoen i teksten «Oversikten viser ledige verv per …».
-3. Fjern verv som er besatt, og dupliser et kort for nye ledige verv.
-4. **Publiser** og oversett endringene.
+Rekkefølgen på fakultetene og det engelske navnet endrer du under [Fakulteter](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_faculty&post_type=sta_parliament_rep). «Ansvarlige for Studentparlamentet» endrer du under [Grupper](https://stastudent.no/wp-admin/edit.php?post_type=sta_group). Årstallet i overskriften endrer du i [Studentparlamentet i Elementor](https://stastudent.no/wp-admin/post.php?post=161&action=elementor).
+
+### 5.7 Verv og utvalg, og ledige verv
+**Råd, styrer og utvalg:** gå til [Verv og utvalg](https://stastudent.no/wp-admin/edit.php?post_type=sta_position). Fyll ut navn, kort beskrivelse og eventuelt utfyllende tekst (blir «Les mer»), og velg **Utvalgsgruppe**.
+
+**Ledige verv:** gå til [Ledige verv](https://stastudent.no/wp-admin/edit.php?post_type=sta_vacancy). Fyll ut navn, ledige plasser, organ og kvalifikasjonskrav, og velg kategori. Lenker til stastudent.no vises som knapp, lenker til andre nettsider som ekstern lenke. Når vervet er besatt: flytt det til papirkurven.
+
+Datoen i teksten øverst på [Ledige verv](https://stastudent.no/wp-admin/post.php?post=13129&action=elementor) endrer du i Elementor.
+
+**Ny seksjon:** en ny utvalgsgruppe eller kategori vises ikke av seg selv, for hver seksjon på siden er koblet til én gruppe. Be en administrator legge den til (se teknisk del). Tomme seksjoner skjules automatisk.
 
 ### 5.8 Legge ut et dokument (sakspapirer, protokoll, resolusjon)
-1. Gå til [Last opp fil](https://stastudent.no/wp-admin/media-new.php) og last opp PDF-en.
-2. Når den er lastet opp, klikk **Kopier URL til utklippstavle**.
-3. Åpne riktig side i Elementor: [Sakspapirer](https://stastudent.no/wp-admin/post.php?post=6443&action=elementor), [Protokoller](https://stastudent.no/wp-admin/post.php?post=6445&action=elementor) eller [Resolusjoner](https://stastudent.no/wp-admin/post.php?post=6450&action=elementor).
-4. Klikk på listen under riktig år. I tekstfeltet til venstre: sett markøren øverst i listen og skriv navnet på dokumentet (f.eks. «SP-møte 21.10.26»).
-5. Merk navnet, klikk på **lenke-ikonet** (kjettingen) og lim inn adressen fra punkt 2. Trykk `Enter`.
-6. **Publiser**.
+1. Gå til [Legg til dokument](https://stastudent.no/wp-admin/post-new.php?post_type=sta_document).
+2. Skriv tittelen, f.eks. «SP-møte 21.10.26».
+3. Klikk **Velg fil** og last opp PDF-en.
+4. Velg **Dato**. Den bestemmer hvilket år dokumentet havner under.
+5. Velg **Dokumentkategori** til høyre (Sakspapirer, Referater, Resolusjoner …). Klikk **Publiser**.
+
+Nye dokumenter havner øverst under riktig år. Vil du skrive noe etter lenken, bruk **Merknad**, f.eks. «(digitalt Zoom-møte)». Uten fil vises tittelen som en vanlig linje, f.eks. «Møtet ble avlyst». Kortene på [Dokumenter](https://stastudent.no/dokumenter/) (Vedtekter, Handlingsplan …) endres på samme måte: åpne dokumentet og velg ny fil.
 
 Gi dokumenter et tydelig navn med dato. Last helst opp PDF-er der teksten kan markeres (ikke skannede bilder), så de kan leses av skjermlesere.
 
@@ -227,29 +236,28 @@ Gi dokumenter et tydelig navn med dato. Last helst opp PDF-er der teksten kan ma
 2. Endre adresse, telefon, e-post, org.nr. eller lenkene til Facebook, Instagram og LinkedIn.
 3. Klikk **Lagre endringer** og [tøm hurtigbufferen](#8-få-endringene-til-å-vises-tømme-hurtigbufferen).
 
+Kontaktboksen nederst på STA-styret-siden henter de samme opplysningene.
+
 ### 5.10 Linjeforeninger og studentaktiviteter
-Listene med foreninger hentes fra egne registre, ikke fra Elementor.
-
-**Legge til en forening**
 1. Gå til [Legg til linjeforening](https://stastudent.no/wp-admin/post-new.php?post_type=sta_association) (eller [Legg til studentaktivitet](https://stastudent.no/wp-admin/post-new.php?post_type=sta_activity)).
-2. Skriv navnet øverst og beskrivelsen i tekstfeltet.
-3. Fyll ut feltene under (studieprogram, campus, e-post, nettside, Facebook, Instagram).
-4. Til høyre: velg **Fakultet** (eller **Aktivitetskategori**) og legg inn logo under **Fremhevet bilde**.
-5. Klikk **Publiser**.
-
-**Endre eller fjerne en forening:** gå til [alle linjeforeninger](https://stastudent.no/wp-admin/edit.php?post_type=sta_association) eller [alle studentaktiviteter](https://stastudent.no/wp-admin/edit.php?post_type=sta_activity), klikk på navnet for å endre, eller hold musen over og velg **Flytt til papirkurven** for å fjerne.
-
-**Rekkefølge:** foreningene vises i rekkefølgen i feltet **Rekkefølge** (til høyre under «Egenskaper»), lavest først. De som fulgte med fra før har 10, 20, 30 … Vil du ha en ny forening mellom 20 og 30, skriv 25.
-
-**Engelsk navn på et fakultet eller en kategori:** gå til [Fakulteter](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_faculty&post_type=sta_association) (eller [Aktivitetskategorier](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_activity_category&post_type=sta_activity)) og skriv det engelske navnet i feltet **Beskrivelse**.
+2. Skriv navnet øverst og fyll ut feltene under. Logo velger du med **Velg bilde**. Studentaktiviteter kan også ha **Når** og **Hvor**, som vises på kortet hvis de er fylt ut.
+3. Til høyre: velg **Fakultet** (eller **Aktivitetskategori**).
+4. Klikk **Publiser**.
 
 Filtrene og telleren «Viser X av Y» oppdaterer seg selv.
 
+**Engelsk navn på et fakultet eller en kategori:** gå til [Fakulteter](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_faculty&post_type=sta_association) (eller [Aktivitetskategorier](https://stastudent.no/wp-admin/edit-tags.php?taxonomy=sta_activity_category&post_type=sta_activity)) og fyll ut feltet **Engelsk navn**.
+
 ### 5.11 Samarbeidspartnere på forsiden
-1. Åpne [forsiden i Elementor](https://stastudent.no/wp-admin/post.php?post=11503&action=elementor) og bla ned til **Samarbeidspartnere**.
-2. Dupliser et partnerkort ([5.3](#53-legge-til-en-ny-boks-et-kort--kopier-en-som-finnes)).
-3. Bytt logo ([5.1](#51-bytte-et-bilde)), navn og lenke ([5.2](#52-endre-en-lenke-eller-knapp)).
-4. **Publiser**.
+Gå til [Samarbeidspartnere](https://stastudent.no/wp-admin/edit.php?post_type=sta_partner) → **Legg til ny**. Skriv navnet, velg **Logo** med **Velg bilde**, og fyll ut nettsiden. Klikk **Publiser**.
+
+### 5.11b Slik fungerer alle listene under STA-innhold
+- **Legge til:** **Legg til ny** øverst i listen. Felt med * må fylles ut før du kan publisere. Mangler noe, lagres oppføringen som utkast, og du får beskjed om hva som mangler.
+- **Skjule:** gjør oppføringen om til utkast. Utkast vises ikke på nettsiden.
+- **Fjerne:** **Flytt til papirkurven**. Oppføringen forsvinner fra nettsiden, men kan gjenopprettes fra **Papirkurv** i listen. Gjenopprettede oppføringer er utkast til du publiserer dem igjen.
+- **Rekkefølge:** dra i ☰ i listen. Endringen lagres med en gang. Du kan også skrive et tall i feltet **Rekkefølge**; lavest vises først.
+- **Engelsk:** felt merket «på engelsk» er valgfrie. Står de tomme, vises den norske teksten eller oversettelsen fra TranslatePress på engelske sider. Husk at nye norske tekster også må oversettes til nynorsk ([7.2](#72-nynorsk)).
+- **Kort med `{{navn}}` i Elementor** er maler. Innholdet endrer du under STA-innhold; utseendet endrer du på malen i Elementor. Ikke slett `{{…}}`-feltene eller CSS-klassene som begynner med `sta-`.
 
 ### 5.12 Lage en ny side
 1. Gå til [Legg til side](https://stastudent.no/wp-admin/post-new.php?post_type=page).
@@ -479,6 +487,27 @@ Menyen er skrevet i `sta-theme/header.php`, én gang for skrivebord (`.sta-deskt
 </a>
 ```
 `sta_get_localized_url()` lager riktig lenke for språk og for testsiden. `sta_t()` velger tekst etter språk.
+
+## Innholdsstyring (STA-innhold, plugin 1.2.1)
+Innholdsmodellen står i `sta-core-plugin/inc/cms/schema.php`. Der er alle typer og felt definert; registrering, skjemaer, validering og lagring leser derfra.
+
+Listene vises gjennom vanlige Elementor-kort (`inc/cms/dynamic.php`, filteret `elementor/frontend/builder_content_data`). En beholder med CSS-klassene `sta-loop sta-src-<kilde>` gjentar det første barnet for hver oppføring, med samme element-ID, så kortene får malens Elementor-stil.
+
+| CSS-klasse | Virkning |
+|---|---|
+| `sta-arg-<verdi>` | Argument til kilden, f.eks. gruppens eller kategoriens slug |
+| `sta-limit-<n>` | Vis høyst n oppføringer |
+| `sta-if-<felt>` / `sta-ifnot-<felt>` | Fjern elementet når feltet er tomt / har verdi |
+| `sta-img-<felt>` | Sett bildet i et Image-widget fra feltet |
+| `sta-tpl-<variant>` | Egen mal for en variant (`vacant`) |
+| `sta-hide-empty` | Fjern beholderen når løkkene i den er tomme |
+| `sta-html sta-src-doclist` | Generert dokumentliste i et Text editor-widget (`sta-opt-strongyear` for årstall i fet skrift) |
+
+**Ny seksjon på Råd, styrer og utvalg eller Ledige verv:** dupliser en seksjon i Elementor og bytt `sta-arg-<slug>` på rutenettet til den nye gruppens slug.
+
+Elementors elementcache er slått av for sider med løkker, fordi den lagrer én gjengivelse per side uansett språk. Når STA-innhold endres, tømmes WP-Optimize-bufferen automatisk.
+
+**Engangsflytting:** STA-innhold → Flytt innhold (`inc/cms/migrate.php`). Sidens gamle Elementor-data lagres i `_sta_cms_backup`, og **Angre sideendring** legger dem tilbake. Oppføringer opprettes bare én gang.
 
 ## Språk
 - Språk velges med `?lang=no|nn|en`, prefiks `/en/` eller `/nn/`, eller informasjonskapselen `sta_lang`.

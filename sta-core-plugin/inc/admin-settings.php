@@ -160,9 +160,10 @@ function sta_render_admin_settings_page() {
 
             <hr style="margin:24px 0;">
 
-            <h2><?php esc_html_e('2. Samarbeidspartnere (Logoer og lenker)', 'sta-core'); ?></h2>
-            <p><?php esc_html_e('Administrer de 4 offisielle samarbeidspartnerne som vises i bunnseksjonen på forsiden.', 'sta-core'); ?></p>
+            <h2><?php esc_html_e('2. Samarbeidspartnere', 'sta-core'); ?></h2>
+            <p><?php esc_html_e('Samarbeidspartnerne på forsiden legges til, endres og sorteres nå under', 'sta-core'); ?> <a href="<?php echo esc_url(admin_url('edit.php?post_type=sta_partner')); ?>"><?php esc_html_e('STA-innhold → Samarbeidspartnere', 'sta-core'); ?></a>.</p>
 
+            <details style="max-width:800px;margin-bottom:16px;"><summary><?php esc_html_e('Gammel liste (reserve for temaets innebygde forside – brukes ikke av Elementor-forsiden)', 'sta-core'); ?></summary>
             <?php foreach ($partners as $slug => $partner): ?>
                 <div style="background:#fff; border:1px solid #ccd0d4; padding:16px; margin-bottom:16px; max-width:800px; border-radius:4px;">
                     <h3 style="margin-top:0;"><?php echo esc_html($partner['name']); ?></h3>
@@ -193,6 +194,7 @@ function sta_render_admin_settings_page() {
                     </table>
                 </div>
             <?php endforeach; ?>
+            </details>
 
             <?php submit_button(__('Lagre alle innstillinger', 'sta-core')); ?>
         </form>

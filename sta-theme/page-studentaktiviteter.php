@@ -33,7 +33,7 @@ if ($activity_query->have_posts()) {
         $activity_query->the_post();
         $post_id = get_the_ID();
         $categories = get_the_terms($post_id, 'sta_activity_category');
-        $cat_name = (!empty($categories) && !is_wp_error($categories)) ? (($is_en && $categories[0]->description !== '') ? $categories[0]->description : $categories[0]->name) : sta_t('Annet', 'Other', 'Anna');
+        $cat_name = (!empty($categories) && !is_wp_error($categories)) ? (($is_en && sta_term_name_en($categories[0]) !== '') ? sta_term_name_en($categories[0]) : $categories[0]->name) : sta_t('Annet', 'Other', 'Anna');
         $cat_slug = (!empty($categories) && !is_wp_error($categories)) ? $categories[0]->slug : 'annet';
 
         $items[] = array(
@@ -48,6 +48,8 @@ if ($activity_query->have_posts()) {
             'instagram'    => get_post_meta($post_id, '_sta_instagram', true),
             'discord'      => get_post_meta($post_id, '_sta_discord', true),
             'desc'         => $is_en ? (get_post_meta($post_id, '_sta_desc_en', true) ?: get_post_meta($post_id, '_sta_desc_no', true)) : get_post_meta($post_id, '_sta_desc_no', true),
+            'when'         => $is_en ? (get_post_meta($post_id, '_sta_meeting_time_en', true) ?: get_post_meta($post_id, '_sta_meeting_time', true)) : get_post_meta($post_id, '_sta_meeting_time', true),
+            'where'        => get_post_meta($post_id, '_sta_location', true),
         );
     }
     wp_reset_postdata();
@@ -159,6 +161,17 @@ foreach ($items as $item) {
                     <p class="sta-card-desc" style="font-size:0.85rem; line-height:1.6; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;">
                         <?php echo esc_html($item['desc']); ?>
                     </p>
+
+                    <?php if (!empty($item['when']) || !empty($item['where'])): ?>
+                        <ul class="sta-dir-meta" style="list-style:none; margin:0.75rem 0 0; padding:0; font-size:0.8rem; line-height:1.5; color:var(--sta-teal-200); display:grid; gap:0.3rem;">
+                            <?php if (!empty($item['when'])): ?>
+                                <li style="display:flex; gap:0.45rem; align-items:flex-start;"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none; margin-top:0.2rem;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span><span class="screen-reader-text"><?php echo esc_html(sta_t('Når:', 'When:', 'Når:')); ?> </span><?php echo esc_html($item['when']); ?></span></li>
+                            <?php endif; ?>
+                            <?php if (!empty($item['where'])): ?>
+                                <li style="display:flex; gap:0.45rem; align-items:flex-start;"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none; margin-top:0.2rem;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span><span class="screen-reader-text"><?php echo esc_html(sta_t('Hvor:', 'Where:', 'Kvar:')); ?> </span><?php echo esc_html($item['where']); ?></span></li>
+                            <?php endif; ?>
+                        </ul>
+                    <?php endif; ?>
                 </div>
 
                 <div class="sta-dir-socials" style="display:flex; align-items:center; justify-content:space-between; margin-top:1.25rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">

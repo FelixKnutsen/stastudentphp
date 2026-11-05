@@ -2,8 +2,8 @@
 /**
  * Plugin Name: STA Core Plugin
  * Plugin URI: https://stastudent.no/
- * Description: Core custom post types, taxonomies, and custom fields for Studentorganisasjonen i Agder (STA). Preserves student activities, academic associations, board members, and positions independently of the active theme.
- * Version: 1.1.0
+ * Description: Innholdsstyring for stastudent.no: personer og grupper, Studentparlamentet, verv og utvalg, ledige verv, dokumenter, samarbeidspartnere, linjeforeninger og studentaktiviteter – redigeres under «STA-innhold» og vises automatisk på nettsiden.
+ * Version: 1.2.1
  * Author: Studentorganisasjonen i Agder (STA)
  * Author URI: https://stastudent.no/
  * Text Domain: sta-core
@@ -15,18 +15,18 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-define('STA_CORE_VERSION', '1.1.0');
+define('STA_CORE_VERSION', '1.2.1');
 define('STA_CORE_PATH', plugin_dir_path(__FILE__));
 define('STA_CORE_URL', plugin_dir_url(__FILE__));
 
-// Require modular components
-require_once STA_CORE_PATH . 'inc/taxonomies.php';
-require_once STA_CORE_PATH . 'inc/cpt-associations.php';
-require_once STA_CORE_PATH . 'inc/cpt-activities.php';
-require_once STA_CORE_PATH . 'inc/cpt-board.php';
-require_once STA_CORE_PATH . 'inc/cpt-parliament.php';
-require_once STA_CORE_PATH . 'inc/cpt-positions.php';
-require_once STA_CORE_PATH . 'inc/meta-boxes.php';
+// Content model, admin and frontend output
+require_once STA_CORE_PATH . 'inc/cms/schema.php';
+require_once STA_CORE_PATH . 'inc/cms/register.php';
+require_once STA_CORE_PATH . 'inc/cms/fields.php';
+require_once STA_CORE_PATH . 'inc/cms/admin-ux.php';
+require_once STA_CORE_PATH . 'inc/cms/dynamic.php';
+require_once STA_CORE_PATH . 'inc/cms/shortcodes.php';
+require_once STA_CORE_PATH . 'inc/cms/migrate.php';
 require_once STA_CORE_PATH . 'inc/admin-settings.php';
 require_once STA_CORE_PATH . 'inc/import-directory.php';
 
@@ -34,12 +34,8 @@ require_once STA_CORE_PATH . 'inc/import-directory.php';
  * Flush rewrite rules on plugin activation
  */
 function sta_core_activate() {
-    sta_register_all_taxonomies();
-    sta_register_cpt_associations();
-    sta_register_cpt_activities();
-    sta_register_cpt_board();
-    sta_register_cpt_parliament();
-    sta_register_cpt_positions();
+    sta_cms_register_taxonomies();
+    sta_cms_register_post_types();
     flush_rewrite_rules();
 }
 register_activation_hook(__FILE__, 'sta_core_activate');

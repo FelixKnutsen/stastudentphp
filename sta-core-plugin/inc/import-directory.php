@@ -106,6 +106,7 @@ add_action('admin_post_sta_import_directory', function () {
                 $term_obj = get_term((int) $set[0], $source['taxonomy']);
                 if ($term_obj && !is_wp_error($term_obj) && $term_obj->description === '') {
                     wp_update_term($term_obj->term_id, $source['taxonomy'], array('description' => $term_en));
+                    update_term_meta($term_obj->term_id, 'sta_name_en', $term_en);
                 }
             }
         }

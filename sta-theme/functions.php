@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.26');
+define('STA_THEME_VERSION', '1.3.27');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -772,3 +772,14 @@ add_filter('wpseo_metadesc', function ($description) {
     }
     return wp_html_excerpt($text, 155, '…');
 });
+
+/**
+ * English name of a faculty/category term: the «Engelsk navn» field from STA-innhold, or the
+ * term description where older entries kept it.
+ */
+function sta_term_name_en($term) {
+    if (function_exists('sta_cms_term_name_en')) {
+        return (string) sta_cms_term_name_en($term);
+    }
+    return (string) $term->description;
+}

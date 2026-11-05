@@ -33,7 +33,7 @@ if ($associations_query->have_posts()) {
         $associations_query->the_post();
         $post_id = get_the_ID();
         $faculties = get_the_terms($post_id, 'sta_faculty');
-        $faculty_name = (!empty($faculties) && !is_wp_error($faculties)) ? (($is_en && $faculties[0]->description !== '') ? $faculties[0]->description : $faculties[0]->name) : sta_t('Annet', 'Other', 'Anna');
+        $faculty_name = (!empty($faculties) && !is_wp_error($faculties)) ? (($is_en && sta_term_name_en($faculties[0]) !== '') ? sta_term_name_en($faculties[0]) : $faculties[0]->name) : sta_t('Annet', 'Other', 'Anna');
         $faculty_slug = (!empty($faculties) && !is_wp_error($faculties)) ? $faculties[0]->slug : 'annet';
 
         $items[] = array(
