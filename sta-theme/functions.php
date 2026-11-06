@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.27');
+define('STA_THEME_VERSION', '1.3.28');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -782,4 +782,27 @@ function sta_term_name_en($term) {
         return (string) sta_cms_term_name_en($term);
     }
     return (string) $term->description;
+}
+
+/** Term name in the page's language, falling back to the Bokmål name. */
+function sta_term_name_lang($term) {
+    if (sta_is_en() && sta_term_name_en($term) !== '') {
+        return sta_term_name_en($term);
+    }
+    if (sta_is_nn() && function_exists('sta_cms_term_name_nn') && sta_cms_term_name_nn($term) !== '') {
+        return sta_cms_term_name_nn($term);
+    }
+    return $term->name;
+}
+
+/** A field in the page's language: $base_key + _en / _nn when filled in, otherwise the Bokmål field. */
+function sta_lang_meta($post_id, $no_key, $base_key) {
+    $lang = sta_get_current_language();
+    if ($lang === 'en' || $lang === 'nn') {
+        $value = trim((string) get_post_meta($post_id, $base_key . '_' . $lang, true));
+        if ($value !== '') {
+            return $value;
+        }
+    }
+    return get_post_meta($post_id, $no_key, true);
 }

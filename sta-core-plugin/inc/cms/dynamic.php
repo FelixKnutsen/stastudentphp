@@ -242,22 +242,24 @@ function sta_dyn_t($no, $en, $nn = null) {
     return $no;
 }
 
-/** Norwegian value, or the English field on English pages when it is filled in. */
+/** Norwegian value, or the field for the page's language when it is filled in. */
 function sta_dyn_meta($post_id, $base) {
-    if (sta_dyn_lang() === 'en') {
-        $en = trim((string) get_post_meta($post_id, $base . '_en', true));
-        if ($en !== '') {
-            return $en;
+    $lang = sta_dyn_lang();
+    if ($lang === 'en' || $lang === 'nn') {
+        $value = trim((string) get_post_meta($post_id, $base . '_' . $lang, true));
+        if ($value !== '') {
+            return $value;
         }
     }
     return trim((string) get_post_meta($post_id, $base . '_no', true));
 }
 
 function sta_dyn_title($post) {
-    if (sta_dyn_lang() === 'en') {
-        $en = trim((string) get_post_meta($post->ID, '_sta_title_en', true));
-        if ($en !== '') {
-            return $en;
+    $lang = sta_dyn_lang();
+    if ($lang === 'en' || $lang === 'nn') {
+        $value = trim((string) get_post_meta($post->ID, '_sta_title_' . $lang, true));
+        if ($value !== '') {
+            return $value;
         }
     }
     return get_the_title($post);
@@ -268,6 +270,12 @@ function sta_dyn_term_name($term) {
         $en = sta_cms_term_name_en($term);
         if ($en !== '') {
             return $en;
+        }
+    }
+    if (sta_dyn_lang() === 'nn') {
+        $nn = sta_cms_term_name_nn($term);
+        if ($nn !== '') {
+            return $nn;
         }
     }
     return $term->name;
@@ -379,9 +387,14 @@ function sta_dyn_people($rows) {
         }
         $row_no = trim((string) ($row['role_no'] ?? ''));
         $row_en = trim((string) ($row['role_en'] ?? ''));
+        $row_nn = trim((string) ($row['role_nn'] ?? ''));
         $p_no   = trim((string) get_post_meta($person->ID, '_sta_role_no', true));
         $p_en   = trim((string) get_post_meta($person->ID, '_sta_role_en', true));
+        $p_nn   = trim((string) get_post_meta($person->ID, '_sta_role_nn', true));
         $role   = $en ? ($row_en ?: ($row_no === '' ? $p_en : '') ?: $row_no ?: $p_no) : ($row_no ?: $p_no);
+        if (sta_dyn_lang() === 'nn') {
+            $role = $row_nn ?: ($row_no === '' ? $p_nn : '') ?: $row_no ?: $p_no;
+        }
         $resp   = array_filter(array_map('trim', preg_split('/\r?\n/', sta_dyn_meta($person->ID, '_sta_responsibilities'))));
         $email  = sanitize_email(get_post_meta($person->ID, '_sta_email', true));
         $phone  = trim((string) get_post_meta($person->ID, '_sta_phone', true));

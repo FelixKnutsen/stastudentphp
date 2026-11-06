@@ -154,7 +154,44 @@ function sta_cms_term_name_en($term) {
     return $en !== '' ? $en : (string) $term->description;
 }
 
+function sta_cms_term_name_nn($term) {
+    return (string) get_term_meta($term->term_id, 'sta_name_nn', true);
+}
+
 /** Use the classic edit screen for STA content: one simple form with all fields. */
 add_filter('use_block_editor_for_post_type', function ($use, $post_type) {
     return isset(sta_cms_types()[$post_type]) ? false : $use;
 }, 10, 2);
+
+/**
+ * News uses the same form. Existing posts built with blocks stay in the block editor, so saving
+ * them in the classic editor can never damage their layout. The language fields work in both.
+ */
+add_filter('use_block_editor_for_post', function ($use, $post) {
+    return $post->post_type === 'post' ? has_blocks($post->post_content) : $use;
+}, 10, 2);
+
+/** The post being edited in wp-admin, 0 on a new post. */
+function sta_cms_admin_post_id() {
+    return isset($_GET['post']) ? absint($_GET['post']) : (isset($_POST['post_ID']) ? absint($_POST['post_ID']) : 0); // phpcs:ignore WordPress.Security.NonceVerification
+}
+
+/**
+ * News opens in the plain text editor, not in a page builder. Posts already built with SiteOrigin
+ * or Elementor keep their builder, because their content only exists in that form.
+ */
+add_filter('siteorigin_panels_settings', function ($settings) {
+    if (!is_admin() || !is_array($settings) || !isset($settings['post-types'])) {
+        return $settings;
+    }
+    $id = sta_cms_admin_post_id();
+    if (!$id || !get_post_meta($id, 'panels_data', true)) {
+        $settings['post-types'] = array_values(array_diff((array) $settings['post-types'], array('post')));
+    }
+    return $settings;
+});
+
+add_filter('admin_body_class', function ($classes) {
+    $id = sta_cms_admin_post_id();
+    return (!$id || get_post_meta($id, '_elementor_edit_mode', true) !== 'builder') ? $classes . ' sta-no-builder' : $classes;
+});

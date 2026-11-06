@@ -15,15 +15,14 @@ Denne veiledningen er skrevet for deg som skal holde nettsiden oppdatert, også 
 |---|---|
 | Logge inn | [stastudent.no/wp-admin](https://stastudent.no/wp-admin) |
 | Endre tekst eller bilder på en side | [Alle sider](https://stastudent.no/wp-admin/edit.php?post_type=page) → hold musen over siden → **Rediger med Elementor** ([oppskrift](#4-endre-tekst-på-en-side)) |
-| Skrive en nyhet | [Nytt innlegg](https://stastudent.no/wp-admin/post-new.php) ([oppskrift](#6-skrive-en-nyhet)) |
-| Se eller endre nyheter | [Alle innlegg](https://stastudent.no/wp-admin/edit.php) |
+| Skrive en nyhet | [Ny nyhet](https://stastudent.no/wp-admin/post-new.php) ([oppskrift](#6-skrive-en-nyhet)) |
+| Se eller endre nyheter | [Nyheter](https://stastudent.no/wp-admin/edit.php) (under STA-innhold) |
 | Laste opp en PDF eller et bilde | [Last opp fil](https://stastudent.no/wp-admin/media-new.php) |
 | Endre personer, grupper, representanter, verv, ledige verv, dokumenter eller samarbeidspartnere | [STA-innhold](https://stastudent.no/wp-admin/admin.php?page=sta-innhold) ([oppskrift](#511b-slik-fungerer-alle-listene-under-sta-innhold)) |
 | Endre linjeforeninger | [Linjeforeninger](https://stastudent.no/wp-admin/edit.php?post_type=sta_association) |
 | Endre studentaktiviteter | [Studentaktiviteter](https://stastudent.no/wp-admin/edit.php?post_type=sta_activity) |
 | Endre adresse, telefon, e-post eller sosiale medier i bunnteksten | [STA Innstillinger](https://stastudent.no/wp-admin/admin.php?page=sta-settings) |
-| Oversette til nynorsk | [Nynorsk-tekst](https://stastudent.no/wp-admin/options-general.php?page=sta-nynorsk) ([oppskrift](#72-nynorsk)) |
-| Oversette til engelsk | Åpne siden og klikk **Oversett side** i den svarte linja øverst ([oppskrift](#71-engelsk)) |
+| Oversette til nynorsk og engelsk | [Oversettelser](https://stastudent.no/wp-admin/admin.php?page=sta-oversettelser) ([oppskrift](#7-oversette-til-nynorsk-og-engelsk)) |
 | Ta sikkerhetskopi | [Backup & Migration](https://stastudent.no/wp-admin/admin.php?page=wpstg_backup) ([oppskrift](#93-ta-sikkerhetskopi-av-hele-nettsiden)) |
 | Gi en ny person tilgang | [Legg til bruker](https://stastudent.no/wp-admin/user-new.php) |
 | Bytte mitt passord | [Min profil](https://stastudent.no/wp-admin/profile.php) |
@@ -46,7 +45,7 @@ Denne veiledningen er skrevet for deg som skal holde nettsiden oppdatert, også 
 | **Kontrollpanelet / wp-admin** | «Baksiden» av nettsiden der du styrer alt. Åpnes på [stastudent.no/wp-admin](https://stastudent.no/wp-admin). Menyen står til venstre. |
 | **Elementor** | Verktøyet du bruker for å endre utseendet og teksten på en side. Du klikker rett på teksten og skriver. |
 | **Side** | En fast side, for eksempel «STA-styret» eller «Lokaler». |
-| **Innlegg** | En nyhet. Vises under «Siste nytt». |
+| **Nyhet** (WordPress kaller det «innlegg») | Vises under «Siste nytt». Finnes under STA-innhold → Nyheter. |
 | **Publiser** | Gjør endringen synlig for alle. Før du publiserer ser bare du endringen. |
 | **Utkast** | Lagret, men ikke synlig for besøkende. |
 | **Mediebiblioteket** | Lageret for alle bilder og PDF-er på nettsiden. |
@@ -84,7 +83,7 @@ Når noen slutter i styret: gå til [Alle brukere](https://stastudent.no/wp-admi
 Når du er innlogget og åpner nettsiden, ser du en linje øverst. De tre knappene du bruker mest:
 
 - **Rediger med Elementor** – endre siden du ser på.
-- **Oversett side** – oversette siden til engelsk.
+- **Oversett side** – åpner oversettelsene for siden du ser på.
 - **Purge cache** – få endringene dine til å vises for alle (hold musen over og velg **Purge cache for all pages**).
 
 ---
@@ -256,7 +255,7 @@ Gå til [Samarbeidspartnere](https://stastudent.no/wp-admin/edit.php?post_type=s
 - **Skjule:** gjør oppføringen om til utkast. Utkast vises ikke på nettsiden.
 - **Fjerne:** **Flytt til papirkurven**. Oppføringen forsvinner fra nettsiden, men kan gjenopprettes fra **Papirkurv** i listen. Gjenopprettede oppføringer er utkast til du publiserer dem igjen.
 - **Rekkefølge:** dra i ☰ i listen. Endringen lagres med en gang. Du kan også skrive et tall i feltet **Rekkefølge**; lavest vises først.
-- **Engelsk:** felt merket «på engelsk» er valgfrie. Står de tomme, vises den norske teksten eller oversettelsen fra TranslatePress på engelske sider. Husk at nye norske tekster også må oversettes til nynorsk ([7.2](#72-nynorsk)).
+- **Andre språk:** velg **Nynorsk** eller **English** øverst i skjemaet ([kapittel 7](#7-oversette-til-nynorsk-og-engelsk)). Feltene er valgfrie.
 - **Kort med `{{navn}}` i Elementor** er maler. Innholdet endrer du under STA-innhold; utseendet endrer du på malen i Elementor. Ikke slett `{{…}}`-feltene eller CSS-klassene som begynner med `sta-`.
 
 ### 5.12 Lage en ny side
@@ -278,55 +277,64 @@ Husk å fjerne lenker til siden fra andre sider.
 
 ## 6. Skrive en nyhet
 
-1. Gå til [Nytt innlegg](https://stastudent.no/wp-admin/post-new.php).
+1. Gå til [Ny nyhet](https://stastudent.no/wp-admin/post-new.php) (STA-innhold → Nyheter → Legg til).
 2. Skriv **overskriften** øverst.
-3. Klikk under overskriften og skriv teksten. Trykk `Enter` for nytt avsnitt.
-   - **Mellomtitler:** klikk på `+`, velg **Overskrift** (velg nivå **H2**, og **H3** under den).
-   - **Bilde i teksten:** `+` → **Bilde**.
+3. Skriv teksten i feltet under. Trykk `Enter` for nytt avsnitt.
+   - **Mellomtitler:** velg **Overskrift 2** i nedtrekkslisten (der det står «Avsnitt»), og **Overskrift 3** under den.
+   - **Bilde i teksten:** **Legg til medier**.
    - **Lenke:** merk teksten og klikk på kjettingen.
    - **Liming fra Word:** bruk `Ctrl` + `Shift` + `V` for å lime inn uten rar formatering.
-4. I panelet til høyre (fanen **Innlegg**):
-   - **Kategorier:** huk av **Nyheter**. *Bare nyheter med denne kategorien vises under «Siste nytt».*
+4. Til høyre og lenger ned:
+   - **Kategorier:** **Nyheter** er allerede krysset av. *Bare nyheter med denne kategorien vises under «Siste nytt».*
    - **Fremhevet bilde:** bildet som vises på nyhetskortet. Bruk et liggende bilde og fyll inn alternativ tekst.
    - **Utdrag:** 1–2 setninger som oppsummerer saken. Vises på forsiden.
-5. Klikk **Publiser** (to ganger – WordPress spør om du er sikker).
-   - Vil du at nyheten skal komme ut senere: klikk på **Umiddelbart** ved siden av «Publiser», velg dato og tid, og klikk **Planlegg**.
-6. [Tøm hurtigbufferen](#8-få-endringene-til-å-vises-tømme-hurtigbufferen). De tre nyeste nyhetene vises automatisk på forsiden.
+5. Vil du ha nyheten på flere språk: velg **Nynorsk** og **English** øverst og fyll ut. Står et språk tomt, vises bokmål.
+6. Klikk **Publiser**. Mangler overskrift eller tekst, får du beskjed.
+   - Vil du at nyheten skal komme ut senere: klikk **Rediger** ved «Publiser umiddelbart», velg dato og tid, og klikk **Planlegg**.
 
-**Endre eller slette en nyhet:** [Alle innlegg](https://stastudent.no/wp-admin/edit.php) → klikk på tittelen for å endre, eller hold musen over → **Flytt til papirkurven**.
+Nyheten vises med en gang, og de tre nyeste vises automatisk på forsiden.
 
-Nyheter skrives på bokmål. Vil du nå internasjonale studenter, skriv en engelsk versjon under den norske i samme innlegg («English below»). Nyheter oversettes ikke automatisk.
+**Endre eller slette en nyhet:** [Nyheter](https://stastudent.no/wp-admin/edit.php) → klikk på tittelen for å endre, eller hold musen over → **Flytt til papirkurven**.
+
+**Eldre nyheter:** de ligger som de er, også de med «English below». Noen få eldre nyheter er laget med blokker og åpnes derfor i blokkredigereren; der finner du språkfeltene i skuffen nederst («Meta Boxes»). Nyheter laget med SiteOrigin åpnes fortsatt i SiteOrigin.
 
 ---
 
 ## 7. Oversette til nynorsk og engelsk
 
-Nettsiden finnes på **bokmål**, **nynorsk** og **engelsk** (velges øverst til høyre på nettsiden). Du skriver alltid på bokmål i Elementor, og oversetter etterpå.
-
-**Når du har endret eller lagt til tekst på en side, må den oversettes på nytt.** Tekst som ikke er oversatt, vises på bokmål.
+Nettsiden finnes på **bokmål**, **nynorsk** og **engelsk**. Du skriver på bokmål og oversetter i administrasjonen; du trenger ikke åpne nettsiden for å oversette. Tekst uten oversettelse vises på bokmål.
 
 Menyen, bunnteksten og knappene i designet er allerede oversatt.
 
-### 7.1 Engelsk
-1. Gå til siden på nettsiden (mens du er innlogget).
-2. Klikk **Oversett side** i den svarte linja øverst.
-3. Til venstre: velg **English** hvis det ikke er valgt.
-4. Klikk på blyanten ved teksten du vil oversette (eller velg den fra listen til venstre).
-5. Skriv den engelske teksten i feltet under **English**.
-6. Klikk **Lagre oversettelse** (Save translation).
-7. Lukk oversetteren (krysset øverst til venstre) og [tøm hurtigbufferen](#8-få-endringene-til-å-vises-tømme-hurtigbufferen).
+### 7.1 Nyheter og STA-innhold
+1. Åpne oppføringen. Øverst står **Bokmål**, **Nynorsk** og **English**.
+2. Velg språk. Bokmålsteksten står over hvert felt, så du ser hva du oversetter.
+3. Skriv oversettelsen og klikk **Oppdater** (eller **Publiser**).
 
-Se resultatet ved å velge **English** i språkvelgeren på nettsiden.
+Fanen viser om noe **mangler** eller er **utdatert**. Listene har også en **Språk**-kolonne. Navn regnes ikke som manglende, siden de ofte er like på alle språk.
 
-### 7.2 Nynorsk
-1. Gå til [Nynorsk-tekst](https://stastudent.no/wp-admin/options-general.php?page=sta-nynorsk).
-2. Klikk **Finn ny tekst på sidene**. Vent til det står hvor mange nye tekster som ble funnet.
-3. Nå vises bare tekstene som mangler nynorsk. Venstre kolonne er bokmål, høyre kolonne er der du skriver nynorsk.
-4. Skriv nynorsk i feltet til høyre. Er teksten lik på nynorsk (et navn, en tittel), skriv den samme teksten.
-5. Klikk **Lagre** nederst.
-6. [Tøm hurtigbufferen](#8-få-endringene-til-å-vises-tømme-hurtigbufferen) og sjekk siden med **Norsk nynorsk** i språkvelgeren.
+Fakulteter og kategorier har egne felt: **Nynorsk navn** og **Engelsk navn**.
 
-Du kan søke etter en tekst i søkefeltet øverst på siden for å rette en oversettelse.
+### 7.2 Tekst på sider (fra Elementor)
+1. Gå til [Oversettelser](https://stastudent.no/wp-admin/admin.php?page=sta-oversettelser) og klikk **Oversett** ved siden. Du kommer også hit fra:
+   - knappen **Oversett** som dukker opp i Elementor når du har lagret,
+   - **Oversett side** i den svarte linja øverst på nettsiden,
+   - **Oversett** i listen over sider.
+2. Listen viser det som mangler eller må sjekkes. Venstre kolonne er bokmål.
+3. Skriv nynorsk og engelsk. Er teksten lik (et navn), klikk **Lik bokmål**.
+4. Klikk **Lagre**. Endringen vises med en gang.
+
+Klikk **Sjekk alle sider** på oversiktssiden for å se hva som mangler på hele nettstedet. Det tar et par minutter.
+
+### 7.3 Når du endrer en tekst
+Endrer du en tekst i Elementor, følger oversettelsene med, så besøkende ikke plutselig ser bokmål. Oversettelsen merkes **utdatert** og viser den gamle bokmålsteksten. Sjekk den: skriv ny oversettelse, eller klikk **Fortsatt riktig**.
+
+Det samme gjelder felt i nyheter og STA-innhold.
+
+**Unntak:** deler du et avsnitt eller legger til nye, kan ikke systemet vite hva som hører sammen. Da vises teksten som **mangler**, og den må oversettes på nytt. Den gamle oversettelsen slettes ikke.
+
+### 7.4 Sikkerhetskopi av nynorsk
+Under [Nynorsk-tekst](https://stastudent.no/wp-admin/options-general.php?page=sta-nynorsk) kan du eksportere alle nynorsk-oversettelsene ([9.6](#96-ta-vare-på-nynorsk-oversettelsene)).
 
 ---
 
@@ -353,7 +361,7 @@ Ser siden fortsatt gammel ut (feil farger eller mangler design): velg også **Pu
 5. **Publiser**.
 
 ### 9.2 Angre en endring på en nyhet
-Åpne nyheten fra [Alle innlegg](https://stastudent.no/wp-admin/edit.php). I panelet til høyre: klikk **Revisjoner**, velg en tidligere versjon og **Gjenopprett denne revisjonen**.
+Åpne nyheten fra [Nyheter](https://stastudent.no/wp-admin/edit.php). I panelet til høyre: klikk **Revisjoner**, velg en tidligere versjon og **Gjenopprett denne revisjonen**.
 
 **Slettet noe ved en feil?** Gå til papirkurven for [innlegg](https://stastudent.no/wp-admin/edit.php?post_status=trash&post_type=post) eller [sider](https://stastudent.no/wp-admin/edit.php?post_status=trash&post_type=page), hold musen over og klikk **Gjenopprett**. Ting ligger der i 30 dager.
 
@@ -488,8 +496,10 @@ Menyen er skrevet i `sta-theme/header.php`, én gang for skrivebord (`.sta-deskt
 ```
 `sta_get_localized_url()` lager riktig lenke for språk og for testsiden. `sta_t()` velger tekst etter språk.
 
-## Innholdsstyring (STA-innhold, plugin 1.2.1)
-Innholdsmodellen står i `sta-core-plugin/inc/cms/schema.php`. Der er alle typer og felt definert; registrering, skjemaer, validering og lagring leser derfra.
+## Innholdsstyring (STA-innhold, plugin 1.3.2)
+Innholdsmodellen står i `sta-core-plugin/inc/cms/schema.php`. Der er alle typer og felt definert; registrering, skjemaer, validering og lagring leser derfra. Hvert `_en`-felt får automatisk en `_nn`-tvilling (`sta_cms_add_language_fields`), og nyheter bruker samme skjema (`sta_cms_news_def`).
+
+**Oversettelser** (`inc/cms/translate.php`, `assets/translate.js`): sidetekst slås opp på eksakt bokmålstekst, engelsk i TranslatePress-tabellene og nynorsk i `sta_nn_translations`. Ved lagring i Elementor (`elementor/document/before_save`) sammenlignes gammel og ny tekst per widget, og oversettelsen kopieres til ny ordlyd og merkes i `sta_tr_outdated`. Ingenting slettes. Felt merkes utdatert med hash av kilden i `_sta_tr_hash`.
 
 Listene vises gjennom vanlige Elementor-kort (`inc/cms/dynamic.php`, filteret `elementor/frontend/builder_content_data`). En beholder med CSS-klassene `sta-loop sta-src-<kilde>` gjentar det første barnet for hver oppføring, med samme element-ID, så kortene får malens Elementor-stil.
 

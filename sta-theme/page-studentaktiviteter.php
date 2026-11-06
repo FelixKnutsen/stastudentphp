@@ -33,7 +33,7 @@ if ($activity_query->have_posts()) {
         $activity_query->the_post();
         $post_id = get_the_ID();
         $categories = get_the_terms($post_id, 'sta_activity_category');
-        $cat_name = (!empty($categories) && !is_wp_error($categories)) ? (($is_en && sta_term_name_en($categories[0]) !== '') ? sta_term_name_en($categories[0]) : $categories[0]->name) : sta_t('Annet', 'Other', 'Anna');
+        $cat_name = (!empty($categories) && !is_wp_error($categories)) ? sta_term_name_lang($categories[0]) : sta_t('Annet', 'Other', 'Anna');
         $cat_slug = (!empty($categories) && !is_wp_error($categories)) ? $categories[0]->slug : 'annet';
 
         $items[] = array(
@@ -47,8 +47,8 @@ if ($activity_query->have_posts()) {
             'facebook'     => get_post_meta($post_id, '_sta_facebook', true),
             'instagram'    => get_post_meta($post_id, '_sta_instagram', true),
             'discord'      => get_post_meta($post_id, '_sta_discord', true),
-            'desc'         => $is_en ? (get_post_meta($post_id, '_sta_desc_en', true) ?: get_post_meta($post_id, '_sta_desc_no', true)) : get_post_meta($post_id, '_sta_desc_no', true),
-            'when'         => $is_en ? (get_post_meta($post_id, '_sta_meeting_time_en', true) ?: get_post_meta($post_id, '_sta_meeting_time', true)) : get_post_meta($post_id, '_sta_meeting_time', true),
+            'desc'         => sta_lang_meta($post_id, '_sta_desc_no', '_sta_desc'),
+            'when'         => sta_lang_meta($post_id, '_sta_meeting_time', '_sta_meeting_time'),
             'where'        => get_post_meta($post_id, '_sta_location', true),
         );
     }

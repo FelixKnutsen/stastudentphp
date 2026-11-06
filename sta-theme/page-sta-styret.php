@@ -31,13 +31,13 @@ if ($board_query->have_posts()) {
     while ($board_query->have_posts()) {
         $board_query->the_post();
         $post_id = get_the_ID();
-        $resp_raw = $is_en ? (get_post_meta($post_id, '_sta_responsibilities_en', true) ?: get_post_meta($post_id, '_sta_responsibilities_no', true)) : get_post_meta($post_id, '_sta_responsibilities_no', true);
+        $resp_raw = sta_lang_meta($post_id, '_sta_responsibilities_no', '_sta_responsibilities');
         $resp_lines = is_array($resp_raw) ? $resp_raw : (array_filter(array_map('trim', explode("\n", (string)$resp_raw))));
 
         $members[] = array(
             'id'               => get_post_field('post_name', $post_id),
             'name'             => get_the_title(),
-            'role'             => $is_en ? (get_post_meta($post_id, '_sta_role_en', true) ?: get_post_meta($post_id, '_sta_role_no', true)) : get_post_meta($post_id, '_sta_role_no', true),
+            'role'             => sta_lang_meta($post_id, '_sta_role_no', '_sta_role'),
             'email'            => get_post_meta($post_id, '_sta_email', true),
             'phone'            => get_post_meta($post_id, '_sta_phone', true),
             'imageUrl'         => get_post_meta($post_id, '_sta_image_url', true) ?: (get_the_post_thumbnail_url($post_id, 'medium_large') ?: ''),

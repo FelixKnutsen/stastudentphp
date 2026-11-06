@@ -14,11 +14,19 @@ if (!defined('ABSPATH')) {
 add_action('admin_menu', function () {
     add_menu_page('STA-innhold', 'STA-innhold', 'edit_posts', STA_CMS_MENU, 'sta_cms_render_overview', 'dashicons-groups', 3);
     add_submenu_page(STA_CMS_MENU, 'STA-innhold – oversikt', 'Oversikt', 'edit_posts', STA_CMS_MENU, 'sta_cms_render_overview');
+    add_submenu_page(STA_CMS_MENU, 'Oversettelser', 'Oversettelser', 'edit_pages', 'sta-oversettelser', 'sta_tr_render_page');
+    add_submenu_page(STA_CMS_MENU, 'Nyheter', 'Nyheter', 'edit_posts', 'edit.php');
+    add_submenu_page(STA_CMS_MENU, 'Nyhetskategorier', '↳ Nyhetskategorier', 'manage_categories', 'edit-tags.php?taxonomy=category');
     foreach (sta_cms_taxonomies() as $tax => $def) {
         $first = reset($def['objects']);
         add_submenu_page(STA_CMS_MENU, $def['plural'], '↳ ' . ($def['menu'] ?? $def['plural']), 'manage_categories', 'edit-tags.php?taxonomy=' . $tax . '&post_type=' . $first);
     }
 }, 9);
+
+/** News lives under STA-innhold, so the separate «Innlegg» menu is not needed. */
+add_action('admin_menu', function () {
+    remove_menu_page('edit.php');
+}, 999);
 
 /** Keep «STA-innhold» highlighted on taxonomy screens. */
 add_filter('parent_file', function ($parent) {
@@ -26,19 +34,23 @@ add_filter('parent_file', function ($parent) {
     if ($screen && !empty($screen->taxonomy) && isset(sta_cms_taxonomies()[$screen->taxonomy])) {
         return STA_CMS_MENU;
     }
+    if ($screen && $screen->post_type === 'post') {
+        return STA_CMS_MENU;
+    }
     return $parent;
 });
 
 function sta_cms_render_overview() {
     $sections = array(
+        'Nyheter'             => array('post'),
         'Personer og grupper' => array('sta_board_member', 'sta_group'),
         'Studentdemokrati'    => array('sta_parliament_rep', 'sta_position', 'sta_vacancy'),
         'Organisasjoner'      => array('sta_association', 'sta_activity'),
         'Dokumenter og forside' => array('sta_document', 'sta_partner'),
     );
-    $types = sta_cms_types();
+    $types = sta_cms_form_types();
     echo '<div class="wrap sta-cms-overview"><h1>STA-innhold</h1>';
-    echo '<p class="about-description">Her endrer du innholdet på nettsiden uten å redigere sidene. Velg hva du vil endre. Nyheter skrives under <a href="' . esc_url(admin_url('edit.php')) . '">Innlegg</a>, og kontaktinformasjon i bunnteksten under <a href="' . esc_url(admin_url('admin.php?page=sta-settings')) . '">STA Innstillinger</a>.</p>';
+    echo '<p class="about-description">Her endrer du innholdet på nettsiden uten å redigere sidene. Velg hva du vil endre. Du skriver bokmål, nynorsk og engelsk i samme skjema, og ser alt som mangler under <a href="' . esc_url(admin_url('admin.php?page=sta-oversettelser')) . '">Oversettelser</a>. Kontaktinformasjon i bunnteksten endrer du under <a href="' . esc_url(admin_url('admin.php?page=sta-settings')) . '">STA Innstillinger</a>.</p>';
     foreach ($sections as $title => $list) {
         echo '<h2>' . esc_html($title) . '</h2><div class="sta-cms-cards">';
         foreach ($list as $type) {
@@ -58,14 +70,14 @@ function sta_cms_render_overview() {
         }
         echo '</div>';
     }
-    echo '<h2>Sideinnhold som ikke er lister</h2><p>Overskrifter, ingresser og bilder på hver side endres i Elementor: åpne siden under <a href="' . esc_url(admin_url('edit.php?post_type=page')) . '">Sider</a> og velg «Rediger med Elementor». Kort som viser <code>{{…}}</code> i Elementor er maler som fylles med innholdet herfra – endre innholdet her, ikke i malen.</p>';
+    echo '<h2>Sideinnhold som ikke er lister</h2><p>Overskrifter, ingresser og bilder på hver side endres i Elementor: åpne siden under <a href="' . esc_url(admin_url('edit.php?post_type=page')) . '">Sider</a> og velg «Rediger med Elementor». Kort som viser <code>{{…}}</code> i Elementor er maler som fylles med innholdet herfra – endre innholdet her, ikke i malen. Oversett tekst fra Elementor under <a href="' . esc_url(admin_url('admin.php?page=sta-oversettelser')) . '">Oversettelser</a>.</p>';
     echo '</div>';
 }
 
 /* ---------------------------------------------------------------- Messages */
 
 add_filter('post_updated_messages', function ($messages) {
-    foreach (sta_cms_types() as $type => $def) {
+    foreach (sta_cms_form_types() as $type => $def) {
         $name  = ucfirst($def['singular']);
         $links = sta_cms_page_links($type);
         $see   = $links ? ' Se: ' . implode(', ', $links) : '';
@@ -87,7 +99,7 @@ add_filter('post_updated_messages', function ($messages) {
 });
 
 add_filter('bulk_post_updated_messages', function ($messages, $counts) {
-    foreach (sta_cms_types() as $type => $def) {
+    foreach (sta_cms_form_types() as $type => $def) {
         $messages[$type] = array(
             'updated'   => _n('%s oppføring oppdatert.', '%s oppføringer oppdatert.', $counts['updated']),
             'locked'    => _n('%s oppføring ble ikke endret fordi noen andre redigerer den.', '%s oppføringer ble ikke endret fordi noen andre redigerer dem.', $counts['locked']),
@@ -138,6 +150,7 @@ foreach (array_keys(sta_cms_types()) as $sta_cms_type) {
             }
         }
         $new['sta_status'] = 'Synlig på nettsiden';
+        $new['sta_lang']   = 'Språk';
         return $new;
     });
     add_action('manage_' . $sta_cms_type . '_posts_custom_column', function ($column, $post_id) {
@@ -162,6 +175,9 @@ function sta_cms_extra_columns($type) {
 
 function sta_cms_render_column($column, $post_id) {
     switch ($column) {
+        case 'sta_lang':
+            sta_tr_render_list_status($post_id);
+            break;
         case 'sta_order':
             echo '<span class="sta-cms-drag" title="Dra for å endre rekkefølgen">☰</span><span class="screen-reader-text">' . (int) get_post_field('menu_order', $post_id) . '</span>';
             break;
@@ -233,6 +249,7 @@ add_action('wp_ajax_sta_cms_reorder', function () {
 foreach (array_keys(sta_cms_taxonomies()) as $sta_cms_tax) {
     add_action($sta_cms_tax . '_add_form_fields', function () use ($sta_cms_tax) {
         wp_nonce_field('sta_cms_term', 'sta_cms_term_nonce');
+        echo '<div class="form-field"><label for="sta_name_nn">Nynorsk navn</label><input type="text" id="sta_name_nn" name="sta_name_nn"><p>Vises på nynorske sider. Valgfritt.</p></div>';
         echo '<div class="form-field"><label for="sta_name_en">Engelsk navn</label><input type="text" id="sta_name_en" name="sta_name_en"><p>Vises på engelske sider. Valgfritt.</p></div>';
         echo '<div class="form-field"><label for="sta_order">Rekkefølge</label><input type="number" id="sta_order" name="sta_order" value="0" style="width:100px"><p>Lavere tall vises først på nettsiden.</p></div>';
         if (!empty(sta_cms_taxonomies()[$sta_cms_tax]['current_flag'])) {
@@ -241,6 +258,7 @@ foreach (array_keys(sta_cms_taxonomies()) as $sta_cms_tax) {
     });
     add_action($sta_cms_tax . '_edit_form_fields', function ($term) use ($sta_cms_tax) {
         wp_nonce_field('sta_cms_term', 'sta_cms_term_nonce');
+        printf('<tr class="form-field"><th><label for="sta_name_nn">Nynorsk navn</label></th><td><input type="text" id="sta_name_nn" name="sta_name_nn" value="%s"><p class="description">Vises på nynorske sider. Valgfritt.</p></td></tr>', esc_attr(sta_cms_term_name_nn($term)));
         printf('<tr class="form-field"><th><label for="sta_name_en">Engelsk navn</label></th><td><input type="text" id="sta_name_en" name="sta_name_en" value="%s"><p class="description">Vises på engelske sider. Valgfritt.</p></td></tr>', esc_attr(sta_cms_term_name_en($term)));
         printf('<tr class="form-field"><th><label for="sta_order">Rekkefølge</label></th><td><input type="number" id="sta_order" name="sta_order" value="%d" style="width:100px"><p class="description">Lavere tall vises først på nettsiden.</p></td></tr>', (int) get_term_meta($term->term_id, 'sta_order', true));
         if (!empty(sta_cms_taxonomies()[$sta_cms_tax]['current_flag'])) {
@@ -250,6 +268,9 @@ foreach (array_keys(sta_cms_taxonomies()) as $sta_cms_tax) {
     $save = function ($term_id) use ($sta_cms_tax) {
         if (empty($_POST['sta_cms_term_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['sta_cms_term_nonce'])), 'sta_cms_term') || !current_user_can('manage_categories')) {
             return;
+        }
+        if (isset($_POST['sta_name_nn'])) {
+            update_term_meta($term_id, 'sta_name_nn', sanitize_text_field(wp_unslash($_POST['sta_name_nn'])));
         }
         if (isset($_POST['sta_name_en'])) {
             update_term_meta($term_id, 'sta_name_en', sanitize_text_field(wp_unslash($_POST['sta_name_en'])));
@@ -269,6 +290,7 @@ foreach (array_keys(sta_cms_taxonomies()) as $sta_cms_tax) {
     add_action('edited_' . $sta_cms_tax, $save);
     add_filter('manage_edit-' . $sta_cms_tax . '_columns', function ($columns) use ($sta_cms_tax) {
         unset($columns['description']);
+        $columns['sta_name_nn'] = 'Nynorsk navn';
         $columns['sta_name_en'] = 'Engelsk navn';
         $columns['sta_order']   = 'Rekkefølge';
         if (!empty(sta_cms_taxonomies()[$sta_cms_tax]['current_flag'])) {
@@ -277,6 +299,9 @@ foreach (array_keys(sta_cms_taxonomies()) as $sta_cms_tax) {
         return $columns;
     });
     add_filter('manage_' . $sta_cms_tax . '_custom_column', function ($out, $column, $term_id) use ($sta_cms_tax) {
+        if ($column === 'sta_name_nn') {
+            return esc_html(sta_cms_term_name_nn(get_term($term_id)));
+        }
         if ($column === 'sta_name_en') {
             return esc_html(sta_cms_term_name_en(get_term($term_id)));
         }
@@ -298,7 +323,7 @@ add_action('admin_enqueue_scripts', function ($hook) {
     if (!$screen) {
         return;
     }
-    $is_sta = isset(sta_cms_types()[$screen->post_type]) || (isset($screen->taxonomy) && isset(sta_cms_taxonomies()[$screen->taxonomy])) || $screen->id === 'toplevel_page_' . STA_CMS_MENU;
+    $is_sta = sta_cms_form_def($screen->post_type) || (isset($screen->taxonomy) && isset(sta_cms_taxonomies()[$screen->taxonomy])) || $screen->id === 'toplevel_page_' . STA_CMS_MENU;
     if (!$is_sta) {
         return;
     }
@@ -342,13 +367,13 @@ function sta_cms_purge_caches() {
 }
 
 add_action('save_post', function ($post_id, $post) {
-    if (isset(sta_cms_types()[$post->post_type]) && !wp_is_post_revision($post_id) && !(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)) {
+    if (sta_cms_form_def($post->post_type) && !wp_is_post_revision($post_id) && !(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)) {
         sta_cms_schedule_purge();
     }
 }, 99, 2);
 foreach (array('trashed_post', 'untrashed_post', 'before_delete_post') as $sta_cms_hook) {
     add_action($sta_cms_hook, function ($post_id) {
-        if (isset(sta_cms_types()[get_post_type($post_id)])) {
+        if (sta_cms_form_def(get_post_type($post_id))) {
             sta_cms_schedule_purge();
         }
     });

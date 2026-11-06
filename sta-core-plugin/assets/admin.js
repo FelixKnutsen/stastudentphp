@@ -50,12 +50,45 @@
         }
     });
 
+    /* Language bar: one form, one language at a time. Without the bar every field stays visible. */
+    function sourceValue(name) {
+        if (name === 'post_title') {
+            return $('#title').val() || '';
+        }
+        if (name === 'post_excerpt') {
+            return $('#excerpt').val() || '';
+        }
+        var id = name === 'post_content' ? 'content' : 'sta_f' + name;
+        var ed = window.tinymce && window.tinymce.get(id);
+        if (ed && !ed.isHidden()) {
+            return ed.getContent({ format: 'text' }).replace(/\n{2,}/g, '\n');
+        }
+        return $('#' + id).val() || $('[name="' + name + '"]').val() || '';
+    }
+    function showLanguage(lang) {
+        $('body').removeClass('sta-lang-no sta-lang-nn sta-lang-en').addClass('sta-lang-' + lang);
+        $('.sta-lang-tab').each(function () {
+            var on = $(this).data('lang') === lang;
+            $(this).toggleClass('is-active', on).attr('aria-selected', on ? 'true' : 'false');
+        });
+        if (lang === 'no') {
+            return;
+        }
+        $('.sta-cms-row[data-sta-lang="' + lang + '"] .sta-tr-source').each(function () {
+            var text = $.trim(sourceValue($(this).data('source')));
+            $(this).toggle(text !== '').find('span').text(text.length > 400 ? text.slice(0, 400) + ' …' : text);
+        });
+    }
+    $(document).on('click', '.sta-lang-tab', function () {
+        showLanguage($(this).data('lang'));
+    });
+
     /* Required fields: checked before «Publiser» (the server checks again). */
     function missingFields() {
         var missing = [];
         var title = $('#title');
         if (title.length && !$.trim(title.val())) {
-            missing.push({ el: $('#titlewrap'), label: title.attr('placeholder') || 'Tittel' });
+            missing.push({ el: $('#titlewrap'), label: $.trim($('#title-prompt-text').text()) || 'Tittel' });
         }
         $('.sta-cms-row[data-required="1"]').each(function () {
             var row = $(this);
@@ -71,6 +104,13 @@
                 missing.push({ el: box.closest('.postbox'), label: box.data('label') });
             }
         });
+        if ($('body').hasClass('post-type-post')) {
+            var body = window.tinymce && window.tinymce.get('content');
+            var text = body && !body.isHidden() ? body.getContent() : $('#content').val();
+            if (!$.trim(String(text || '').replace(/<(?!img)[^>]*>/g, '').replace(/&nbsp;/g, ' '))) {
+                missing.push({ el: $('#postdivrich'), label: 'Tekst' });
+            }
+        }
         var thumb = $('#sta-cms-thumb-required');
         if (thumb.length && !(parseInt($('#_thumbnail_id').val(), 10) > 0)) {
             missing.push({ el: $('#postimagediv'), label: thumb.data('label') });
@@ -88,6 +128,7 @@
             return;
         }
         e.preventDefault();
+        showLanguage('no');
         missing.forEach(function (m) { m.el.addClass('sta-cms-missing'); });
         $('<div id="sta-cms-error" class="notice notice-error"><p></p></div>')
             .find('p').text('Fyll ut før du publiserer: ' + missing.map(function (m) { return m.label; }).join(', ') + '. (Du kan lagre som utkast uten å fylle ut alt.)').end()
@@ -148,5 +189,8 @@
     $(function () {
         initMembers();
         initSorting();
+        if ($('.sta-lang-bar').length) {
+            showLanguage('no');
+        }
     });
 }(jQuery));

@@ -33,7 +33,7 @@ if ($associations_query->have_posts()) {
         $associations_query->the_post();
         $post_id = get_the_ID();
         $faculties = get_the_terms($post_id, 'sta_faculty');
-        $faculty_name = (!empty($faculties) && !is_wp_error($faculties)) ? (($is_en && sta_term_name_en($faculties[0]) !== '') ? sta_term_name_en($faculties[0]) : $faculties[0]->name) : sta_t('Annet', 'Other', 'Anna');
+        $faculty_name = (!empty($faculties) && !is_wp_error($faculties)) ? sta_term_name_lang($faculties[0]) : sta_t('Annet', 'Other', 'Anna');
         $faculty_slug = (!empty($faculties) && !is_wp_error($faculties)) ? $faculties[0]->slug : 'annet';
 
         $items[] = array(
@@ -49,7 +49,7 @@ if ($associations_query->have_posts()) {
             'facebook'     => get_post_meta($post_id, '_sta_facebook', true),
             'instagram'    => get_post_meta($post_id, '_sta_instagram', true),
             'discord'      => get_post_meta($post_id, '_sta_discord', true),
-            'desc'         => $is_en ? (get_post_meta($post_id, '_sta_desc_en', true) ?: get_post_meta($post_id, '_sta_desc_no', true)) : get_post_meta($post_id, '_sta_desc_no', true),
+            'desc'         => sta_lang_meta($post_id, '_sta_desc_no', '_sta_desc'),
         );
     }
     wp_reset_postdata();

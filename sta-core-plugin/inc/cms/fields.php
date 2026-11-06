@@ -9,13 +9,15 @@ if (!defined('ABSPATH')) {
 }
 
 add_action('add_meta_boxes', function ($post_type) {
-    $types = sta_cms_types();
-    if (!isset($types[$post_type])) {
+    $def = sta_cms_form_def($post_type);
+    if (!$def) {
         return;
     }
-    $def = $types[$post_type];
-    add_meta_box('sta_cms_fields', 'Innhold', 'sta_cms_render_fields_box', $post_type, 'normal', 'high');
+    add_meta_box('sta_cms_fields', !empty($def['news']) ? 'Oversettelser' : 'Innhold', 'sta_cms_render_fields_box', $post_type, 'normal', 'high');
     add_meta_box('sta_cms_where', 'Hvor vises dette?', 'sta_cms_render_where_box', $post_type, 'side', 'high');
+    if (!empty($def['news'])) {
+        return;
+    }
     if ($post_type === 'sta_board_member') {
         add_meta_box('sta_cms_memberships', 'Medlem av', 'sta_cms_render_memberships_box', $post_type, 'side', 'default');
     }
@@ -24,10 +26,19 @@ add_action('add_meta_boxes', function ($post_type) {
     add_meta_box('sta_cms_order', 'Rekkefølge', 'sta_cms_render_order_box', $post_type, 'side', 'default');
 }, 20);
 
+/** News form: the excerpt is always shown (it is on the news cards); boxes editors never need are not. */
+add_filter('hidden_meta_boxes', function ($hidden, $screen) {
+    if (!$screen || $screen->base !== 'post' || $screen->post_type !== 'post') {
+        return $hidden;
+    }
+    $hidden = array_diff((array) $hidden, array('postexcerpt'));
+    return array_values(array_unique(array_merge($hidden, array('trackbacksdiv', 'commentstatusdiv', 'commentsdiv', 'slugdiv', 'pageparentdiv', 'obfx-scripts'))));
+}, 10, 2);
+
 /** Title placeholder per type («Fullt navn» instead of «Legg til tittel»). */
 add_filter('enter_title_here', function ($text, $post) {
-    $types = sta_cms_types();
-    return isset($types[$post->post_type]) ? $types[$post->post_type]['title_label'] : $text;
+    $def = sta_cms_form_def($post->post_type);
+    return $def ? $def['title_label'] : $text;
 }, 10, 2);
 
 function sta_cms_render_order_box($post) {
@@ -47,9 +58,9 @@ function sta_cms_find_page($path) {
 }
 
 function sta_cms_page_links($post_type) {
-    $types = sta_cms_types();
+    $def   = sta_cms_form_def($post_type);
     $links = array();
-    foreach ($types[$post_type]['pages'] ?? array() as $path) {
+    foreach ($def['pages'] ?? array() as $path) {
         $page  = $path === '' ? null : sta_cms_find_page($path);
         $title = $path === '' ? 'Forsiden' : ($page ? get_the_title($page) : $path);
         $url   = $path === '' ? home_url('/') : ($page ? get_permalink($page) : home_url('/' . $path . '/'));
@@ -59,8 +70,7 @@ function sta_cms_page_links($post_type) {
 }
 
 function sta_cms_render_where_box($post) {
-    $types = sta_cms_types();
-    $def   = $types[$post->post_type];
+    $def = sta_cms_form_def($post->post_type);
     echo '<p>' . esc_html($def['intro']) . '</p>';
     $links = sta_cms_page_links($post->post_type);
     if ($links) {
@@ -104,8 +114,7 @@ function sta_cms_render_memberships_box($post) {
 }
 
 function sta_cms_render_fields_box($post) {
-    $types = sta_cms_types();
-    $def   = $types[$post->post_type];
+    $def = sta_cms_form_def($post->post_type);
     wp_nonce_field('sta_cms_save_' . $post->post_type, 'sta_cms_nonce');
     echo '<p class="sta-cms-required-note"><span class="sta-cms-req">*</span> = må fylles ut før du kan publisere.';
     $required = array();
@@ -120,6 +129,9 @@ function sta_cms_render_fields_box($post) {
         echo ' Velg også: ' . esc_html(implode(', ', $required)) . ' (i boksene til høyre).';
     }
     echo '</p>';
+    if (!empty($def['news'])) {
+        echo '<p class="description sta-cms-news-note">Overskrift og tekst på bokmål skriver du øverst. Her skriver du de andre språkene.</p>';
+    }
     echo '<table class="form-table sta-cms-form" role="presentation"><tbody>';
     foreach ($def['fields'] as $field) {
         sta_cms_render_field($post, $field);
@@ -134,19 +146,23 @@ function sta_cms_render_field($post, $field) {
     $req   = !empty($field['required']);
     $id    = 'sta_f' . $key;
     $attrs = $req ? ' data-required="1" data-label="' . esc_attr($field['label']) . '"' : '';
-    echo '<tr class="sta-cms-row sta-cms-type-' . esc_attr($type) . '"' . $attrs . '>';
+    $lang  = $field['lang'] ?? 'no';
+    echo '<tr class="sta-cms-row sta-cms-type-' . esc_attr($type) . '" data-sta-lang="' . esc_attr($lang) . '"' . $attrs . '>';
     echo '<th scope="row"><label for="' . esc_attr($id) . '">' . esc_html($field['label']) . ($req ? ' <span class="sta-cms-req">*</span>' : '') . '</label></th><td>';
+    if ($lang !== 'no') {
+        sta_tr_render_field_status($post, $field);
+    }
     switch ($type) {
         case 'textarea':
-            printf('<textarea id="%1$s" name="%2$s" rows="4" class="large-text">%3$s</textarea>', esc_attr($id), esc_attr($key), esc_textarea($value));
+            printf('<textarea id="%1$s" name="%2$s" rows="4" class="large-text"%4$s>%3$s</textarea>', esc_attr($id), esc_attr($key), esc_textarea($value), $lang !== 'no' ? sta_tr_placeholder_attr($post, $field, $value) : '');
             break;
         case 'editor':
             wp_editor((string) $value, $id, array(
                 'textarea_name' => $key,
                 'textarea_rows' => 8,
-                'media_buttons' => false,
-                'teeny'         => true,
-                'quicktags'     => false,
+                'media_buttons' => !empty($field['full']),
+                'teeny'         => empty($field['full']),
+                'quicktags'     => !empty($field['full']),
             ));
             break;
         case 'checkbox':
@@ -182,10 +198,11 @@ function sta_cms_render_field($post, $field) {
         default:
             $html_type = in_array($type, array('email', 'tel', 'url', 'number', 'date'), true) ? $type : 'text';
             printf(
-                '<input type="%1$s" id="%2$s" name="%3$s" value="%4$s" class="%5$s"%6$s>',
+                '<input type="%1$s" id="%2$s" name="%3$s" value="%4$s" class="%5$s"%6$s%7$s>',
                 esc_attr($html_type), esc_attr($id), esc_attr($key), esc_attr($value),
                 $html_type === 'number' ? 'small-text' : 'regular-text',
-                $html_type === 'number' ? ' min="0" step="1"' : ''
+                $html_type === 'number' ? ' min="0" step="1"' : '',
+                $lang !== 'no' ? sta_tr_placeholder_attr($post, $field, $value) : ''
             );
     }
     if (!empty($field['help'])) {
@@ -222,12 +239,13 @@ function sta_cms_render_members($post, $field) {
             . '<td class="sta-cms-handle" title="Dra for å endre rekkefølgen">☰</td>'
             . '<td><select name="sta_members[person][]">' . $options($row['person'] ?? 0) . '</select></td>'
             . '<td><input type="text" name="sta_members[role_no][]" value="' . esc_attr($row['role_no'] ?? '') . '" placeholder="Rolle i gruppen (valgfritt)"></td>'
+            . '<td><input type="text" name="sta_members[role_nn][]" value="' . esc_attr($row['role_nn'] ?? '') . '" placeholder="Rolle på nynorsk (valgfritt)"></td>'
             . '<td><input type="text" name="sta_members[role_en][]" value="' . esc_attr($row['role_en'] ?? '') . '" placeholder="Rolle på engelsk (valgfritt)"></td>'
             . '<td><button type="button" class="button-link sta-cms-member-remove" aria-label="Fjern medlem">Fjern</button></td>'
             . '</tr>';
     };
     echo '<input type="hidden" name="sta_members_present" value="1">';
-    echo '<table class="widefat striped sta-cms-members"><thead><tr><th></th><th>Person</th><th>Rolle</th><th>Rolle (engelsk)</th><th></th></tr></thead><tbody>';
+    echo '<table class="widefat striped sta-cms-members"><thead><tr><th></th><th>Person</th><th>Rolle</th><th>Rolle (nynorsk)</th><th>Rolle (engelsk)</th><th></th></tr></thead><tbody>';
     foreach ($rows as $row) {
         echo $row_html($row); // Escaped in $row_html.
     }
@@ -246,8 +264,7 @@ function sta_cms_render_members($post, $field) {
  */
 add_filter('wp_insert_post_data', function ($data, $postarr) {
     $type = $data['post_type'];
-    $types = sta_cms_types();
-    if (!isset($types[$type]) || empty($_POST['sta_cms_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['sta_cms_nonce'])), 'sta_cms_save_' . $type)) {
+    if (!sta_cms_form_def($type) || empty($_POST['sta_cms_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['sta_cms_nonce'])), 'sta_cms_save_' . $type)) {
         return $data;
     }
     if (!in_array($data['post_status'], array('publish', 'future'), true)) {
@@ -262,10 +279,13 @@ add_filter('wp_insert_post_data', function ($data, $postarr) {
 }, 10, 2);
 
 function sta_cms_missing_required($type, $data, $input) {
-    $def = sta_cms_types()[$type];
+    $def = sta_cms_form_def($type);
     $missing = array();
     if (trim((string) $data['post_title']) === '') {
         $missing[] = $def['title_label'];
+    }
+    if (!empty($def['news']) && trim(wp_strip_all_tags((string) $data['post_content'], true)) === '' && strpos((string) $data['post_content'], '<img') === false) {
+        $missing[] = 'Tekst';
     }
     foreach ($def['fields'] as $field) {
         if (empty($field['required'])) {
@@ -303,8 +323,8 @@ add_action('admin_notices', function () {
 
 /** Saves the fields (sanitised per type). Runs only for the STA edit form, with a valid nonce. */
 add_action('save_post', function ($post_id, $post) {
-    $types = sta_cms_types();
-    if (!isset($types[$post->post_type]) || wp_is_post_revision($post_id) || (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)) {
+    $def = sta_cms_form_def($post->post_type);
+    if (!$def || wp_is_post_revision($post_id) || (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)) {
         return;
     }
     if (empty($_POST['sta_cms_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['sta_cms_nonce'])), 'sta_cms_save_' . $post->post_type)) {
@@ -313,9 +333,11 @@ add_action('save_post', function ($post_id, $post) {
     if (!current_user_can('edit_post', $post_id)) {
         return;
     }
-    foreach ($types[$post->post_type]['fields'] as $field) {
+    $before = sta_tr_snapshot($post, $def['fields']);
+    foreach ($def['fields'] as $field) {
         sta_cms_save_field($post_id, $field);
     }
+    sta_tr_update_hashes($post, $def['fields'], $before);
 }, 10, 2);
 
 /** Stores the member rows of a group/committee plus a reverse index (person → groups). */
@@ -348,6 +370,7 @@ function sta_cms_save_field($post_id, $field) {
                 $rows[] = array(
                     'person'  => $person,
                     'role_no' => sanitize_text_field($in['role_no'][$i] ?? ''),
+                    'role_nn' => sanitize_text_field($in['role_nn'][$i] ?? ''),
                     'role_en' => sanitize_text_field($in['role_en'][$i] ?? ''),
                 );
             }

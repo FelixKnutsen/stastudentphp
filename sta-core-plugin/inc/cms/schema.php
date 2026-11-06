@@ -15,7 +15,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-const STA_CMS_EN_HELP = 'Valgfritt. Står feltet tomt, vises den norske teksten (eller oversettelsen i TranslatePress) på engelske sider.';
+const STA_CMS_EN_HELP = 'Valgfritt. Står feltet tomt, vises oversettelsen fra Oversettelser, ellers den norske teksten.';
+const STA_CMS_NN_HELP = 'Valgfritt. Står feltet tomt, vises oversettelsen fra Oversettelser, ellers bokmålsteksten.';
 
 function sta_cms_types() {
     static $types = null;
@@ -35,6 +36,7 @@ function sta_cms_types() {
             'intro'       => 'Linjeforeningene vises på siden Linjeforeninger, sortert etter rekkefølge og navn.',
             'taxonomies'  => array('sta_faculty'),
             'fields'      => array(
+                array('key' => '_sta_title_en', 'label' => 'Navn på engelsk', 'type' => 'text', 'help' => STA_CMS_EN_HELP),
                 array('key' => '_sta_desc_no', 'label' => 'Beskrivelse', 'type' => 'textarea'),
                 array('key' => '_sta_desc_en', 'label' => 'Beskrivelse på engelsk', 'type' => 'textarea', 'help' => STA_CMS_EN_HELP),
                 array('key' => '_sta_study_program', 'label' => 'Studieprogram', 'type' => 'text'),
@@ -59,6 +61,7 @@ function sta_cms_types() {
             'intro'       => 'Studentaktivitetene vises på siden Studentaktiviteter, sortert etter rekkefølge og navn.',
             'taxonomies'  => array('sta_activity_category'),
             'fields'      => array(
+                array('key' => '_sta_title_en', 'label' => 'Navn på engelsk', 'type' => 'text', 'help' => STA_CMS_EN_HELP),
                 array('key' => '_sta_desc_no', 'label' => 'Beskrivelse', 'type' => 'textarea'),
                 array('key' => '_sta_desc_en', 'label' => 'Beskrivelse på engelsk', 'type' => 'textarea', 'help' => STA_CMS_EN_HELP),
                 array('key' => '_sta_meeting_time', 'label' => 'Når (valgfritt)', 'type' => 'text', 'help' => 'F.eks. «Trening tirsdager kl. 18–20». Vises på kortet hvis det er fylt ut.'),
@@ -195,7 +198,75 @@ function sta_cms_types() {
             ),
         ),
     );
+    foreach ($types as $type => $def) {
+        $types[$type]['fields'] = sta_cms_add_language_fields($def['fields']);
+    }
     return $types;
+}
+
+/**
+ * Every English field gets a Nynorsk twin, and both learn which Bokmål text they translate.
+ * Names are marked optional: a name that is the same in every language is not «missing».
+ */
+function sta_cms_add_language_fields($fields) {
+    $keys = wp_list_pluck($fields, 'key');
+    $out  = array();
+    foreach ($fields as $field) {
+        if (substr($field['key'], -3) !== '_en') {
+            $out[] = $field;
+            continue;
+        }
+        $base = substr($field['key'], 0, -3);
+        $field['lang']   = 'en';
+        $field['source'] = $field['source'] ?? (in_array($base . '_no', $keys, true) ? $base . '_no' : (in_array($base, $keys, true) ? $base : 'post_title'));
+        if ($field['source'] === 'post_title' && !isset($field['optional'])) {
+            $field['optional'] = true;
+        }
+        $out[] = $field;
+        $nn = $field;
+        $nn['key']   = $base . '_nn';
+        $nn['lang']  = 'nn';
+        $nn['label'] = str_replace('på engelsk', 'på nynorsk', $field['label']);
+        $nn['help']  = STA_CMS_NN_HELP;
+        $out[] = $nn;
+    }
+    return $out;
+}
+
+/** The news form: core title, text and excerpt in Bokmål, plus the other languages. */
+function sta_cms_news_def() {
+    static $def = null;
+    if ($def === null) {
+        $def = array(
+            'plural'      => 'Nyheter',
+            'singular'    => 'nyhet',
+            'icon'        => 'dashicons-admin-post',
+            'title_label' => 'Overskrift',
+            'pages'       => array('siste-nytt', ''),
+            'intro'       => 'Nyheter med kategorien «Nyheter» vises under Siste nytt, og de tre nyeste på forsiden. Velg et fremhevet bilde; det vises på nyhetskortet.',
+            'news'        => true,
+            'fields'      => sta_cms_add_language_fields(array(
+                array('key' => '_sta_title_en', 'label' => 'Overskrift på engelsk', 'type' => 'text', 'source' => 'post_title', 'optional' => false, 'help' => STA_CMS_EN_HELP),
+                array('key' => '_sta_excerpt_en', 'label' => 'Kort oppsummering på engelsk', 'type' => 'textarea', 'source' => 'post_excerpt', 'help' => STA_CMS_EN_HELP),
+                array('key' => '_sta_content_en', 'label' => 'Tekst på engelsk', 'type' => 'editor', 'full' => true, 'source' => 'post_content', 'help' => STA_CMS_EN_HELP),
+            )),
+        );
+    }
+    return $def;
+}
+
+/** Form definition for a post type with the shared edit form, or null. */
+function sta_cms_form_def($post_type) {
+    if ($post_type === 'post') {
+        return sta_cms_news_def();
+    }
+    $types = sta_cms_types();
+    return $types[$post_type] ?? null;
+}
+
+/** All post types with the shared edit form. */
+function sta_cms_form_types() {
+    return array_merge(sta_cms_types(), array('post' => sta_cms_news_def()));
 }
 
 function sta_cms_taxonomies() {
