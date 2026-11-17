@@ -11,6 +11,51 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!cards.length) return;
 
+    // Search uses the card text as it is before the «Les mer» buttons are added.
+    cards.forEach(function (card) {
+        card.setAttribute('data-search', (card.textContent || '').replace(/\s+/g, ' ').toLowerCase());
+    });
+
+    /* Long descriptions: show five lines with a «Les mer» button; short ones are shown in full. */
+    const grid = document.querySelector('.sta-directory-grid');
+    const moreLabel = (grid && grid.getAttribute('data-more')) || 'Les mer';
+    const lessLabel = (grid && grid.getAttribute('data-less')) || 'Vis mindre';
+    const descs = [];
+    document.querySelectorAll('.sta-dir-desc').forEach(function (p, i) {
+        p.id = p.id || 'sta-dir-desc-' + (i + 1);
+        p.classList.add('is-clamped');
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'sta-desc-toggle';
+        btn.hidden = true;
+        btn.textContent = moreLabel;
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-controls', p.id);
+        btn.addEventListener('click', function () {
+            const open = btn.getAttribute('aria-expanded') === 'true';
+            p.classList.toggle('is-clamped', open);
+            btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+            btn.textContent = open ? moreLabel : lessLabel;
+        });
+        p.insertAdjacentElement('afterend', btn);
+        descs.push({ p: p, btn: btn });
+    });
+    function measureDescs() {
+        descs.forEach(function (d) {
+            if (d.btn.getAttribute('aria-expanded') === 'true' || !d.p.offsetParent) return;
+            d.btn.hidden = !(d.p.scrollHeight > d.p.clientHeight + 1);
+        });
+    }
+    measureDescs();
+    let resizeTimer;
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(measureDescs, 150);
+    });
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(measureDescs);
+    }
+
     let currentCategory = 'all';
     let currentSearch = '';
     const isEn = document.documentElement.lang && document.documentElement.lang.startsWith('en');
@@ -21,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cards.forEach(function (card) {
             const cardCategory = card.getAttribute('data-category') || '';
-            const cardFullText = (card.textContent || '').toLowerCase();
+            const cardFullText = card.getAttribute('data-search') || '';
 
             const matchesCategory = currentCategory === 'all' || cardCategory === currentCategory;
             const matchesSearch = !searchNormalized || cardFullText.includes(searchNormalized);
@@ -47,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (emptyState) {
             emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
         }
+        measureDescs();
     }
 
     if (searchInput) {

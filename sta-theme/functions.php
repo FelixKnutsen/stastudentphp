@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('STA_THEME_VERSION', '1.3.28');
+define('STA_THEME_VERSION', '1.3.30');
 define('STA_THEME_PATH', get_template_directory());
 define('STA_THEME_URL', get_template_directory_uri());
 
@@ -725,9 +725,38 @@ add_action('admin_init', function() {
  * (visitor arrived from another site): news articles → news list, subpages → parent page,
  * everything else → homepage. With history, navigation.js uses history.back() instead.
  */
+/**
+ * Old or shortened addresses that are still linked from content and elsewhere: send visitors to
+ * the page in their language instead of a «not found» page (WordPress only redirects old page
+ * addresses in Bokmål).
+ */
+add_action('template_redirect', function () {
+    if (!is_404()) {
+        return;
+    }
+    $aliases = array(
+        'nyheter'  => '/siste-nytt',
+        'aktuelt'  => '/siste-nytt',
+        'om-oss'   => '/om-oss-2',
+        'om-sta'   => '/om-oss-2',
+    );
+    $raw  = isset($GLOBALS['sta_original_request_uri']) ? $GLOBALS['sta_original_request_uri'] : (isset($_SERVER['REQUEST_URI']) ? wp_unslash($_SERVER['REQUEST_URI']) : '/');
+    $path = (string) parse_url($raw, PHP_URL_PATH);
+    $base = sta_get_home_base_path();
+    if ($base !== '' && strpos($path, $base) === 0) {
+        $path = substr($path, strlen($base));
+    }
+    $path = preg_replace('#^/(en|nn)(?=/|$)#i', '', $path);
+    $slug = trim(strtolower($path), '/');
+    if (isset($aliases[$slug])) {
+        wp_safe_redirect(sta_get_localized_url($aliases[$slug]), 301);
+        exit;
+    }
+}, 1);
+
 function sta_back_link_fallback() {
     if (is_singular('post')) {
-        return sta_get_localized_url('/nyheter');
+        return sta_get_localized_url('/siste-nytt');
     }
     $id = get_queried_object_id();
     // Pages that belong to a section without being its child page in WordPress.

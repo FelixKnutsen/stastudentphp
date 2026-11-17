@@ -133,7 +133,7 @@ foreach ($items as $item) {
     </div>
 
     <!-- Cards Grid -->
-    <div class="sta-directory-grid">
+    <div class="sta-directory-grid" data-more="<?php echo esc_attr(sta_t('Les mer', 'Read more', 'Les meir')); ?>" data-less="<?php echo esc_attr(sta_t('Vis mindre', 'Show less', 'Vis mindre')); ?>">
         <?php foreach ($items as $item): ?>
             <div class="sta-directory-card" data-category="<?php echo esc_attr($item['categorySlug']); ?>" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
                 <div>
@@ -158,7 +158,7 @@ foreach ($items as $item) {
                         <?php echo esc_html($item['name']); ?>
                     </h2>
 
-                    <p class="sta-card-desc" style="font-size:0.85rem; line-height:1.6; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;">
+                    <p class="sta-card-desc sta-dir-desc" style="font-size:0.85rem; line-height:1.6;">
                         <?php echo esc_html($item['desc']); ?>
                     </p>
 
@@ -174,7 +174,10 @@ foreach ($items as $item) {
                     <?php endif; ?>
                 </div>
 
-                <div class="sta-dir-socials" style="display:flex; align-items:center; justify-content:space-between; margin-top:1.25rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
+                <div class="sta-dir-socials" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; row-gap:0.6rem; margin-top:1.25rem; padding-top:1rem; border-top:1px solid rgba(158,207,201,0.2);">
+                    <?php if (!empty($item['email']) && is_email($item['email'])): ?>
+                        <a class="sta-dir-email" href="mailto:<?php echo esc_attr($item['email']); ?>"><?php echo esc_html($item['email']); ?></a>
+                    <?php endif; ?>
                     <div style="display:flex; align-items:center; gap:0.65rem; color:var(--sta-teal-200);">
                         <?php if (!empty($item['facebook'])): ?>
                             <a href="<?php echo esc_url($item['facebook']); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr($item['name']); ?> Facebook" style="color:var(--sta-teal-200);">
@@ -184,11 +187,6 @@ foreach ($items as $item) {
                         <?php if (!empty($item['instagram'])): ?>
                             <a href="<?php echo esc_url($item['instagram']); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr($item['name']); ?> Instagram" style="color:var(--sta-teal-200);">
                                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                            </a>
-                        <?php endif; ?>
-                        <?php if (!empty($item['email'])): ?>
-                            <a href="mailto:<?php echo esc_attr($item['email']); ?>" aria-label="<?php echo esc_attr($item['name']); ?> e-post" style="color:var(--sta-teal-200);">
-                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                             </a>
                         <?php endif; ?>
                     </div>

@@ -3285,3 +3285,91 @@ body:not(.sta-native-layout).page-id-16160 h3 {
 .sta-page-content .sta-badge {
     color: #ffffff !important;
 }
+
+/* Elementor button widgets that carry the theme's button classes (front page, 1.3.29):
+   the link inside is the button, so the widget box around it must not look like one. */
+.elementor-element.elementor-widget-button.sta-btn,
+.elementor-element.elementor-widget-button.sta-btn-orange,
+.elementor-element.elementor-widget-button.sta-btn:hover,
+.elementor-element.elementor-widget-button.sta-btn-orange:hover {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+/* Linjeforeninger and Studentaktiviteter cards (1.3.29) */
+.sta-dir-desc.is-clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.sta-desc-toggle {
+    align-self: flex-start;
+    margin: 0.4rem 0 0;
+    padding: 0.2rem 0;
+    background: none;
+    border: 0;
+    color: var(--sta-orange-text);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+.sta-desc-toggle[hidden] {
+    display: none;
+}
+.sta-desc-toggle:hover,
+.sta-desc-toggle:focus-visible {
+    color: #fff;
+}
+.sta-dir-email {
+    flex: 1 1 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--sta-teal-100);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+.sta-dir-email:hover,
+.sta-dir-email:focus-visible {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Header with Studentparlamentet as its own item (1.3.29): keep every item on one line. */
+.sta-desktop-nav .sta-nav-link {
+    white-space: nowrap;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .sta-desktop-nav {
+        gap: 0.1rem;
+    }
+    .sta-desktop-nav .sta-nav-link {
+        padding: 0.6rem 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .sta-desktop-nav .sta-nav-link {
+        padding: 0.55rem 0.45rem;
+        font-size: 0.85rem;
+    }
+}
+@media (min-width: 1024px) {
+    .sta-logo-link {
+        flex-shrink: 0;
+    }
+}
+
+/* Elementor boxes with a fixed width (e.g. page headings set to 800px from 768px, the
+   Studentparlamentet grid set to 1200px) must never be wider than the box they sit in;
+   otherwise the page scrolls sideways on tablets and small laptops (1.3.30). */
+main .e-con.e-child {
+    width: min(var(--width, 100%), 100%);
+}

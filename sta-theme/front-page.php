@@ -178,10 +178,10 @@ if (empty($news_items)) {
 <section style="padding: 3rem 0; background: rgba(4, 24, 23, 0.4);">
     <div class="sta-container">
         <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem;">
-            <a href="<?php echo esc_url(sta_get_localized_url('/nyheter')); ?>" style="font-size:1.75rem; font-weight:800; color:#fff; letter-spacing:0.05em;">
+            <a href="<?php echo esc_url(sta_get_localized_url('/siste-nytt')); ?>" style="font-size:1.75rem; font-weight:800; color:#fff; letter-spacing:0.05em;">
                 <?php echo esc_html(sta_t('SISTE NYTT', 'LATEST NEWS', 'SISTE NYTT')); ?>
             </a>
-            <a href="<?php echo esc_url(sta_get_localized_url('/nyheter')); ?>" style="display:flex; align-items:center; gap:0.35rem; color:var(--sta-orange-text); font-size:0.85rem; font-weight:700;">
+            <a href="<?php echo esc_url(sta_get_localized_url('/siste-nytt')); ?>" style="display:flex; align-items:center; gap:0.35rem; color:var(--sta-orange-text); font-size:0.85rem; font-weight:700;">
                 <span><?php echo esc_html(sta_t('Se alle nyheter', 'View all news', 'Sjå alle nyheiter')); ?></span>
                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>

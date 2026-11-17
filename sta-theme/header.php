@@ -10,6 +10,7 @@ if (!defined('ABSPATH')) {
 $is_en = sta_is_en();
 $is_nn = sta_is_nn();
 $current_url = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '/';
+$is_parliament = is_page(sta_get_page_id_by_slug('studentparlamentet'));
 
 $current_lang_label = 'Norsk bokmål';
 if ($is_en) {
@@ -72,6 +73,10 @@ if ($is_en) {
                     <?php echo esc_html(sta_t('Verv', 'Get involved', 'Verv')); ?>
                 </a>
 
+                <a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-nav-link <?php echo $is_parliament ? 'is-active' : ''; ?>"<?php echo $is_parliament ? ' aria-current="page"' : ''; ?>>
+                    <?php echo esc_html(sta_t('Studentparlamentet', 'Student Parliament', 'Studentparlamentet')); ?>
+                </a>
+
                 <a href="<?php echo esc_url(sta_get_localized_url('/dokumenter')); ?>" class="sta-nav-link <?php echo (strpos($current_url, 'dokumenter') !== false || strpos($current_url, 'sakspapirer') !== false || strpos($current_url, 'referat-fra-moter') !== false) ? 'is-active' : ''; ?>">
                     <?php echo esc_html(sta_t('Dokumenter', 'Documents', 'Dokument')); ?>
                 </a>
@@ -94,10 +99,6 @@ if ($is_en) {
                         <a href="<?php echo esc_url(sta_get_localized_url('/sta-styret')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('STA-Styret', 'The STA-board', 'STA-styret')); ?></span>
                             <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('Det daglige styret i studentorganisasjonen', 'The daily board of the student organisation', 'Det daglege styret i studentorganisasjonen')); ?></span>
-                        </a>
-                        <a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-dropdown-item">
-                            <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Studentparlamentet', 'The Student Parliament', 'Studentparlamentet')); ?></span>
-                            <span class="sta-dropdown-desc"><?php echo esc_html(sta_t('UiAs øverste studentdemokratiske organ', "UiA's highest student democratic body", 'Det øvste studentdemokratiske organet ved UiA')); ?></span>
                         </a>
                         <a href="<?php echo esc_url(sta_get_localized_url('/linjeforeninger')); ?>" class="sta-dropdown-item">
                             <span class="sta-dropdown-title"><?php echo esc_html(sta_t('Linjeforeninger', 'Academic associations', 'Linjeforeiningar')); ?></span>
@@ -219,6 +220,11 @@ if ($is_en) {
                     </a>
                 </li>
                 <li class="sta-mobile-nav-item">
+                    <a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-mobile-nav-link"<?php echo $is_parliament ? ' aria-current="page"' : ''; ?>>
+                        <?php echo esc_html(sta_t('Studentparlamentet', 'The Student Parliament', 'Studentparlamentet')); ?>
+                    </a>
+                </li>
+                <li class="sta-mobile-nav-item">
                     <a href="<?php echo esc_url(sta_get_localized_url('/dokumenter')); ?>" class="sta-mobile-nav-link">
                         <?php echo esc_html(sta_t('Dokumenter', 'Documents', 'Dokument')); ?>
                     </a>
@@ -240,7 +246,6 @@ if ($is_en) {
                     <ul class="sta-mobile-subnav" style="display:none;">
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/om-oss-2')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Om oss', 'About us', 'Om oss')); ?></a></li>
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/sta-styret')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('STA-Styret', 'The STA-board', 'STA-styret')); ?></a></li>
-                        <li><a href="<?php echo esc_url(sta_get_localized_url('/studentparlamentet')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Studentparlamentet', 'The Student Parliament', 'Studentparlamentet')); ?></a></li>
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/linjeforeninger')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Linjeforeninger', 'Academic associations', 'Linjeforeiningar')); ?></a></li>
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/studentaktiviteter')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Studentaktiviteter', 'Student Activities', 'Studentaktivitetar')); ?></a></li>
                         <li><a href="<?php echo esc_url(sta_get_localized_url('/lokaler')); ?>" class="sta-mobile-sublink"><?php echo esc_html(sta_t('Lokaler', 'Our premises', 'Lokale')); ?></a></li>
